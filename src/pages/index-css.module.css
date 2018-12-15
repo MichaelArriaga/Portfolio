@@ -1,0 +1,61 @@
+/* typefaces
+font-family: var(--primary-type-copy);
+font-family: var(--primary-type-heading);
+font-family: var(--secondary-type-copy);
+font-family: var(--secondary-type-emphasis); 
+*/
+
+@import url(../components/layout-css-module.module.css);
+
+  .heroContainer {
+    max-width: 1746px;
+    padding: 0 80px;
+  }
+
+  .gap {
+    margin-bottom: 60px;
+  }
+
+  .heroHeading{
+    font-family: var(--primary-type-heading);
+    font-size: 50.4px;
+    margin-bottom: 20px;
+  }
+
+  .deEmphasis {
+    font-family: var(--primary-type-copy);
+  }
+
+  .projListHeading {
+    font-family: var(--secondary-type-copy);
+    font-size: 21.26px;
+  }
+
+  .projectListContainer {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .projectList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+  }
+
+  .projListHeading, .projListItem {
+    margin-bottom: 5px;
+  }
+  
+  .projListItem {
+    display: block;
+  }
+
+  .projLink {
+    font-family: var(--primary-type-heading);
+    font-size: 37.8px;
+    color: black;
+  }
+ 
+
+ 

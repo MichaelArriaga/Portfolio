@@ -1,0 +1,8 @@
+.container {
+  background: blue;
+  height: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+/* breakpoint 1: 1171px */

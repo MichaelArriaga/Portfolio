@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Zwizz-Regular;
+  src: url(../../static/etc/Zwizz-Regular.otf)
+  }
+
+@font-face {
+  font-family: Zwizz-Bold;
+  src: url(../../static/etc/Zwizz-Bold.otf)
+  }
+
+@font-face {
+font-family: IBMPlexMono-Regular;
+src: url(../../static/etc/IBMPlexMono-Regular.ttf)
+}
+
+@font-face {
+font-family: IBMPlexMono-Bold;
+src: url(../../static/etc/IBMPlexMono-Bold.ttf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --primary-type-copy: Zwizz-Regular;
+  --primary-type-heading: Zwizz-Bold;
+  --secondary-type-copy: IBMPlexMono-Regular;
+  --secondary-type-emphasis: IBMPlexMono-Bold;
+  font-size: 16px;
+
+}
+
+em {
+  font-style: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+

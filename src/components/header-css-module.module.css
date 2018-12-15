@@ -1,0 +1,31 @@
+
+.headercontainer {
+  max-width: 1746px;
+  height: 40px;
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.headerListItem {
+  font-family: var(--secondary-type-emphasis);
+  float: left;
+  font-size: 18px;
+
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+}
+
+.headerListItem:nth-child(2), .headerListItem:nth-child(3), .headerListItem:nth-child(4) {
+  float: right;
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+
+
+/* 22, 20 */
