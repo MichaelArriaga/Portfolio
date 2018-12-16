@@ -9,8 +9,6 @@ export default () => (
       <li className={styles.headerListItem}><Link to="/" className={styles.headerLink}>Contact</Link></li>
       <li className={styles.headerListItem}><Link to="/" className={styles.headerLink}>Blog</Link></li>
       <li className={styles.headerListItem}><Link to="/" className={styles.headerLink}>About</Link></li>
-
     </ul>
   </div>
-
 )
