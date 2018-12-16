@@ -1,0 +1,53 @@
+
+.container {
+    height: 1000px;
+    max-width: 1171px;
+    margin: auto;
+    /* background: blue; */
+}
+
+
+
+.projectH1 {
+    font-family: var(--primary-type-heading);
+    font-size: 36px;
+    letter-spacing: 6px;
+}
+
+.projectH2 {
+    font-family: var(--secondary-type-emphasis);
+    font-size: 27px;
+    color: #FE8B10;
+}
+
+.primaryRhythm {
+    margin-bottom: 62px;
+}
+
+.techOverview {
+    display: inline-block;
+    margin-right: 180px;
+    margin-bottom: 18px;
+}
+
+.techOverview:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.techListHeading {
+    font-family: var(--primary-type-heading);
+    font-size: 27px;
+    color: #FE8B10;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+}
+
+.techListItem {
+    font-family: var(--secondary-type-emphasis);
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.projectLineBreak {
+    margin-bottom: 62px;
+}
