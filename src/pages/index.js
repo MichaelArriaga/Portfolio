@@ -20,7 +20,7 @@ export default () => (
       </div>
 
       <div className={styles.projectListContainer}> 
-        <h3 className={styles.projListHeading}>/* Stuff */</h3>
+        <h3 className={styles.projListHeading}>Stuff</h3>
         <ul className={styles.projectList}> 
           <li className={styles.projectListLi}><ProjectListItem to="/" title="FLEX MATE" />
             <CategoryLabel tag="Design" />

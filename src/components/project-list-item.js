@@ -7,7 +7,7 @@ const CategoryLabel = (props) => (
 )
 
 const ProjectListItem = (props) => (
-    <Link to="/" className={styles.projLink}>{props.title} </Link>
+    <Link to="/flex-mate" className={styles.projLink}>{props.title} </Link>
 )
 
 
