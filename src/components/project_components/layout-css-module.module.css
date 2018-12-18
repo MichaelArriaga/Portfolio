@@ -7,7 +7,6 @@
 }
 
 
-
 .projectH1 {
     font-family: var(--primary-type-heading);
     font-size: 36px;
@@ -17,8 +16,8 @@
 .projectH2 {
     font-family: var(--secondary-type-emphasis);
     font-size: 27px;
-    color: #FE8B10;
 }
+
 
 .primaryRhythm {
     margin-bottom: 62px;
@@ -37,7 +36,6 @@
 .techListHeading {
     font-family: var(--primary-type-heading);
     font-size: 27px;
-    color: #FE8B10;
     margin-bottom: 16px;
     letter-spacing: 3px;
 }
@@ -45,9 +43,106 @@
 .techListItem {
     font-family: var(--secondary-type-emphasis);
     font-size: 18px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .projectLineBreak {
+    width: 100%;
     margin-bottom: 62px;
 }
+
+
+/* Project Description */
+
+.descriptionContainer {
+    width: 535px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: bottom;
+    /* background: pink; */
+}
+
+.descriptionContainer:nth-of-type(3) {
+    margin-right: 80px;
+}
+
+.secondaryRhythm {
+    margin-bottom: 40px;
+}
+
+.projectCopy {
+    font-family: var(--secondary-type-copy);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Features */
+
+.featureList {
+    padding-left:20px;
+}
+
+.featureList > li {
+    font-family: var(--secondary-type-emphasis);
+    font-size: 22px;
+    list-style-type: disc;
+    padding: 5px 10px;
+}
+
+/* Shared Styles */
+
+.metricsList {
+    display: block;
+    height: 80px;
+}
+
+.metric {
+    font-family: var(--secondary-type-emphasis);
+    font-size: 18px;
+    float: left;
+    margin-right: 115px;
+    line-height: 100px;
+}
+
+.metric > img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+/* Color */
+
+.colorList {
+    display: block;
+    height: 200px;
+}
+
+.colorListItem {
+    font-family: var(--secondary-type-emphasis);
+    font-size:22px;
+    float: left;
+    margin-right: 65px;
+}
+
+.colorBlock {
+    height: 192px;
+    width: 192px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+.colorBlock > p {
+    float: right;
+    padding-right: 10px;
+}
+
+.colorBlock > p:first-of-type {
+    padding-top: 123px;
+}
+
+/* subsection images */
+.subsectionImage {
+    width: 100%;
+}
+
