@@ -26,6 +26,75 @@
   font-size: 16px;
 }
 
+/*  responsive header */
+
+.headerContainerResponsive {
+  display: none;
+  width: 768px;
+  height: 100px;
+  margin: auto;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  position: relative;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: black;
+}
+
+.underline {
+  text-decoration: underline;
+}
 
 
-/* 22, 20 */
+
+
+@media only screen and (max-width: 960px) {
+
+  .headercontainer {
+    display: none;
+  }
+
+  .headerContainerResponsive {
+    display: block;
+  }
+  
+  .headerContainerResponsive > ul {
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    padding-left: 135px;
+    padding-top: 70px;
+  }
+  
+  .headerListItemResponsive {
+    font-family: var(--secondary-type-copy);
+    float: left;
+    font-size: 16px;
+    padding-right: 90px;
+    letter-spacing: 1.5px;
+  }
+  
+  .headerIconResponsive {
+    display: block;
+    position: absolute;
+    top:10px;
+    left: 20px;
+  }
+
+  .mikeIconAlt {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .headerListItemResponsive:nth-child(5) {
+    padding-right: 0px;
+  }
+
+
+
+
+}
+
+

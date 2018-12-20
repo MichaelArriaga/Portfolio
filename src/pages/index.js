@@ -3,12 +3,13 @@ import React from "react"
 import styles from "./index-css.module.css"
 
 import { ProjectListItem, CategoryLabel } from '../components/project-list-item';
-import Header from "../components/header"
+import Header from "../components/header";
+import ResponsiveHeader from '../components/responsive-header';
 
 export default () => (
   <div>
   <Header />
-
+  <ResponsiveHeader />
   <div className={styles.heroContainer}>
       <div className={styles.gap}> 
         <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>~/Dad</h1>

@@ -23,6 +23,7 @@ import SubHeading from '../../components/project_components/sub-heading';
 import Metrics from '../../components/project_components/metrics';
 import ColorList from '../../components/project_components/color-list';
 import SubsectionImage from '../../components/project_components/subsection-image';
+import ResponsiveHeader from '../../components/responsive-header';
 
 
 
@@ -73,6 +74,7 @@ const colorsArray  = [
 export default () => (
     <Container>
         <Header />
+        <ResponsiveHeader />
 
         <PrimaryHeading 
             title="FLEX MATE APP"
