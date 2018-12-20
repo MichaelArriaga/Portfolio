@@ -33,6 +33,10 @@ src: url(../../static/etc/IBMPlexMono-Bold.ttf)
 
 }
 
+body {
+  width: 100%;
+}
+
 em {
   font-style: inherit;
 }

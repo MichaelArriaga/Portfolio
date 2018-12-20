@@ -6,7 +6,7 @@
   margin-top: 40px;
   display: block;
   margin-bottom: 60px;
-  padding: 0px 20px;
+  padding: 0px 40px;
 }
 
 .headerListItem {
@@ -31,7 +31,7 @@
 
 .headerContainerResponsive {
   display: none;
-  width: 768px;
+  max-width: 768px;
   height: 100px;
   margin: auto;
   border-bottom-style: solid;
@@ -62,7 +62,7 @@
   }
   
   .headerContainerResponsive > ul {
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     height: 40px;
     padding-left: 135px;
@@ -75,6 +75,10 @@
     font-size: 16px;
     padding-right: 90px;
     letter-spacing: 1.5px;
+  }
+
+  .headerListItemResponsive:nth-child(4) {
+    padding-right: 0;
   }
   
   .headerIconResponsive {
