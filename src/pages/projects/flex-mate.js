@@ -72,9 +72,12 @@ const colorsArray  = [
 ];
 
 export default () => (
+    <div>
+    <Header />
+    <ResponsiveHeader />
+
     <Container>
-        <Header />
-        <ResponsiveHeader />
+
 
         <PrimaryHeading 
             title="FLEX MATE APP"
@@ -160,5 +163,7 @@ export default () => (
 
 
     </Container>
+    </div>
+
  
 )

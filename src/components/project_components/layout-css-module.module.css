@@ -58,7 +58,7 @@
     /* background: pink; */
 }
 
-.descriptionContainer:nth-of-type(3) {
+.descriptionContainer:nth-of-type(4) {
     margin-right: 80px;
 }
 
@@ -320,5 +320,130 @@
     .colorBlock > p:first-of-type {
         padding-top: 90px;
     }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    hr {
+        visibility: hidden;
+    }
+
+    .projectH1 {
+        font-size: 1.6875rem;
+        letter-spacing: 6px;
+    }
+    
+    .projectH2 {
+        font-size: 1.265625rem;
+    }
+    
+    
+    .primaryRhythm {
+        margin-bottom: 40px;
+    }
+
+    .secondaryRhythm {
+        margin-bottom: 20px;
+    }
+
+    .techOverview {
+        display: inline-block;
+        margin-right: 60px;
+        margin-bottom: 18px;
+    }
+    
+    .techOverview:nth-of-type(3) {
+        margin-right: 0;
+    }
+    
+    .techListHeading {
+        font-size: 1.265625rem;
+        margin-bottom: 10px;
+    }
+    
+    .techListItem {
+        font-size: 0.875rem;
+        padding-bottom: 10px;
+    }
+
+
+    .descriptionContainer {
+        display: block;
+        height: auto;
+        width: 500px;
+    }
+    
+    .projectCopy {
+        font-size: 0.875rem;
+        line-height: 24px;
+    }
+
+    /* Features */
+
+    .featureList > li {
+        font-size: 1.125rem;
+    }
+
+    /* Shared Styles */
+
+    .metricsList {
+        display: block;
+        height: 300px;
+        width: 80%;
+    }
+    
+    .metric {
+        font-size: 1.125rem;
+        line-height: 100px;
+        display: block;
+    }
+    
+    .metric > img {
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    /* Color */
+
+    .colorContainer {
+        height: 424px;
+    }
+
+    .colorList {
+        display: block;
+        height: 200px;
+    }
+
+    .colorListItem {
+        font-size: 1.125rem;
+        float: left;
+        margin-right: 65px;
+        margin-bottom: 20px;
+    }
+
+    .colorBlock {
+        height: 192px;
+        width: 192px;
+    }
+
+    .colorBlock > p {
+        float: right;
+        padding-right: 10px;
+    }
+
+    .colorBlock > p:first-of-type {
+        padding-top: 159px;
+    }
+
+    /* subsection images */
+    .subsectionImage {
+        width: 90%;
+    }
+
 
 }
