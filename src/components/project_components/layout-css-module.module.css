@@ -355,7 +355,7 @@
     .techOverview {
         display: inline-block;
         margin-right: 60px;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
     
     .techOverview:nth-of-type(3) {
@@ -399,7 +399,7 @@
     }
     
     .metric {
-        font-size: 1.125rem;
+        font-size: 1rem;
         line-height: 100px;
         display: block;
     }
@@ -446,17 +446,94 @@
         width: 90%;
     }
 
-
 }
 
+/* final responsive rule */
 @media only screen and (max-width: 650px) {
     .container {
         padding-left: 10px;
+        width: 374px;
+        margin: 0;
+    }
+
+    .techOverview {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    .descriptionContainer {
+        max-width: 374px;
+        line-height: 21px;
+    }
+
+    .descriptionContainer, .featureList {
+        max-width: 374px;
     }
 
     hr {
-        visibility: visible;
+        display: none;
     }
+
+    .projectCopy {
+        font-size: 0.875rem;
+        line-height: 21px;
+    }
+
+    .featureList {
+        width: 325px;
+    }
+
+    .featureList > li {
+        font-size: .85rem;
+        list-style-type: disc;
+        padding: 5px 0;
+        width: 100%;
+    }
+
+
+    .metricsList {
+        display: block;
+        height: 280px;
+        width: 100%;
+    }
+    
+    /* Color */
+
+    .colorContainer {
+        height: 325px;
+    }
+
+    .colorList {
+        display: block;
+        height: 200px;
+    }
+
+    .colorListItem {
+        margin-right: 20px;
+    }
+
+    .colorBlock {
+        height: 140px;
+        width: 140px;
+    }
+
+
+
+    .colorBlock > p:first-of-type {
+        padding-top: 83px;
+    }
+
+    /* subsection images */
+    .subsectionImage {
+        width: 90%;
+    }
+
+
+   
+
+
 
     
 }
+

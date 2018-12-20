@@ -58,7 +58,7 @@
   }
 
   .headerContainerResponsive {
-    display: block;
+    display: none;
   }
   
   .headerContainerResponsive > ul {
