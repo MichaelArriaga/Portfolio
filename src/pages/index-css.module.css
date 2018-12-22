@@ -12,52 +12,33 @@ font-family: var(--secondary-type-emphasis);
     padding: 0 80px;
   }
 
-  .gap {
-    margin-bottom: 60px;
-  }
-
-  .heroHeading{
-    font-family: var(--primary-type-heading);
-    font-size: 50.4px;
-    margin-bottom: 20px;
-  }
-
-  .deEmphasis {
-    font-family: var(--primary-type-copy);
-  }
-
-  .projListHeading {
-    font-family: var(--secondary-type-copy);
-    font-size: 21.26px;
-    margin-bottom: 10px;
-  }
-
-  .projectListContainer {
-    width: 50%;
-    height: 500px;
-  }
-
-  .projectList {
-    list-style-type: none;
-  }
-
-  .projectListLi {
-    height: 50px;
-    margin: 10px 0;
-  }
-
-
-
   .headingContainer {
     width: 555px;
     margin: auto;
+    height: auto;
     padding-left: 55px;
+    margin-bottom: 1000px;
+  }
+
+  .headingContainer > h1:nth-child(2) {
+    font-family: var(--secondary-type-emphasis)
   }
 
   .heroImage {
     display: block;
     margin: auto;
     margin-bottom: 30px;
+    max-width: 50%;
+  }
+
+  .heroHeading{
+    font-family: var(--primary-type-heading);
+    font-size: 50.4px;
+    margin-bottom: 10px;
+  }
+
+  .deEmphasis {
+    font-family: var(--primary-type-copy);
   }
 
   .cssTyping h1 {
@@ -176,6 +157,38 @@ font-family: var(--secondary-type-emphasis);
       border-color: tranparent;
     }
   }
+
+  .gap {
+    margin-bottom: 60px;
+  }
+
+
+
+  .projListHeading {
+    font-family: var(--secondary-type-copy);
+    font-size: 21.26px;
+    margin-bottom: 10px;
+  }
+
+  .projectListContainer {
+    width: 50%;
+    height: 500px;
+  }
+
+  .projectList {
+    list-style-type: none;
+  }
+
+  .projectListLi {
+    height: 50px;
+    margin: 10px 0;
+  }
+
+
+
+  
+
+  
   
  
 
