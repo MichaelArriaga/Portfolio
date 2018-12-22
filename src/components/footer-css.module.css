@@ -1,0 +1,36 @@
+.footerTest {
+    color: red;
+}
+
+.footerText {
+    font-family: var(--secondary-type-copy);
+    font-size: 21.26px;
+    margin-bottom: 25px;
+}
+
+.footerLine {
+    width: 100%;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.link {
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+    font-family: var(--secondary-type-emphasis);
+  }
+
+  .footerIconList {
+    width: 100%;
+      display: block;
+      margin-bottom: 120px;
+      height: auto;
+  }
+
+.footerIcon {
+    margin-right: 25px;
+    float: left;
+    vertical-align: bottom;
+}

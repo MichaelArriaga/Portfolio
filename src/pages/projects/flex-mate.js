@@ -102,7 +102,7 @@ export default () => (
             listitem2="Google Distance Matrix API"
             color={themeColor}
         />
-        <hr className={styles.primaryRhythm}></hr>
+        <hr className={[styles.primaryRhythm, styles.projectLineBreak].join(' ')}></hr>
 
         <ProblemOverview 
             heading="Problem" 

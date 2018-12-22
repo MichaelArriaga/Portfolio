@@ -5,6 +5,7 @@ import styles from "./index-css.module.css"
 import { ProjectListItem, CategoryLabel } from '../components/project-list-item';
 import Header from "../components/header";
 import ResponsiveHeader from '../components/responsive-header';
+import Footer from '../components/footer';
 
 import { Link } from 'gatsby';
 
@@ -29,12 +30,12 @@ export default () => (
 
       </div>
 
-      <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and my ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Web and App development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
+      <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and the ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Web and App development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
 
 
 
       <div className={styles.projectListContainer}> 
-        <h3 className={styles.projListHeading}>Here's some stuff I've made recently.</h3>
+        <h3 className={styles.projListHeading}>Here's some stuff that I've made recently.</h3>
         <ul className={styles.projectList}> 
           <li className={styles.projectListLi}><ProjectListItem path="/projects/flex-mate" title="FLEX MATE" />
             <CategoryLabel tag="Design" />
@@ -63,7 +64,10 @@ export default () => (
       </div> */}
 
 
+  <Footer />
+
   </div>
+
 
   </div>
 )

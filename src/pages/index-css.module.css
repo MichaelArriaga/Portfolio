@@ -193,7 +193,8 @@ font-family: var(--secondary-type-emphasis);
 
   .projectListContainer {
     width: 100%;
-    height: 500px;
+    height: auto;
+    margin-bottom: 80px;
   }
 
   .projectList {
