@@ -2,14 +2,17 @@ import React from "react"
 // import { Link } from 'gatsby'
 import styles from "./index-css.module.css"
 
-import { ProjectListItem, CategoryLabel } from '../components/project-list-item';
 import Header from "../components/header";
 import ResponsiveHeader from '../components/responsive-header';
+
+import ProjectItem from '../components/project-item';
+import ProjectList from '../components/project-list';
 import Footer from '../components/footer';
 
 import { Link } from 'gatsby';
 
 import computerimage from '../../static/etc/images/computer-screen.svg';
+
 
 export default () => (
   <div>
@@ -34,27 +37,12 @@ export default () => (
 
 
 
-      <div className={styles.projectListContainer}> 
-        <h3 className={styles.projListHeading}>Here's some stuff that I've made recently.</h3>
-        <ul className={styles.projectList}> 
-          <li className={styles.projectListLi}><ProjectListItem path="/projects/flex-mate" title="FLEX MATE" />
-            <CategoryLabel tag="Design" />
-            <CategoryLabel tag="Code" />
-          </li>
-          <li className={styles.projectListLi}><ProjectListItem path="/" title="HELPFUL APP" />
-            <CategoryLabel tag="Design" />
-            <CategoryLabel tag="Code" />
-          </li>
-          <li className={styles.projectListLi}><ProjectListItem path="/" title="TRUE FINANCE" />
-            <CategoryLabel tag="Design" />
-            <CategoryLabel tag="Code" />
-          </li>
-          <li className={styles.projectListLi}><ProjectListItem path="/" title="GIVE BACK" />
-            <CategoryLabel tag="Design" /> 
-            <CategoryLabel tag="Code" />
-          </li>
-        </ul>
-      </div>
+      <ProjectList>
+        <ProjectItem  path="/projects/flex-mate"  title="FLEX MATE" tags={["Design", "Code"]}/>
+        <ProjectItem  path="/"  title="HELPFUL APP" tags={["Design", "Code"]}/>
+        <ProjectItem  path="/"  title="TRUE FINANCE" tags={["Design", "Code"]}/>
+        <ProjectItem  path="/"  title="GIVE BACK" tags={["Design", "Code"]}/>
+      </ProjectList>
 
 
       {/* <div className={styles.gap}> 
@@ -64,9 +52,11 @@ export default () => (
       </div> */}
 
 
+  
+  </div>
+
   <Footer />
 
-  </div>
 
 
   </div>

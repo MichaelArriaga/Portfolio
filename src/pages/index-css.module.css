@@ -10,12 +10,13 @@ font-family: var(--secondary-type-emphasis);
   .indexContainer {
     max-width: 1171px;
     padding: 0 80px;
+    margin: auto;
   }
 
   .headingContainer {
     width: 555px;
     margin: auto;
-    height: auto;
+    height: 420px;
     padding-left: 55px;
     margin-bottom: 60px;
   }
@@ -28,7 +29,7 @@ font-family: var(--secondary-type-emphasis);
     display: block;
     margin: auto;
     margin-bottom: 30px;
-    max-width: 50%;
+    width: 500px;
   }
 
   .heroHeading{
@@ -40,13 +41,16 @@ font-family: var(--secondary-type-emphasis);
   .heroDescription {
     height: auto;
     display: block;
-    margin: auto;
+    margin: 0;
     font-family: var(--secondary-type-copy);
-    font-size: 27px;
-    width: 80%;
+    font-size: 21.26px;
+    width: 600px;
     margin-bottom: 60px;
     text-align: left;
-    transform: rotate(1.125deg);
+    margin-left: 10px;
+    
+    /* -webkit-transform: rotate(1.125deg);
+    transform: rotate(1.125deg); */
   }
 
   .deEmphasis {
@@ -185,32 +189,31 @@ font-family: var(--secondary-type-emphasis);
     margin-bottom: 60px;
   }
 
-  .projListHeading {
-    font-family: var(--secondary-type-copy);
-    font-size: 21.26px;
-    margin-bottom: 10px;
-  }
-
-  .projectListContainer {
-    width: 100%;
-    height: auto;
-    margin-bottom: 80px;
-  }
-
-  .projectList {
-    list-style-type: none;
-  }
-
-  .projectListLi {
-    height: 50px;
-    margin: 5px 0;
-  }
 
 
   
 
   
-  
+  @media only screen and (max-width: 1024px) {
+
+    .headingContainer {
+      height: 120px;
+    }
+
+    .heroHeading {
+      font-size: 32px;
+      margin: auto;
+    }
+
+    .heroImage {
+      width: 300px;
+    }
+
+    .heroDescription {
+      font-size: 13px;
+    }
+    
+  }
  
 
 

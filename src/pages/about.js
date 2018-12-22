@@ -3,6 +3,7 @@ import React from 'react';
 // global components
 import Header from '../components/header';
 import ResponsiveHeader from '../components/responsive-header';
+import Footer from '../components/footer';
 
 
 import styles from './about-css.module.css'
@@ -13,5 +14,7 @@ export default () => (
     <ResponsiveHeader />
     <Header />
     <h1 className={styles.aboutClass}>About page ORANGE</h1>
+
+    <Footer />
   </div>
 )

@@ -1,5 +1,8 @@
-.footerTest {
-    color: red;
+
+.footerContainer {
+    max-width: 1171px;
+    height: auto;
+    margin: auto;
 }
 
 .footerText {
@@ -38,4 +41,20 @@
 .footerIcon > img {
     height: 20px;
     width: 20px;
+}
+
+.footerText, .footerIconList {
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerText {
+        font-size: 16px;
+    }
+
+    .footerText, .footerIconList {
+        padding-left: 20px;
+    }
+
+
 }
