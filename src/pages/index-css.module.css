@@ -7,8 +7,8 @@ font-family: var(--secondary-type-emphasis);
 
 @import url(../components/layout-css-module.module.css);
 
-  .heroContainer {
-    max-width: 1746px;
+  .indexContainer {
+    max-width: 1171px;
     padding: 0 80px;
   }
 
@@ -17,7 +17,7 @@ font-family: var(--secondary-type-emphasis);
     margin: auto;
     height: auto;
     padding-left: 55px;
-    margin-bottom: 1000px;
+    margin-bottom: 60px;
   }
 
   .headingContainer > h1:nth-child(2) {
@@ -37,9 +37,34 @@ font-family: var(--secondary-type-emphasis);
     margin-bottom: 10px;
   }
 
+  .heroDescription {
+    height: auto;
+    display: block;
+    margin: auto;
+    font-family: var(--secondary-type-copy);
+    font-size: 27px;
+    width: 80%;
+    margin-bottom: 60px;
+    text-align: left;
+    transform: rotate(1.125deg);
+  }
+
   .deEmphasis {
     font-family: var(--primary-type-copy);
   }
+
+
+  .emphasis {
+    font-family: var(--secondary-type-emphasis);
+  }
+
+  .link {
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+  }
+
+
 
   .cssTyping h1 {
     border-right: .25em solid orange;
@@ -64,8 +89,6 @@ font-family: var(--secondary-type-emphasis);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
-  
-
   
   @keyframes type {
     0% {
@@ -162,8 +185,6 @@ font-family: var(--secondary-type-emphasis);
     margin-bottom: 60px;
   }
 
-
-
   .projListHeading {
     font-family: var(--secondary-type-copy);
     font-size: 21.26px;
@@ -171,7 +192,7 @@ font-family: var(--secondary-type-emphasis);
   }
 
   .projectListContainer {
-    width: 50%;
+    width: 100%;
     height: 500px;
   }
 
@@ -181,9 +202,8 @@ font-family: var(--secondary-type-emphasis);
 
   .projectListLi {
     height: 50px;
-    margin: 10px 0;
+    margin: 5px 0;
   }
-
 
 
   
