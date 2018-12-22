@@ -8,10 +8,10 @@ export default () => (
   <div className={styles.headerContainerResponsive} style={{marginBottom: '40px'}}>
   <img className={[styles.mikeIconAlt, styles.headerIconResponsive].join(' ')} src={mikeiconalt} alt="not loaded"/>
     <ul>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink}>HOME</Link></li>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink}>ABOUT</Link></li>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink}>BLOG</Link></li>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink}>CONTACT</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/projects/flex-mate" className={styles.headerLink} activeClassName={styles.activeLink}>HOME</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink} activeClassName={styles.activeLink}>ABOUT</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink} activeClassName={styles.activeLink}>BLOG</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink} activeClassName={styles.activeLink}>CONTACT</Link></li>
     </ul>
   </div>
 )
