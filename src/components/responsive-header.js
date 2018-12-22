@@ -6,12 +6,12 @@ import mikeiconalt from '../../static/etc/images/mike-icon-alt.png';
 
 export default () => (
   <div className={styles.headerContainerResponsive} style={{marginBottom: '40px'}}>
-  <img className={[styles.mikeIconAlt, styles.headerIconResponsive].join(' ')} src={mikeiconalt} alt="not loaded"/>
+  <Link to="/" ><img className={[styles.mikeIconAlt, styles.headerIconResponsive].join(' ')} src={mikeiconalt} alt="not loaded"/></Link>
     <ul>
       <li className={styles.headerListItemResponsive}><Link to="/projects/flex-mate" className={styles.headerLink} activeClassName={styles.activeLink}>HOME</Link></li>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink} activeClassName={styles.activeLink}>ABOUT</Link></li>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink} activeClassName={styles.activeLink}>BLOG</Link></li>
-      <li className={styles.headerListItemResponsive}><Link to="/" className={styles.headerLink} activeClassName={styles.activeLink}>CONTACT</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/about" className={styles.headerLink} activeClassName={styles.activeLink}>ABOUT</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/blog" className={styles.headerLink} activeClassName={styles.activeLink}>BLOG</Link></li>
+      <li className={styles.headerListItemResponsive}><Link to="/contact" className={styles.headerLink} activeClassName={styles.activeLink}>CONTACT</Link></li>
     </ul>
   </div>
 )

@@ -2,6 +2,7 @@ import React from 'react';
 
 // global components
 import Header from '../../components/header';
+import ResponsiveHeader from '../../components/responsive-header';
 
 // static assets
 import pixelImageEight from '../../../static/etc/images/project-images/8px-grid.png';
@@ -23,8 +24,6 @@ import SubHeading from '../../components/project_components/sub-heading';
 import Metrics from '../../components/project_components/metrics';
 import ColorList from '../../components/project_components/color-list';
 import SubsectionImage from '../../components/project_components/subsection-image';
-import ResponsiveHeader from '../../components/responsive-header';
-
 
 
 const themeColor = "#FE8B10"
