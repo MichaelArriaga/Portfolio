@@ -6,21 +6,31 @@ import { ProjectListItem, CategoryLabel } from '../components/project-list-item'
 import Header from "../components/header";
 import ResponsiveHeader from '../components/responsive-header';
 
+import computerimage from '../../static/etc/images/computer-screen.svg';
+
 export default () => (
   <div>
   <Header />
   <ResponsiveHeader />
   <div className={styles.heroContainer}>
+  
+
+      <img className={styles.heroImage} src={computerimage} alt="not loaded"/>
+
+      <div className={[styles.headingContainer, styles.cssTyping].join(' ')}>
+        <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } style={{marginBottom: "20px"}}><em className={styles.deEmphasis}>Hi. I’m </em>Mike Arriaga, </h1>
+
+        <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } style={{marginBottom: "0"}}>
+        <em className={styles.deEmphasis}>and I </em>code for good.
+        </h1>        
+      </div>
+
       <div className={styles.gap}> 
         <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>~/Dad</h1>
         <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>./Designer</h1>
         <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>./Developer</h1>
       </div>
 
-      <div className={styles.gap}>
-        <h1 className={styles.heroHeading } style={{marginBottom: "0"}}><em className={styles.deEmphasis}>Hi. I’m </em>Mike Arriaga,</h1>
-        <h1 className={styles.heroHeading}><em className={styles.deEmphasis}>and I </em>code for good.</h1>
-      </div>
 
       <div className={styles.projectListContainer}> 
         <h3 className={styles.projListHeading}>Stuff</h3>
@@ -43,7 +53,6 @@ export default () => (
           </li>
         </ul>
       </div>
-
 
   </div>
 
