@@ -14,6 +14,28 @@ import { Link } from 'gatsby';
 import computerimage from '../../static/etc/images/computer-screen.svg';
 
 
+const catTags =
+    {
+      new: {
+        text: "NEW!",
+        color: "white",
+        bg: "black",
+        id: 1
+      },
+      design: {
+        text: "Design",
+        color: "black",
+        bg: "white",
+        id: 2
+      },
+      code: {
+        text: "Code",
+        color: "black",
+        bg: "white",
+        id: 3
+      }
+    }
+
 export default () => (
   <div>
   <Header />
@@ -38,10 +60,10 @@ export default () => (
 
 
       <ProjectList>
-        <ProjectItem  path="/projects/flex-mate"  title="FLEX MATE" tags={["Design", "Code"]}/>
-        <ProjectItem  path="/"  title="HELPFUL APP" tags={["Design", "Code"]}/>
-        <ProjectItem  path="/"  title="TRUE FINANCE" tags={["Design", "Code"]}/>
-        <ProjectItem  path="/"  title="GIVE BACK" tags={["Design", "Code"]}/>
+        <ProjectItem  path="/projects/flex-mate"  title="FLEX MATE" tags={[catTags.new, catTags.design, catTags.code ]}/>
+        <ProjectItem  path="/"  title="HELPFUL APP" tags={[catTags.design, catTags.code]}/>
+        <ProjectItem  path="/"  title="TRUE FINANCE" tags={[catTags.design, catTags.code]}/>
+        <ProjectItem  path="/"  title="GIVE BACK" tags={[catTags.design, catTags.code]}/>
       </ProjectList>
 
 

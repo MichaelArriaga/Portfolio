@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './project-list-css.module.css';
+import styles from '../pages/index-css.module.css';
+
 
 
 
@@ -9,7 +10,6 @@ export default ({ children }) => (
         <ul className={styles.projectList}> 
 
         { children }
-        
           
         </ul>
   </div>

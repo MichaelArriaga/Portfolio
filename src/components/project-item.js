@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from './project-list-css.module.css';
+import styles from '../pages/index-css.module.css';
 
 
 const CategoryLabel = (props) => (
-  <p className={styles.projectLabel}>{props.tag}</p>
+  <p className={styles.projectLabel} style={{color: props.color, background: props.bg}}>{props.tag}</p>
 )
 
 const ProjectListItem = (props) => (
@@ -18,7 +18,7 @@ class ProjectItem extends React.Component {
       <li className={styles.projectListLi}>
       <ProjectListItem path={this.props.path} title={this.props.title} />
       { this.props.tags.map((tag) => {
-        return <CategoryLabel tag={tag} key={tag.key}/>
+        return <CategoryLabel tag={tag.text} color={tag.color} bg={tag.bg} key={tag.id}/>
       })}
 
     </li>
