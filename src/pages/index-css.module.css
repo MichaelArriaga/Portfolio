@@ -323,7 +323,14 @@ font-family: var(--secondary-type-emphasis);
 
     .projLink {
       font-size: 16px;
+      line-height: 15px;
     }
+
+    .projectListLi {
+      height: 30px;
+    }
+
+
 
   }
  
