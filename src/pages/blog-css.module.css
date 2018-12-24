@@ -1,3 +1,37 @@
-.blogClass {
-  color: blue;
+.blogContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.blogHeading {
+  font-size: 34px;
+  font-family: var(--primary-type-heading);
+  margin-bottom: 100px;
+}
+
+.section {
+  margin-bottom: 30px;
+  width: 700px ;
+  height: auto;
+}
+
+.sectionHeader {
+  font-size: 21.38px;
+  font-family: var(--secondary-type-copy);
+}
+
+.postItem {
+}
+
+.postLink {
+  font-size: 28.5px;
+  font-family: var(--primary-type-heading);
+  color: black;
+}
+
+.inlineDate {
+  font-family: var(--secondary-type-copy);
+  font-size: 16.03px;
+  display: inline;
+  margin-left: 5px;
 }
