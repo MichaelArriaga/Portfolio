@@ -46,7 +46,7 @@ sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
 consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
 ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-![](https://picsum.photos/200)
+![THERE IS TEXT HERE](https://picsum.photos/200)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
@@ -90,4 +90,4 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 
-> I really gotta say, I could see myself doing this for a long time mother fucker.
+> I really gotta say, I could see myself doing this for a long time. 
