@@ -45,6 +45,17 @@
   color: black;
 }
 
+.contactButton {
+  font-family: var(--secondary-type-emphasis);
+  font-size: 16px;
+  padding: 15px 17px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  background: black;
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
 
   .aboutContainer {
