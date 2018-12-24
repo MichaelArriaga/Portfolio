@@ -73,7 +73,7 @@ export default () => (
           previewimg={flexmatepreview}
         />
 
-        <ProjectItem   
+        {/* <ProjectItem   
           path="/"  
           title="Helpful App" 
           // 11 words max to avoid breaking style
@@ -101,7 +101,7 @@ export default () => (
           tags={[catTags.design, catTags.code]} 
           primarycolor="lightgrey"
           previewimg=""
-        />
+        /> */}
 
       </ProjectList>
 

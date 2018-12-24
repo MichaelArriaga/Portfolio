@@ -10,9 +10,11 @@ import { Link } from 'gatsby';
 
 
 export default () => (
-  <div className={styles.blogContainer}>
-    <ResponsiveHeader />
+  <div>
+      <ResponsiveHeader />
     <Header />
+  <div className={styles.blogContainer}>
+  
     <h1 className={styles.blogHeading}>/Blog</h1>
 
     <section className={styles.section}>
@@ -64,4 +66,6 @@ export default () => (
     </section>
 
   </div>
+  </div>
+
 )
