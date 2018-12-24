@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Header from '../components/header';
 import ResponsiveHeader from '../components/responsive-header';
 
@@ -16,6 +16,7 @@ export default function Template({
       <Header />
       <ResponsiveHeader />
       <div className="blog-post-container">
+      <Link className="backArrow" to="/">⟵ back to home</Link>
         <div className="blog-post">
           <h1 className="postTitle">{frontmatter.title}</h1>
           <h2 className="postDate">{frontmatter.date} / <span className="readTime">{frontmatter.readtime}</span></h2>

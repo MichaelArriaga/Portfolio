@@ -46,7 +46,7 @@ sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
 consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
 ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-![THERE IS TEXT HERE](https://picsum.photos/200)
+![THERE IS TEXT HERE](https://picsum.photos/999)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
@@ -81,7 +81,7 @@ export default FeatureList;
 
 
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+<!-- Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
@@ -90,4 +90,4 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 
-> I really gotta say, I could see myself doing this for a long time. 
+> I really gotta say, I could see myself doing this for a long time.  -->
