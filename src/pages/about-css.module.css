@@ -12,7 +12,7 @@
 }
 
 .aboutImg {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .bodyBlock {
@@ -43,5 +43,43 @@
 .link {
   text-decoration: underline;
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .aboutContainer {
+    width: 80%;
+    height: auto;
+    margin: 0;
+
+  }
+
+  .aboutHeader {
+    font-size: 25.5px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  .aboutImg {
+    width: 200px;
+    padding: 0 20px;
+  }
+  
+
+  .bodyBlock {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .sectionHeader {
+    font-family: var(--primary-type-heading);
+    font-size: 21.26px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
 }
 
