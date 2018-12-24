@@ -48,21 +48,22 @@
 @media only screen and (max-width: 768px) {
 
   .aboutContainer {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin: 0;
-
+    margin: 0px;
   }
 
   .aboutHeader {
     font-size: 25.5px;
     margin-bottom: 10px;
-    padding: 0 20px;
+    padding: 0 10px;
+
   }
 
   .aboutImg {
     width: 200px;
-    padding: 0 20px;
+    padding: 0 10px;
+
   }
   
 
@@ -70,15 +71,16 @@
     font-size: 12px;
     line-height: 19px;
     margin-bottom: 20px;
-    width: 100%;
-    padding: 0 20px;
+    width: 91%;
+    padding: 0 10px;
   }
 
   .sectionHeader {
     font-family: var(--primary-type-heading);
     font-size: 21.26px;
     margin-bottom: 10px;
-    padding: 0 20px;
+    padding: 0 10px;
+
   }
 
 }

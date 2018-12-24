@@ -6,16 +6,10 @@ import ResponsiveHeader from '../components/responsive-header';
 import Footer from '../components/footer';
 import { Link } from 'gatsby';
 
+// static assets
 import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 
-
 import styles from './about-css.module.css'
-
-
-// const BodyBlock = (props) => (
-
-// )
-
 
 export default () => (
   <div>
