@@ -1,5 +1,5 @@
 ---
-path: "/blog/my-first-post"
+path: "/blog/spend-less-time"
 date: "2017-11-07"
 title: "Spend less time studying, and more time digging into other people’s code."
 readtime: "10 min read"
@@ -41,13 +41,12 @@ sanctus est Lorem ipsum dolor sit amet.
 
 ### Another section heading
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
-erat, sed diam voluptua. At vero eos et accusam et justo duo 
-dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+[I'm an inline-style link](https://www.google.com) Stet clita kasd gubergren, no sea takimata 
 sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
 consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
 ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+![](https://picsum.photos/200)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
@@ -78,7 +77,7 @@ class FeatureList extends React.Component {
 export default FeatureList;
 
 ```
-![](https://picsum.photos/200)
+
 
 
 
@@ -89,3 +88,6 @@ Strong emphasis, aka bold, with **asterisks** or __underscores__.
 Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
+
+
+> I really gotta say, I could see myself doing this for a long time mother fucker.
