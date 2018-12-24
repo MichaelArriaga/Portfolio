@@ -19,7 +19,7 @@ export default () => (
       <h3 className={styles.sectionHeader}>OPINION</h3>
       <ul>
         <li className={styles.postItem}>
-          <Link to="/" className={styles.postLink}>
+          <Link to="/blog/my-first-post" className={styles.postLink}>
           Curiosity Trumps Years of Experience.
           </Link>
           <p className={styles.inlineDate}>Nov, 2018</p>
