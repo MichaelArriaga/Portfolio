@@ -11,7 +11,9 @@ import Footer from '../components/footer';
 
 import { Link } from 'gatsby';
 
+// static assets
 import computerimage from '../../static/etc/images/computer-screen.svg';
+import flexmatepreview from '../../static/etc/images/project-images/flex-mate/flex-mate-preview.png';
 
 
 const catTags =
@@ -25,13 +27,13 @@ const catTags =
       design: {
         text: "Design",
         color: "black",
-        bg: "white",
+        bg: "rgba(255, 0, 0, 0.01)",
         id: 2
       },
       code: {
         text: "Code",
         color: "black",
-        bg: "white",
+        bg: "rgba(255, 0, 0, 0.01)",
         id: 3
       }
     }
@@ -55,15 +57,52 @@ export default () => (
 
       </div>
 
-      <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and the ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Web and App development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
+      <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and the ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Front-End development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
 
 
 
       <ProjectList>
-        <ProjectItem  path="/projects/flex-mate"  title="FLEX MATE" tags={[catTags.new, catTags.design, catTags.code ]}/>
-        <ProjectItem  path="/"  title="HELPFUL APP" tags={[catTags.design, catTags.code]}/>
-        <ProjectItem  path="/"  title="TRUE FINANCE" tags={[catTags.design, catTags.code]}/>
-        <ProjectItem  path="/"  title="GIVE BACK" tags={[catTags.design, catTags.code]}/>
+
+        <ProjectItem  
+          path="/projects/flex-mate"  
+          title="Flex Mate" 
+          // 11 words max to avoid breaking style
+          headline="Help Amazon flex workers better visualize their out of pocket expenses."
+          tags={[catTags.new, catTags.design, catTags.code ]} 
+          primarycolor="#FE8B10"
+          previewimg={flexmatepreview}
+        />
+
+        <ProjectItem   
+          path="/"  
+          title="Helpful App" 
+          // 11 words max to avoid breaking style
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris."
+          tags={[catTags.design, catTags.code]} 
+          primarycolor="lightblue"
+          previewimg=""
+        />
+
+        <ProjectItem  
+         path="/"  
+          title="True Finance" 
+          // 11 words max to avoid breaking style
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris."
+          tags={[catTags.design, catTags.code]} 
+          primarycolor="lightgreen"
+          previewimg=""
+        />
+
+        <ProjectItem  
+          path="/"  
+          title="Give Back" 
+          // 11 words max to avoid breaking style
+          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris."
+          tags={[catTags.design, catTags.code]} 
+          primarycolor="lightgrey"
+          previewimg=""
+        />
+
       </ProjectList>
 
 

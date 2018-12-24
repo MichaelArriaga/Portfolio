@@ -4,27 +4,39 @@ import styles from '../pages/index-css.module.css';
 
 
 const CategoryLabel = (props) => (
-  <p className={styles.projectLabel} style={{color: props.color, background: props.bg}}>{props.tag}</p>
-)
-
-const ProjectListItem = (props) => (
-  <Link to={props.path} className={styles.projLink}>{props.title} </Link>
+  <p className={styles.categoryLabel} style={{color: props.color, background: props.bg}}>{props.tag}</p>
 )
 
 
 class ProjectItem extends React.Component {
   render() {
     return (
-      <li className={styles.projectListLi}>
-      <ProjectListItem path={this.props.path} title={this.props.title} />
-      { this.props.tags.map((tag) => {
-        return <CategoryLabel tag={tag.text} color={tag.color} bg={tag.bg} key={tag.id}/>
-      })}
+      <div className={styles.projectContainer} style={{background: this.props.primarycolor}}>
+        <p className={styles.projectHeadline}>{this.props.headline}</p>
+        <img  className={ styles.projectPreviewImg} src={this.props.previewimg} alt="not loaded"/>
+        <ul className={styles.projectMarkup}>
+        <li>
+          <h3 className={styles.projectTitle}>{this.props.title}</h3>
+        </li>
 
-    </li>
+        <li>
+          <h3>
+            { this.props.tags.map((tag) => {
+              return <CategoryLabel tag={tag.text} color={tag.color} bg={tag.bg} key={tag.id}/>
+            })}
+          </h3>
+        </li>
+        
+        <li>
+          <h4 className={styles.projectLink}>View <Link to={this.props.path} className={styles.linkEmphasis}>Project</Link></h4>
+        </li>
+      </ul>
+            
+    </div>
     )
   }
 }
 
 export default ProjectItem;
+
 

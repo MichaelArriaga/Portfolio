@@ -16,7 +16,6 @@ font-family: var(--secondary-type-emphasis);
   .headingContainer {
     width: 555px;
     margin: auto;
-    padding-left: 55px;
     margin-bottom: 60px;
   }
 
@@ -190,41 +189,44 @@ font-family: var(--secondary-type-emphasis);
   /* Project List component */
 
 
-  .projListHeading {
-    font-family: var(--secondary-type-copy);
-    font-size: 21.26px;
-    margin-bottom: 10px;
-  }
+
+ .projectContainer {
+   display: block;
+   width: 500px;
+   height: 300px;
+   margin: auto;
+   margin-bottom: 80px;
+   position: relative;
+ }
+
+ .projectMarkup {
+   text-align: right;
+   position: absolute;
+   top: 65px;
+   right: -100px;
+ }
+
+ .projectTitle {
+ 
+   font-family: var(--primary-type-heading);
+   font-size: 37.8px;
+   margin-bottom: 10px;
+   transform: rotate(2deg);
+ }
+
+ .projectLink {
+   font-family: var(--secondary-type-copy);
+   font-size: 21.26px;
+   transform: rotate(-4deg);
+ }
+
+ .linkEmphasis {
+   font-family: var(--secondary-type-emphasis);
+   text-decoration: underline;
+   color: black;
+ }
   
-  .projectListContainer {
-    width: 100%;
-    height: auto;
-    margin-bottom: 80px;
-  }
-  
-  .projectList {
-    list-style-type: none;
-  }
-  
-  .projectListLi {
-    height: 50px;
-    margin: 5px 0;
-  }
-  
-  
-  
-  .projLink {
-    font-family: var(--primary-type-heading);
-    font-size: 37.8px;
-    color: black;
-    margin-right: 3px;
-    vertical-align: bottom;
-    line-height: .75;
-  }
-  
-  
-  
-  .projectLabel {
+  .categoryLabel {
     font-family: var(--secondary-type-copy);
     font-size: 12px;
     display: inline-block;
@@ -234,6 +236,23 @@ font-family: var(--secondary-type-emphasis);
     border-width: 1px;
     border-color: black;
     vertical-align: bottom;
+    margin-bottom: 15px; 
+  }
+
+  .projectHeadline {
+    font-family: var(--secondary-type-emphasis);
+    font-size: 16px;
+    width: 75%;
+    text-align: left;
+    position: absolute;
+    top: 305px;
+    left: 5px;
+  }
+
+  .projectPreviewImg {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
   }
 
 
@@ -264,21 +283,12 @@ font-family: var(--secondary-type-emphasis);
     
     /* project list Component */
 
-    .projLink {
-      font-size: 32px;
-    }
+
   
-    .projListHeading {
-      /* font-size: 32px; */
-    }
   
-    .projLink {
-      font-size: 32px;
-    }
   
-    .projListLi {
-      margin: 0;
-    }
+ 
+
   }
 
   @media only screen and (max-width: 768px) {
@@ -286,7 +296,7 @@ font-family: var(--secondary-type-emphasis);
       padding: 0 20px;
     }
 
-    .heroHeading, .projLink {
+    .heroHeading {
       font-size: 27px;
     }
 
@@ -304,7 +314,7 @@ font-family: var(--secondary-type-emphasis);
       padding: 0 20px;
     }
 
-    .heroHeading, .projLink {
+    .heroHeading {
       font-size: 27px;
     }
 
@@ -317,18 +327,8 @@ font-family: var(--secondary-type-emphasis);
       width: 100%;
     }
 
-    .projListHeading {
-      font-size: 18px;
-    }
 
-    .projLink {
-      font-size: 16px;
-      line-height: 15px;
-    }
 
-    .projectListLi {
-      height: 30px;
-    }
 
 
 

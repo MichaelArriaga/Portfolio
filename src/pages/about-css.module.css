@@ -1,3 +1,47 @@
-.aboutClass {
-  color: orange;
+.aboutContainer {
+  width: 700px;
+  height: auto;
+  /* background: blue; */
+  margin: auto;
 }
+
+.aboutHeader {
+  font-family: var(--primary-type-heading);
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.aboutImg {
+  margin-bottom: 40px;
+}
+
+.bodyBlock {
+  font-family: var(--secondary-type-copy);
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.rotateLeft {
+  transform: rotate(-0.5deg)
+ }
+
+.rotateRight {
+ transform: rotate(0.5deg) 
+}
+
+.sectionHeader {
+  font-family: var(--primary-type-heading);
+  font-size: 28.35px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-family: var(--secondary-type-emphasis);
+}
+
+.link {
+  text-decoration: underline;
+  color: black;
+}
+
