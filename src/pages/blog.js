@@ -4,68 +4,66 @@ import React from 'react';
 import Header from '../components/header';
 import ResponsiveHeader from '../components/responsive-header';
 
+// page components
+import PostList from '../components/post-list';
+import Post from '../components/post';
 
-import styles from './blog-css.module.css'
-import { Link } from 'gatsby';
+// styling
+import styles from './blog-css.module.css';
 
 
-export default () => (
-  <div>
+  export default () => (
+    <div>
       <ResponsiveHeader />
-    <Header />
-  <div className={styles.blogContainer}>
-  
-    <h1 className={styles.blogHeading}>/Blog</h1>
+      <Header />
+      <div className={styles.blogContainer}>
+        <h1 className={styles.blogHeading}>/BLOG</h1>
+        <PostList sectiontitle="OPINION">
 
-    <section className={styles.section}>
-      <h3 className={styles.sectionHeader}>OPINION</h3>
-      <ul>
-        <li className={styles.postItem}>
-          <Link to="/blog/spend-less-time" className={styles.postLink}>
-          Curiosity Trumps Years of Experience.
-          </Link>
-          <p className={styles.inlineDate}>Nov, 2018</p>
-        </li>
-        <li className={styles.postItem}>
-          <Link to="/" className={styles.postLink}>
-            It Doesn’t Matter What You Know, It’show fast you can learn it.
-          </Link>
-          <p className={styles.inlineDate}>Oct, 2018</p>
-        </li>
-        <li className={styles.postItem}>
-          <Link to="/" className={styles.postLink}>
-            Spend less time studying, and more time digging into other people’s code.
-          </Link>
-          <p className={styles.inlineDate}>Nov, 2018</p>
-        </li>
-      </ul>
-    </section>
+          <Post 
+            path="/blog/spend-less-time" 
+            title="Curiosity Trumps Years of Experience." 
+            postdate="Nov, 2018"
+          />
 
-    <section className={styles.section}>
-      <h3 className={styles.sectionHeader}>TECHNICAL</h3>
-      <ul>
-        <li className={styles.postItem}>
-          <Link to="/" className={styles.postLink}>
-          GIT CLI, as fast as possible.
-          </Link>
-          <p className={styles.inlineDate}>Nov, 2018</p>
-        </li>
-        <li className={styles.postItem}>
-          <Link to="/" className={styles.postLink}>
-          Semantic versioning, as fast as possible.
-          </Link>
-          <p className={styles.inlineDate}>Oct, 2018</p>
-        </li>
-        <li className={styles.postItem}>
-          <Link to="/" className={styles.postLink}>
-            ES6 differences (the important bits).
-          </Link>
-          <p className={styles.inlineDate}>Nov, 2018</p>
-        </li>
-      </ul>
-    </section>
+          <Post 
+            path="/" 
+            title="It Doesn’t Matter What You Know, It’s how fast you can learn it." 
+            postdate="Oct, 2018"
+          />
 
-  </div>
-  </div>
+          <Post 
+            path="/" 
+            title="Spend less time studying, and more time digging into other people’s code." 
+            postdate="Nov, 2018"
+          />
 
-)
+        </PostList>
+
+        <PostList sectiontitle="TECHNICAL">
+
+          <Post 
+            path="/" 
+            title="GIT CLI, as fast as possible." 
+            postdate="Nov, 2018"
+          />
+
+          <Post 
+            path="/" 
+            title="Semantic versioning, as fast as possible" 
+            postdate="Oct, 2018"
+          />
+
+          <Post 
+            path="/" 
+            title="ES6 differences (the important bits)." 
+            postdate="Dec, 2018"
+          />
+
+        </PostList>
+
+      </div>
+      
+    </div>
+
+  )

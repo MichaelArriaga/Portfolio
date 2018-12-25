@@ -35,7 +35,7 @@
   height: 100px;
   margin: auto;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom-width: 1.5px;
   position: relative;
 }
 
@@ -77,7 +77,7 @@
   }
   
   .headerListItemResponsive {
-    font-family: var(--secondary-type-copy);
+    font-family: var(--secondary-type-emphasis);
     display: inline-block;
     font-size: 16px;
     padding: 0 5%;

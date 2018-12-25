@@ -1,7 +1,8 @@
 ---
 path: "/blog/spend-less-time"
 date: "2017-11-07"
-title: "Spend less time studying, and more time digging into other people’s code."
+title: "It Doesn’t Matter What You Know, It’s
+how fast you can learn it."
 readtime: "10 min read"
 ---
 

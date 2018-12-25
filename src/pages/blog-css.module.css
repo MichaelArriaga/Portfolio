@@ -35,3 +35,36 @@
   display: inline;
   margin-left: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+  .sectionHeader {
+
+  }
+
+  .blogContainer {
+    width: 95%;
+  }
+
+  .blogHeading {
+    margin-bottom: 50px;
+    font-size: 25.5px;
+  }
+
+  .section {
+    width: 95%;
+
+  }
+
+  .sectionHeader {
+    font-size: 16.035px;
+    margin-bottom: 2.5px;
+  }
+
+  .postItem {
+    margin-bottom: 5px;
+  }
+
+  .postLink {
+    font-size: 21.375px;
+  }
+}
