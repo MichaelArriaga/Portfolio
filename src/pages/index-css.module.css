@@ -262,14 +262,16 @@ font-family: var(--secondary-type-emphasis);
   @media only screen and (max-width: 1024px) {
 
     .headingContainer {
-      height: 120px;
       width: 100%;
-      padding-left: 20px;
+      height: auto;
+      margin-bottom: 20px;
     }
+
 
     .heroHeading {
       font-size: 32px;
       margin: auto;
+      margin-bottom: 0;
     }
 
     .heroImage {
@@ -307,11 +309,84 @@ font-family: var(--secondary-type-emphasis);
     .headingContainer {
       width: 80%;
     }
+
+    .projectContainer {
+      width: 450px;
+      height: 250px;
+      margin-left: 70px;
   }
 
+  .projectHeadline {
+    font-size: 12px;
+    top: 255px;
+    left: 2px;
+}
+
+  .categoryLabel {
+    margin-bottom: 5px;
+  }
+  }
+
+  /* for resizin project items only with absolute positioning */
+  @media only screen and (max-width: 665px) {
+
+    .projectContainer {
+      width: 360px;
+      height: 225px;
+      margin: auto;
+      margin-bottom: 80px;
+  }
+
+
+
+
+    .projectTitle {
+      transform: rotate(0deg);
+      font-size: 24.8px;
+      margin-bottom: 10px;
+    }
+    .projectLink {
+      transform: rotate(0deg);
+      font-size: 20.26px;
+    }
+
+    .categoryLabel {
+      margin-right: 6px;
+    }
+
+
+    .projectPreviewImg {
+      position: absolute;
+      bottom: 0;
+      left: 48%;
+      width: 45%;
+    }
+
+    .projectMarkup {
+      text-align: left;
+      top: 10px;
+      right: 191px;
+  }
+
+  .projectHeadline {
+    top: 230px;
+  }
+
+  }
+
+
+
+
   @media only screen and (max-width: 414px) {
+
+    .headingContainer {
+      width: 100%;
+      height: auto;
+    }
+
     .indexContainer {
-      padding: 0 20px;
+      padding: 0;
+      width: 100%;
     }
 
     .heroHeading {
@@ -319,13 +394,13 @@ font-family: var(--secondary-type-emphasis);
     }
 
     .heroDescription {
-      font-size: 16px;
+      font-size: 15px;
       width: 90%;
     }
 
-    .headingContainer {
-      width: 100%;
-    }
+
+
+
 
 
 

@@ -48,7 +48,7 @@ export default () => (
       <img className={styles.heroImage} src={computerimage} alt="not loaded"/>
 
       <div className={[styles.headingContainer, styles.cssTyping].join(' ')}>
-        <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } style={{marginBottom: "10px"}}><em className={styles.deEmphasis}>Hi. I’m </em>Mike Arriaga, </h1>
+        <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } ><em className={styles.deEmphasis}>Hi. I’m </em>Mike Arriaga, </h1>
 
         <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } style={{marginBottom: "40px"}}>
         <em className={styles.deEmphasis}>and I </em>code for good.
@@ -73,7 +73,7 @@ export default () => (
           previewimg={flexmatepreview}
         />
 
-        {/* <ProjectItem   
+        <ProjectItem   
           path="/"  
           title="Helpful App" 
           // 11 words max to avoid breaking style
@@ -101,7 +101,7 @@ export default () => (
           tags={[catTags.design, catTags.code]} 
           primarycolor="lightgrey"
           previewimg=""
-        /> */}
+        />
 
       </ProjectList>
 
