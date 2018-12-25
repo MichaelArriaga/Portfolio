@@ -1,3 +1,10 @@
-.contactClass {
-  color: red;
+.contactContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.contactHeading {
+  font-size: 34px;
+  font-family: var(--primary-type-heading);
+  margin-bottom: 100px;
 }
