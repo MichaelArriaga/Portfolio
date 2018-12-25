@@ -11,7 +11,8 @@ const CategoryLabel = (props) => (
 class ProjectItem extends React.Component {
   render() {
     return (
-      <div className={styles.projectContainer} style={{background: this.props.primarycolor}}>
+      <div>
+      <Link to={this.props.path} className={styles.projectContainer} style={{background: this.props.primarycolor}}>
         <p className={styles.projectHeadline}>{this.props.headline}</p>
         <img  className={ styles.projectPreviewImg} src={this.props.previewimg} alt="not loaded"/>
         <ul className={styles.projectMarkup}>
@@ -32,6 +33,7 @@ class ProjectItem extends React.Component {
         </li>
       </ul>
             
+    </Link>
     </div>
     )
   }

@@ -29,6 +29,10 @@
   color: black;
 }
 
+.postLink:hover {
+  color: #FE8B10;
+}
+
 .inlineDate {
   font-family: var(--secondary-type-copy);
   font-size: 16.03px;

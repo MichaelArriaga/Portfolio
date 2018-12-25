@@ -42,8 +42,8 @@ font-family: var(--secondary-type-emphasis);
     margin: auto;
     font-family: var(--secondary-type-copy);
     font-size: 21.26px;
-    width: 60%;
-    margin-bottom: 60px;
+    width: 75%;
+    margin-bottom: 300px;
     text-align: left;
     
     /* -webkit-transform: rotate(1.125deg);
@@ -207,7 +207,7 @@ font-family: var(--secondary-type-emphasis);
  }
 
  .projectTitle {
- 
+  color: black;
    font-family: var(--primary-type-heading);
    font-size: 37.8px;
    margin-bottom: 10px;
@@ -218,6 +218,7 @@ font-family: var(--secondary-type-emphasis);
    font-family: var(--secondary-type-copy);
    font-size: 21.26px;
    transform: rotate(-4deg);
+   color: black;
  }
 
  .linkEmphasis {
@@ -247,6 +248,7 @@ font-family: var(--secondary-type-emphasis);
     position: absolute;
     top: 305px;
     left: 5px;
+    color: black;
   }
 
   .projectPreviewImg {
@@ -366,6 +368,7 @@ font-family: var(--secondary-type-emphasis);
       text-align: left;
       top: 10px;
       right: 191px;
+      padding-left: 10px;
   }
 
   .projectHeadline {

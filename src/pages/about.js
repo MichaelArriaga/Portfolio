@@ -46,9 +46,9 @@ eventually going on to recording, producing, and performing with a few of the <s
     So, no matter what tool or framework your product team prefers, I will be up to speed and ready to make <span className={styles.highlight}>meaningful contributions</span> to your project in record time. Like a <span className={styles.highlight}>musical instrument</span>, I consider technologies to be nothing more than the tools that we use to <span className={styles.highlight}>express our creative ideas</span>, which is it’s own entity that is <span className={styles.highlight}>separate</span> from the core industry experience that we accumulate over time. Frameworks, Methodologies, Programming Languages e.t.c fall <span className={styles.highlight}>in and out of style</span> at a staggering pace. Industry experience however does not.
     </p>
 
-    <h2 className={styles.sectionHeader} style={{marginBottom: "60px"}}>Let’s talk about what I can do for your project!</h2>
+    <h2 className={styles.sectionHeader} style={{marginBottom: "60px", textAlign: "center"}}>Let’s talk about what I can do for your project!</h2>
 
-    <div style={{marginBottom: "120px"}}>
+    <div style={{marginBottom: "76px"}}>
     <a className={styles.contactButton} href="/" >Let's Talk!</a>
     </div>
    
