@@ -1,4 +1,6 @@
 import React from 'react';
+import * as typeformEmbed from '@typeform/embed'
+
 
 // global components
 import Header from '../components/header';
@@ -10,6 +12,27 @@ import { Link } from 'gatsby';
 import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 
 import styles from './about-css.module.css'
+
+const typeform = typeformEmbed.makePopup (
+  'https://michael2329.typeform.com/to/kpBMGz',
+  {
+    mode: 'popup',
+    autoClose: 3000,
+    hideHeaders: true,
+    hideFooters: true,
+    onSubmit: function() {
+      console.log('Typeform success')
+
+    }
+  }
+)
+
+
+// this.refs.typeform.addEventListener('click', function() {
+//   typeform.open();
+// })
+
+
 
 export default () => (
   <div>
@@ -49,7 +72,7 @@ eventually going on to recording, producing, and performing with a few of the <s
     <h2 className={styles.sectionHeader} style={{marginBottom: "60px", textAlign: "center"}}>Let’s talk about what I can do for your project!</h2>
 
     <div style={{marginBottom: "76px"}}>
-    <a className={styles.contactButton} href="/" >Let's Talk!</a>
+    <button id="typeform" className={styles.contactButton} onClick={() => { typeform.open() } } >Let's talk!</button>
     </div>
    
   </div>
