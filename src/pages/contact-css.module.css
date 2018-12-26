@@ -1,5 +1,5 @@
 .contactContainer {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -7,4 +7,46 @@
   font-size: 34px;
   font-family: var(--primary-type-heading);
   margin-bottom: 100px;
+}
+
+.contactSubheading {
+    font-family: var(--primary-type-heading);
+    font-size: 37.8px;
+    line-height: 48px;
+    margin-bottom: 5px;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contactContactBtn {
+  font-family: var(--secondary-type-copy);
+  display: block;
+  padding: 20px 40px;
+  margin: auto;
+  background: black;
+  color: white;
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 220px;
+}
+
+.contactContactBtn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .contactHeading {
+    font-size: 25.5px;
+  }
+  .contactSubheading {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .contactContactBtn {
+    font-size: 22px;
+  }
 }
