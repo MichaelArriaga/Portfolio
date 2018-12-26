@@ -53,42 +53,30 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
 erat, sed diam voluptua.
 
+```javascript
+import React from 'react';
+
+import styles from './footer-css.module.css';
+
+import twittericon from '../../static/etc/images/twitter-icon.svg';
+// import linkedinicon from '../../static/etc/images/linkedin-con.svg';
+import githubicon from '../../static/etc/images/github-icon.svg';
+
+export default () => (
+    <div className={styles.footerContainer}>
+        <hr className={styles.footerLine}></hr>
+        <p className={styles.footerText}>Design + Code by <a className={styles.link} href="https://twitter.com/ux_Michael" target="_blank" rel="noopener noreferrer">Mike Arriaga</a> in Seattle, WA</p>
+        <ul className={styles.footerIconList}>
+
+            <li className={styles.footerIcon}>
+            <a href="https://twitter.com/ux_Michael" target="_blank" rel="noopener noreferrer"><img src={twittericon} alt="not loaded" /></a>
+            </li>
+
+            <li className={styles.footerIcon}>
+            <a href="https://github.com/MichaelArriaga" target="_blank" rel="noopener noreferrer"><img src={githubicon} alt="not loaded" /></a>
+            </li>
+
+        </ul>
+    </div>
+)
 ```
-import React from 'react'
-import styles from './layout-css-module.module.css'
-
- const ListItem = (props) => (
-   <li>{props.feature}</li>
- )
-
-class FeatureList extends React.Component {
-  render() {
-    return (
-      <ul className={[styles.featureList, styles.primaryRhythm].join(' ')}>
-
-        {this.props.features.map((feature) => {
-          return <ListItem feature={feature.feature} key={feature.id} />
-        })}
-      
-      </ul>
-    )
-  }
-}
-
-export default FeatureList;
-
-```
-
-
-
-
-<!-- Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-
-> I really gotta say, I could see myself doing this for a long time.  -->
