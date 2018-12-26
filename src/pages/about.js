@@ -27,13 +27,6 @@ const typeform = typeformEmbed.makePopup (
   }
 )
 
-
-// this.refs.typeform.addEventListener('click', function() {
-//   typeform.open();
-// })
-
-
-
 export default () => (
   <div>
         <ResponsiveHeader />
