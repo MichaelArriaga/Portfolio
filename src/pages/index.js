@@ -6,7 +6,6 @@ import Header from "../components/header";
 import ResponsiveHeader from '../components/responsive-header';
 
 import ProjectItem from '../components/project-item';
-import ProjectList from '../components/project-list';
 import Footer from '../components/footer';
 
 import { Link } from 'gatsby';
@@ -61,7 +60,6 @@ export default () => (
 
 
 
-      <ProjectList>
 
         <ProjectItem  
           path="/projects/flex-mate"  
@@ -102,8 +100,6 @@ export default () => (
           primarycolor="lightgrey"
           previewimg=""
         />
-
-      </ProjectList>
 
 
       {/* <div className={styles.gap}> 
