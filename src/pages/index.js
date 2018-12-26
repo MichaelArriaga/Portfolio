@@ -58,6 +58,8 @@ export default () => (
 
       <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and the ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Front-End development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
 
+      <h3 className={styles.projectListHeader}>Here’s some stuff I’ve made recently</h3>
+
 
 
 

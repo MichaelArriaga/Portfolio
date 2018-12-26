@@ -43,7 +43,7 @@ font-family: var(--secondary-type-emphasis);
     font-family: var(--secondary-type-copy);
     font-size: 21.26px;
     width: 75%;
-    margin-bottom: 300px;
+    margin-bottom: 130px;
     text-align: left;
     
     /* -webkit-transform: rotate(1.125deg);
@@ -188,6 +188,14 @@ font-family: var(--secondary-type-emphasis);
 
   /* Project List component */
 
+  .projectListHeader {
+    width: 90%;
+    font-size: 22px;
+    font-family: var(--secondary-type-emphasis);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 
 
  .projectContainer {
