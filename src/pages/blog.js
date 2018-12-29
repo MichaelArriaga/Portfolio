@@ -27,8 +27,8 @@ import styles from './blog-css.module.css';
           />
 
           <Post 
-            path="/" 
-            title="It Doesn’t Matter What You Know, It’s how fast you can learn it." 
+            path="/blog/a-new-post" 
+            title="A new test post" 
             postdate="Oct, 2018"
           />
 
