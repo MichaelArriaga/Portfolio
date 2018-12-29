@@ -37,13 +37,12 @@ export default () => (
     <img className={styles.aboutImg} src={aboutimg} alt="not loaded"/>
 
     <p className={[styles.bodyBlock, styles.rotateRight].join(' ')} >
-    <span className={styles.highlight}>Mike Arriaga</span> is a professional career musician and drum performance instructor turned programmer and design thinker. Originally from <span className={styles.highlight}>Long Beach California</span> now based in <span className={styles.highlight}>Seattle</span>, Mike has never let barriers stand in his way when it comes to what he is passionate about doing. Starting in a small garage at age 4, Mike practiced drums up to <span className={styles.highlight}>8 hours per day</span>, 
-eventually going on to recording, producing, and performing with a few of the <span className={styles.highlight}>world’s</span> most famed musicians and producers. 
+    <span className={styles.highlight}>Mike Arriaga</span> is a professional career musician and drum performance instructor turned programmer and design thinker. Originally from <span className={styles.highlight}>Long Beach California</span> now based in <span className={styles.highlight}>Seattle</span>, Mike has never let barriers stand in his way when it comes to what he is passionate about doing. Starting in a small garage at age 4, Mike eventually went on to recording, producing, and performing with a few of the <span className={styles.highlight}>world’s</span> most famed musicians and producers. 
     </p>
 
 
     <p className={[styles.bodyBlock, styles.rotateLeft].join(' ')} >
-    <span className={styles.highlight}>In 2014</span>, Mike, who had already been tinkering with computer <span className={styles.highlight}>hardware, software, and web development</span> for years decided to focus on designing and building <span className={styles.highlight}>meaningful</span> software, and visual designs to pursue as a career. Since then, he has aimed to build projects that benefit every day people with his latest project being a tool that helps <span className={styles.highlight}>Amazon Flex workers</span> visualize their out of pocket expenses. <Link className={styles.link} to="/projects/flex-mate" ><span className={styles.highlight}>CHECK IT OUT HERE</span></Link>
+    <span className={styles.highlight}>In 2014</span>, Mike decided to switch his focus from music to designing and building <span className={styles.highlight}>meaningful</span> software, and visual designs to pursue as a <span className={styles.highlight}>career</span> Since then, he has aimed to build <span className={styles.highlight}>projects that benefit every day people</span> with his latest project being a tool that helps <span className={styles.highlight}>Amazon Flex workers</span> visualize their out of pocket expenses. <Link className={styles.link} to="/projects/flex-mate" ><span className={styles.highlight}>CHECK IT OUT HERE</span></Link>
     </p>
 
 
@@ -59,14 +58,20 @@ eventually going on to recording, producing, and performing with a few of the <s
     </p>
 
     <p className={[styles.bodyBlock, styles.rotateLeft].join(' ')} >
-    So, no matter what tool or framework your product team prefers, I will be up to speed and ready to make <span className={styles.highlight}>meaningful contributions</span> to your project in record time. Like a <span className={styles.highlight}>musical instrument</span>, I consider technologies to be nothing more than the tools that we use to <span className={styles.highlight}>express our creative ideas</span>, which is it’s own entity that is <span className={styles.highlight}>separate</span> from the core industry experience that we accumulate over time. Frameworks, Methodologies, Programming Languages e.t.c fall <span className={styles.highlight}>in and out of style</span> at a staggering pace. Industry experience however does not.
+    So, no matter what tool or framework your product team prefers, I will be up to speed and ready to make <span className={styles.highlight}>meaningful contributions</span> to your project in record time. Like a <span className={styles.highlight}>musical instrument</span>, I consider technologies to be nothing more than the tools that we use to <span className={styles.highlight}>express our creative ideas</span>, which is it’s own entity that is <span className={styles.highlight}>separate</span> from the core industry experience that we accumulate over time.
     </p>
 
-    <h2 className={styles.sectionHeader} style={{marginBottom: "60px", textAlign: "center"}}>Let’s talk about what I can do for your project!</h2>
+    <h2 className={styles.sectionHeader} style={{marginBottom: "40px", textAlign: "center"}}>Let’s talk about what I can do for your project!</h2>
 
-    <div style={{marginBottom: "76px"}}>
-    <button id="typeform" className={styles.contactButton} onClick={() => { typeform.open() } } >Let's talk!</button>
-    </div>
+    <ul  className={ styles.contactList }>
+      <li>
+      <button id="typeform" className={styles.contactButton} onClick={() => { typeform.open() } } >Let's talk!</button>
+      </li>
+
+      <li>
+      <a className={styles.contactButton} style={{color: "black", background: "white", }} href="https://devdb.io/ux_michael" target="_blank" rel="noopener noreferrer">View My Resume</a>
+      </li>
+    </ul>
    
   </div>
   <Footer />

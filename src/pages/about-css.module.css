@@ -45,6 +45,19 @@
   color: black;
 }
 
+.contactList {
+  display: block;
+  margin: auto;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.contactList li {
+  display: inline-block;
+  height: 50px;
+  margin: 10px;
+}
+
 .contactButton {
   font-family: var(--secondary-type-emphasis);
   font-size: 16px;
@@ -80,7 +93,6 @@
     padding: 0 10px;
 
   }
-  
 
   .bodyBlock {
     font-size: 14.18px;
@@ -103,8 +115,10 @@
   .contactButton {
     display: block;
     margin: auto;
-    width: 200px;
     text-align: center;
-}
+    padding: 12px 14px;
+  }
+
+
 }
 

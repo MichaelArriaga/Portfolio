@@ -98,7 +98,7 @@ export default () => (
         />
         <TechOverview 
             heading="CORE TECH"
-            listitem1="React.js"
+            listitem1="JavaScript ES6"
             listitem2="Google Distance Matrix API"
             color={themeColor}
         />

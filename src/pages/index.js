@@ -73,43 +73,7 @@ export default () => (
           previewimg={flexmatepreview}
         />
 
-        <ProjectItem   
-          path="/"  
-          title="Helpful App" 
-          // 11 words max to avoid breaking style
-          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris."
-          tags={[catTags.design, catTags.code]} 
-          primarycolor="lightblue"
-          previewimg=""
-        />
-
-        <ProjectItem  
-         path="/"  
-          title="True Finance" 
-          // 11 words max to avoid breaking style
-          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris."
-          tags={[catTags.design, catTags.code]} 
-          primarycolor="lightgreen"
-          previewimg=""
-        />
-
-        <ProjectItem  
-          path="/"  
-          title="Give Back" 
-          // 11 words max to avoid breaking style
-          headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris."
-          tags={[catTags.design, catTags.code]} 
-          primarycolor="lightgrey"
-          previewimg=""
-        />
-
-
-      {/* <div className={styles.gap}> 
-        <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>~/Dad</h1>
-        <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>./Designer</h1>
-        <h1 className={styles.heroHeading} style={{fontSize: "63px"}}>./Developer</h1>
-      </div> */}
-
+        
 
   
   </div>
