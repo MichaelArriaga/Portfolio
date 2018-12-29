@@ -10,6 +10,7 @@
   font-family: var(--primary-type-heading);
   font-size: 37.8px;
   line-height: 38px;
+  letter-spacing: -1px;
   margin-bottom: 5px;
 }
 
