@@ -29,9 +29,6 @@ class ProjectItem extends React.Component {
           </h3>
         </li>
         
-        <li>
-          <h4 className={styles.projectLink}>View <Link to={this.props.path} className={styles.linkEmphasis}>Project</Link></h4>
-        </li>
       </ul>
             
     </Link>

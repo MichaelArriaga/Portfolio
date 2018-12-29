@@ -42,12 +42,9 @@ font-family: var(--secondary-type-emphasis);
     margin: auto;
     font-family: var(--secondary-type-copy);
     font-size: 21.26px;
-    width: 75%;
-    margin-bottom: 130px;
-    text-align: left;
-    
-    /* -webkit-transform: rotate(1.125deg);
-    transform: rotate(1.125deg); */
+    width: 599px;
+    margin-bottom: 60px;
+    text-align: center;
   }
 
   .deEmphasis {
@@ -189,8 +186,8 @@ font-family: var(--secondary-type-emphasis);
   /* Project List component */
 
   .projectListHeader {
-    width: 90%;
-    font-size: 22px;
+    width: 100%;
+    font-size: 21.26px;
     font-family: var(--secondary-type-emphasis);
     margin: auto;
     text-align: center;
@@ -219,15 +216,9 @@ font-family: var(--secondary-type-emphasis);
    font-family: var(--primary-type-heading);
    font-size: 37.8px;
    margin-bottom: 10px;
-   transform: rotate(2deg);
  }
 
- .projectLink {
-   font-family: var(--secondary-type-copy);
-   font-size: 21.26px;
-   transform: rotate(-4deg);
-   color: black;
- }
+
 
  .linkEmphasis {
    font-family: var(--secondary-type-emphasis);
@@ -289,11 +280,15 @@ font-family: var(--secondary-type-emphasis);
     }
 
     .heroDescription {
-      font-size: 22px;
-      width: 80%;
+      font-size: 16.5px;
+      width: 550px;
     }
     
     /* project list Component */
+
+    .projectListHeader {
+      font-size: 16.5px;
+    }
 
 
   
@@ -314,6 +309,7 @@ font-family: var(--secondary-type-emphasis);
 
     .heroDescription {
       font-size: 16px;
+      width: 80%;
     }
 
     .headingContainer {
@@ -323,7 +319,6 @@ font-family: var(--secondary-type-emphasis);
     .projectContainer {
       width: 450px;
       height: 250px;
-      margin-left: 70px;
   }
 
   .projectHeadline {
@@ -345,23 +340,15 @@ font-family: var(--secondary-type-emphasis);
       height: 225px;
       margin: auto;
       margin-bottom: 80px;
-  }
-
-
-
+    }
 
     .projectTitle {
-      transform: rotate(0deg);
       font-size: 24.8px;
       margin-bottom: 10px;
     }
-    .projectLink {
-      transform: rotate(0deg);
-      font-size: 20.26px;
-    }
 
     .categoryLabel {
-      margin-right: 6px;
+      margin-right: 3px;
     }
 
 
@@ -375,7 +362,7 @@ font-family: var(--secondary-type-emphasis);
     .projectMarkup {
       text-align: left;
       top: 10px;
-      right: 191px;
+      right: 200px;
       padding-left: 10px;
   }
 
@@ -401,7 +388,7 @@ font-family: var(--secondary-type-emphasis);
     }
 
     .heroHeading {
-      font-size: 27px;
+      font-size: 24px;
     }
 
     .heroDescription {
