@@ -1,5 +1,6 @@
 import React from "react"
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby';
+
 import styles from "./index-css.module.css"
 
 import Header from "../components/header";
@@ -8,7 +9,6 @@ import ResponsiveHeader from '../components/responsive-header';
 import ProjectItem from '../components/project-item';
 import Footer from '../components/footer';
 
-import { Link } from 'gatsby';
 
 // static assets
 import computerimage from '../../static/etc/images/computer-screen.svg';

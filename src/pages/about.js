@@ -1,5 +1,5 @@
 import React from 'react';
-import * as typeformEmbed from '@typeform/embed'
+// import typeformEmbed from '@typeform/embed'
 
 
 // global components
@@ -13,22 +13,24 @@ import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 
 import styles from './about-css.module.css'
 
-const typeform = typeformEmbed.makePopup (
-  'https://michael2329.typeform.com/to/kpBMGz',
-  {
-    mode: 'popup',
-    autoClose: 3000,
-    hideHeaders: true,
-    hideFooters: true,
-    onSubmit: function() {
-      console.log('Typeform success')
+// const typeform = typeformEmbed.makePopup (
+//   'https://michael2329.typeform.com/to/kpBMGz',
+//   {
+//     mode: 'popup',
+//     autoClose: 3000,
+//     hideHeaders: true,
+//     hideFooters: true,
+//     onSubmit: function() {
+//       console.log('Typeform success')
 
-    }
-  }
-)
+//     }
+//   }
+// )
 
-export default () => (
-  <div>
+class About extends React.Component {
+  render() {
+    return (
+<div>
         <ResponsiveHeader />
     <Header />
   <div className={styles.aboutContainer}>
@@ -65,7 +67,7 @@ export default () => (
 
     <ul  className={ styles.contactList }>
       <li>
-      <button id="typeform" className={styles.contactButton} onClick={() => { typeform.open() } } >Let's talk!</button>
+      {/* <button id="typeform" className={styles.contactButton} onClick={() => { typeform.open() } } >Let's talk!</button> */}
       </li>
 
       <li>
@@ -76,4 +78,9 @@ export default () => (
   </div>
   <Footer />
   </div>
-)
+    )
+  }
+}
+
+
+export default About;

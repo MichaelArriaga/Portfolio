@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './footer-css.module.css';
 
 import twittericon from '../../static/etc/images/twitter-icon.svg';
-// import linkedinicon from '../../static/etc/images/linkedin-con.svg';
 import githubicon from '../../static/etc/images/github-icon.svg';
 
 export default () => (

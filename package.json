@@ -6,17 +6,20 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "@typeform/embed": "^0.5.12",
-    "gatsby": "^2.0.33",
+    "gatsby": "^2.0.77",
     "gatsby-remark-prismjs": "^3.1.4",
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-remark": "^2.1.17",
     "prismjs": "^1.15.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-typography": "^0.16.18"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

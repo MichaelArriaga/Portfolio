@@ -16,6 +16,7 @@ class ProjectItem extends React.Component {
         <p className={styles.projectHeadline}>{this.props.headline}</p>
         <img  className={ styles.projectPreviewImg} src={this.props.previewimg} alt="not loaded"/>
         <ul className={styles.projectMarkup}>
+        
         <li>
           <h3 className={styles.projectTitle}>{this.props.title}</h3>
         </li>
