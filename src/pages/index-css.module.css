@@ -262,39 +262,17 @@ font-family: var(--secondary-type-emphasis);
   
   @media only screen and (max-width: 1024px) {
 
-    .headingContainer {
+    /* .headingContainer {
       width: 100%;
       height: auto;
       margin-bottom: 20px;
-    }
+    } */
 
 
-    .heroHeading {
-      font-size: 32px;
-      margin: auto;
-      margin-bottom: 0;
-    }
 
-    .heroImage {
-      width: 300px;
-    }
 
-    .heroDescription {
-      font-size: 16.5px;
-      width: 550px;
-    }
     
-    /* project list Component */
 
-    .projectListHeader {
-      font-size: 16.5px;
-    }
-
-
-  
-  
-  
- 
 
   }
 
@@ -306,6 +284,17 @@ font-family: var(--secondary-type-emphasis);
     .heroHeading {
       font-size: 27px;
     }
+
+    .heroHeading {
+      margin: auto;
+      margin-bottom: 0;
+    }
+
+
+    .heroImage {
+      width: 300px;
+    }
+
 
     .heroDescription {
       font-size: 16px;
