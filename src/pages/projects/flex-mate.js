@@ -3,6 +3,7 @@ import React from 'react';
 // global components
 import Header from '../../components/header';
 import ResponsiveHeader from '../../components/responsive-header';
+import Footer from '../../components/footer';
 
 // static assets
 import pixelImageEight from '../../../static/etc/images/project-images/8px-grid.png';
@@ -162,6 +163,7 @@ export default () => (
 
 
     </Container>
+    <Footer />
     </div>
 
  

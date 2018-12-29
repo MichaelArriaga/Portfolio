@@ -4,12 +4,6 @@
   margin: auto;
 }
 
-.contactHeading {
-  font-size: 34px;
-  font-family: var(--primary-type-heading);
-  margin-bottom: 100px;
-}
-
 .contactSubheading {
     font-family: var(--primary-type-heading);
     font-size: 37.8px;
@@ -30,9 +24,6 @@
 
 @media only screen and (max-width: 768px) {
 
-  .contactHeading {
-    font-size: 25.5px;
-  }
   .contactSubheading {
     font-size: 32px;
     width: 100%;
