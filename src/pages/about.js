@@ -1,5 +1,5 @@
 import React from 'react';
-// import typeformEmbed from '@typeform/embed'
+import TypeformButton from '../components/TypeformButton'
 
 
 // global components
@@ -13,19 +13,6 @@ import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 
 import styles from './about-css.module.css'
 
-// const typeform = typeformEmbed.makePopup (
-//   'https://michael2329.typeform.com/to/kpBMGz',
-//   {
-//     mode: 'popup',
-//     autoClose: 3000,
-//     hideHeaders: true,
-//     hideFooters: true,
-//     onSubmit: function() {
-//       console.log('Typeform success')
-
-//     }
-//   }
-// )
 
 class About extends React.Component {
   render() {
@@ -65,15 +52,12 @@ class About extends React.Component {
 
     <h2 className={styles.sectionHeader} style={{marginBottom: "40px", textAlign: "center"}}>Let’s talk about what I can do for your project!</h2>
 
-    <ul  className={ styles.contactList }>
-      <li>
-      {/* <button id="typeform" className={styles.contactButton} onClick={() => { typeform.open() } } >Let's talk!</button> */}
-      </li>
+      <TypeformButton />
 
-      <li>
-      <a className={styles.contactButton} style={{color: "black", background: "white", }} href="https://devdb.io/ux_michael" target="_blank" rel="noopener noreferrer">View My Resume</a>
-      </li>
-    </ul>
+
+      
+      <a className={styles.contactButton}  style={{color: "black", background: "white"}}href="https://devdb.io/ux_michael" target="_blank" rel="noopener noreferrer">View My Resume</a>
+     
    
   </div>
   <Footer />

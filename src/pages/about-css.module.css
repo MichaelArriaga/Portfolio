@@ -58,20 +58,27 @@
   margin: 10px;
 }
 
-.contactButton {
+.contactButton, .typeformButton {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  text-align: center;
   font-family: var(--secondary-type-emphasis);
-  font-size: 16px;
+  font-size: 28.35px;
   padding: 15px 17px;
   border-style: solid;
   border-color: black;
   border-width: 4px;
   background: black;
   color: white;
+  margin-bottom: 40px;
 }
 
-.contactButton:hover {
+.contactButton:hover, .typeformButton:hover {
   cursor: pointer;
 }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -113,10 +120,7 @@
   }
 
   .contactButton {
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 12px 14px;
+    font-size: 21.26px;
   }
 
 

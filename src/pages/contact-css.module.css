@@ -1,5 +1,6 @@
 .contactContainer {
   width: 95%;
+  height: 720px;
   margin: auto;
 }
 
@@ -20,17 +21,8 @@
     margin-bottom: 40px;
 }
 
-.contactContactBtn {
-  font-family: var(--secondary-type-copy);
-  display: block;
-  padding: 20px 40px;
-  margin: auto;
-  background: black;
-  color: white;
-  font-size: 32px;
-  margin-top: 80px;
-  margin-bottom: 220px;
-}
+/* contact button styles inside about-css.module.css */
+
 
 .contactContactBtn:hover {
   cursor: pointer;
