@@ -3,11 +3,12 @@
     max-width: 1171px;
     height: auto;
     margin: auto;
+    text-align: center;
 }
 
 .footerText {
     font-family: var(--secondary-type-copy);
-    font-size: 21.26px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
@@ -33,9 +34,9 @@
   }
 
 .footerIcon {
-    margin-right: 15px;
-    float: left;
-    vertical-align: bottom;
+    margin-left: 15px;
+    /* float: left; */
+    vertical-align: middle;
 }
 
 .footerIcon > img {
@@ -49,12 +50,33 @@
 
 @media only screen and (max-width: 768px) {
     .footerText {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .footerText, .footerIconList {
         padding-left: 20px;
     }
 
+    .footerIcon {
+        width: 15px;
+        height: 15px;
+    }
 
+
+}
+
+@media only screen and (max-width: 414px) {
+    .footerText {
+        padding: 0;
+        text-align: left;
+        padding-left:10px;
+    }
+
+
+
+    .footerIcon {
+            margin: 0;
+            margin-right: 5px;
+        
+    }
 }
