@@ -29,6 +29,14 @@
     margin-bottom: 62px;
 }
 
+.tryLink {
+    color: black;
+    display: block;
+    font-family: var(--secondary-type-emphasis);
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
 .techOverview {
     display: inline-block;
     margin-right: 180px;

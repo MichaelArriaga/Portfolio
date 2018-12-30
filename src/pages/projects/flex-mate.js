@@ -81,12 +81,15 @@ export default () => (
 
         <img className={styles.mockupImg} src={mockupImg} alt="notloaded"/>
 
-
+        <a className={styles.tryLink} href="https://michaelarriaga.github.io/Flex-Warehouse-Expense-Calculator/" target="_blank "rel="noopener">TRY IT OUT HERE</a>
         <PrimaryHeading 
             title="FLEX MATE APP"
             subtitle="November 2018 - Present"
             color={themeColor}
         />
+
+        
+
 
         <TechOverview 
             heading="SCOPE"
