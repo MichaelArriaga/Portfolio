@@ -21,7 +21,7 @@ import styles from './blog-css.module.css';
         <PostList sectiontitle="OPINION">
 
           <Post 
-            path="/blog/spend-less-time" 
+            path="/blog/curiosity-trumps-experience" 
             title="Curiosity Trumps Years of Experience." 
             postdate="Nov, 2018"
           />
@@ -43,8 +43,8 @@ import styles from './blog-css.module.css';
         <PostList sectiontitle="TECHNICAL">
 
           <Post 
-            path="/" 
-            title="GIT CLI, as fast as possible." 
+            path="/blog/how-to-connect-your-google-domain-to-github-pages-site" 
+            title="How To Connect Your Google Domain to A Github Pages Site" 
             postdate="Nov, 2018"
           />
 

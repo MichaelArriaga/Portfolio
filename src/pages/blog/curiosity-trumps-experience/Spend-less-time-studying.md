@@ -1,5 +1,5 @@
 ---
-path: "/blog/spend-less-time"
+path: "/blog/curiosity-trumps-experience"
 date: "2017-11-07"
 title: "It Doesn’t Matter What You Know, It’s
 how fast you can learn it."
@@ -47,7 +47,7 @@ sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
 consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
 ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-![THERE IS TEXT HERE](https://picsum.photos/999)
+![THERE IS TEXT HERE](image.png)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
