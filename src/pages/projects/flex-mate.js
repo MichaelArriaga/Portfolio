@@ -6,6 +6,7 @@ import ResponsiveHeader from '../../components/responsive-header';
 import Footer from '../../components/footer';
 
 // static assets
+import mockupImg from '../../../static/etc/images/project-images/flex-mate/phone-mockup.png';
 import pixelImageEight from '../../../static/etc/images/project-images/8px-grid.png';
 import pixelImageSixteen from '../../../static/etc/images/project-images/16px-grid.png';
 import pixelImageFortyEight from '../../../static/etc/images/project-images/48px-grid.png';
@@ -77,6 +78,8 @@ export default () => (
     <ResponsiveHeader />
 
     <Container>
+
+        <img className={styles.mockupImg} src={mockupImg} alt="notloaded"/>
 
 
         <PrimaryHeading 

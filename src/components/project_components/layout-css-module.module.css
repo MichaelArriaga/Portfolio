@@ -5,6 +5,13 @@
     margin: auto;
 }
 
+.mockupImg {
+    display: block;
+    width: 35%;
+    margin: auto;
+    margin-bottom: 62px;
+}
+
 
 .projectH1 {
     font-family: var(--primary-type-heading);
@@ -149,6 +156,13 @@
 
     .container {
         max-width: 960px;
+    }
+
+    .mockupImg {
+        display: block;
+        width: 35%;
+        margin: auto;
+        margin-bottom: 62px;
     }
 
     .primaryRhythm {
@@ -454,6 +468,12 @@
         padding-left: 10px;
         width: 374px;
         margin: 0;
+    }
+
+    .mockupImg {
+        width: 60%;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .techOverview {
