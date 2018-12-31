@@ -2,6 +2,7 @@ module.exports = {
   // pathPrefix: "michaelarriaga.github.io/michael-arriaga-portfolio",
   siteMetadata: {
     title: "Mike Arriaga Portfolio",
+    siteUrl: "https://ekim.me",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
