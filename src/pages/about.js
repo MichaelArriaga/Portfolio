@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import TypeformButton from '../components/TypeformButton'
 
 
@@ -17,10 +18,15 @@ import styles from './about-css.module.css'
 class About extends React.Component {
   render() {
     return (
-<div>
+      <div>
+        <Helmet>
+        <title>Mike Arriaga About Me</title>
+      <meta name="description" content="Mike Arriaga About Me"   />
+        <meta />
+      </Helmet>
         <ResponsiveHeader />
-    <Header />
-  <div className={styles.aboutContainer}>
+        <Header />
+        <div className={styles.aboutContainer}>
 
     <h1 className={styles.aboutHeader}>/ABOUT ME</h1>
     <img className={styles.aboutImg} src={aboutimg} alt="not loaded"/>
@@ -60,8 +66,8 @@ class About extends React.Component {
      
    
   </div>
-  <Footer />
-  </div>
+        <Footer />
+      </div>
     )
   }
 }

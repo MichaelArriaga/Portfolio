@@ -4,6 +4,7 @@ module.exports = {
     title: "Mike Arriaga Portfolio",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

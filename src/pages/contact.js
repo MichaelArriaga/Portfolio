@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 // global components
 import Header from '../components/header';
@@ -14,6 +15,11 @@ import styles from './contact-css.module.css';
 
   export default () => (
     <div>
+      <Helmet>
+        <title>Mike Arriaga Contact</title>
+        <meta name="description" content="Mike Arriaga Contact"   />
+        <meta />
+      </Helmet>
       <ResponsiveHeader />
       <Header />
       <div className={styles.contactContainer}>

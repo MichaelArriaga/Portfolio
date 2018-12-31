@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Helmet } from 'react-helmet';
 // global components
 import Header from '../components/header';
 import ResponsiveHeader from '../components/responsive-header';
@@ -14,6 +14,12 @@ import styles from './blog-css.module.css';
 
   export default () => (
     <div>
+
+      <Helmet>
+        <title>Mike Arriaga Blog Home</title>
+      <meta name="description" content="Mike Arriaga Blog Home"   />
+        <meta />
+      </Helmet>
       <ResponsiveHeader />
       <Header />
       <div className={styles.blogContainer}>

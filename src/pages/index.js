@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import styles from "./index-css.module.css"
 
@@ -39,48 +40,43 @@ const catTags =
 
 export default () => (
   <div>
-  <Header />
-  <ResponsiveHeader />
-  <div className={styles.indexContainer}>
-  
+    <Helmet>
+      <title>Mike Arriaga Portfolio Home</title>
+      <meta name="description" content="Mike Arriaga Web Developer Portfolio Home"   />
+    </Helmet>
 
-      <img className={styles.heroImage} src={computerimage} alt="not loaded"/>
+    <Header />
+    <ResponsiveHeader />
+    <div className={styles.indexContainer}>
+    
+        <img className={styles.heroImage} src={computerimage} alt="not loaded"/>
 
-      <div className={[styles.headingContainer, styles.cssTyping].join(' ')}>
-        <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } ><em className={styles.deEmphasis}>Hi. I’m </em>Mike Arriaga, </h1>
+        <div className={[styles.headingContainer, styles.cssTyping].join(' ')}>
+          <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } ><em className={styles.deEmphasis}>Hi. I’m </em>Mike Arriaga, </h1>
 
-        <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } style={{marginBottom: "40px"}}>
-        <em className={styles.deEmphasis}>and I </em>code for good.
-        </h1>    
+          <h1 className={[styles.heroHeading, styles.typewriter].join(' ') } style={{marginBottom: "40px"}}>
+          <em className={styles.deEmphasis}>and I </em>code for good.
+          </h1>    
 
+        </div>
 
-      </div>
+        <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and the ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Front-End development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
 
-      <p className={styles.heroDescription}>I help startups win through <em className={styles.emphasis}>user-centered design</em> and the ability to wear multiple hats in a product team. From <em className={styles.emphasis}>Product Design</em> and UX Research to <em className={styles.emphasis}>Full process Front-End development.</em> <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>More About Me</Link></p>    
+        <h3 className={styles.projectListHeader}>*Recent Stuff*</h3>
 
-      <h3 className={styles.projectListHeader}>*Recent Stuff*</h3>
+          <ProjectItem  
+            path="/projects/flex-mate"  
+            title="Flex Mate" 
+            // 11 words max to avoid breaking style
+            headline="Help Amazon flex workers better visualize their out of pocket expenses."
+            tags={[catTags.new, catTags.design, catTags.code ]} 
+            primarycolor="#FE8B10"
+            previewimg={flexmatepreview}
+          />
+    
+    </div>
 
-
-
-
-        <ProjectItem  
-          path="/projects/flex-mate"  
-          title="Flex Mate" 
-          // 11 words max to avoid breaking style
-          headline="Help Amazon flex workers better visualize their out of pocket expenses."
-          tags={[catTags.new, catTags.design, catTags.code ]} 
-          primarycolor="#FE8B10"
-          previewimg={flexmatepreview}
-        />
-
-        
-
-  
-  </div>
-
-  <Footer />
-
-
+    <Footer />
 
   </div>
 )

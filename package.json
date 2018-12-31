@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "gatsby": "^2.0.77",
+    "gatsby-plugin-react-helmet": "^3.0.5",
     "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-prismjs": "^3.1.4",
@@ -19,6 +20,7 @@
     "prismjs": "^1.15.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
     "react-typeform-embed": "^0.1.6",
     "react-typography": "^0.16.18"
   },

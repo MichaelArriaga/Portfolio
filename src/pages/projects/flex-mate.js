@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 // global components
 import Header from '../../components/header';
@@ -74,6 +75,11 @@ const colorsArray  = [
 
 export default () => (
     <div>
+        <Helmet>
+        <title>Flex Mate App</title>
+      <meta name="description" content="Flex Mate App" />
+        <meta />
+      </Helmet>
     <Header />
     <ResponsiveHeader />
 
