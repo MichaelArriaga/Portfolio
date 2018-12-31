@@ -43,7 +43,7 @@ import styles from './blog-css.module.css';
             postdate="March, 2018"
           />
 
-<Post 
+          <Post 
             path="/blog/post-flow-in-gatsby" 
             title="Workflow for Creating Posts in Gatsby" 
             postdate="Dec, 2018"
