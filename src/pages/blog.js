@@ -26,38 +26,14 @@ import styles from './blog-css.module.css';
             postdate="Nov, 2018"
           />
 
-          <Post 
-            path="/blog/a-new-post" 
-            title="A new test post" 
-            postdate="Oct, 2018"
-          />
-
-          <Post 
-            path="/" 
-            title="Spend less time studying, and more time digging into other people’s code." 
-            postdate="Nov, 2018"
-          />
-
         </PostList>
 
         <PostList sectiontitle="TECHNICAL">
 
           <Post 
-            path="/blog/how-to-connect-your-google-domain-to-github-pages-site" 
+            path="/blog/google-domains-and-github-pages" 
             title="How To Connect Your Google Domain to A Github Pages Site" 
-            postdate="Nov, 2018"
-          />
-
-          <Post 
-            path="/" 
-            title="Semantic versioning, as fast as possible" 
-            postdate="Oct, 2018"
-          />
-
-          <Post 
-            path="/" 
-            title="ES6 differences (the important bits)." 
-            postdate="Dec, 2018"
+            postdate="Feb, 2018"
           />
 
         </PostList>

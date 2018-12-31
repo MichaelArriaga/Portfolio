@@ -1,8 +1,7 @@
 ---
 path: "/blog/curiosity-trumps-experience"
 date: "2017-11-07"
-title: "It Doesn’t Matter What You Know, It’s
-how fast you can learn it."
+title: "Curiosity Trumps Experience"
 readtime: "10 min read"
 ---
 
@@ -47,7 +46,7 @@ sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
 consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
 ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-![THERE IS TEXT HERE](image.png)
+![alt](image.png)
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 

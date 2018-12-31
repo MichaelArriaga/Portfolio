@@ -1,7 +1,7 @@
 ---
-path: "/blog/how-to-connect-your-google-domain-to-github-pages-site"
-date: "2017-11-07"
-title: "How to connect your google domain to github pages site"
+path: "/blog/google-domains-and-github-pages"
+date: "2018-02-14"
+title: "How to connect your google domain to a github pages site"
 readtime: "30 min read"
 ---
 
@@ -17,7 +17,7 @@ Depending on whether the site we want to use is a project page `username.github.
 
 (This chart also determines on **what branch you can host your site from** more on that later.)
 
-![alt](/posts/gh-pages-custom-domain-redirects-chart.png)
+![alt](gh-pages-custom domain-redirects-chart.png)
 
 Basically, it boils down to how we named the repository that we want to host. Github Pages has automatic hooks that determines if our repository is given a base url of `username.github.io/` to which all our additional pages are included in the path relative to our base url `username.github.io/PROJECT`
 
@@ -42,13 +42,11 @@ git push --set-upstream origin gh-pages
 
 We can now see that our repository has a new branch called `gh-pages`
 
-![My helpful screenshot]({{ "/assets/images/gh-pages-branch-on-github.png" | absolute_url }})
-*gh-pages-branch-on-github.png*
+![alt](gh-pages-branch-on-github.png)
 
 Let's navigate to the settings section of our repository and choose our `gh-pages` branch as the source for our automatic pages domain and click save.
 
-![My helpful screenshot]({{ "/assets/images/select-gh-pages-branch.png" | absolute_url }})
-*select-gh-pages-branch.png*
+![alt](select-gh-pages-branch.png)
 
 ### 1.2 Creating a CNAME file
 
@@ -79,13 +77,11 @@ git push
 
 Over at our google domains list page, let's choose **DNS** so we can make some changes to the configuration.
 
-![My helpful screenshot]({{ "/assets/images/google-domain-choose-dns.png" | absolute_url }})
-*google-domain-choose-dns.png*
+![alt](google-domain-choose-dns.png)
 
 Now, lets scroll down to **custom resource records** section and **add** some.
 
-![My helpful screenshot]({{ "/assets/images/google-domains-custom-resource.png" | absolute_url }})
-*google-domains-custom-resource.png*
+![alt](google-domains-custom-resource.png)
 
 We need to add 3 custom resource records in order for Google Domains to properly point to our github pages site.
 
