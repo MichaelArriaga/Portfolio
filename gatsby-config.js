@@ -1,7 +1,7 @@
 module.exports = {
   // pathPrefix: "michaelarriaga.github.io/michael-arriaga-portfolio",
   siteMetadata: {
-    title: "Michael Arriaga Portfolio",
+    title: "Mike Arriaga Portfolio",
   },
   plugins: [
     {
