@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Header from '../components/header';
 import ResponsiveHeader from '../components/responsive-header';
-
+import Footer from '../components/footer';
 
 import './blog-template-css.css';
 
@@ -26,6 +26,7 @@ export default function Template({
           />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

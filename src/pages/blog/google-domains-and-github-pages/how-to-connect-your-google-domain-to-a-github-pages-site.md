@@ -112,5 +112,3 @@ www              A      username.github.io
 AND WE'RE DONE!
 
 Now we wait for our changes to have effect. It is very commonplace for domain configurations to take a long time to update. Sometimes it can take as long as 24 hours or more. *I've never had it take more than a couple hours to update my dns changes so don't worry if your domain and site aren't working immediately.*
-
----
