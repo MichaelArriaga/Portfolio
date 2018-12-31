@@ -37,7 +37,7 @@
   font-family: var(--secondary-type-copy);
   font-size: 16.03px;
   display: inline;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -35,6 +35,12 @@ import styles from './blog-css.module.css';
             title="How To Connect Your Google Domain to A Github Pages Site" 
             postdate="Feb, 2018"
           />
+            
+          <Post 
+            path="/blog/animate-blog-posts-with-isotope" 
+            title="Animate and Filter Your Blog Posts with Isotope" 
+            postdate="March, 2018"
+          />
 
         </PostList>
 
