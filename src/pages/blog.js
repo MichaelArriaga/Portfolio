@@ -18,7 +18,8 @@ import styles from './blog-css.module.css';
       <Header />
       <div className={styles.blogContainer}>
         <h1 className={styles.blogHeading}>/BLOG</h1>
-        <PostList sectiontitle="OPINION">
+
+        {/* <PostList sectiontitle="OPINION">
 
           <Post 
             path="/blog/curiosity-trumps-experience" 
@@ -26,7 +27,7 @@ import styles from './blog-css.module.css';
             postdate="Nov, 2018"
           />
 
-        </PostList>
+        </PostList> */}
 
         <PostList sectiontitle="TECHNICAL">
 
