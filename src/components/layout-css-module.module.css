@@ -35,6 +35,7 @@ src: url(../../static/etc/IBMPlexMono-Bold.ttf)
 
 body {
   width: 100%;
+  background: #EFF4F7;
 }
 
 em {
