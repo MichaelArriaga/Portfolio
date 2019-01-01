@@ -1,7 +1,7 @@
 ---
 path: "/blog/animate-blog-posts-with-isotope"
 date: "2018-03-07"
-title: "Animate and Filter Your Blog Posts with Isotope"
+title: "Animate and Filter Your Jekyll Blog Posts with Isotope"
 readtime: "10 min read"
 ---
 

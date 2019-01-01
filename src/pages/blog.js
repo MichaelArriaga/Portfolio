@@ -45,7 +45,7 @@ import styles from './blog-css.module.css';
             
           <Post 
             path="/blog/animate-blog-posts-with-isotope" 
-            title="Animate and Filter Your Blog Posts with Isotope" 
+            title="Animate and Filter Your Jekyll Blog Posts with Isotope" 
             postdate="March, 2018"
           />
 
