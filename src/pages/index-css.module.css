@@ -250,8 +250,7 @@ font-family: var(--secondary-type-emphasis);
   right: 20px;
 }
 
-@media only screen and (max-width: 1024px) {
-}
+
 
 @media only screen and (max-width: 768px) {
   .headingContainer {
