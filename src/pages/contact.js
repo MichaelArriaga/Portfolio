@@ -11,10 +11,11 @@ import TypeformButton from '../components/TypeformButton'
 import Footer from '../components/footer';
 
 // styling
+import Layout from '../components/layout';
 import styles from './contact-css.module.css';
 
   export default () => (
-    <div>
+    <Layout>
       <Helmet>
         <title>Mike Arriaga Contact</title>
         <meta name="description" content="Mike Arriaga Contact"   />
@@ -31,7 +32,6 @@ import styles from './contact-css.module.css';
 
       </div>
       <Footer />
-      
-    </div>
+      </Layout>
 
   )

@@ -9,12 +9,12 @@ import PostList from '../components/post-list';
 import Post from '../components/post';
 
 // styling
+import Layout from '../components/layout';
 import styles from './blog-css.module.css';
 
 
   export default () => (
-    <div>
-
+    <Layout>
       <Helmet>
         <title>Mike Arriaga Blog Home</title>
       <meta name="description" content="Mike Arriaga Blog Home"   />
@@ -58,7 +58,8 @@ import styles from './blog-css.module.css';
         </PostList>
 
       </div>
+
+      </Layout>
       
-    </div>
 
   )

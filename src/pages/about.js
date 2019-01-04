@@ -12,13 +12,16 @@ import { Link } from 'gatsby';
 // static assets
 import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 
+// styling
+import Layout from '../components/layout';
 import styles from './about-css.module.css'
 
 
 class About extends React.Component {
   render() {
     return (
-      <div>
+        <Layout>
+
         <Helmet>
         <title>Mike Arriaga About Me</title>
       <meta name="description" content="Mike Arriaga About Me"   />
@@ -67,7 +70,8 @@ class About extends React.Component {
    
   </div>
         <Footer />
-      </div>
+
+      </Layout>
     )
   }
 }

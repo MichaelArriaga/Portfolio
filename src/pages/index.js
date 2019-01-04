@@ -2,13 +2,15 @@ import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
-import styles from "./index-css.module.css";
-
 import Header from "../components/header";
 import ResponsiveHeader from "../components/responsive-header";
 
 import ProjectItem from "../components/project-item";
 import Footer from "../components/footer";
+
+// styling
+import Layout from '../components/layout';
+import styles from "./index-css.module.css";
 
 // static assets
 import flexmatepreview from "../../static/etc/images/project-images/flex-mate/flex-mate-preview.png";
@@ -35,7 +37,8 @@ const catTags = {
 };
 
 export default () => (
-  <div>
+
+  <Layout>
     <Helmet>
       <title>Mike Arriaga Portfolio Home</title>
       <meta
@@ -78,5 +81,5 @@ export default () => (
     </div>
 
     <Footer />
-  </div>
+  </Layout>
 );

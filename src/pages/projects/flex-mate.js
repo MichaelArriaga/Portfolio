@@ -15,6 +15,8 @@ import typograhyImage from '../../../static/etc/images/project-images/flex-mate/
 import flowChart from '../../../static/etc/images/project-images/flex-mate/flow-chart.png';
 
 // stylesheet
+import '../index-css.module.css';
+import Layout from '../../components/layout';
 import styles from '../../components/project_components/layout-css-module.module.css';
 
 // main components
@@ -74,7 +76,7 @@ const colorsArray  = [
 ];
 
 export default () => (
-    <div>
+    <Layout>
         <Helmet>
         <title>Flex Mate App</title>
       <meta name="description" content="Flex Mate App" />
@@ -176,7 +178,6 @@ export default () => (
 
     </Container>
     <Footer />
-    </div>
-
+    </Layout>
  
 )
