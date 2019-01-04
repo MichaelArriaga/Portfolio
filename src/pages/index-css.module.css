@@ -198,6 +198,14 @@ font-family: var(--secondary-type-emphasis);
   position: relative;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  transition: all .2s ease;
+
+}
+
+.projectContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 6px 19px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 .projectMarkup {
