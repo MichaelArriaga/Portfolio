@@ -190,6 +190,7 @@ font-family: var(--secondary-type-emphasis);
 }
 
 .projectContainer {
+  background: #fdfeff;
   display: block;
   width: 500px;
   height: 300px;
