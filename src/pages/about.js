@@ -61,7 +61,10 @@ class About extends React.Component {
 
     <h2 className={styles.sectionHeader} style={{marginBottom: "40px", textAlign: "center"}}>Let’s talk about what I can do for your project!</h2>
 
-      <TypeformButton />
+    <div style={{width: "220px", margin: "auto"}}>
+    <TypeformButton />
+
+    </div>
 
 
       
