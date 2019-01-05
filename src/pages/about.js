@@ -65,7 +65,7 @@ class About extends React.Component {
 
 
       
-      <a className={styles.contactButton}  style={{color: "black", background: "white"}}href="https://devdb.io/ux_michael" target="_blank" rel="noopener noreferrer">View My Resume</a>
+      {/* <a className={styles.contactButton}  style={{color: "black", background: "white"}}href="https://devdb.io/ux_michael" target="_blank" rel="noopener noreferrer">View My Resume</a> */}
      
    
   </div>
