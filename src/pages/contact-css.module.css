@@ -52,8 +52,9 @@
 
   .contactContainer {
     width: 95%;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
+    padding-left: 20px;
   }
   .envelopeImage {
     max-width: 320px;
