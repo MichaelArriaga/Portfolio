@@ -38,9 +38,9 @@ font-family: var(--secondary-type-emphasis);
   height: auto;
   display: block;
   margin: auto;
-  font-family: var(--secondary-type-copy);
+  font-family: var(--primary-type-copy);
   font-size: 21.26px;
-  width: 599px;
+  width: 474px;
   margin-bottom: 105px;
   text-align: center;
 }
