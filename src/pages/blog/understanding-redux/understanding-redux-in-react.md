@@ -1,6 +1,6 @@
 ---
 path: "/blog/understanding-redux"
-date: "2019/01/18"
+date: "2019-01-18"
 title: "Understanding Redux in 4 Steps"
 readtime: "5 min read"
 ---
