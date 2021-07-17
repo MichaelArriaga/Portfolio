@@ -50,7 +50,7 @@ const Index = () => (
     <ResponsiveHeader />
     <div className={styles.indexContainer}>
       <div className={[styles.headingContainer, styles.cssTyping].join(' ')}>
-        <h1 className={[styles.heroHeading, styles.typewriter].join(' ')}>
+        <h1 className={[styles.heroHeading]}>
           <em className={styles.deEmphasis}>Hi! I’m </em>Mike Arriaga.{' '}
         </h1>
       </div>
