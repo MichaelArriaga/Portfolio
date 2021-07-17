@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './layout-css-module.module.css';
+import * as styles from './layout-css-module.module.css';
 
 
 const SubHeading = (props) => (

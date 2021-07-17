@@ -5,7 +5,6 @@ font-family: var(--secondary-type-copy);
 font-family: var(--secondary-type-emphasis); 
 */
 
-
 .indexContainer {
   padding: 0 5%;
   margin: auto;
@@ -258,8 +257,6 @@ font-family: var(--secondary-type-emphasis);
   bottom: 0;
   right: 20px;
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .headingContainer {

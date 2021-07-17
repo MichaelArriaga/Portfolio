@@ -17,7 +17,7 @@ import flowChart from '../../../static/etc/images/project-images/flex-mate/flow-
 // stylesheet
 import '../index-css.module.css';
 import Layout from '../../components/layout';
-import styles from '../../components/project_components/layout-css-module.module.css';
+import * as styles from '../../components/project_components/layout-css-module.module.css';
 
 // main components
 import Container from '../../components/project_components/container';
@@ -30,154 +30,152 @@ import Metrics from '../../components/project_components/metrics';
 import ColorList from '../../components/project_components/color-list';
 import SubsectionImage from '../../components/project_components/subsection-image';
 
-
-const themeColor = "#FE8B10"
+const themeColor = '#FE8B10';
 
 const featuresArray = [
-    {
-        feature: "Fuel Cost Estimation",
-        id: 1
-    },
-    {
-        feature: "Show Real-Time Travel/Traffic Estimations",
-        id: 2
-    },
-    {
-        feature: "Show Job Types By Station",
-        id: 3
-    },
-    {
-        feature: "Coverage for as many Flex Regions as possible",
-        id: 4
-    },  
+  {
+    feature: 'Fuel Cost Estimation',
+    id: 1,
+  },
+  {
+    feature: 'Show Real-Time Travel/Traffic Estimations',
+    id: 2,
+  },
+  {
+    feature: 'Show Job Types By Station',
+    id: 3,
+  },
+  {
+    feature: 'Coverage for as many Flex Regions as possible',
+    id: 4,
+  },
 ];
 
-const colorsArray  = [
-    {
-       label: "Primary",
-       labelcolor: "black",
-       hexcode: "#FE8B10" 
-    },
-    {
-        label: "Danger",
-        labelcolor: "black",
-        hexcode: "#FF0000" 
-     },
-     {
-        label: "Text/BG",
-        labelcolor: "black",
-        hexcode: "#FFFFFF" 
-     },
-     {
-        label: "Text/BG",
-        labelcolor: "white",
-        hexcode: "#000000" 
-     },
+const colorsArray = [
+  {
+    label: 'Primary',
+    labelcolor: 'black',
+    hexcode: '#FE8B10',
+  },
+  {
+    label: 'Danger',
+    labelcolor: 'black',
+    hexcode: '#FF0000',
+  },
+  {
+    label: 'Text/BG',
+    labelcolor: 'black',
+    hexcode: '#FFFFFF',
+  },
+  {
+    label: 'Text/BG',
+    labelcolor: 'white',
+    hexcode: '#000000',
+  },
 ];
 
-export default () => (
-    <Layout>
-        <Helmet>
-        <title>Flex Mate App</title>
+const FlexMate = () => (
+  <Layout>
+    <Helmet>
+      <title>Flex Mate App</title>
       <meta name="description" content="Flex Mate App" />
-        <meta />
-      </Helmet>
+      <meta />
+    </Helmet>
     <Header />
     <ResponsiveHeader />
 
     <Container>
+      <img className={styles.mockupImg} src={mockupImg} alt="notloaded" />
 
-        <img className={styles.mockupImg} src={mockupImg} alt="notloaded"/>
+      <a
+        className={styles.tryLink}
+        href="https://michaelarriaga.github.io/Flex-Warehouse-Expense-Calculator/"
+        target="_blank "
+        rel="noopener"
+      >
+        TRY IT OUT HERE
+      </a>
+      <PrimaryHeading
+        title="FLEX MATE APP"
+        subtitle="November 2018 - Present"
+        color={themeColor}
+      />
 
-        <a className={styles.tryLink} href="https://michaelarriaga.github.io/Flex-Warehouse-Expense-Calculator/" target="_blank "rel="noopener">TRY IT OUT HERE</a>
-        <PrimaryHeading 
-            title="FLEX MATE APP"
-            subtitle="November 2018 - Present"
-            color={themeColor}
-        />
+      <TechOverview
+        heading="SCOPE"
+        listitem1="UX/UI"
+        listitem2="Web Dev"
+        color={themeColor}
+      />
+      <TechOverview
+        heading="APPS USED"
+        listitem1="Adobe XD"
+        listitem2="Visual Studio Code"
+        color={themeColor}
+      />
+      <TechOverview
+        heading="CORE TECH"
+        listitem1="JavaScript ES6"
+        listitem2="Google Distance Matrix API"
+        color={themeColor}
+      />
+      <hr
+        className={[styles.primaryRhythm, styles.projectLineBreak].join(' ')}
+      ></hr>
 
-        
+      <ProblemOverview
+        heading="Problem"
+        body="Amazon flex, a gig delivery app created by Amazon Logistics Inc. Does not have any way to show users an accurate fuel cost and travel estimate to each of the warehouses which is a significant amount of common un-accounted for expenses that delivery partners incur while making their deliveries."
+      />
 
+      <ProblemOverview
+        heading="Solution"
+        body="Create an app that uses Distance Matrix data to estimate fuel cost for travel to each delivery station based on the user provided average cost per gallon (cpg) as well as their vehicle average miles per gallon (mpg)."
+      />
 
-        <TechOverview 
-            heading="SCOPE"
-            listitem1="UX/UI"
-            listitem2="Web Dev"
-            color={themeColor}
-        />        
-        <TechOverview 
-            heading="APPS USED"
-            listitem1="Adobe XD"
-            listitem2="Visual Studio Code"
-            color={themeColor}
-        />
-        <TechOverview 
-            heading="CORE TECH"
-            listitem1="JavaScript ES6"
-            listitem2="Google Distance Matrix API"
-            color={themeColor}
-        />
-        <hr className={[styles.primaryRhythm, styles.projectLineBreak].join(' ')}></hr>
+      <PrimaryHeading
+        title="Features"
+        subtitle="Flex Mate App"
+        color={themeColor}
+      />
 
-        <ProblemOverview 
-            heading="Problem" 
-            body="Amazon flex, a gig delivery app created by Amazon Logistics Inc. Does not have any way to show users an accurate fuel cost and travel estimate to each of the warehouses which is a significant amount of common un-accounted for expenses that delivery partners incur while making their deliveries."
-        />
+      <FeatureList features={featuresArray} />
 
-        <ProblemOverview 
-            heading="Solution" 
-            body="Create an app that uses Distance Matrix data to estimate fuel cost for travel to each delivery station based on the user provided average cost per gallon (cpg) as well as their vehicle average miles per gallon (mpg)."
-        />
+      <PrimaryHeading
+        title="Shared Styles"
+        subtitle="Design System"
+        color={themeColor}
+      />
 
-        <PrimaryHeading 
-            title="Features"
-            subtitle="Flex Mate App"
-            color={themeColor}
-        />
+      <SubHeading title="/Metrics" />
 
-        <FeatureList
-        features={featuresArray}
-        />
+      <Metrics
+        baseline="8px baseline grid"
+        baselineimg={pixelImageEight}
+        gutter="16px gutter/spacing"
+        gutterimg={pixelImageSixteen}
+        rhythm="48px vertical rhythm"
+        rhythmimg={pixelImageFortyEight}
+      />
 
-        <PrimaryHeading 
-            title="Shared Styles"
-            subtitle="Design System"
-            color={themeColor}
-        />
+      <SubHeading title="/Color" />
 
-        <SubHeading title="/Metrics" />
+      <ColorList colors={colorsArray} />
 
-        <Metrics 
-            baseline="8px baseline grid"
-            baselineimg={pixelImageEight}
-            gutter="16px gutter/spacing"
-            gutterimg={pixelImageSixteen}
-            rhythm="48px vertical rhythm"
-            rhythmimg={pixelImageFortyEight}
-        />
+      <SubHeading title="/Typography" />
 
-        <SubHeading title="/Color" />
+      <SubsectionImage image={typograhyImage} />
 
-        <ColorList 
-        colors={colorsArray}
-        />
+      <PrimaryHeading
+        title="User Flows"
+        subtitle="Main Functionality"
+        color={themeColor}
+      />
 
-        <SubHeading title="/Typography" />
-
-
-        <SubsectionImage image={typograhyImage} />
-
-        <PrimaryHeading 
-            title="User Flows"
-            subtitle="Main Functionality"
-            color={themeColor}
-        />
-
-        <SubsectionImage image={flowChart} />
-
-
+      <SubsectionImage image={flowChart} />
     </Container>
     <Footer />
-    </Layout>
- 
-)
+  </Layout>
+);
+
+export default FlexMate;

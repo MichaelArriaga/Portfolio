@@ -10,21 +10,24 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^2.0.77",
-    "gatsby-plugin-react-helmet": "^3.0.5",
-    "gatsby-plugin-sharp": "^2.0.17",
-    "gatsby-remark-images": "^3.0.1",
-    "gatsby-remark-prismjs": "^3.1.4",
-    "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-transformer-remark": "^2.1.17",
-    "prismjs": "^1.15.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0",
+    "gatsby": "^3.9.1",
+    "gatsby-plugin-react-helmet": "^4.9.0",
+    "gatsby-plugin-sharp": "^3.9.0",
+    "gatsby-remark-images": "^5.6.0",
+    "gatsby-remark-prismjs": "^5.6.0",
+    "gatsby-source-filesystem": "^3.9.0",
+    "gatsby-transformer-remark": "^4.6.0",
+    "prismjs": "^1.24.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^5.2.1",
     "react-typeform-embed": "^0.1.6",
-    "react-typography": "^0.16.18"
+    "react-typography": "^0.16.20"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.2.0"
+  },
+  "resolutions": {
+    "**/**/node-gyp": "5.0.0"
   }
 }

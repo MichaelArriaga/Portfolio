@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../pages/blog-css.module.css';
+import * as styles from '../pages/blog-css.module.css';
 
 import { Link } from 'gatsby';
 

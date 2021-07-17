@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 
-import styles from '../pages/about-css.module.css';
+import * as styles from '../pages/about-css.module.css';
 
 // static assets
 import contactIcon from '../../static/etc/images/pages/contact/edit.svg'

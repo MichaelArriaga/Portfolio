@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from '../pages/index-css.module.css';
+import * as styles from '../pages/index-css.module.css';
 
 
 const CategoryLabel = (props) => (

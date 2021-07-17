@@ -13,7 +13,7 @@ import aboutimg from "../../static/etc/images/pages/about/self-pic.png";
 
 // styling
 import Layout from "../components/layout";
-import styles from "./about-css.module.css";
+import * as styles from "./about-css.module.css";
 
 class About extends React.Component {
   render() {
