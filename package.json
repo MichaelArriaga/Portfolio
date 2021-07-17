@@ -10,6 +10,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "fsevents": "^2.3.2",
     "gatsby": "^3.9.1",
     "gatsby-plugin-react-helmet": "^4.9.0",
     "gatsby-plugin-sharp": "^3.9.0",
@@ -22,7 +23,8 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
     "react-typeform-embed": "^0.1.6",
-    "react-typography": "^0.16.20"
+    "react-typography": "^0.16.20",
+    "sharp": "^0.28.3"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
