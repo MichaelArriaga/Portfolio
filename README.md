@@ -5,6 +5,10 @@ This is my personal web page where you can find the following (Built with Gatsby
 - Portfolio of projects
 - Blog
 
+#### TailwindCSS Usage
+
+Importing tailwind is not required in a gatsby project.
+
 #### Hardrebuild project
 
 ```bash
