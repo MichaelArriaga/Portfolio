@@ -1,19 +1,13 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import TypeformButton from "../components/TypeformButton";
-
-// global components
-import Header from "../components/header";
-import ResponsiveHeader from "../components/responsive-header";
-import Footer from "../components/footer";
-import { Link } from "gatsby";
-
-// static assets
-import aboutimg from "../../static/etc/images/pages/about/self-pic.png";
-
-// styling
-import Layout from "../components/layout";
-import * as styles from "./about-css.module.css";
+import * as styles from './about-css.module.css';
+import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
+import Footer from '../components/footer';
+import Layout from '../components/layout';
+import { Link } from 'gatsby';
+import React from 'react';
+import Header from '../components/header';
+import { Helmet } from 'react-helmet';
+import ResponsiveHeader from '../components/responsive-header';
+import TypeformButton from '../components/TypeformButton';
 
 class About extends React.Component {
   render() {
@@ -30,10 +24,10 @@ class About extends React.Component {
           <h1 className={styles.aboutHeader}>/ABOUT ME</h1>
           <img className={styles.aboutImg} src={aboutimg} alt="not loaded" />
 
-          <p className={[styles.bodyBlock, styles.rotateRight].join(" ")}>
+          <p className={[styles.bodyBlock, styles.rotateRight].join(' ')}>
             <span className={styles.highlight}>Mike Arriaga</span> is a
             professional career musician and drum performance instructor turned
-            programmer and design thinker. Originally from{" "}
+            programmer and design thinker. Originally from{' '}
             <span className={styles.highlight}>Long Beach California</span> now
             based in <span className={styles.highlight}>Seattle</span>, Mike has
             never let barriers stand in his way when it comes to what he is
@@ -43,19 +37,19 @@ class About extends React.Component {
             famed musicians and producers.
           </p>
 
-          <p className={[styles.bodyBlock, styles.rotateLeft].join(" ")}>
+          <p className={[styles.bodyBlock, styles.rotateLeft].join(' ')}>
             <span className={styles.highlight}>In 2014</span>, Mike decided to
-            switch his focus from music to designing and building{" "}
+            switch his focus from music to designing and building{' '}
             <span className={styles.highlight}>meaningful</span> software, and
-            visual designs to pursue as a{" "}
+            visual designs to pursue as a{' '}
             <span className={styles.highlight}>career</span> Since then, he has
-            aimed to build{" "}
+            aimed to build{' '}
             <span className={styles.highlight}>
               projects that benefit every day people
-            </span>{" "}
-            with his latest project being a tool that helps{" "}
-            <span className={styles.highlight}>Amazon Flex workers</span>{" "}
-            visualize their out of pocket expenses.{" "}
+            </span>{' '}
+            with his latest project being a tool that helps{' '}
+            <span className={styles.highlight}>Amazon Flex workers</span>{' '}
+            visualize their out of pocket expenses.{' '}
             <Link className={styles.link} to="/projects/flex-mate">
               <span className={styles.highlight}>CHECK IT OUT HERE</span>
             </Link>
@@ -68,15 +62,15 @@ class About extends React.Component {
 
           <h2 className={styles.sectionHeader}>Technology Agnostic</h2>
 
-          <p className={[styles.bodyBlock, styles.rotateRight].join(" ")}>
+          <p className={[styles.bodyBlock, styles.rotateRight].join(' ')}>
             I am <span className={styles.highlight}>technology agnostic</span>,
             meaning that I do not pledge allegiance to any one design tool or
-            tech stack. Instead, I am hyper-focused on{" "}
+            tech stack. Instead, I am hyper-focused on{' '}
             <span className={styles.highlight}>
               rapid learning and adapting
-            </span>{" "}
+            </span>{' '}
             to many different frameworks, design tools, workflows and situations
-            using optimal learning strategies and{" "}
+            using optimal learning strategies and{' '}
             <span className={styles.highlight}>intense study regimen</span>.
           </p>
 
@@ -86,12 +80,12 @@ class About extends React.Component {
 
           <h2
             className={styles.sectionHeader}
-            style={{ marginBottom: "40px", textAlign: "center" }}
+            style={{ marginBottom: '40px', textAlign: 'center' }}
           >
             Let’s talk about what I can do for your project!
           </h2>
 
-          <div style={{ width: "300px", margin: "auto" }}>
+          <div style={{ width: '300px', margin: 'auto' }}>
             <TypeformButton />
           </div>
 

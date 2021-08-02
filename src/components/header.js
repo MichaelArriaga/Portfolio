@@ -1,8 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
 import * as styles from './header-css-module.module.css';
-
+import { Link } from 'gatsby';
 import mikeicon from '../../static/etc/images/mike-icon.png';
+import React from 'react';
 
 const Header = () => (
   <div className={styles.headercontainer}>

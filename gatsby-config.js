@@ -5,6 +5,8 @@ module.exports = {
     siteUrl: "https://ekim.me",
   },
   plugins: [
+    // config step for tailwindcss installation
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
