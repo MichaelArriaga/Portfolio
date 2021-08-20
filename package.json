@@ -3,7 +3,7 @@
   "description": "Mike Arriaga Developer Portfolio",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -p 3000",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
