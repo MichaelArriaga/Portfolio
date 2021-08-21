@@ -9,7 +9,7 @@ const Footer = () => (
   <div className={styles.footerContainer}>
     <hr className={styles.footerLine}></hr>
 
-    <p className={styles.footerText}>
+    <div className={styles.footerTextContainer}>
       Design + Code by{' '}
       <a
         className={styles.link}
@@ -36,7 +36,7 @@ const Footer = () => (
       >
         <img src={githubicon} alt="not loaded" />
       </a>
-    </p>
+    </div>
   </div>
 );
 
