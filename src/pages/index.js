@@ -11,9 +11,9 @@ import Footer from '../components/footer';
 // styling
 import Layout from '../components/layout';
 import * as styles from './index-css.module.css';
-
 // static assets
 import flexmatepreview from '../../static/etc/images/project-images/flex-mate/flex-mate-preview.png';
+// import tailwindcss from 'tailwindcss';
 
 const catTags = {
   new: {
@@ -48,26 +48,7 @@ const Index = () => (
 
     <Header />
     <ResponsiveHeader />
-    <div className={styles.indexContainer}>
-      <div className={[styles.headingContainer, styles.cssTyping].join(' ')}>
-        <h1 className={[styles.heroHeading]}>
-          <em className={styles.deEmphasis}>Hi! I’m </em>Mike Arriaga.{' '}
-        </h1>
-      </div>
-
-      <h1 className={[styles.heroHeading, styles.hide].join(' ')}>
-        <em className={styles.deEmphasis}>Hi! I’m </em>Mike Arriaga.{' '}
-      </h1>
-
-      <p className={styles.heroDescription}>
-        I help startups win through{' '}
-        <em className={styles.emphasis}>user-centered design</em> and the
-        ability to wear multiple hats in a product team.{' '}
-        <Link to="/about" className={[styles.emphasis, styles.link].join(' ')}>
-          More About Me
-        </Link>
-      </p>
-
+    <div className={'w-full mx-auto px-4 flex justify-center items-center'}>
       <ProjectItem
         path="/projects/flex-mate"
         title="Flex Mate"
