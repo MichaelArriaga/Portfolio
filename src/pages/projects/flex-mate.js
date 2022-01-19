@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // global components
-import Header from '../../components/header';
-import ResponsiveHeader from '../../components/responsive-header';
-import Footer from '../../components/footer';
+import Header from '../../components/Header';
+import ResponsiveHeader from '../../components/ResponsiveHeader';
+import Footer from '../../components/Footer';
 
 // static assets
 import mockupImg from '../../../static/etc/images/project-images/flex-mate/phone-mockup.png';
@@ -16,11 +16,11 @@ import flowChart from '../../../static/etc/images/project-images/flex-mate/flow-
 
 // stylesheet
 import '../index-css.module.css';
-import Layout from '../../components/layout';
+import Layout from '../../components/Layout';
 import * as styles from '../../components/project_components/layout-css-module.module.css';
 
 // main components
-import Container from '../../components/project_components/container';
+import Container from '../../components/project_components/Container';
 import PrimaryHeading from '../../components/project_components/primary-heading';
 import TechOverview from '../../components/project_components/tech-overview';
 import ProblemOverview from '../../components/project_components/problem-overview';

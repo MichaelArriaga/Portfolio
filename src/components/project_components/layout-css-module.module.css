@@ -85,7 +85,7 @@
 .projectCopy {
     font-family: var(--secondary-type-copy);
     font-size: 1.125rem;
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 /* Features */
@@ -113,7 +113,7 @@
     font-size: 1.125rem;
     float: left;
     margin-right: 115px;
-    line-height: 100px;
+    /* line-height: 100px; */
 }
 
 .metric > img {
@@ -211,7 +211,7 @@
     
     .projectCopy {
         font-size: 0.875rem;
-        line-height: 24px;
+        /* line-height: 24px; */
     }
 
     /* Features */
@@ -303,7 +303,7 @@
     
     .projectCopy {
         font-size: 0.75rem;
-        line-height: 20px;
+        /* line-height: 20px; */
     }
 
     /* Features */
@@ -403,7 +403,7 @@
     
     .projectCopy {
         font-size: 0.875rem;
-        line-height: 24px;
+        /* line-height: 24px; */
     }
 
     /* Features */
@@ -422,7 +422,7 @@
     
     .metric {
         font-size: 1rem;
-        line-height: 100px;
+        /* line-height: 100px; */
         display: block;
     }
     
@@ -492,7 +492,7 @@
 
     .descriptionContainer {
         max-width: 374px;
-        line-height: 21px;
+        /* line-height: 21px; */
     }
 
     .descriptionContainer, .featureList {
@@ -505,7 +505,7 @@
 
     .projectCopy {
         font-size: 0.875rem;
-        line-height: 21px;
+        /* line-height: 21px; */
     }
 
     .featureList {

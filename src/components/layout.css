@@ -1,27 +1,27 @@
 @font-face {
   font-family: OpenSans-Regular;
-  src: url(../../static/etc/OpenSans-Regular.ttf)
+  src: url(../../static/etc/fonts/OpenSans-Regular.ttf)
 }
 
 @font-face {
   font-family: OpenSans-SemiBold;
-  src: url(../../static/etc/OpenSans-Bold.ttf)
+  src: url(../../static/etc/fonts/OpenSans-SemiBold.ttf)
 }
 
 @font-face {
   font-family: OpenSans-Bold;
-  src: url(../../static/etc/OpenSans-Bold.ttf)
+  src: url(../../static/etc/fonts/OpenSans-Bold.ttf)
 }
 
 @font-face {
   font-family: OpenSans-ExtraBold;
-  src: url(../../static/etc/OpenSans-Bold.ttf)
+  src: url(../../static/etc/fonts/OpenSans-ExtraBold.ttf)
 }
   
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 :root {
   --primary-type-copy: OpenSans-Regular;
@@ -34,9 +34,11 @@
 body {
   width: 100%;
   background: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-em {
+/* em {
   font-style: inherit;
 }
 
@@ -46,5 +48,5 @@ a {
 
 ul {
   list-style-type: none;
-}
+} */
 

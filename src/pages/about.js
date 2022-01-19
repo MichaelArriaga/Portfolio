@@ -1,12 +1,12 @@
 import * as styles from './about-css.module.css';
 import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
-import Footer from '../components/footer';
-import Layout from '../components/layout';
+import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 import { Link } from 'gatsby';
 import React from 'react';
-import Header from '../components/header';
+import Header from '../components/Header';
 import { Helmet } from 'react-helmet';
-import ResponsiveHeader from '../components/responsive-header';
+import ResponsiveHeader from '../components/ResponsiveHeader';
 import TypeformButton from '../components/TypeformButton';
 
 class About extends React.Component {

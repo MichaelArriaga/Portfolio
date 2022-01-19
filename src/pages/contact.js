@@ -2,15 +2,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // global components
-import Header from '../components/header';
-import ResponsiveHeader from '../components/responsive-header';
+import Header from '../components/Header';
+import ResponsiveHeader from '../components/ResponsiveHeader';
 import TypeformButton from '../components/TypeformButton';
 
 // page components
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 // styling
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import * as styles from './contact-css.module.css';
 
 // static assets

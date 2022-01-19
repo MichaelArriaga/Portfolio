@@ -1,15 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 // global components
-import Header from '../components/header';
-import ResponsiveHeader from '../components/responsive-header';
+import Header from '../components/Header';
+import ResponsiveHeader from '../components/ResponsiveHeader';
 
 // page components
-import PostList from '../components/post-list';
-import Post from '../components/post';
+import PostList from '../components/PostList';
+import Post from '../components/Post';
 
 // styling
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import * as styles from './blog-css.module.css';
 
 const Blog = () => (
