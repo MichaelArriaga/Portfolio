@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import * as styles from './header-css-module.module.css';
-import mikeiconalt from '../../static/etc/images/mike-icon-alt.png';
+import mikeiconalt from '../../static/etc/images/icons/mike-icon-alt.png';
 
 const ResponsiveHeader = () => (
   <div

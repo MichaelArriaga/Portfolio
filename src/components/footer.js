@@ -2,8 +2,8 @@ import React from 'react';
 
 import * as styles from './footer-css.module.css';
 
-import twittericon from '../../static/etc/images/twitter-icon.svg';
-import githubicon from '../../static/etc/images/github-icon.svg';
+import twittericon from '../../static/etc/images/icons/logo-twitter.png';
+import githubicon from '../../static/etc/images/icons/logo-github.png';
 
 const Footer = () => (
   <div className={styles.footerContainer}>

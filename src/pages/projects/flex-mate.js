@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 
 // global components
 import Header from '../../components/Header';
@@ -16,11 +16,11 @@ import flowChart from '../../../static/etc/images/project-images/flex-mate/flow-
 
 // stylesheet
 import '../index-css.module.css';
-import Layout from '../../components/Layout';
+// import Layout from '../../components/Layout';
 import * as styles from '../../components/project_components/layout-css-module.module.css';
 
 // main components
-import Container from '../../components/project_components/Container';
+// import Container from '../../components/project_components/Container';
 import PrimaryHeading from '../../components/project_components/primary-heading';
 import TechOverview from '../../components/project_components/tech-overview';
 import ProblemOverview from '../../components/project_components/problem-overview';
@@ -29,6 +29,7 @@ import SubHeading from '../../components/project_components/sub-heading';
 import Metrics from '../../components/project_components/metrics';
 import ColorList from '../../components/project_components/color-list';
 import SubsectionImage from '../../components/project_components/subsection-image';
+import ReusableHelmet from '../../components/ReusableHelmet';
 
 const themeColor = '#FE8B10';
 
@@ -75,16 +76,12 @@ const colorsArray = [
 ];
 
 const FlexMate = () => (
-  <Layout>
-    <Helmet>
-      <title>Flex Mate App</title>
-      <meta name="description" content="Flex Mate App" />
-      <meta />
-    </Helmet>
+  <div className="w-full">
+    <ReusableHelmet title={'Flex Mate App'} description={'Flex Mate App'} />
     <Header />
     <ResponsiveHeader />
 
-    <Container>
+    <div className="max-w-screen-lg mx-auto">
       <img className={styles.mockupImg} src={mockupImg} alt="notloaded" />
 
       <a
@@ -173,9 +170,9 @@ const FlexMate = () => (
       />
 
       <SubsectionImage image={flowChart} />
-    </Container>
+    </div>
     <Footer />
-  </Layout>
+  </div>
 );
 
 export default FlexMate;

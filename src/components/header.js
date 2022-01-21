@@ -1,6 +1,6 @@
 import * as styles from './header-css-module.module.css';
 import { Link } from 'gatsby';
-import mikeicon from '../../static/etc/images/mike-icon.png';
+import mikeicon from '../../static/etc/images/icons/mike-icon.png';
 import React from 'react';
 
 const Header = () => (

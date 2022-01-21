@@ -14,13 +14,15 @@ const ProjectItem = ({
       to={route}
       style={{ height: 144 }}
       className={
-        'block w-full p-3 sm:p-4 mb-4 rounded-lg bg-white shadow-md border border-gray-100'
+        'block w-full p-3 sm:p-4 mb-4 rounded-lg bg-white shadow-md border border-gray-100 text-gray-900'
       }
     >
       <div className="mb-1">
         <h1
           style={{ fontFamily: font_names.bold }}
-          className={'text-2xl text-left tracking-tighter'}
+          className={
+            'text-2xl text-gray-900 text-left tracking-tighter antialiased'
+          }
         >
           {title}
         </h1>
