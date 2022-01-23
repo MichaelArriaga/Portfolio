@@ -1,7 +1,5 @@
 import React from 'react';
 
-import * as styles from './footer-css.module.css';
-
 import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
 import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
 import github_icon from '../../static/etc/images/icons/logo-github.png';
