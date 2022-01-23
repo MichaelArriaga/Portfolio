@@ -64,7 +64,7 @@ const ProjectPageTemplate = ({
       {/* try link end */}
 
       {/* description start */}
-      <div className={'mx-auto mb-4 sm:max-w-screen-sm sm:ml-0'}>
+      <div className={'mx-auto mb-4 sm:ml-0'}>
         <p
           style={{ fontFamily: fonts.regular }}
           className={'text-base text-left'}
