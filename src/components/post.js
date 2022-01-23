@@ -3,14 +3,14 @@ import * as styles from '../pages/blog-css.module.css';
 
 import { Link } from 'gatsby';
 
-const Post = function (props) {
+const Post = function ({ path, title, postdate }) {
   return (
     <div>
       <li className={styles.postItem}>
-        <Link to={props.path} className={styles.postLink}>
-          {props.title}
+        <Link to={path} className={styles.postLink}>
+          {title}
         </Link>
-        <p className={styles.inlineDate}>{props.postdate}</p>
+        <p className={styles.inlineDate}>{postdate}</p>
       </li>
     </div>
   );

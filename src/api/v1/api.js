@@ -23,7 +23,7 @@ if (IS_DEV) {
 }
 
 const api = axios.create({
-  baseURL: LIVE_BASE_URL,
+  baseURL: base_url,
 });
 
 // 1000 = 10 seconds

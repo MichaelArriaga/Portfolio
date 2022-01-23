@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import api from '../api/v1/api';
 import { post_api_v1_newsletter_registrations_path } from '../api/v1/routes';
 import fonts from '../constants/font_names';
@@ -7,7 +7,8 @@ import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
 import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
 import github_icon from '../../static/etc/images/icons/logo-github.png';
 import email_icon from '../../static/etc/images/icons/logo-email-envelope.png';
-const SideBar = ({}) => {
+
+const SideBar = () => {
   const [form, setForm] = useState({
     email: {
       value: '',
@@ -71,7 +72,7 @@ const SideBar = ({}) => {
           My Newsletter
         </h3>
         <p style={{ fontFamily: fonts.regular }} className="mb-1">
-          Stay up-to-date with my newest writings and courses.
+          Stay up-to-date with my latest writings and courses.
         </p>
 
         {/* email field start */}
@@ -138,13 +139,17 @@ const SideBar = ({}) => {
         {/* email field end */}
       </div>
       <div className="flex flex-row justify-start items-center">
-        <a href="https://google.com" target="_blank">
+        <a href="https://google.com" target="_blank" rel="noreferrer">
           <img src={twitter_icon} alt="" className="mr-2" />
         </a>
-        <a href="https://google.com" target="_blank">
+        <a href="https://google.com" target="_blank" rel="noreferrer">
           <img src={linkedin_icon} alt="" className="mr-2" />
         </a>
-        <a href="https://github.com/MichaelArriaga" target="_blank">
+        <a
+          href="https://github.com/MichaelArriaga"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={github_icon} alt="" className="mr-2" />
         </a>
         <a href="mailto:m.arriaga.smb@gmail.com">
