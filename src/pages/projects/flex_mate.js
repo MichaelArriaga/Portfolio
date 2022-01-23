@@ -1,35 +1,27 @@
 import React from 'react';
-// import { Helmet } from 'react-helmet';
 
-// global components
 // import Header from '../../components/Header';
 // import ResponsiveHeader from '../../components/ResponsiveHeader';
-import Footer from '../../components/Footer';
-
-import fonts from '../../constants/font_names';
-// static assets
-import mockupImg from '../../../static/etc/images/project-images/flex-mate/phone-mockup.png';
-import baseline_grid_img from '../../../static/etc/images/project-images/8px-grid.png';
-import gutter_img from '../../../static/etc/images/project-images/16px-grid.png';
-import vertical_rhythm_img from '../../../static/etc/images/project-images/48px-grid.png';
-import typography_image from '../../../static/etc/images/project-images/flex-mate/typography-system.png';
-import flow_chart_small_screen_img from '../../../static/etc/images/project-images/flex-mate/flow-chart-small-screen.png';
-import flow_chart_large_screen_img from '../../../static/etc/images/project-images/flex-mate/flow-chart-large-screen.png';
-// stylesheet
-import '../index-css.module.css';
-// import Layout from '../../components/Layout';
-
-// main components
-// import Container from '../../components/project_components/Container';
 import ReusableHelmet from '../../components/ReusableHelmet';
 import ProjectPageTemplate from '../../components/projects/ProjectPageTemplate';
+import Footer from '../../components/Footer';
+
+// static assets
+import mockupImg from '../../../static/etc/images/project_images/flex_mate/phone-mockup.png';
+import baseline_grid_img from '../../../static/etc/images/project_images/8px-grid.png';
+import gutter_img from '../../../static/etc/images/project_images/16px-grid.png';
+import vertical_rhythm_img from '../../../static/etc/images/project_images/48px-grid.png';
+import typography_image from '../../../static/etc/images/project_images/flex_mate/typography-system.png';
+import flow_chart_small_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-small-screen.png';
+import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
+// stylesheet
+import '../index-css.module.css';
 
 const FlexMate = () => (
   <div className="w-full">
     <ReusableHelmet title={'Flex Mate App'} description={'Flex Mate App'} />
     {/* <Header />
     <ResponsiveHeader /> */}
-    {/* <Footer /> */}
     <ProjectPageTemplate
       primary_color="#FE8B10"
       mockupImg={mockupImg}
@@ -75,6 +67,7 @@ const FlexMate = () => (
       flowchart_small_screen_img={flow_chart_small_screen_img}
       flowchart_large_screen_img={flow_chart_large_screen_img}
     />
+    <Footer />
   </div>
 );
 

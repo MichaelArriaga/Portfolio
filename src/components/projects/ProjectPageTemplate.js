@@ -205,7 +205,7 @@ const ProjectPageTemplate = ({
             <img src={metrics.baseline_grid_img} alt="not loaded" />
             <h3
               style={{ fontFamily: fonts.regular }}
-              className={'text-xl ml-4'}
+              className={'text-xl ml-4 sm:text-lg'}
             >
               {metrics.baseline_grid} baseline grid
             </h3>
@@ -215,7 +215,7 @@ const ProjectPageTemplate = ({
             <img src={metrics.gutter_img} alt="not loaded" />
             <h3
               style={{ fontFamily: fonts.regular }}
-              className={'text-xl ml-4'}
+              className={'text-xl ml-4 sm:text-lg'}
             >
               {metrics.gutter} gutter/spacing
             </h3>
@@ -225,7 +225,7 @@ const ProjectPageTemplate = ({
             <img src={metrics.vertical_rhythm_img} alt="not loaded" />
             <h3
               style={{ fontFamily: fonts.regular }}
-              className={'text-xl ml-4'}
+              className={'text-xl ml-4 sm:text-lg'}
             >
               {metrics.vertical_rhythm} vertical rhythm
             </h3>
@@ -290,41 +290,43 @@ const ProjectPageTemplate = ({
       {/* typography section end */}
 
       {/* flow charts start */}
-      <h1
-        style={{ fontFamily: fonts.bold }}
-        className={
-          'text-3xl tracking-tight text-center sm:text-2xl sm:text-left'
-        }
-      >
-        User Flows
-      </h1>
-      <h2
-        style={{ fontFamily: fonts.bold, color: primary_color }}
-        className={
-          'text-xl mb-2 sm:mb-4 tracking-tight text-center sm:text-xl sm:text-left'
-        }
-      >
-        Main Functionality
-      </h2>
+      <div className="mb-12">
+        <h1
+          style={{ fontFamily: fonts.bold }}
+          className={
+            'text-3xl tracking-tight text-center sm:text-2xl sm:text-left'
+          }
+        >
+          User Flows
+        </h1>
+        <h2
+          style={{ fontFamily: fonts.bold, color: primary_color }}
+          className={
+            'text-xl mb-2 sm:mb-4 tracking-tight text-center sm:text-xl sm:text-left'
+          }
+        >
+          Main Functionality
+        </h2>
 
-      {/* small screen */}
-      <div className="sm:hidden">
-        <img
-          style={{ maxWidth: 250 }}
-          className="mx-auto"
-          src={flowchart_small_screen_img}
-          alt="not loaded"
-        />
-      </div>
+        {/* small screen */}
+        <div className="sm:hidden">
+          <img
+            style={{ maxWidth: 250 }}
+            className="mx-auto"
+            src={flowchart_small_screen_img}
+            alt="not loaded"
+          />
+        </div>
 
-      {/* large screen */}
-      <div className="hidden sm:block">
-        <img
-          style={{ maxWidth: 700 }}
-          className=""
-          src={flowchart_large_screen_img}
-          alt="not loaded"
-        />
+        {/* large screen */}
+        <div className="hidden sm:block">
+          <img
+            style={{ maxWidth: 700 }}
+            className=""
+            src={flowchart_large_screen_img}
+            alt="not loaded"
+          />
+        </div>
       </div>
       {/* flow charts end */}
     </div>

@@ -2,40 +2,71 @@ import React from 'react';
 
 import * as styles from './footer-css.module.css';
 
-import twittericon from '../../static/etc/images/icons/logo-twitter.png';
-import githubicon from '../../static/etc/images/icons/logo-github.png';
+import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
+import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
+import github_icon from '../../static/etc/images/icons/logo-github.png';
+import email_icon from '../../static/etc/images/icons/logo-email-envelope.png';
+import fonts from '../constants/font_names';
 
 const Footer = () => (
-  <div className={styles.footerContainer}>
-    <hr className={styles.footerLine}></hr>
+  <div className={'w-full mx-auto'}>
+    <hr className={'w-full border-t border-gray-200'}></hr>
 
-    <div className={styles.footerTextContainer}>
-      Design + Code by{' '}
-      <a
-        className={styles.link}
-        href="https://twitter.com/ux_Michael"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Mike Arriaga
-      </a>{' '}
-      in Seattle, WA |
-      <a
-        className={styles.footerIcon}
-        href="https://twitter.com/ux_Michael"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={twittericon} alt="not loaded" />
-      </a>
-      <a
-        className={styles.footerIcon}
-        href="https://github.com/MichaelArriaga"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={githubicon} alt="not loaded" />
-      </a>
+    <div
+      className={'py-3 flex flex-col sm:flex-row justify-center items-center'}
+    >
+      <div className="flex flex-row mb-2 sm:mb-0 justify-center items-center">
+        <span className="mr-1">Made by</span>
+        <a
+          style={{ fontFamily: fonts.bold }}
+          className={'text-gray-900 underline mr-1'}
+          href="https://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mike Arriaga
+        </a>{' '}
+        <span className="mr-1">in Seattle, WA</span>
+      </div>
+
+      <div className="pl-2 flex flex-row justify-start items-center">
+        <a
+          style={{ width: 20 }}
+          className={'mr-2'}
+          href="https://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={twitter_icon} alt="not loaded" />
+        </a>
+        <a
+          style={{ width: 20 }}
+          className={'mr-2'}
+          href="https://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={linkedin_icon} alt="not loaded" />
+        </a>
+        <a
+          style={{ width: 20 }}
+          className={'mr-2'}
+          href="https://github.com/MichaelArriaga"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={github_icon} alt="not loaded" />
+        </a>
+        <a
+          style={{ width: 20 }}
+          className={'mr-3'}
+          href="https://github.com/MichaelArriaga"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={email_icon} alt="not loaded" />
+        </a>
+      </div>
     </div>
   </div>
 );

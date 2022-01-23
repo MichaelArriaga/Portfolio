@@ -50,7 +50,7 @@ class About extends React.Component {
             with his latest project being a tool that helps{' '}
             <span className={styles.highlight}>Amazon Flex workers</span>{' '}
             visualize their out of pocket expenses.{' '}
-            <Link className={styles.link} to="/projects/flex-mate">
+            <Link className={styles.link} to="/projects/flex_mate">
               <span className={styles.highlight}>CHECK IT OUT HERE</span>
             </Link>
           </p>

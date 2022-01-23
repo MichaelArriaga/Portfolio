@@ -13,7 +13,7 @@ import SideBar from '../components/Sidebar';
 // import * as styles from './index-css.module.css';
 
 // static assets
-// import flexmatepreview from '../../static/etc/images/project-images/flex-mate/flex-mate-preview.png';
+// import flexmatepreview from '../../static/etc/images/project_images/flex_mate/flex-mate-preview.png';
 import HeroHeader from '../components/general/HeroHeader';
 import fonts from '../constants/font_names';
 import ProjectItem from '../components/index/ProjectItem';
@@ -104,7 +104,7 @@ const Index = () => {
               time_range="2022"
               description="Track your Crowdsource earnings goals from multiple sources
       automatically."
-              route="/projects/flex-mate"
+              route="/projects/flex_mate"
             />
             <ProjectItem
               title="Fresh And Tumble"
@@ -112,7 +112,7 @@ const Index = () => {
               underline_width={200}
               time_range="2018 - 2021"
               description="Uber for Laundry"
-              route="/projects/flex-mate"
+              route="/projects/flex_mate"
             />
             <ProjectItem
               title="Flex Mate"
@@ -120,7 +120,7 @@ const Index = () => {
               underline_width={110}
               time_range="2018"
               description="Help Amazon Flex Drivers estimate often unaccounted for fuel expenses. "
-              route="/projects/flex-mate"
+              route="/projects/flex_mate"
             />
           </div>
           {/* apps end */}
@@ -161,7 +161,7 @@ export default Index;
 // <ResponsiveHeader />
 // <div className={'w-full mx-auto px-4 flex justify-center items-center'}>
 //   <ProjectItem
-//     path="/projects/flex-mate"
+//     path="/projects/flex_mate"
 //     title="Flex Mate"
 //     // 11 words max to avoid breaking style
 //     headline="Help Amazon flex workers better visualize their out of pocket expenses."
