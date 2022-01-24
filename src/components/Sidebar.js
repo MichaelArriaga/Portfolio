@@ -142,20 +142,35 @@ const SideBar = ({ hide_socials }) => {
       {hide_socials ? null : (
         <div className="flex flex-row justify-start items-center">
           <a href="https://google.com" target="_blank" rel="noreferrer">
-            <img src={twitter_icon} alt="" className="mr-2" />
+            <img
+              src={twitter_icon}
+              alt=""
+              style={{ width: 25 }}
+              className="mr-2"
+            />
           </a>
           <a href="https://google.com" target="_blank" rel="noreferrer">
-            <img src={linkedin_icon} alt="" className="mr-2" />
+            <img
+              src={linkedin_icon}
+              alt=""
+              style={{ width: 25 }}
+              className="mr-2"
+            />
           </a>
           <a
             href="https://github.com/MichaelArriaga"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={github_icon} alt="" className="mr-2" />
+            <img
+              src={github_icon}
+              alt=""
+              style={{ width: 25 }}
+              className="mr-2"
+            />
           </a>
           <a href="mailto:m.arriaga.smb@gmail.com">
-            <img src={email_icon} alt="" className="" />
+            <img src={email_icon} alt="" style={{ width: 25 }} className="" />
           </a>
         </div>
       )}

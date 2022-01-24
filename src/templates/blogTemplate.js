@@ -1,9 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import Header from '../components/header';
-import ResponsiveHeader from '../components/ResponsiveHeader';
+import HeroHeader from '../components/general/HeroHeader';
 import Footer from '../components/Footer';
-
 import './blog-template-css.css';
 
 export default function Template({
@@ -13,12 +11,8 @@ export default function Template({
   const { frontmatter, html } = markdownRemark;
   return (
     <div>
-      <Header />
-      <ResponsiveHeader />
+      <HeroHeader highlighted="posts" />
       <div className="blog-post-container">
-        <Link className="backArrow" to="/blog">
-          ⟵ back to blog home
-        </Link>
         <div className="blog-post">
           <h1 className="postTitle">{frontmatter.title}</h1>
           <h2 className="postDate">

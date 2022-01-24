@@ -6,7 +6,7 @@ import '../layout.css';
 import { Link } from 'gatsby';
 const HeroHeader = ({ highlighted }) => {
   return (
-    <div className="h-full mt-4 flex flex-col justify-center items-center mb-4">
+    <div className="h-full mt-6 flex flex-col justify-center items-center mb-4">
       <img className="block" src={mike_circle_logo} alt="" />
       <h1
         style={{ fontFamily: font_names.semiBold }}

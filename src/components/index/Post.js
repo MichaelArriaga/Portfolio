@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 const Post = ({ title, date, post_tags }) => {
   return (
-    <div className={'sm:max-w-xl mx-auto mb-2'}>
+    <div className={'sm:max-w-xl mx-auto mb-3'}>
       <Link
         className="flex justify-start items-center mb-1"
         to={'/blog/understanding-redux'}
@@ -15,14 +15,14 @@ const Post = ({ title, date, post_tags }) => {
             width: 8,
             height: 8,
             borderRadius: 50,
-            backgroundColor: '#9F9F9F',
+            backgroundColor: '#1F1F1F',
             marginRight: 10,
           }}
           className="hidden sm:block"
         ></div>
         <h3
           style={{ fontFamily: fonts.semiBold }}
-          className={'text-base text-gray-900 text-left'}
+          className={'text-base text-gray-900 text-left leading-none'}
         >
           <span className="underline mr-1">{title}</span>{' '}
           <span style={{ paddingLeft: 5, color: '#9F9F9F' }}>({date})</span>
@@ -32,18 +32,26 @@ const Post = ({ title, date, post_tags }) => {
       <div className={'flex flex-row justify-start items-center sm:pl-4'}>
         {post_tags.length > 0
           ? post_tags.map((tag) => (
+              // post tag start
               <Link
                 to={'/blog/understanding-redux'}
-                style={{ backgroundColor: '#A0EDE4' }}
-                className="py-1 px-2 rounded bg-cyan-400 mr-3"
+                style={{
+                  paddingTop: 3,
+                  paddingBottom: 3,
+                  paddingLeft: 6,
+                  paddingRight: 6,
+                  backgroundColor: '#A0EDE4',
+                }}
+                className="px-1 rounded bg-cyan-400 mr-2"
               >
                 <h3
                   style={{ fontFamily: fonts.semiBold }}
-                  className="text-sm text-gray-900"
+                  className="text-xs text-gray-900"
                 >
                   {tag}
                 </h3>
               </Link>
+              // post tag end
             ))
           : null}
       </div>
