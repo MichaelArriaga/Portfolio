@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 // page components
 import PostList from '../components/PostList';
 import Post from '../components/Post';

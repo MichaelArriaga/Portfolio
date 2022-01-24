@@ -17,7 +17,7 @@ const HeroHeader = ({ highlighted }) => {
       <div className="">
         <Link
           style={{
-            fontFamily: highlighted == 'home' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'home' ? fonts.bold : fonts.semiBold,
           }}
           className="font-regular underline mr-4 text-lg"
           to="/"
@@ -26,7 +26,7 @@ const HeroHeader = ({ highlighted }) => {
         </Link>
         <Link
           style={{
-            fontFamily: highlighted == 'about' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'about' ? fonts.bold : fonts.semiBold,
           }}
           className="font-regular underline mr-4 text-lg"
           to="/about"
@@ -35,7 +35,7 @@ const HeroHeader = ({ highlighted }) => {
         </Link>
         <Link
           style={{
-            fontFamily: highlighted == 'posts' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'posts' ? fonts.bold : fonts.semiBold,
           }}
           className="font-regular underline mr-4 text-lg"
           to="/blog"
@@ -44,7 +44,7 @@ const HeroHeader = ({ highlighted }) => {
         </Link>
         <Link
           style={{
-            fontFamily: highlighted == 'contact' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'contact' ? fonts.bold : fonts.semiBold,
           }}
           className={'font-regular underline mr-4 text-lg'}
           to="/contact"
