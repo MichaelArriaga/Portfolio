@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import Header from '../../components/Header';
-// import ResponsiveHeader from '../../components/ResponsiveHeader';
 import ReusableHelmet from '../../components/ReusableHelmet';
 import ProjectPageTemplate from '../../components/projects/ProjectPageTemplate';
 import Footer from '../../components/Footer';
@@ -16,12 +14,12 @@ import flow_chart_small_screen_img from '../../../static/etc/images/project_imag
 import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
 // stylesheet
 import '../index-css.module.css';
+import HeroHeader from '../../components/general/HeroHeader';
 
 const FlexMate = () => (
   <div className="w-full">
     <ReusableHelmet title={'Flex Mate App'} description={'Flex Mate App'} />
-    {/* <Header />
-    <ResponsiveHeader /> */}
+    <HeroHeader highlighted={''} />
     <ProjectPageTemplate
       primary_color="#FE8B10"
       mockupImg={mockupImg}
