@@ -36,7 +36,7 @@ const Index = () => {
               style={{ fontFamily: fonts.regular }}
               className="text-base mb-2"
             >
-              Howdy 👋
+              👋 <span className="pr-1"></span> Howdy!
             </h3>
             <h3
               style={{ fontFamily: fonts.regular, lineHeight: 1.3 }}
@@ -101,7 +101,7 @@ const Index = () => {
               underline_width={200}
               time_range="2018 - 2021"
               description="Uber for Laundry"
-              route="/projects/flex_mate"
+              route="/projects/fresh_and_tumble"
             />
             <ProjectItem
               title="Flex Mate"

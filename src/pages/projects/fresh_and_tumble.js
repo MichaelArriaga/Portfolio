@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ReusableHelmet from '../../components/ReusableHelmet';
 import ProjectPageTemplate from '../../components/projects/ProjectPageTemplate';
 import Footer from '../../components/Footer';
@@ -16,7 +15,7 @@ import flow_chart_large_screen_img from '../../../static/etc/images/project_imag
 import '../index-css.module.css';
 import HeroHeader from '../../components/general/HeroHeader';
 
-const FlexMate = () => (
+const FreshAndTumble = () => (
   <div className="w-full">
     <ReusableHelmet title={'Flex Mate App'} description={'Flex Mate App'} />
     <HeroHeader highlighted={'home'} />
@@ -69,4 +68,4 @@ const FlexMate = () => (
   </div>
 );
 
-export default FlexMate;
+export default FreshAndTumble;
