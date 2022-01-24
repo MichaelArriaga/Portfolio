@@ -7,46 +7,51 @@ import { Link } from 'gatsby';
 const HeroHeader = ({ highlighted }) => {
   return (
     <div className="h-full mt-6 flex flex-col justify-center items-center mb-4">
-      <img className="block" src={mike_circle_logo} alt="" />
+      <img
+        className="block"
+        style={{ maxWidth: 50 }}
+        src={mike_circle_logo}
+        alt="mike logo"
+      />
       <h1
-        style={{ fontFamily: font_names.semiBold }}
-        className="mt-2 text-2xl leading-none tracking-tighter"
+        style={{ fontFamily: font_names.regular }}
+        className="my-2 text-2xl leading-none tracking-tighter"
       >
         Mike Arriaga
       </h1>
       <div className="">
         <Link
           style={{
-            fontFamily: highlighted === 'home' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'home' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-lg"
+          className="font-regular underline mr-4 text-base"
           to="/"
         >
           Home
         </Link>
         <Link
           style={{
-            fontFamily: highlighted === 'about' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'about' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-lg"
+          className="font-regular underline mr-4 text-base"
           to="/about"
         >
           About
         </Link>
         <Link
           style={{
-            fontFamily: highlighted === 'posts' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'posts' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-lg"
+          className="font-regular underline mr-4 text-base"
           to="/blog"
         >
           Posts
         </Link>
         <Link
           style={{
-            fontFamily: highlighted === 'contact' ? fonts.bold : fonts.semiBold,
+            fontFamily: highlighted === 'contact' ? fonts.bold : fonts.regular,
           }}
-          className={'font-regular underline mr-4 text-lg'}
+          className={'font-regular underline mr-4 text-base'}
           to="/contact"
         >
           Contact
