@@ -17,7 +17,9 @@ Depending on whether the site we want to use is a project page `username.github.
 
 (This chart also determines on **what branch you can host your site from** more on that later.)
 
-![alt](/images/posts/gh-pages-custom-domain-redirects-chart.png)
+###
+
+![alt](gh-pages-custom-domain-redirects-chart.png)
 
 Basically, it boils down to how we named the repository that we want to host. Github Pages has automatic hooks that determines if our repository is given a base url of `username.github.io/` to which all our additional pages are included in the path relative to our base url `username.github.io/PROJECT`
 

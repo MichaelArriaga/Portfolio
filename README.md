@@ -37,3 +37,16 @@ ___
 ```
 
 3. Write the body of your post, and remember to place all of the images that you are going to reference in your post in the current directory and reference them using `![alt](image.png)`
+
+### Adding inline images to markdown blog posts
+
+1. Create the image
+2. Minify/Optimize the image (ImageOptim)
+3. Place image in the folder of the post ex: `~/src/pages/blog/how-to-do-something/my-image.png`
+4. Use `![alt](my-image.png)` syntax in your markdown to link the image (it will assume the image is in the current directory of the blog post) If the iamge is not showing up than preface with a blank Heading3 example:
+
+```markdown
+###
+
+![alt](gh-pages-custom-domain-redirects-chart.png)
+```
