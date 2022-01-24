@@ -4,7 +4,7 @@ import ProjectPageTemplate from '../../components/projects/ProjectPageTemplate';
 import Footer from '../../components/Footer';
 
 // static assets
-import mockupImg from '../../../static/etc/images/project_images/flex_mate/phone-mockup.png';
+import mockupImg from '../../../static/etc/images/project_images/fresh_and_tumble/phone-mockup.png';
 import baseline_grid_img from '../../../static/etc/images/project_images/flex_mate/8px-grid.png';
 import gutter_img from '../../../static/etc/images/project_images/flex_mate/16px-grid.png';
 import vertical_rhythm_img from '../../../static/etc/images/project_images/flex_mate/48px-grid.png';
@@ -20,15 +20,30 @@ const FreshAndTumble = () => (
     <ReusableHelmet title={'Flex Mate App'} description={'Flex Mate App'} />
     <HeroHeader highlighted={'home'} />
     <ProjectPageTemplate
-      primary_color="#FE8B10"
+      primary_color="#D70CF5"
       mockupImg={mockupImg}
-      title="FLEX MATE"
-      project_date="November 2018"
+      title="FRESH AND TUMBLE"
+      project_date="2019 - 2021"
       try_url={''}
-      description="A tool that helps Amazon Flex Drivers estimate often unaccounted for fuel expenses. This app shows the user a list of available delivery stations based on their preferred region, and renders an estimate of fuel cost for travel based on the user provided average cost per gallon (cpg) as well as their vehicle average miles per gallon (mpg)."
-      scope_array={['Website', 'CostAnalysis']}
-      core_tech_array={['React.js', 'Google Distance Matrix API']}
-      apps_used_array={['Adobe XD', 'VSCode']}
+      description="Uber of Laundry is pretty self-explanatory, but there's a lot of exciting tech under the hood that powers Fresh And Tumble Laundry Pickups and Deliveries, all of which were built in-house and proprietary, so they do not rely on any costly premade delivery api solutions. Fresh And Tumble has automated systems that provide real-time estimations and enroute map visualization for customers to observe during their laundry pickup including an SMS notification that their Wash Expert is approaching their doorstep for pickup. The SMS notification system would soon become an important tool for facilitating contact-free pickups and deliveries during the COVID-19 pandemic. Pickups and deliveries are protected, tracked and confirmed via geofencing, QR scanning and time windows. Fresh And Tumble also has support for billing and subscription payment services for customers, as well as a full-featured mobile App for Independent Wash Experts (Similar to Uber Drivers) to facilitate and manage their orders including real-time turn-by-turn navigation powered by MapBox Navigation SDK and an earnings payout system powered by Stripe Connect."
+      scope_array={[
+        'Pickup/Delivery',
+        'Appointments',
+        'Geofencing',
+        'QR Scanning',
+        'Navigation',
+        'Billing/Subscriptions',
+      ]}
+      core_tech_array={[
+        'Ruby on Rails 6',
+        'SideKiq',
+        'Docker',
+        'React Native',
+        'Twilio Sendgrid',
+        'Mapbox Navigation SDK',
+        'Stripe/Stripe Connect',
+      ]}
+      apps_used_array={['Adobe XD', 'VIM', 'XCode', 'Android Studio']}
       features_array={[
         'Fuel cost estimation',
         'Real-Time travel time estimatinos',

@@ -99,7 +99,7 @@ const Index = () => {
               title="Fresh And Tumble"
               underline_color="#D70CF5"
               underline_width={200}
-              time_range="2018 - 2021"
+              time_range="2019 - 2021"
               description="Uber for Laundry"
               route="/projects/fresh_and_tumble"
             />
