@@ -7,6 +7,7 @@ import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
 import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
 import github_icon from '../../static/etc/images/icons/logo-github.png';
 import email_icon from '../../static/etc/images/icons/logo-email-envelope.png';
+import { sleep } from '../utils/helpers';
 
 const SideBar = ({ hide_socials }) => {
   const [form, setForm] = useState({
@@ -19,7 +20,6 @@ const SideBar = ({ hide_socials }) => {
 
   const [signup_success, setSignupSuccess] = useState(false);
   const [is_loading, setIsLoading] = useState(false);
-
   const signup = async () => {
     let newState = { ...form.email };
     newState.errors = [];
@@ -29,17 +29,22 @@ const SideBar = ({ hide_socials }) => {
     } else {
       try {
         setIsLoading(true);
-        const { data } = await api.post(
-          post_api_v1_newsletter_registrations_path,
-          {
-            params: {
-              email: form.email.value,
-            },
-          },
-          {
-            headers: { Authorization: null },
-          }
-        );
+        await sleep(0.3);
+        setIsLoading(false);
+        const data = {
+          message: 'success',
+        };
+        // const { data } = await api.post(
+        //   post_api_v1_newsletter_registrations_path,
+        //   {
+        //     params: {
+        //       email: form.email.value,
+        //     },
+        //   },
+        //   {
+        //     headers: { Authorization: null },
+        //   }
+        // );
         switch (data.message) {
           case 'success':
             setSignupSuccess(true);
@@ -128,12 +133,12 @@ const SideBar = ({ hide_socials }) => {
                 value={'✓ Thanks!'}
               />
             </div>
-            <p
+            {/* <p
               style={{ fontFamily: fonts.regular }}
               className="text-sm pt-1 text-gray-900"
             >
               Check your email to confirm
-            </p>
+            </p> */}
           </form>
         )}
         {/* email field end */}
