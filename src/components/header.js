@@ -1,40 +1,27 @@
-import * as styles from './header-css-module.module.css';
 import { Link } from 'gatsby';
 import mikeicon from '../../static/etc/images/icons/mike-icon.png';
 import React from 'react';
 
 const Header = () => (
-  <div className={styles.headercontainer}>
+  <div className={''}>
     <ul>
-      <li className={styles.headerListItem}>
-        <Link to="/" className={styles.headerLink}>
+      <li className={''}>
+        <Link to="/" className={''}>
           <img src={mikeicon} alt="not loaded" />
         </Link>
       </li>
-      <li className={styles.headerListItem}>
-        <Link
-          to="/contact"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/contact" className={''} activeClassName={''}>
           Contact
         </Link>
       </li>
-      <li className={styles.headerListItem}>
-        <Link
-          to="/blog"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/blog" className={''} activeClassName={''}>
           Blog
         </Link>
       </li>
-      <li className={styles.headerListItem}>
-        <Link
-          to="/about"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/about" className={''} activeClassName={''}>
           About
         </Link>
       </li>

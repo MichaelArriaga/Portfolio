@@ -1,54 +1,30 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import * as styles from './header-css-module.module.css';
 import mikeiconalt from '../../static/etc/images/icons/mike-icon-alt.png';
 
 const ResponsiveHeader = () => (
-  <div
-    className={styles.headerContainerResponsive}
-    style={{ marginBottom: '40px' }}
-  >
+  <div className={''} style={{ marginBottom: '40px' }}>
     <Link to="/">
-      <img
-        className={[styles.mikeIconAlt, styles.headerIconResponsive].join(' ')}
-        src={mikeiconalt}
-        alt="not loaded"
-      />
+      <img className={''} src={mikeiconalt} alt="not loaded" />
     </Link>
     <ul>
-      <li className={styles.headerListItemResponsive}>
-        <Link
-          to="/"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/" className={''} activeClassName={''}>
           HOME
         </Link>
       </li>
-      <li className={styles.headerListItemResponsive}>
-        <Link
-          to="/about"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/about" className={''} activeClassName={''}>
           ABOUT
         </Link>
       </li>
-      <li className={styles.headerListItemResponsive}>
-        <Link
-          to="/blog"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/blog" className={''} activeClassName={''}>
           BLOG
         </Link>
       </li>
-      <li className={styles.headerListItemResponsive}>
-        <Link
-          to="/contact"
-          className={styles.headerLink}
-          activeClassName={styles.activeLink}
-        >
+      <li className={''}>
+        <Link to="/contact" className={''} activeClassName={''}>
           CONTACT
         </Link>
       </li>

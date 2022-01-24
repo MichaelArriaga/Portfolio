@@ -1,24 +1,14 @@
 import React from 'react';
-// import Header from '../components/Header';
-// import ResponsiveHeader from '../components/ResponsiveHeader';
-// import ProjectItem from '../components/ProjectItem';
-// import Footer from '../components/Footer';
-// import category_tags from '../constants/category_tags';
+import '../components/layout.css';
+import Footer from '../components/Footer';
 import ReusableHelmet from '../components/ReusableHelmet';
 import { Link } from 'gatsby';
 import SideBar from '../components/Sidebar';
 
-// styling
-// import Layout from '../components/Layout';
-// import * as styles from './index-css.module.css';
-
-// static assets
-// import flexmatepreview from '../../static/etc/images/project_images/flex_mate/flex-mate-preview.png';
 import HeroHeader from '../components/general/HeroHeader';
 import fonts from '../constants/font_names';
 import ProjectItem from '../components/index/ProjectItem';
 import Post from '../components/index/Post';
-
 const Index = () => {
   return (
     <div className="">
@@ -28,7 +18,6 @@ const Index = () => {
       />
       <div className="w-full sm:flex sm:flex-row sm:justify-center items-start">
         {/* sidebar start */}
-
         <div
           style={{ width: 290 }}
           className="hidden sm:block w-64 h-screen h-max mr-4 border-r border-gray-100"
@@ -40,7 +29,7 @@ const Index = () => {
 
         {/* right panel start */}
         <div className="">
-          <HeroHeader />
+          <HeroHeader highlighted={'home'} />
           {/* hero start */}
           <div className="sm:max-w-xl mx-auto mb-3">
             <h3
@@ -57,7 +46,7 @@ const Index = () => {
               <Link
                 to="/blog/understanding-redux"
                 style={{ color: '#C60212', fontFamily: fonts.semiBold }}
-                className=""
+                className="font-semibold"
               >
                 Ruby on Rails
               </Link>{' '}
@@ -146,27 +135,14 @@ const Index = () => {
           {/* latest posts end */}
           {/* <Footer /> */}
           <div className="sm:hidden">
-            <SideBar />
+            <SideBar hide_socials={true} />
           </div>
         </div>
         {/* right panel end */}
       </div>
+      <Footer />
     </div>
   );
 };
 
 export default Index;
-
-// <Header />
-// <ResponsiveHeader />
-// <div className={'w-full mx-auto px-4 flex justify-center items-center'}>
-//   <ProjectItem
-//     path="/projects/flex_mate"
-//     title="Flex Mate"
-//     // 11 words max to avoid breaking style
-//     headline="Help Amazon flex workers better visualize their out of pocket expenses."
-//     tags={[category_tags.new, category_tags.design, category_tags.code]}
-//     primarycolor="white"
-//     previewimg={flexmatepreview}
-//   />
-// </div>

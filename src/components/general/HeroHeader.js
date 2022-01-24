@@ -1,7 +1,10 @@
 import React from 'react';
 import mike_circle_logo from '../../../static/etc/images/icons/mike-circle-logo.png';
+import fonts from '../../constants/font_names';
 import font_names from '../../constants/font_names';
-const HeroHeader = ({ navigation }) => {
+import '../layout.css';
+import { Link } from 'gatsby';
+const HeroHeader = ({ highlighted }) => {
   return (
     <div className="h-full mt-4 flex flex-col justify-center items-center mb-4">
       <img className="block" src={mike_circle_logo} alt="" />
@@ -12,27 +15,42 @@ const HeroHeader = ({ navigation }) => {
         Mike Arriaga
       </h1>
       <div className="">
-        <a
-          style={{ fontFamily: font_names.semiBold }}
+        <Link
+          style={{
+            fontFamily: highlighted == 'home' ? fonts.bold : fonts.semiBold,
+          }}
           className="font-regular underline mr-4 text-lg"
-          href="/about"
+          to="/"
+        >
+          Home
+        </Link>
+        <Link
+          style={{
+            fontFamily: highlighted == 'about' ? fonts.bold : fonts.semiBold,
+          }}
+          className="font-regular underline mr-4 text-lg"
+          to="/about"
         >
           About
-        </a>
-        <a
-          style={{ fontFamily: font_names.semiBold }}
+        </Link>
+        <Link
+          style={{
+            fontFamily: highlighted == 'posts' ? fonts.bold : fonts.semiBold,
+          }}
           className="font-regular underline mr-4 text-lg"
-          href="/blog"
+          to="/blog"
         >
           Posts
-        </a>
-        <a
-          style={{ fontFamily: font_names.semiBold }}
-          className="font-regular underline mr-4 text-lg"
-          href="/contact"
+        </Link>
+        <Link
+          style={{
+            fontFamily: highlighted == 'contact' ? fonts.bold : fonts.semiBold,
+          }}
+          className={'font-regular underline mr-4 text-lg'}
+          to="/contact"
         >
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );

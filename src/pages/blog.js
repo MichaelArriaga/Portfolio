@@ -1,26 +1,21 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-// global components
-import Header from '../components/Header';
-import ResponsiveHeader from '../components/ResponsiveHeader';
-
 // page components
 import PostList from '../components/PostList';
 import Post from '../components/Post';
 
 // styling
-import Layout from '../components/Layout';
 import * as styles from './blog-css.module.css';
+import HeroHeader from '../components/general/HeroHeader';
+import ReusableHelmet from '../components/ReusableHelmet';
 
 const Blog = () => (
-  <Layout>
-    <Helmet>
-      <title>Mike Arriaga Blog Home</title>
-      <meta name="description" content="Mike Arriaga Blog Home" />
-      <meta />
-    </Helmet>
-    <ResponsiveHeader />
-    <Header />
+  <div>
+    <ReusableHelmet
+      title="Mike Arriaga Blog Home"
+      description="Mike Arriaga Blog Home"
+    />
+    <HeroHeader highlighted="posts" />
     <div className={styles.blogContainer}>
       <h1 className={styles.blogHeading}>/BLOG</h1>
 
@@ -58,7 +53,7 @@ const Blog = () => (
         />
       </PostList>
     </div>
-  </Layout>
+  </div>
 );
 
 export default Blog;
