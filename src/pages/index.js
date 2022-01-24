@@ -53,8 +53,8 @@ const Index = () => {
               and{' '}
               <Link
                 to="/blog/understanding-redux"
-                style={{ color: '#00A0CC', fontFamily: fonts.semiBold }}
-                className=""
+                style={{ fontFamily: fonts.semiBold }}
+                className="text-indigo-600"
               >
                 React Native
               </Link>{' '}

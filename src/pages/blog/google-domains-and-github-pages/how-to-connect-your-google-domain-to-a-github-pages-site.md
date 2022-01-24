@@ -1,11 +1,11 @@
 ---
-path: "/blog/google-domains-and-github-pages"
-date: "2018-02-14"
-title: "How to connect your google domain to a github pages site"
-readtime: "30 min read"
+path: '/blog/google-domains-and-github-pages'
+date: '2018-02-14'
+title: 'How to connect your google domain to a github pages site'
+readtime: '30 min read'
 ---
 
-<!-- 
+<!--
 * TOC
 {:toc} -->
 
@@ -17,7 +17,7 @@ Depending on whether the site we want to use is a project page `username.github.
 
 (This chart also determines on **what branch you can host your site from** more on that later.)
 
-![alt](gh-pages-custom domain-redirects-chart.png)
+![alt](/images/posts/gh-pages-custom-domain-redirects-chart.png)
 
 Basically, it boils down to how we named the repository that we want to host. Github Pages has automatic hooks that determines if our repository is given a base url of `username.github.io/` to which all our additional pages are included in the path relative to our base url `username.github.io/PROJECT`
 
@@ -63,6 +63,7 @@ Back at our site's root directory let's create that file now. (If you are hostin
 www.ourdomain.com
 ourdomain.com
 ```
+
 **Note:** It's important that our file **does not** have an extension and that the filename is in all caps.
 
 Now that our CNAME file has been created let's commit and push our changes to GitHub.
@@ -93,6 +94,7 @@ They use the following ip addresses:
 192.30.252.153
 192.30.252.154
 ```
+
 Let's add them now.
 
 ```
@@ -101,7 +103,7 @@ Let's add them now.
 @               A      192.30.252.154
 ```
 
-*Note: Google domains may say "This record is in use" this is usually fine and one IP resource record is usually good enough.*
+_Note: Google domains may say "This record is in use" this is usually fine and one IP resource record is usually good enough._
 
 Finally, We want to create a third record `www` with a type of `CNAME` that has a data value of our `username.github.io`
 
@@ -111,4 +113,4 @@ www              A      username.github.io
 
 AND WE'RE DONE!
 
-Now we wait for our changes to have effect. It is very commonplace for domain configurations to take a long time to update. Sometimes it can take as long as 24 hours or more. *I've never had it take more than a couple hours to update my dns changes so don't worry if your domain and site aren't working immediately.*
+Now we wait for our changes to have effect. It is very commonplace for domain configurations to take a long time to update. Sometimes it can take as long as 24 hours or more. _I've never had it take more than a couple hours to update my dns changes so don't worry if your domain and site aren't working immediately._
