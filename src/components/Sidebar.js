@@ -29,7 +29,7 @@ const SideBar = ({ hide_socials }) => {
     } else {
       try {
         setIsLoading(true);
-        await sleep(0.3);
+        await sleep(0.65);
         setIsLoading(false);
         const data = {
           message: 'success',
