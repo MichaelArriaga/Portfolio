@@ -22,7 +22,7 @@ const Index = () => {
           style={{ width: 290 }}
           className="hidden sm:block w-64 h-screen h-max mr-4 border-r border-gray-100"
         >
-          <div style={{ marginTop: 170 }}></div>
+          <div style={{ marginTop: 150 }}></div>
           <SideBar />
         </div>
         {/* sidebar end */}
