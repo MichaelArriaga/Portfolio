@@ -6,16 +6,20 @@ import React from 'react';
 import HeroHeader from '../components/general/HeroHeader';
 import ReusableHelmet from '../components/ReusableHelmet';
 import fonts from '../constants/font_names';
+
 class About extends React.Component {
   render() {
     return (
-      <div>
+      <div className="">
         <ReusableHelmet
           title="Mike Arriaga About Me"
           description="Mike Arriaga About Me"
         />
         <HeroHeader highlighted="about" />
-        <div className={'w-full h-full max-w-screen-sm mx-auto px-2'}>
+        <div
+          style={{ marginBottom: 150 }}
+          className={'w-full h-full max-w-screen-sm mx-auto px-2 '}
+        >
           <img
             className={'w-64 mx-auto mb-4'}
             src={aboutimg}

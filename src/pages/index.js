@@ -34,18 +34,24 @@ const Index = () => {
           <div className="sm:max-w-xl mx-auto mb-3">
             <h3
               style={{ fontFamily: fonts.regular }}
-              className="text-base mb-2"
+              className="text-lg sm:text-xl mb-2"
             >
               👋 <span className="pr-1"></span> Howdy!
             </h3>
             <h3
-              style={{ fontFamily: fonts.regular, lineHeight: 1.3 }}
-              className="text-base mb-2 text-gray-900"
+              style={{
+                fontFamily: fonts.regular,
+                lineHeight: 1.3,
+              }}
+              className="text-lg sm:text-xl mb-2 text-gray-900"
             >
               I’m a{' '}
               <Link
                 to="/blog/understanding-redux"
-                style={{ color: '#C60212', fontFamily: fonts.semiBold }}
+                style={{
+                  color: '#C60212',
+                  fontFamily: fonts.semiBold,
+                }}
                 className="font-semibold"
               >
                 Ruby on Rails
@@ -65,7 +71,7 @@ const Index = () => {
 
             <h3
               style={{ fontFamily: fonts.regular }}
-              className="text-base mb-2 text-gray-900"
+              className="text-lg sm:text-xl mb-2 text-gray-900"
             >
               Need help?{' '}
               <a
@@ -82,7 +88,7 @@ const Index = () => {
           <div className="sm:max-w-xl mx-auto">
             <h3
               style={{ fontFamily: fonts.bold }}
-              className="text-lg text-gray-900 sm:text-base mb-3 sm:mb-5"
+              className="text-lg text-gray-900 mb-3 sm:mb-5"
             >
               My Apps
             </h3>
@@ -93,7 +99,7 @@ const Index = () => {
               time_range="2022"
               description="Track your Crowdsource earnings goals from multiple sources
       automatically."
-              route="/projects/flex_mate"
+              route="/projects/crowd_mint"
             />
             <ProjectItem
               title="Fresh And Tumble"
@@ -117,7 +123,7 @@ const Index = () => {
           <div className="sm:max-w-xl mx-auto mb-4">
             <h3
               style={{ fontFamily: fonts.bold }}
-              className="text-lg sm:text-base mb-3 sm:mb-5"
+              className="text-lg mb-3 sm:mb-5"
             >
               Latest Posts
             </h3>

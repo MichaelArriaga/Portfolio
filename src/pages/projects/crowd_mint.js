@@ -9,25 +9,22 @@ import baseline_grid_img from '../../../static/etc/images/project_images/flex_ma
 import gutter_img from '../../../static/etc/images/project_images/flex_mate/16px-grid.png';
 import vertical_rhythm_img from '../../../static/etc/images/project_images/flex_mate/48px-grid.png';
 import typography_image from '../../../static/etc/images/project_images/flex_mate/typography-system.png';
-// import flow_chart_small_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-small-screen.png';
-// import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
+import flow_chart_small_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-small-screen.png';
+import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
 // stylesheet
 import '../index-css.module.css';
 import HeroHeader from '../../components/general/HeroHeader';
 
-const FreshAndTumble = () => (
+const CrowdMint = () => (
   <div className="w-full">
-    <ReusableHelmet
-      title={'Fresh And Tumble Laundry'}
-      description={'Fresh And Tumble Laundry'}
-    />
+    <ReusableHelmet title={'CrowdMint'} description={'CrowdMint'} />
     <ProjectPageTemplate
-      primary_color="#D70CF5"
+      primary_color="#3661F2"
       mockupImg={mockupImg}
-      title="FRESH AND TUMBLE"
-      project_date="2019 - 2021"
+      title="CrowdMint"
+      project_date="2022 - Current"
       try_url={''}
-      description="Uber of Laundry is pretty self-explanatory, but there's a lot of exciting tech under the hood that powers Fresh And Tumble Laundry Pickups and Deliveries, all of which were built from the ground up, ensuring the core of the service (pickup/delivery) is not reliant on any costly premade delivery last mile api solutions. Fresh And Tumble has automated systems that provide real-time estimations and enroute map visualization for customers to observe during their laundry pickup including an SMS notification that their Wash Expert is approaching their doorstep for pickup. The SMS notification system would soon become an important tool for facilitating contact-free pickups and deliveries during the COVID-19 pandemic. Pickups and deliveries are protected, tracked and confirmed via a combination of Geofencing, QR code scanning and datetime windows. Fresh And Tumble also has support for billing and subscription payment services for customers, as well as a full-featured mobile App for Independent Wash Experts (Similar to Uber Drivers) to facilitate and manage their orders including real-time turn-by-turn navigation powered by MapBox Navigation SDK and an earnings payout system powered by Stripe Connect. At the end of the day, Fresh And Tumble is built to scale into the thousands and millions of customers."
+      description="Uber of Laundry is pretty self-explanatory, but there's a lot of exciting tech under the hood that powers Fresh And Tumble Laundry Pickups and Deliveries, all of which were built from the ground up, ensuring the core of the service (pickup/delivery) is not reliant on any costly premade delivery last mile api solutions. Fresh And Tumble has automated systems that provide real-time estimations and enroute map visualization for customers to observe during their laundry pickup including an SMS notification that their Wash Expert is approaching their doorstep for pickup. The SMS notification system would soon become an important tool for facilitating contact-free pickups and deliveries during the COVID-19 pandemic. Pickups and deliveries are protected, tracked and confirmed via geofencing, QR scanning and time windows. Fresh And Tumble also has support for billing and subscription payment services for customers, as well as a full-featured mobile App for Independent Wash Experts (Similar to Uber Drivers) to facilitate and manage their orders including real-time turn-by-turn navigation powered by MapBox Navigation SDK and an earnings payout system powered by Stripe Connect."
       scope_array={[
         'Pickup/Delivery',
         'Appointments',
@@ -35,7 +32,6 @@ const FreshAndTumble = () => (
         'QR Scanning',
         'Navigation',
         'Billing/Subscriptions',
-        'Contractor Payouts',
       ]}
       core_tech_array={[
         'Ruby on Rails 6',
@@ -50,10 +46,10 @@ const FreshAndTumble = () => (
       features_array={[
         'Appointments',
         'Pickup/Delivery',
-        'Enroute Visualization',
+        'Real-time in-map enroute visualization',
         'Billing/Subscriptions/Payouts',
         'Turn-by-turn Navigation',
-        'QR Label Generation/Scanning',
+        'QR Label Tracking',
         'SMS Notifications',
         'Email Receipts/Updates',
       ]}
@@ -95,4 +91,4 @@ const FreshAndTumble = () => (
   </div>
 );
 
-export default FreshAndTumble;
+export default CrowdMint;

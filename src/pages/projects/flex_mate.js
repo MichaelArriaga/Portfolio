@@ -19,7 +19,6 @@ import HeroHeader from '../../components/general/HeroHeader';
 const FlexMate = () => (
   <div className="w-full">
     <ReusableHelmet title={'Flex Mate App'} description={'Flex Mate App'} />
-    <HeroHeader highlighted={'home'} />
     <ProjectPageTemplate
       primary_color="#FE8B10"
       mockupImg={mockupImg}

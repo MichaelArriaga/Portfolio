@@ -68,12 +68,14 @@ const EmailListSignupForm = () => {
 
   return (
     <div className="mb-4">
-      <h3 style={{ fontFamily: fonts.bold }} className="mb-1 text-lg">
-        My Newsletter
-      </h3>
-      <p style={{ fontFamily: fonts.regular }} className="mb-1">
-        Stay up-to-date with my latest writings and courses.
-      </p>
+      <div className="pr-2">
+        <h3 style={{ fontFamily: fonts.bold }} className="mb-1 text-lg">
+          My Newsletter
+        </h3>
+        <p style={{ fontFamily: fonts.regular }} className="mb-1">
+          Stay up-to-date with my latest writings and courses.
+        </p>
+      </div>
 
       {/* email field start */}
       {!signup_success ? (

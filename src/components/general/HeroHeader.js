@@ -9,7 +9,7 @@ const HeroHeader = ({ highlighted }) => {
     <div className="h-full mt-6 flex flex-col justify-center items-center mb-4">
       <img
         className="block"
-        style={{ maxWidth: 50 }}
+        style={{ maxWidth: 75 }}
         src={mike_circle_logo}
         alt="mike logo"
       />
@@ -24,7 +24,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'home' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-base"
+          className="font-regular underline mr-4 text-lg sm:text-xl"
           to="/"
         >
           Home
@@ -33,7 +33,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'about' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-base"
+          className="font-regular underline mr-4 text-lg sm:text-xl"
           to="/about"
         >
           About
@@ -42,7 +42,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'posts' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-base"
+          className="font-regular underline mr-4 text-lg sm:text-xl"
           to="/blog"
         >
           Posts
@@ -51,7 +51,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'contact' ? fonts.bold : fonts.regular,
           }}
-          className={'font-regular underline mr-4 text-base'}
+          className={'font-regular underline mr-4 text-lg sm:text-xl'}
           to="/contact"
         >
           Contact
