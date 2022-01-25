@@ -1,10 +1,10 @@
 import React from 'react';
-import { ReactTypeformEmbed } from 'react-typeform-embed';
+// import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 import * as styles from '../pages/about-css.module.css';
 
 // static assets
-import contactIcon from '../../static/etc/images/pages/contact/edit.svg'
+import contactIcon from '../../static/etc/images/pages/contact/edit.svg';
 
 class TypeformButton extends React.Component {
   constructor(props) {
@@ -19,17 +19,21 @@ class TypeformButton extends React.Component {
   render() {
     return (
       <div>
-        <ReactTypeformEmbed
+        {/* <ReactTypeformEmbed
           popup={true}
           autoOpen={false}
           url={'https://michael2329.typeform.com/to/kpBMGz'}
           hideHeaders={false}
           hideFooter={false}
           style={{top: -1000}}
-          ref={(tf => this.typeformEmbed = tf) }/>
+          ref={(tf => this.typeformEmbed = tf) }/> */}
         <button className={styles.typeformButton} onClick={this.openForm}>
-        <img className={styles.contactIcon} src={contactIcon} alt="not loaded" />
-        Contact Mike
+          <img
+            className={styles.contactIcon}
+            src={contactIcon}
+            alt="not loaded"
+          />
+          Contact Mike
         </button>
       </div>
     );
