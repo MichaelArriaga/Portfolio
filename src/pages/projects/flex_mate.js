@@ -14,7 +14,7 @@ import flow_chart_small_screen_img from '../../../static/etc/images/project_imag
 import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
 // stylesheet
 import '../index-css.module.css';
-import HeroHeader from '../../components/general/HeroHeader';
+// import HeroHeader from '../../components/general/HeroHeader';
 
 const FlexMate = () => (
   <div className="w-full">

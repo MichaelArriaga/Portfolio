@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useContext, useRef } from 'react';
+import React, { useState } from 'react';
 import fonts from '../../constants/font_names';
 import { emailValid } from '../../utils/validations';
-import api from '../../api/v1/api';
-import { post_api_v1_newsletter_registrations_path } from '../../api/v1/routes';
+// import api from '../../api/v1/api';
+// import { post_api_v1_newsletter_registrations_path } from '../../api/v1/routes';
 import { sleep } from '../../utils/helpers';
 
 const EmailListSignupForm = () => {

@@ -9,11 +9,10 @@ import baseline_grid_img from '../../../static/etc/images/project_images/flex_ma
 import gutter_img from '../../../static/etc/images/project_images/flex_mate/16px-grid.png';
 import vertical_rhythm_img from '../../../static/etc/images/project_images/flex_mate/48px-grid.png';
 import typography_image from '../../../static/etc/images/project_images/flex_mate/typography-system.png';
-import flow_chart_small_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-small-screen.png';
-import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
+// import flow_chart_small_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-small-screen.png';
+// import flow_chart_large_screen_img from '../../../static/etc/images/project_images/flex_mate/flow-chart-large-screen.png';
 // stylesheet
 import '../index-css.module.css';
-import HeroHeader from '../../components/general/HeroHeader';
 
 const CrowdMint = () => (
   <div className="w-full">

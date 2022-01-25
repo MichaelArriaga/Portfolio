@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import fonts from '../constants/font_names';
+import React from 'react';
+// import fonts from '../constants/font_names';
 import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
 import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
 import github_icon from '../../static/etc/images/icons/logo-github.png';
