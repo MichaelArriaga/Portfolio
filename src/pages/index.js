@@ -120,7 +120,7 @@ const Index = () => {
           </div>
           {/* apps end */}
           {/* latest posts start */}
-          <div className="sm:max-w-xl mx-auto mb-4">
+          <div className="sm:max-w-xl mx-auto mb-8 sm:mb-16">
             <h3
               style={{ fontFamily: fonts.bold }}
               className="text-lg mb-3 sm:mb-5"

@@ -22,10 +22,12 @@ const Post = ({ title, date, post_tags }) => {
         ></div>
         <h3
           style={{ fontFamily: fonts.semiBold }}
-          className={'text-base text-gray-900 text-left leading-none'}
+          className={
+            'text-base sm:text-lg text-gray-900 text-left flex flex-wrap justify-start items-center'
+          }
         >
-          <span className="underline mr-1">{title}</span>{' '}
-          <span style={{ paddingLeft: 5, color: '#9F9F9F' }}>({date})</span>
+          <span className="underline mr-2">{title}</span>{' '}
+          <span style={{ color: '#9F9F9F' }}>({date})</span>
         </h3>
       </Link>
 
