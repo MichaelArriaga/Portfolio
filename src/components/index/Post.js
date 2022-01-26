@@ -27,7 +27,9 @@ const Post = ({ title, date, post_tags }) => {
           }
         >
           <span className="underline mr-2">{title}</span>{' '}
-          <span style={{ color: '#9F9F9F' }}>({date})</span>
+          <span style={{ color: '#9F9F9F' }} className="tracking-tighter">
+            ({date})
+          </span>
         </h3>
       </Link>
 

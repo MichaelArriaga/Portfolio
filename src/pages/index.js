@@ -68,20 +68,6 @@ const Index = () => {
               experience, I help startups win through user-centered design and
               the ability to wear multiple hats on a product team.
             </h3>
-
-            <h3
-              style={{ fontFamily: fonts.regular }}
-              className="text-lg sm:text-xl mb-2 text-gray-900"
-            >
-              Need help?{' '}
-              <a
-                href="mailto: m.arriaga.smb@gmail.com"
-                style={{ fontFamily: fonts.bold }}
-                className="text-gray-900 underline"
-              >
-                Send me an email
-              </a>{' '}
-            </h3>
           </div>
           {/* hero end */}
           {/* apps start */}

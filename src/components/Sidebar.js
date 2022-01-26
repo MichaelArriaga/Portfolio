@@ -1,5 +1,5 @@
 import React from 'react';
-// import fonts from '../constants/font_names';
+import fonts from '../constants/font_names';
 import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
 import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
 import github_icon from '../../static/etc/images/icons/logo-github.png';
@@ -47,6 +47,24 @@ const SideBar = ({ hide_socials }) => {
         </div>
       )}
       {/* socials end */}
+      <div className="py-2 flex flex-row justify-start items-center">
+        <h3
+          style={{ fontFamily: fonts.regular }}
+          className="text-base mb-2 text-gray-900 mr-2"
+        >
+          Need help?{' '}
+        </h3>
+
+        <h3 className="pb-2">
+          <a
+            href="mailto: m.arriaga.smb@gmail.com"
+            style={{ fontFamily: fonts.bold }}
+            className="text-gray-900 underline"
+          >
+            Send me an email
+          </a>{' '}
+        </h3>
+      </div>
     </div>
   );
 };
