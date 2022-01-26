@@ -132,11 +132,6 @@ const Index = () => {
               date="Jan 18, 2019"
               post_tags={['React', 'Redux']}
             />
-            <Post
-              title="How to return a 404 error in getServerSide.js"
-              date="Sept 26, 2021"
-              post_tags={['React', 'React Native']}
-            />
           </div>
           {/* latest posts end */}
           {/* <Footer /> */}
