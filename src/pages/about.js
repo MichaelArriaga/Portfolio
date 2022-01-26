@@ -1,5 +1,5 @@
 import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 import { Link } from 'gatsby';
 import React from 'react';
 // import TypeformButton from '../components/TypeformButton';
