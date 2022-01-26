@@ -1,7 +1,7 @@
 import React from 'react';
 import ReusableHelmet from '../../components/ReusableHelmet';
 import ProjectPageTemplate from '../../components/projects/ProjectPageTemplate';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 
 // static assets
 import mockupImg from '../../../static/etc/images/project_images/fresh_and_tumble/phone-mockup.png';

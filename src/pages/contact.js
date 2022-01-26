@@ -2,7 +2,7 @@ import React from 'react';
 // global components
 import TypeformButton from '../components/TypeformButton';
 // page components
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 // styling
 import * as styles from './contact-css.module.css';
 // static assets
