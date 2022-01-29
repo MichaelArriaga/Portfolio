@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import HeroHeader from '../components/general/HeroHeader';
 import Footer from '../components/Footer';
 import './blog-template-css.css';
+import './copy-code-btn-css.css';
 import fonts from '../constants/font_names';
 
 export default function Template({
