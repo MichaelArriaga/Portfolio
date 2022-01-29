@@ -2,13 +2,13 @@ import React from 'react';
 import '../components/layout.css';
 import Footer from '../components/Footer';
 import ReusableHelmet from '../components/ReusableHelmet';
-import { Link } from 'gatsby';
 import SideBar from '../components/Sidebar';
 
 import HeroHeader from '../components/general/HeroHeader';
 import fonts from '../constants/font_names';
 import ProjectItem from '../components/index/ProjectItem';
-import Post from '../components/index/Post';
+import LatestPostsLists from '../components/index/LatestPostsList';
+
 const Index = () => {
   return (
     <div className="">
@@ -34,7 +34,7 @@ const Index = () => {
           <div className="sm:max-w-xl mx-auto mb-3">
             <h3
               style={{ fontFamily: fonts.regular }}
-              className="text-lg sm:text-xl mb-2"
+              className="text-left text-lg sm:text-xl mb-2"
             >
               👋 <span className="pr-1"></span> Howdy!
             </h3>
@@ -45,28 +45,12 @@ const Index = () => {
               }}
               className="text-lg sm:text-xl mb-2 text-gray-900"
             >
-              I’m a{' '}
-              <Link
-                to="/blog/understanding-redux"
-                style={{
-                  color: '#C60212',
-                  fontFamily: fonts.semiBold,
-                }}
-                className="font-semibold"
-              >
-                Ruby on Rails
-              </Link>{' '}
-              and{' '}
-              <Link
-                to="/blog/understanding-redux"
-                style={{ fontFamily: fonts.semiBold }}
-                className="text-indigo-600"
-              >
-                React Native
-              </Link>{' '}
-              developer based in Seattle Washington. With over 7 years industry
-              experience, I help startups win through user-centered design and
-              the ability to wear multiple hats on a product team.
+              I'm a single founder and software engineer based in Seattle
+              Washington. With over 7 years industry experience, I help startups
+              win through user-centered design and the ability to wear multiple
+              hats on a product team. On occasion, I write about building
+              software in the context of my prefferred tools (Ruby on Rails and
+              React Native).
             </h3>
           </div>
           {/* hero end */}
@@ -106,19 +90,7 @@ const Index = () => {
           </div>
           {/* apps end */}
           {/* latest posts start */}
-          <div className="sm:max-w-xl mx-auto mb-8 sm:mb-16">
-            <h3
-              style={{ fontFamily: fonts.bold }}
-              className="text-lg mb-3 sm:mb-5"
-            >
-              Latest Posts
-            </h3>
-            <Post
-              title="Understanding Redux in 4 Steps"
-              date="Jan 18, 2019"
-              post_tags={['React', 'Redux']}
-            />
-          </div>
+          <LatestPostsLists />
           {/* latest posts end */}
           {/* <Footer /> */}
           <div className="sm:hidden">

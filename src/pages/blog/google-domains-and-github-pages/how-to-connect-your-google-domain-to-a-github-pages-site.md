@@ -1,8 +1,10 @@
 ---
+slug: '/blog/google-domains-and-github-pages'
 path: '/blog/google-domains-and-github-pages'
 date: '2018-02-14'
 title: 'How to connect your google domain to a github pages site'
 readtime: '30 min read'
+tags: 'Google Domains, Github Pages'
 ---
 
 <!--

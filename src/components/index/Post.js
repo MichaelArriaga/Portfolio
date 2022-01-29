@@ -2,13 +2,10 @@ import React from 'react';
 import fonts from '../../constants/font_names';
 import { Link } from 'gatsby';
 
-const Post = ({ title, date, post_tags }) => {
+const Post = ({ slug, title, date, post_tags }) => {
   return (
     <div className={'sm:max-w-xl mx-auto mb-3'}>
-      <Link
-        className="flex justify-start items-center mb-1"
-        to={'/blog/understanding-redux'}
-      >
+      <Link className="flex justify-start items-center mb-1" to={slug}>
         <div
           id="circle"
           style={{
@@ -34,11 +31,12 @@ const Post = ({ title, date, post_tags }) => {
       </Link>
 
       <div className={'flex flex-row justify-start items-center sm:pl-4'}>
-        {post_tags.length > 0
+        {post_tags && post_tags.length > 0
           ? post_tags.map((tag) => (
               // post tag start
               <Link
-                to={'/blog/understanding-redux'}
+                key={tag}
+                to={''}
                 style={{
                   paddingTop: 3,
                   paddingBottom: 3,
