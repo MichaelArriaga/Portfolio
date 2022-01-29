@@ -1,9 +1,5 @@
 import React from 'react';
 import '../components/layout.css';
-import Footer from '../components/Footer';
-import ReusableHelmet from '../components/ReusableHelmet';
-import SideBar from '../components/Sidebar';
-import HeroHeader from '../components/general/HeroHeader';
 import fonts from '../constants/font_names';
 import ProjectItem from '../components/index/ProjectItem';
 import LatestPostsLists from '../components/index/LatestPostsList';
@@ -75,11 +71,6 @@ const Index = () => {
       {/* latest posts start */}
       <LatestPostsLists />
       {/* latest posts end */}
-      {/* <Footer /> */}
-      <div className="sm:hidden">
-        <SideBar hide_socials={true} />
-      </div>
-      {/* right panel end */}
     </SidebarLayout>
   );
 };

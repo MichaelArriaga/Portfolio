@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useContext, useRef } from 'react';
-import SideBar from '../Sidebar';
+import React from 'react';
 import ReusableHelmet from '../ReusableHelmet';
 import HeroHeader from '../general/HeroHeader';
 import Footer from '../Footer';

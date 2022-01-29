@@ -1,12 +1,7 @@
 import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
-import Footer from '../components/Footer';
 import { Link } from 'gatsby';
 import React from 'react';
-// import TypeformButton from '../components/TypeformButton';
-import HeroHeader from '../components/general/HeroHeader';
-import ReusableHelmet from '../components/ReusableHelmet';
 import fonts from '../constants/font_names';
-import SideBar from '../components/Sidebar';
 import SidebarLayout from '../components/layouts/SidebarLayout';
 
 class About extends React.Component {

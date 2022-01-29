@@ -1,14 +1,6 @@
 import React from 'react';
-// page components
-import Post from '../components/index/Post';
-// styling
-import HeroHeader from '../components/general/HeroHeader';
-import ReusableHelmet from '../components/ReusableHelmet';
-import SideBar from '../components/Sidebar';
 import fonts from '../constants/font_names';
 import { Link, graphql, StaticQuery } from 'gatsby';
-import Footer from '../components/Footer';
-import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 import SidebarLayout from '../components/layouts/SidebarLayout';
 
 const Blog = () => (
