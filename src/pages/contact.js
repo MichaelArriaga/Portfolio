@@ -9,31 +9,46 @@ import * as styles from './contact-css.module.css';
 import envelopeImage from '../../static/etc/images/pages/contact/envelope.svg';
 import HeroHeader from '../components/general/HeroHeader';
 import ReusableHelmet from '../components/ReusableHelmet';
-
+import SideBar from '../components/Sidebar';
+import fonts from '../constants/font_names';
 const Contact = () => {
   return (
-    <div>
+    <div className="">
       <ReusableHelmet
-        title="Mike Arriaga Contact"
-        description="Mike Arriaga Contact"
+        title="Mike Arriaga About Me"
+        description="Mike Arriaga About Me"
       />
-      <HeroHeader highlighted="contact" />
-      <div className={styles.contactContainer}>
-        <img
-          src={envelopeImage}
-          className={styles.envelopeImage}
-          alt="not loaded"
-        />
-        <h1 className={styles.contactHeading}>Contact Mike</h1>
-        <h2 className={styles.contactSubHeading}>Need some help?</h2>
-        <p className={styles.contactCopy}>
-          Mike loves to help teams and individuals.
-        </p>
-        <p className={styles.contactCopy} style={{ marginBottom: '30px' }}>
-          Let's get in touch!
-        </p>
+      <div className="w-full sm:flex sm:flex-row sm:justify-center items-start">
+        {/* sidebar start */}
+        <div
+          style={{ width: 290 }}
+          className="hidden sm:block w-64 h-screen h-max mr-4 border-r border-gray-100"
+        >
+          <div style={{ marginTop: 150 }}></div>
+          <SideBar />
+        </div>
+        {/* sidebar end */}
 
-        <TypeformButton />
+        {/* right panel start */}
+        <div className="w-full sm:max-w-screen-sm mb-3">
+          <HeroHeader highlighted="contact" />
+          <div style={{ marginBottom: 150 }} className="">
+            <h2
+              style={{ fontFamily: fonts.bold }}
+              className={'text-xl font-bold mb-2'}
+            >
+              /Contact
+            </h2>
+
+            <p
+              style={{ fontFamily: fonts.regular }}
+              className={'text-lg sm:text-xl mb-2 text-gray-900'}
+            >
+              Contact me
+            </p>
+          </div>
+        </div>
+        {/* right panel end */}
       </div>
       <Footer />
     </div>

@@ -27,10 +27,10 @@ const Index = () => {
         {/* sidebar end */}
 
         {/* right panel start */}
-        <div className="">
+        <div className="w-full min-w-min sm:max-w-screen-sm mb-3">
           <HeroHeader highlighted={'home'} />
           {/* hero start */}
-          <div className="sm:max-w-xl mx-auto mb-3">
+          <div className="">
             <h3
               style={{ fontFamily: fonts.regular }}
               className="text-left text-lg sm:text-xl mb-2"
@@ -54,7 +54,7 @@ const Index = () => {
           </div>
           {/* hero end */}
           {/* apps start */}
-          <div className="sm:max-w-xl mx-auto">
+          <div className="sm:max-w-screen-sm mx-auto">
             <h3
               style={{ fontFamily: fonts.bold }}
               className="text-lg text-gray-900 mb-3 sm:mb-5"

@@ -35,17 +35,18 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
-  if (stage === 'build-html') {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /@typeform/,
-            loader: 'null-loader',
-          },
-        ],
-      },
-    });
-  }
-};
+// NO LONGER USES TYPEFORM
+// exports.onCreateWebpackConfig = ({ stage, actions }) => {
+//   if (stage === 'build-html') {
+//     actions.setWebpackConfig({
+//       module: {
+//         rules: [
+//           {
+//             test: /@typeform/,
+//             loader: 'null-loader',
+//           },
+//         ],
+//       },
+//     });
+//   }
+// };
