@@ -1,3 +1,7 @@
+p, h1, ul, li, h2, h3, ol {
+  color: #1F1F1F !important ;
+}
+
 .backArrow {
   display: block;
   margin-bottom: 20px;
@@ -24,7 +28,7 @@
 
 .blog-post-container {
   width: 100%;
-  max-width: 640px;
+  /* max-width: 640px; */
   height: auto;
   margin: auto;
   margin-top: 40px;
@@ -82,7 +86,7 @@
 .blog-post-container code {
   width: 700px;
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .blog-post-container img {
@@ -139,9 +143,9 @@
   }
 
   .blog-post-container p {
-    font-size: 14.18px;
-    line-height: 20px;
-    width: 90%;
+    font-size: 18px;
+    /* line-height: 20px; */
+    /* width: 90%; */
     margin-bottom: 20px;
   }
 

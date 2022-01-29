@@ -3,7 +3,6 @@ import '../components/layout.css';
 import Footer from '../components/Footer';
 import ReusableHelmet from '../components/ReusableHelmet';
 import SideBar from '../components/Sidebar';
-
 import HeroHeader from '../components/general/HeroHeader';
 import fonts from '../constants/font_names';
 import ProjectItem from '../components/index/ProjectItem';
@@ -48,9 +47,9 @@ const Index = () => {
               I'm a single founder and software engineer based in Seattle
               Washington. With over 7 years industry experience, I help startups
               win through user-centered design and the ability to wear multiple
-              hats on a product team. On occasion, I write about building
-              software in the context of my prefferred tools (Ruby on Rails and
-              React Native).
+              hats on a product team. On occasion, I write about my favorite
+              tools for building software products: Ruby on Rails and React
+              Native
             </h3>
           </div>
           {/* hero end */}

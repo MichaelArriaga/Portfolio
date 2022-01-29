@@ -114,10 +114,10 @@ Alternatively, we could substitute `post.categories` for something more specific
 In order for Isotope to know which elements it will use to trigger sorting our posts, we need to add a the class `.filter-button-group` to the parent container of our filter buttons but we haven't made that yet. Let's do that now:
 
 ```html
-  <div class="post-filters-container filter-button-group">
-    <a class="post-sort-btn" href="#/" </a>
-    <a class="post-sort-btn" href="#/" >All</a>
-  </div>
+<div class="post-filters-container filter-button-group">
+  <a class="post-sort-btn" href="#/"></a>
+  <a class="post-sort-btn" href="#/">All</a>
+</div>
 ```
 
 Here, we've made two `<a>` elements, one that will be act as template for our buttons which will be generated with some liquid syntax and a for loop, and the other being a generic sort button that will simply sort our posts by "All"
