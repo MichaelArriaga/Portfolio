@@ -7,156 +7,116 @@ import HeroHeader from '../components/general/HeroHeader';
 import ReusableHelmet from '../components/ReusableHelmet';
 import fonts from '../constants/font_names';
 import SideBar from '../components/Sidebar';
+import SidebarLayout from '../components/layouts/SidebarLayout';
 
 class About extends React.Component {
   render() {
     return (
-      <div className="">
-        <ReusableHelmet
-          title="Mike Arriaga About Me"
-          description="Mike Arriaga About Me"
-        />
-        <div className="w-full sm:flex sm:flex-row sm:justify-center items-start">
-          {/* sidebar start */}
-          <div
-            style={{ width: 290 }}
-            className="hidden sm:block w-64 h-screen h-max mr-4 border-r border-gray-100"
+      <SidebarLayout
+        meta_title="Mike Arriaga Portfolio About"
+        meta_description="Mike Arriaga Web Developer Portfolio About"
+        highlighted_hero_link={'about'}
+      >
+        <div style={{ marginBottom: 150 }} className="">
+          <img
+            className={'w-64 mx-auto mb-4'}
+            src={aboutimg}
+            alt="not loaded"
+          />
+          <p
+            style={{ fontFamily: fonts.regular }}
+            className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            <div style={{ marginTop: 150 }}></div>
-            <SideBar />
-          </div>
-          {/* sidebar end */}
+            <span style={{ fontFamily: fonts.bold }} className={'font-bold'}>
+              Mike
+            </span>{' '}
+            is a professional career musician and drum performance instructor
+            turned product engineer, entrepreneur and design thinker.{' '}
+          </p>
 
-          {/* right panel start */}
-          <div className="w-full min-w-min sm:max-w-screen-sm mb-3">
-            <HeroHeader highlighted="about" />
-            <div style={{ marginBottom: 150 }} className="">
-              <img
-                className={'w-64 mx-auto mb-4'}
-                src={aboutimg}
-                alt="not loaded"
-              />
-              <p
-                style={{ fontFamily: fonts.regular }}
-                className={'text-lg sm:text-xl mb-2 text-gray-900'}
-              >
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold'}
-                >
-                  Mike
-                </span>{' '}
-                is a professional career musician and drum performance
-                instructor turned product engineer, entrepreneur and design
-                thinker.{' '}
-              </p>
+          <p
+            style={{ fontFamily: fonts.regular }}
+            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+          >
+            <span style={{ fontFamily: fonts.bold }} className={'font-bold'}>
+              In 2014
+            </span>
+            , Mike decided to switch his focus from music to designing and
+            building{' '}
+            <span
+              style={{ fontFamily: fonts.bold }}
+              className={'font-bold text-gray-900'}
+            >
+              meaningful
+            </span>{' '}
+            software, and visual designs to pursue as a{' '}
+            <span
+              style={{ fontFamily: fonts.bold }}
+              className={'font-bold text-gray-900'}
+            >
+              career
+            </span>{' '}
+            Since then, he has aimed to build{' '}
+            <span
+              style={{ fontFamily: fonts.bold }}
+              className={'font-bold text-gray-900'}
+            >
+              projects that benefit every day people
+            </span>{' '}
+            with his latest project being a tool that helps{' '}
+            <span
+              style={{ fontFamily: fonts.bold }}
+              className={'font-bold text-gray-900'}
+            >
+              Amazon Flex workers
+            </span>{' '}
+            visualize their out of pocket expenses.{' '}
+            <Link
+              className={'font-bold text-gray-900 underline'}
+              to="/projects/flex_mate"
+            >
+              <span style={{ fontFamily: fonts.bold }} className={'font-bold'}>
+                CHECK IT OUT HERE
+              </span>
+            </Link>
+          </p>
 
-              <p
-                style={{ fontFamily: fonts.regular }}
-                className={'text-lg sm:text-xl mb-2 text-gray-900'}
-              >
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold'}
-                >
-                  In 2014
-                </span>
-                , Mike decided to switch his focus from music to designing and
-                building{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold text-gray-900'}
-                >
-                  meaningful
-                </span>{' '}
-                software, and visual designs to pursue as a{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold text-gray-900'}
-                >
-                  career
-                </span>{' '}
-                Since then, he has aimed to build{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold text-gray-900'}
-                >
-                  projects that benefit every day people
-                </span>{' '}
-                with his latest project being a tool that helps{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold text-gray-900'}
-                >
-                  Amazon Flex workers
-                </span>{' '}
-                visualize their out of pocket expenses.{' '}
-                <Link
-                  className={'font-bold text-gray-900 underline'}
-                  to="/projects/flex_mate"
-                >
-                  <span
-                    style={{ fontFamily: fonts.bold }}
-                    className={'font-bold'}
-                  >
-                    CHECK IT OUT HERE
-                  </span>
-                </Link>
-              </p>
+          <h2
+            style={{ fontFamily: fonts.bold }}
+            className={'text-xl font-bold mb-2'}
+          >
+            /Technology Agnostic
+          </h2>
 
-              <h2
-                style={{ fontFamily: fonts.bold }}
-                className={'text-xl font-bold mb-2'}
-              >
-                /Technology Agnostic
-              </h2>
+          <p
+            style={{ fontFamily: fonts.regular }}
+            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+          >
+            I am{' '}
+            <span style={{ fontFamily: fonts.bold }} className={'font-bold'}>
+              technology agnostic
+            </span>
+            , meaning that I do not pledge allegiance to any one design tool or
+            tech stack. Instead, I am hyper-focused on{' '}
+            <span style={{ fontFamily: fonts.bold }} className={'font-bold'}>
+              rapid learning and adapting
+            </span>{' '}
+            to many different frameworks, design tools, workflows and situations
+            using optimal learning strategies and{' '}
+            <span style={{ fontFamily: fonts.bold }} className={'font-bold'}>
+              intense study regimen
+            </span>
+            .
+          </p>
 
-              <p
-                style={{ fontFamily: fonts.regular }}
-                className={'text-lg sm:text-xl mb-2 text-gray-900'}
-              >
-                I am{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold'}
-                >
-                  technology agnostic
-                </span>
-                , meaning that I do not pledge allegiance to any one design tool
-                or tech stack. Instead, I am hyper-focused on{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold'}
-                >
-                  rapid learning and adapting
-                </span>{' '}
-                to many different frameworks, design tools, workflows and
-                situations using optimal learning strategies and{' '}
-                <span
-                  style={{ fontFamily: fonts.bold }}
-                  className={'font-bold'}
-                >
-                  intense study regimen
-                </span>
-                .
-              </p>
-
-              <h2
-                style={{ fontFamily: fonts.bold }}
-                className="text-lg sm:text-xl mb-2 text-gray-900"
-              >
-                Let’s talk about what I can do for your project!
-              </h2>
-
-              {/* <div style={{ width: '300px', margin: 'auto' }}>
-            <TypeformButton />
-          </div> */}
-            </div>
-          </div>
-          {/* right panel end */}
+          <h2
+            style={{ fontFamily: fonts.bold }}
+            className="text-lg sm:text-xl mb-2 text-gray-900"
+          >
+            Let’s talk about what I can do for your project!
+          </h2>
         </div>
-        <Footer />
-      </div>
+      </SidebarLayout>
     );
   }
 }
