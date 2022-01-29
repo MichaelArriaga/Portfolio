@@ -13,7 +13,7 @@ export default function Template({
   return (
     <div className="">
       <HeroHeader highlighted="posts" />
-      <div className="max-w-screen-lg mx-auto pt-12 py-2">
+      <div className="max-w-screen-md mx-auto pt-12 py-2">
         <div className="">
           <h1
             style={{ fontFamily: fonts.bold }}
