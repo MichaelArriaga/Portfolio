@@ -114,7 +114,9 @@ const Blog = ({
           <h2
             style={{ fontFamily: fonts.bold }}
             className={'text-xl font-bold mb-2'}
-          ></h2>
+          >
+            Posts ({edges.length})
+          </h2>
           {edges.length > 0
             ? edges.map((item) => {
                 let post = item.node.frontmatter;
