@@ -47,7 +47,7 @@ const HeroHeader = ({ highlighted }) => {
         >
           Posts
         </Link>
-        <Link
+        {/* <Link
           style={{
             fontFamily: highlighted === 'contact' ? fonts.bold : fonts.regular,
           }}
@@ -55,7 +55,7 @@ const HeroHeader = ({ highlighted }) => {
           to="/contact"
         >
           Contact
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

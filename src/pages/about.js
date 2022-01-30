@@ -15,7 +15,7 @@ class About extends React.Component {
       >
         <div style={{ marginBottom: 150 }} className="">
           <img
-            className={'w-64 mx-auto mb-4'}
+            className={'w-64 mx-auto my-10'}
             src={aboutimg}
             alt="not loaded"
           />
