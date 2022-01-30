@@ -22,9 +22,8 @@ const Index = () => {
         <h3
           style={{
             fontFamily: fonts.regular,
-            lineHeight: 1.3,
           }}
-          className="text-lg sm:text-xl mb-2 text-gray-900"
+          className="text-lg sm:text-xl mb-2 text-gray-900 leading-none"
         >
           I'm a Software Engineer and Single Founder based in Seattle
           Washington. I help startups win through user-centered design and the

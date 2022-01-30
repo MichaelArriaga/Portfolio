@@ -23,31 +23,44 @@ class About extends React.Component {
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Mike is a <Bold>Product Engineer</Bold> and{' '}
-            <Bold>Single Founder</Bold> Based in <Bold>Seattle Wa</Bold>. After
-            hours, he's a Professional Multi-Instrumentalist{' '}
-            <Bold>(Drumset, Bass, Guitar and Clarinet)</Bold>.
+            Mike is a Product Engineer and Single Founder Based in Seattle Wa.
+            After hours, he's a Professional Musician (Drumset and Bass Guitar).
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Previously, Mike was{' '}
-            <Bold>CTO and Co-Founder of Fresh And Tumble, an</Bold>{' '}
+            Previously, Mike was CTO and Co-Founder of{' '}
             <Link
               style={{ fontFamily: fonts.bold }}
               to="/projects/fresh_and_tumble"
               className="underline"
             >
-              Uber-style Delivery App for Laundry
+              Fresh And Tumble
             </Link>
+            , an Uber-style Delivery App for Laundry.
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Mike helps startups win with <Bold>user-centered design</Bold> and
-            the ability to wear multiple hats in a product team.
+            In 2018, Mike gained some notoriety for creating{' '}
+            <Link
+              style={{ fontFamily: fonts.bold }}
+              to="/projects/flex_mate"
+              className="underline"
+            >
+              Flex Mate
+            </Link>
+            , A free open source tool for Amazon Flex Drivers to estimate often
+            unaccounted for expenses.
+          </p>
+          <p
+            style={{ fontFamily: fonts.regular }}
+            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+          >
+            Mike helps startups win with user-centered design and the ability to
+            wear multiple hats in a product team.
           </p>
         </div>
       </SidebarLayout>
