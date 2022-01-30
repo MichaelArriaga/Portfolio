@@ -13,6 +13,10 @@ const Blog = ({
   const [selected_tag, setSelectedTag] = useState('All');
 
   useEffect(() => {
+    setCategoryTagsFromQuery();
+  }, []);
+
+  const setCategoryTagsFromQuery = () => {
     let tags_to_set = ['All'];
     if (edges.length > 0) {
       edges.forEach((edge) => {
@@ -23,10 +27,17 @@ const Blog = ({
       });
     }
 
+    // sort category tags by first character
+    tags_to_set.sort((a, b) => {
+      console.log(`comparing ${a[0]} and ${b[0]}`);
+      return a[0] - b[0];
+    });
+
     if (tags_to_set.length > 0) {
-      setCategoryTags(tags_to_set);
+      // removes duplicates (Array.from(new Set(my_array)))
+      setCategoryTags(Array.from(new Set(tags_to_set)));
     }
-  }, []);
+  };
 
   const postIncludedInFilter = (tags) => {
     let included = false;
@@ -103,9 +114,7 @@ const Blog = ({
           <h2
             style={{ fontFamily: fonts.bold }}
             className={'text-xl font-bold mb-2'}
-          >
-            /Posts
-          </h2>
+          ></h2>
           {edges.length > 0
             ? edges.map((item) => {
                 let post = item.node.frontmatter;

@@ -15,7 +15,7 @@ Here's a preview of what we can expect this guide to help us accomplish:
 
 First off, we need to add the Isotope library and it's depencies to our project. I prefer to link my Javascript files inside the footer of my Jekyll partial:
 
-```
+```html
 <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script>
 ```
@@ -28,12 +28,12 @@ _project/\_includes/footer.html_
 
 At the very top of our our Jekyll posts we have our **front matter** which by default allows us to specify the category of our post. This is the data that we will use to tell Isotope what to filter our posts by.
 
-```
+```yaml
 ---
 layout: post
-title:  "Sample Post"
+title: 'Sample Post'
 author: Michael Arriaga
-date:   2018-01-14 20:43:28 -0800
+date: 2018-01-14 20:43:28 -0800
 categories: guides
 comments: true
 ---

@@ -33,14 +33,14 @@ Github Pages requires all of our project pages to be served from a branch called
 
 Let's quicky open up our terminal and create a new branch called `gh-pages`
 
-```
+```bash
 $ git checkout -b gh-pages
 >Switched to a new branch 'gh-pages'
 ```
 
 Next, let's push our new branch up to Github.
 
-```
+```bash
 git push --set-upstream origin gh-pages
 ```
 
@@ -62,7 +62,7 @@ We have to create a file called `CNAME` that has no file extension and is in all
 
 Back at our site's root directory let's create that file now. (If you are hosting a project site you must create your CNAME file on your `gh-pages` branch).
 
-```
+```bash
 #Our CNAME file
 www.ourdomain.com
 ourdomain.com
@@ -72,7 +72,7 @@ ourdomain.com
 
 Now that our CNAME file has been created let's commit and push our changes to GitHub.
 
-```
+```bash
 git add -A
 git commit -m "Add a CNAME file"
 git push
@@ -94,14 +94,14 @@ According to [Github Pages official documentation](https://help.github.com/artic
 
 They use the following ip addresses:
 
-```
+```bash
 192.30.252.153
 192.30.252.154
 ```
 
 Let's add them now.
 
-```
+```bash
 #Name           Type   DATA
 @               A      192.30.252.153
 @               A      192.30.252.154
@@ -111,7 +111,7 @@ _Note: Google domains may say "This record is in use" this is usually fine and o
 
 Finally, We want to create a third record `www` with a type of `CNAME` that has a data value of our `username.github.io`
 
-```
+```bash
 www              A      username.github.io
 ```
 

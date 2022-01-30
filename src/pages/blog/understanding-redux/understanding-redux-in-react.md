@@ -4,7 +4,7 @@ path: '/blog/understanding-redux'
 date: '2019-01-18'
 title: 'Understanding Redux in 4 Steps'
 readtime: '5 min read'
-tags: 'React, React-Redux'
+tags: 'React, React Redux'
 ---
 
 ### REDUX in 4 STEPS

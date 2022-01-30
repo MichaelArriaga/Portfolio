@@ -11,7 +11,7 @@ tags: 'Gatsby.js'
 2. Create the markdown file that will be the post. `touch src/pages/blog/how-to-use-this-plugin/how-to-use-this-plugin.md`
 3. Fill out the front matter of your post with the appropriate information:
 
-```
+```yaml
 //post.md
 ___
 path: "/blog/animate-blog-posts-with-isotope"

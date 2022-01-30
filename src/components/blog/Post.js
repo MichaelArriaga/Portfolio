@@ -33,7 +33,7 @@ const Post = ({ title, date, slug, post_tags }) => {
                   paddingRight: 6,
                   backgroundColor: '#A0EDE4',
                 }}
-                className="px-1 rounded bg-cyan-400 mr-2 mb-6"
+                className="px-1 rounded bg-cyan-400 mr-2 mb-3"
               >
                 <h3
                   style={{ fontFamily: fonts.semiBold }}
