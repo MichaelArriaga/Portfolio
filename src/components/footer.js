@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
 
       <div className="pl-2 flex flex-row justify-start items-center">
-        <a
+        {/* <a
           style={{ width: 20 }}
           className={'mr-2'}
           href="https://google.com"
@@ -28,7 +28,7 @@ const Footer = () => (
           rel="noopener noreferrer"
         >
           <img src={twitter_icon} alt="not loaded" />
-        </a>
+        </a> */}
         <a
           style={{ width: 20 }}
           className={'mr-2'}

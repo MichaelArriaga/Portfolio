@@ -30,14 +30,14 @@ const SidebarLayout = ({
             <EmailListSignupForm />
             {/* socials start */}
             <div className="flex flex-row justify-start items-center">
-              <a href="https://google.com" target="_blank" rel="noreferrer">
+              {/* <a href="https://google.com" target="_blank" rel="noreferrer">
                 <img
                   src={twitter_icon}
                   alt=""
                   style={{ width: 25 }}
                   className="mr-2"
                 />
-              </a>
+              </a> */}
               <a href="https://google.com" target="_blank" rel="noreferrer">
                 <img
                   src={linkedin_icon}
