@@ -17,7 +17,7 @@ const Index = () => {
           style={{ fontFamily: fonts.regular }}
           className="text-left text-lg sm:text-xl mb-2"
         >
-          👋 <span className="pr-1"></span> Howdy!
+          Hey! <span className="pl-1"></span> 👋
         </h3>
         <h3
           style={{
@@ -26,11 +26,11 @@ const Index = () => {
           }}
           className="text-lg sm:text-xl mb-2 text-gray-900"
         >
-          I'm a single founder and software engineer based in Seattle
-          Washington. With over 7 years industry experience, I help startups win
-          through user-centered design and the ability to wear multiple hats on
-          a product team. On occasion, I write about my favorite tools for
-          building software products: Ruby on Rails and React Native
+          I'm a Software Engineer and Single Founder based in Seattle
+          Washington. I help startups win through user-centered design and the
+          ability to wear multiple hats on a product team. On occasion, I write
+          about my favorite tools for building software products: Ruby on Rails
+          and React Native.
         </h3>
       </div>
       {/* apps start */}
