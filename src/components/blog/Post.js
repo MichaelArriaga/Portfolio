@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext, useRef } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import fonts from '../../constants/font_names';
 

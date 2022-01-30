@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fonts from '../constants/font_names';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import SidebarLayout from '../components/layouts/SidebarLayout';
 import Post from '../components/blog/Post';
 
@@ -31,8 +31,8 @@ const Blog = ({
   const postIncludedInFilter = (tags) => {
     let included = false;
     if (
-      selected_tag == '' ||
-      selected_tag == 'All' ||
+      selected_tag === '' ||
+      selected_tag === 'All' ||
       tags.includes(selected_tag)
     ) {
       included = true;
@@ -62,7 +62,7 @@ const Blog = ({
                     <button
                       key={tag}
                       onClick={() => {
-                        if (selected_tag != tag) {
+                        if (selected_tag !== tag) {
                           setSelectedTag(tag);
                         } else {
                           setSelectedTag('All');

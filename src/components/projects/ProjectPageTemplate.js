@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import fonts from '../../constants/font_names';
 import HeroHeader from '../general/HeroHeader';
