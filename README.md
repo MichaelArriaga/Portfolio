@@ -12,12 +12,12 @@ Importing tailwind is not required in a gatsby project.
 #### Hardrebuild project
 
 ```bash
-  rm -rf node_modules &&
-  rm -rf public &&
-  rm -rf .cache &&
-  rm -rf package-lock.json &&
-  npm i &&
-  npm start
+rm -rf node_modules &&
+rm -rf public &&
+rm -rf .cache &&
+rm -rf package-lock.json &&
+npm i &&
+npm start
 ```
 
 ### Workflow for creating blog posts
