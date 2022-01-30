@@ -1,22 +1,11 @@
-import React from 'react';
-import fonts from '../../constants/font_names';
+import React, { useEffect, useState, useContext, useRef } from 'react';
 import { Link } from 'gatsby';
+import fonts from '../../constants/font_names';
 
-const Post = ({ slug, title, date, post_tags }) => {
+const Post = ({ title, date, slug, post_tags }) => {
   return (
-    <div className={'sm:max-w-xl mx-auto mb-3'}>
+    <div className={'sm:max-w-xl '}>
       <Link className="flex justify-start items-center mb-1" to={slug}>
-        <div
-          id="circle"
-          style={{
-            width: 8,
-            height: 8,
-            borderRadius: 50,
-            backgroundColor: '#1F1F1F',
-            marginRight: 10,
-          }}
-          className="hidden sm:block"
-        ></div>
         <h3
           style={{ fontFamily: fonts.semiBold }}
           className={
@@ -30,13 +19,13 @@ const Post = ({ slug, title, date, post_tags }) => {
         </h3>
       </Link>
 
-      <div className={'flex flex-row justify-start items-center sm:pl-4'}>
+      <div className={'flex flex-row justify-start items-center'}>
         {post_tags && post_tags.length > 0
           ? post_tags.map((tag) => (
               // post tag start
-              <Link
+              <button
+                disabled={true}
                 key={tag}
-                to={'/blog'}
                 style={{
                   paddingTop: 3,
                   paddingBottom: 3,
@@ -44,7 +33,7 @@ const Post = ({ slug, title, date, post_tags }) => {
                   paddingRight: 6,
                   backgroundColor: '#A0EDE4',
                 }}
-                className="px-1 rounded bg-cyan-400 mr-2"
+                className="px-1 rounded bg-cyan-400 mr-2 mb-6"
               >
                 <h3
                   style={{ fontFamily: fonts.semiBold }}
@@ -52,7 +41,7 @@ const Post = ({ slug, title, date, post_tags }) => {
                 >
                   {tag}
                 </h3>
-              </Link>
+              </button>
               // post tag end
             ))
           : null}
@@ -60,5 +49,4 @@ const Post = ({ slug, title, date, post_tags }) => {
     </div>
   );
 };
-
 export default Post;

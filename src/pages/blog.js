@@ -1,16 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import fonts from '../constants/font_names';
-import { Link, graphql, StaticQuery } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import SidebarLayout from '../components/layouts/SidebarLayout';
-import category_tags from '../constants/category_tags';
+import Post from '../components/blog/Post';
 
-const Blog = () => {
-  // const [tags, setTags] = useState(category_tags);
-  const [selected_tag, setSelectedTag] = useState('');
+const Blog = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const [category_tags, setCategoryTags] = useState([]);
+  const [selected_tag, setSelectedTag] = useState('All');
 
   useEffect(() => {
-    console.log('selected_tag', selected_tag);
-  }, [selected_tag]);
+    let tags_to_set = ['All'];
+    if (edges.length > 0) {
+      edges.forEach((edge) => {
+        let tags = edge.node.frontmatter.tags.split(',');
+        tags.forEach((tag) => {
+          tags_to_set.push(tag);
+        });
+      });
+    }
+
+    if (tags_to_set.length > 0) {
+      setCategoryTags(tags_to_set);
+    }
+  }, []);
+
+  const postIncludedInFilter = (tags) => {
+    let included = false;
+    if (
+      selected_tag == '' ||
+      selected_tag == 'All' ||
+      tags.includes(selected_tag)
+    ) {
+      included = true;
+    }
+    return included;
+  };
 
   return (
     <SidebarLayout
@@ -34,7 +62,11 @@ const Blog = () => {
                     <button
                       key={tag}
                       onClick={() => {
-                        setSelectedTag(tag);
+                        if (selected_tag != tag) {
+                          setSelectedTag(tag);
+                        } else {
+                          setSelectedTag('All');
+                        }
                       }}
                       style={{
                         backgroundColor:
@@ -74,104 +106,23 @@ const Blog = () => {
           >
             /Posts
           </h2>
-          {/* post lists start */}
-          <StaticQuery
-            query={graphql`
-          query {
-            allMarkdownRemark(
-              sort: { order: DESC, fields: [frontmatter___date] }
-              limit: 100
-            ) {
-              edges {
-                node {
-                  id
-                  excerpt(pruneLength: 250)
-                  frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
-                    slug
-                    title
-                    tags
-                  }
+          {edges.length > 0
+            ? edges.map((item) => {
+                let post = item.node.frontmatter;
+                let post_tags = post.tags.split(',');
+                if (postIncludedInFilter(post_tags)) {
+                  return (
+                    <Post
+                      key={post.title}
+                      title={post.title}
+                      date={post.date}
+                      slug={post.slug}
+                      post_tags={post_tags}
+                    />
+                  );
                 }
-              }
-            }
-          }
-        `}
-            render={(data) => {
-              const posts = data.allMarkdownRemark.edges;
-              return (
-                <>
-                  {posts.length > 0
-                    ? posts.map((item) => {
-                        let post = item.node.frontmatter;
-                        let key = post.title;
-                        let title = post.title;
-                        let date = post.date;
-                        let slug = post.slug;
-                        let post_tags = post.tags.split(',');
-
-                        return (
-                          <div key={key} className={'sm:max-w-xl '}>
-                            <Link
-                              className="flex justify-start items-center mb-1"
-                              to={slug}
-                            >
-                              <h3
-                                style={{ fontFamily: fonts.semiBold }}
-                                className={
-                                  'text-base sm:text-lg text-gray-900 text-left flex flex-wrap justify-start items-center'
-                                }
-                              >
-                                <span className="underline mr-2">{title}</span>{' '}
-                                <span
-                                  style={{ color: '#9F9F9F' }}
-                                  className="tracking-tighter"
-                                >
-                                  ({date})
-                                </span>
-                              </h3>
-                            </Link>
-
-                            <div
-                              className={
-                                'flex flex-row justify-start items-center'
-                              }
-                            >
-                              {post_tags && post_tags.length > 0
-                                ? post_tags.map((tag) => (
-                                    // post tag start
-                                    <Link
-                                      key={tag}
-                                      to={''}
-                                      style={{
-                                        paddingTop: 3,
-                                        paddingBottom: 3,
-                                        paddingLeft: 6,
-                                        paddingRight: 6,
-                                        backgroundColor: '#A0EDE4',
-                                      }}
-                                      className="px-1 rounded bg-cyan-400 mr-2 mb-6"
-                                    >
-                                      <h3
-                                        style={{ fontFamily: fonts.semiBold }}
-                                        className="text-xs text-gray-900"
-                                      >
-                                        {tag}
-                                      </h3>
-                                    </Link>
-                                    // post tag end
-                                  ))
-                                : null}
-                            </div>
-                          </div>
-                        );
-                      })
-                    : null}
-                </>
-              );
-            }}
-          />
-          {/* post lists end */}
+              })
+            : null}
         </div>
       </div>
     </SidebarLayout>
@@ -179,3 +130,25 @@ const Blog = () => {
 };
 
 export default Blog;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 100
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            tags
+          }
+        }
+      }
+    }
+  }
+`;
