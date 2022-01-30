@@ -24,7 +24,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'home' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-lg sm:text-base"
+          className="font-regular underline mr-3 text-lg sm:text-base"
           to="/"
         >
           Home
@@ -33,7 +33,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'about' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-lg sm:text-base"
+          className="font-regular underline mr-3 text-lg sm:text-base"
           to="/about"
         >
           About
@@ -42,7 +42,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'posts' ? fonts.bold : fonts.regular,
           }}
-          className="font-regular underline mr-4 text-lg sm:text-base"
+          className="font-regular underline mr-3 text-lg sm:text-base"
           to="/blog"
         >
           Posts
@@ -51,7 +51,7 @@ const HeroHeader = ({ highlighted }) => {
           style={{
             fontFamily: highlighted === 'contact' ? fonts.bold : fonts.regular,
           }}
-          className={'font-regular underline mr-4 text-lg sm:text-base'}
+          className={'font-regular underline mr-3 text-lg sm:text-base'}
           to="/contact"
         >
           Contact
