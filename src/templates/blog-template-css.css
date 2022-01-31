@@ -22,6 +22,16 @@ body > *:last-child {
   text-decoration: underline !important;
 }
 
+.blog-post-container > ol > a {
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
+.blog-post-container a {
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
 .blog-post-container > a.absent {
   color: #cc0000; 
 }

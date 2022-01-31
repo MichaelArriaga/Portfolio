@@ -28,10 +28,11 @@ const Blog = ({
     }
 
     // sort category tags by first character
-    tags_to_set.sort((a, b) => {
-      console.log(`comparing ${a[0]} and ${b[0]}`);
-      return a[0] - b[0];
-    });
+    // tags_to_set.sort((a, b) => {
+    //   console.log(`comparing ${a[0]} and ${b[0]}`);
+    //   return a - b;
+    // });
+
     console.log(tags_to_set);
 
     if (tags_to_set.length > 0) {
@@ -111,7 +112,7 @@ const Blog = ({
         {/* tags section end */}
 
         {/* posts section start */}
-        <div>
+        <div style={{ height: 500 }} className="overflow-y-scroll">
           <h2
             style={{ fontFamily: fonts.bold }}
             className={'text-lg font-bold mb-2'}
