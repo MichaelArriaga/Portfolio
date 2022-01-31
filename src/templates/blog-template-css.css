@@ -13,7 +13,13 @@ body > *:last-child {
   margin-bottom: 0 !important; } */
 
 .blog-post-container > a {
-  color: #4183C4; 
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
+.blog-post-container > p > a {
+  color: blue !important;
+  text-decoration: underline !important;
 }
 
 .blog-post-container > a.absent {

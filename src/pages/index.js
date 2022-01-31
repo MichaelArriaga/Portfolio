@@ -23,7 +23,7 @@ const Index = () => {
           style={{
             fontFamily: fonts.regular,
           }}
-          className="text-lg sm:text-xl mb-2 text-gray-900 leading-none"
+          className="text-lg sm:text-xl mb-2 text-gray-900"
         >
           I'm a Software Engineer and Single Founder based in Seattle
           Washington. I help startups win through user-centered design and the
