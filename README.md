@@ -28,12 +28,14 @@ npm start
 
 ```
 //post.md
-___
-path: "/blog/animate-blog-posts-with-isotope"
-date: "2017-11-07"
-title: "Animate and Filter Your Blog Posts with Isotope"
-readtime: "10 min read"
-___
+---
+slug: '/blog/the-title-of-my-post'
+path: '/blog/the-title-of-my-post'
+date: '2020-09-28'
+title: 'Title Of My Post'
+readtime: '15 min read'
+tags: 'Tag1, Tag2, Tag3'
+---
 ```
 
 3. Write the body of your post, and remember to place all of the images that you are going to reference in your post in the current directory and reference them using `![alt](image.png)`

@@ -4,7 +4,7 @@ path: '/blog/post-flow-in-gatsby'
 date: '2018-03-07'
 title: 'Workflow for Creating Posts in Gatsby'
 readtime: '2 min read'
-tags: 'Gatsby.js'
+tags: 'Gatsby'
 ---
 
 1. Create a directory in `src/pages/blog` for your post **make sure that the name of this directory is only a few words otherwise it will return graphql /path error** This directory will be used for our post but also it will contain all of the image assets inside the post
