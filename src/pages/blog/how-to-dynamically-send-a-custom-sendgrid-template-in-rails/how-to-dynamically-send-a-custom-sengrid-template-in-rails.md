@@ -2,7 +2,7 @@
 slug: '/blog/how-to-dynamically-send-a-custom-sengrid-template-in-rails'
 path: '/blog/how-to-dynamically-send-a-custom-sengrid-template-in-rails'
 date: '2021-05-11'
-title: 'How to Dynamically Send a Custom Sendgrid Template In Rails'
+title: 'How to: Dynamically Send a Custom Sendgrid Template In Rails'
 readtime: '40 min read'
 tags: 'Rails, Sendgrid'
 ---
