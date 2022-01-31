@@ -23,14 +23,15 @@ class About extends React.Component {
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Mike is a Product Engineer and Single Founder Based in Seattle Wa.
-            After hours, he's a Professional Musician (Drumset and Bass Guitar).
+            Mike is a <Bold>Product Engineer</Bold> and{' '}
+            <Bold>Single Founder</Bold> Based in Seattle Wa. After hours, he's a
+            Professional Musician (Drumset and Bass Guitar).
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Previously, Mike was CTO and Co-Founder of{' '}
+            Previously, Mike was <Bold>CTO and Co-Founder</Bold> of{' '}
             <Link
               style={{ fontFamily: fonts.bold }}
               to="/projects/fresh_and_tumble"
@@ -44,7 +45,7 @@ class About extends React.Component {
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            In 2018, Mike gained some notoriety for creating{' '}
+            <Bold>In 2018</Bold>, Mike gained some notoriety for creating{' '}
             <Link
               style={{ fontFamily: fonts.bold }}
               to="/projects/flex_mate"
@@ -52,15 +53,29 @@ class About extends React.Component {
             >
               Flex Mate
             </Link>
-            , A free open source tool for Amazon Flex Drivers to estimate often
-            unaccounted for expenses.
+            , A free open source tool for <Bold>Amazon Flex Drivers</Bold> to
+            estimate often unaccounted for expenses.
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Mike helps startups win through user-centered design and the ability
-            to wear multiple hats in a product team.
+            Mike <Bold>helps startups win through user-centered design</Bold>{' '}
+            and the ability to wear multiple hats in a product team.
+          </p>
+
+          <p
+            style={{ fontFamily: fonts.regular }}
+            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+          >
+            Looking for help with your project?{' '}
+            <a
+              href="mailto:m.arriaga.smb@gmail.com"
+              style={{ fontFamily: fonts.bold }}
+              className="underline"
+            >
+              Send Mike an Email
+            </a>
           </p>
         </div>
       </SidebarLayout>
