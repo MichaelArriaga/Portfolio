@@ -14,7 +14,7 @@ const LatestPostList = () => {
           query {
             allMarkdownRemark(
               sort: { order: DESC, fields: [frontmatter___date] }
-              limit: 5
+              limit: 3
             ) {
               edges {
                 node {
