@@ -8,8 +8,8 @@ import SidebarLayout from '../components/layouts/SidebarLayout';
 const Index = () => {
   return (
     <SidebarLayout
-      meta_title="Mike Arriaga Portfolio Home"
-      meta_description="Mike Arriaga Web Developer Portfolio Home"
+      meta_title="Mike Arriaga, Seattle Product Engineer - Home"
+      meta_description="Mike Arriaga, Seattle Product Engineer Web Developer - Home"
       highlighted_hero_link={'home'}
     >
       <div className="sm:max-w-screen-sm mx-auto">

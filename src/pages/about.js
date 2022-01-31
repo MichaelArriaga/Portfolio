@@ -9,8 +9,8 @@ class About extends React.Component {
   render() {
     return (
       <SidebarLayout
-        meta_title="Mike Arriaga Portfolio About"
-        meta_description="Mike Arriaga Web Developer Portfolio About"
+        meta_title="Mike Arriaga, Seattle Product Engineer - About"
+        meta_description="Mike Arriaga, Seattle Product Engineer - About"
         highlighted_hero_link={'about'}
       >
         <div style={{ marginBottom: 150 }} className="">
