@@ -117,7 +117,7 @@ const Blog = ({
             style={{ fontFamily: fonts.bold }}
             className={'text-lg font-bold mb-2'}
           >
-            Posts ({edges.length})
+            Posts (43)
           </h2>
           {edges.length > 0
             ? edges.map((item) => {

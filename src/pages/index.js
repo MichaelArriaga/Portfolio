@@ -44,7 +44,7 @@ const Index = () => {
           title="CrowdMint"
           underline_color="#3661F2"
           underline_width={125}
-          time_range="2022"
+          time_range="2022 - Present"
           description="Track your Crowdsource earnings goals from multiple sources
       automatically."
           route="/projects/crowd_mint"
