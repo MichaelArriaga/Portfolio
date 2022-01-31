@@ -60,7 +60,7 @@ const Blog = ({
     >
       <div style={{ marginBottom: 150 }} className="">
         {/* tags section start */}
-        <div className={'mb-4 py-2 border-b border-gray-200'}>
+        <div className={'mb-2 py-2'}>
           <h2
             style={{ fontFamily: fonts.bold }}
             className={'text-md sm:text-base font-bold mb-2'}
@@ -114,14 +114,14 @@ const Blog = ({
         <div>
           <h2
             style={{ fontFamily: fonts.bold }}
-            className={'text-xl font-bold mb-2'}
+            className={'text-lg font-bold mb-2'}
           >
             Posts ({edges.length})
           </h2>
           {edges.length > 0
             ? edges.map((item) => {
                 let post = item.node.frontmatter;
-                let post_tags = post.tags.split(',');
+                let post_tags = post.tags.split(', ');
                 if (postIncludedInFilter(post_tags)) {
                   return (
                     <Post
