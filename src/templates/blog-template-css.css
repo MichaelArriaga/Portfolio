@@ -314,6 +314,24 @@ body > *:last-child {
     margin-top: 0; 
   }
 
+ .blog-post-container > ol {
+    list-style: decimal !important;
+  }
+
+ .blog-post-container > ul {
+    list-style: disc !important;
+    margin-left: 30px;
+  }
+
+ .blog-post-container > ol > li {
+    margin-bottom: 8px;
+  }
+
+ .blog-post-container > ul > li {
+    margin-bottom: 8px;
+  }
+
+
  .blog-post-container > ul :last-child, ol :last-child {
     margin-bottom: 0; 
   }

@@ -20,7 +20,7 @@ const Blog = ({
     let tags_to_set = ['All'];
     if (edges.length > 0) {
       edges.forEach((edge) => {
-        let tags = edge.node.frontmatter.tags.split(',');
+        let tags = edge.node.frontmatter.tags.split(', ');
         tags.forEach((tag) => {
           tags_to_set.push(tag);
         });
@@ -32,10 +32,11 @@ const Blog = ({
       console.log(`comparing ${a[0]} and ${b[0]}`);
       return a[0] - b[0];
     });
+    console.log(tags_to_set);
 
     if (tags_to_set.length > 0) {
-      // removes duplicates (Array.from(new Set(my_array)))
-      setCategoryTags(Array.from(new Set(tags_to_set)));
+      // removes duplicates Array.from([...new Set(my_array)])
+      setCategoryTags(Array.from([...new Set(tags_to_set)]));
     }
   };
 
