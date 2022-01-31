@@ -59,8 +59,8 @@ class About extends React.Component {
             style={{ fontFamily: fonts.regular }}
             className={'text-lg sm:text-xl mb-2 text-gray-900'}
           >
-            Mike helps startups win with user-centered design and the ability to
-            wear multiple hats in a product team.
+            Mike helps startups win through user-centered design and the ability
+            to wear multiple hats in a product team.
           </p>
         </div>
       </SidebarLayout>
