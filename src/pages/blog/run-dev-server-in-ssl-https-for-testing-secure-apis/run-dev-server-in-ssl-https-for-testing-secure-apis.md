@@ -59,7 +59,7 @@ The browser will say that it doesn't trust the site. Go to advanced and then 'co
 
 Hopefully all of that worked.
 
-## Test local server in not HTTPS
+## Test local server in HTTP Only
 
 `rails s -b 0.0.0.0`
 
