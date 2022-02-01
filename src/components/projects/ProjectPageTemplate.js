@@ -167,9 +167,7 @@ const ProjectPageTemplate = ({
           className={
             'text-xl sm:mb-2 mb-2 tracking-tight text-center sm:text-xl sm:text-left'
           }
-        >
-          Value System
-        </h2>
+        ></h2>
 
         <ul className={'list-disc mb-4 sm:pl-6 '}>
           <div className="mx-auto flex flex-col justify-center items-center sm:items-start">
