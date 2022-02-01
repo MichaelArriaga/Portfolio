@@ -23,9 +23,9 @@ const CrowdMint = () => (
       title="CrowdMint"
       project_date="2022 - Current"
       try_url={''}
-      description="CrowdMint is a browser extension for tracking earnings across multiple task-based earnings platforms like Amazon Mechanical Turk, Prolific, Task Rabbit e.t.c. CrowdMint aims to make it easy to track and set goals while earning across multiple sites. This makes it easier to achieve daily/weekly/monthly goals while jumping back and forth between multiple platforms in a single day."
+      description="CrowdMint is a browser extension for tracking earnings across multiple task-based earnings platforms like Amazon Mechanical Turk, Prolific, Task Rabbit e.t.c. CrowdMint aims to make it easy to track and set goals while earning across multiple sources, making it easier to achieve daily/weekly/monthly goals while jumping back and forth between multiple platforms"
       scope_array={['Browser Extension']}
-      core_tech_array={['React']}
+      core_tech_array={['React.js']}
       apps_used_array={['Adobe XD', 'VIM']}
       features_array={['Earnings Tracking', 'Goal Setting']}
       metrics={{
