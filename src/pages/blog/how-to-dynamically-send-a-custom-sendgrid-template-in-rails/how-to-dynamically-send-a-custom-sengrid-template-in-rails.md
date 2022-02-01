@@ -7,7 +7,7 @@ readtime: '40 min read'
 tags: 'Rails, Sendgrid'
 ---
 
-Using sendgrid templates, you can customize a template once via sendgrid's GUI email creator tool, and send the email via the sendgrid api. This makes it easier than going through the steps of creating a mailer and coding a template manually, pushing an update to the server and sending via command line (pain in the ass)
+Using sendgrid templates, you can customize a template once via sendgrid's GUI email creator tool, and send the email via the sendgrid api with our own custom content. This makes it easier than going through the steps of creating a mailer and coding a template manually, pushing an update to the server and sending via command line (pain in the ass)
 
 ### Create the template on Sendgrid and generate a template id
 
