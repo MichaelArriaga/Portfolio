@@ -7,6 +7,8 @@ readtime: '5 min read'
 tags: 'Rails'
 ---
 
+Ditch Ruby module syntact and use namespacing instead. Here we will use an existing mailer as an example, but you can namespace anything in our project: controller, models, helpers, you name it!
+
 1. Place the mailer in the subdirectory ex `mailers/users/`
 
 2. Add the namespace to the mailer class itself
