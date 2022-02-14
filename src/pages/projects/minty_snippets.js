@@ -4,7 +4,7 @@ import ProjectPageTemplate from '../../components/projects/ProjectPageTemplate';
 import Footer from '../../components/Footer';
 
 // static assets
-import mockupImg from '../../../static/etc/images/project_images/crowd_mint/mockup.png';
+import mockupImg from '../../../static/etc/images/project_images/minty_snippets/mockup.gif';
 import baseline_grid_img from '../../../static/etc/images/project_images/flex_mate/8px-grid.png';
 import gutter_img from '../../../static/etc/images/project_images/flex_mate/16px-grid.png';
 import vertical_rhythm_img from '../../../static/etc/images/project_images/flex_mate/48px-grid.png';
@@ -23,11 +23,11 @@ const CrowdMint = () => (
       title="Minty Snippets"
       project_date="2022 - Current"
       try_url={''}
-      description="Minty Snippets is a browser extension that makes it easy to create and insert and customize reusable text snippets. Need to insert a professional cover letter on the fly while still keeping it personalized? Minty Snippets has you covered, and it completely free."
-      scope_array={['Browser Extension']}
-      core_tech_array={['React.js']}
+      description="Minty Snippets is a browser extension that makes it easy to create, customize and paste reusable text snippets in the browser. Tired of copying/personalizing that cover letter endlessly on your job hunt? Minty Snippets makes personalizing text easier. Fun fact: 'Snippets' are nothing new, Programmers have been using Snippets for many years because they prevent having to write the same boilerplate code over and over. Minty Snippets takes the idea of Snippets and attempts to make it accessible to everyone, whether you are a coder or not. A new Hotkey powered workflow makes creating/customizing snippets faster and more convenient than ever before."
+      scope_array={['Browser Extension', 'Productivity Product']}
+      core_tech_array={['React.js', 'Chrome Manifest V3']}
       apps_used_array={['Adobe XD', 'VIM']}
-      features_array={['Earnings Tracking', 'Goal Setting']}
+      features_array={['Snippets', 'Customization', 'Hotkey Workflow']}
       metrics={{
         baseline_grid: '8px',
         baseline_grid_img: baseline_grid_img,
