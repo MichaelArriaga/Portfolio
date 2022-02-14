@@ -20,7 +20,7 @@ const SidebarLayout = ({
       <ReusableHelmet title={meta_title} description={meta_description} />
       <div
         style={{ minWidth: 300 }}
-        className="w-full sm:flex sm:flex-row sm:justify-start items-start"
+        className="w-full sm:flex sm:flex-row sm:justify-center items-start"
       >
         {/* left panel start */}
         <div
