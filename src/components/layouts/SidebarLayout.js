@@ -27,7 +27,7 @@ const SidebarLayout = ({
           style={{ width: 290 }}
           className="hidden sm:block w-64 h-screen h-max mr-4 border-r border-gray-100"
         >
-          <div style={{ marginTop: 60 }}></div>
+          <div style={{ marginTop: 45 }}></div>
           <HeroHeader highlighted={highlighted_hero_link} />
 
           <div className="mb-4">
