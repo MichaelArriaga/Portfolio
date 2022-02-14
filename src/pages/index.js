@@ -12,26 +12,6 @@ const Index = () => {
       meta_description="Mike Arriaga, Seattle Product Engineer Web Developer - Home"
       highlighted_hero_link={'home'}
     >
-      <div className="sm:max-w-screen-sm mx-auto">
-        <h3
-          style={{ fontFamily: fonts.regular }}
-          className="text-left text-lg sm:text-xl mb-2"
-        >
-          Hey! <span className="pl-1"></span> 👋
-        </h3>
-        <h3
-          style={{
-            fontFamily: fonts.regular,
-          }}
-          className="text-lg sm:text-xl mb-2 text-gray-900"
-        >
-          I'm a Software Engineer and Single Founder based in Seattle
-          Washington. I help startups win through user-centered design and the
-          ability to wear multiple hats on a product team. On occasion, I write
-          about my favorite tools for building software products: Ruby on Rails
-          and React Native.
-        </h3>
-      </div>
       {/* apps start */}
       <div className="sm:max-w-screen-sm mx-auto">
         <h3

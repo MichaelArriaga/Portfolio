@@ -6,7 +6,7 @@ import '../layout.css';
 import { Link } from 'gatsby';
 const HeroHeader = ({ highlighted }) => {
   return (
-    <div className="h-full mt-6 flex flex-col justify-center items-center mb-4">
+    <div className="flex flex-col justify-center items-center mb-8">
       <img
         className="block"
         style={{ maxWidth: 75 }}
@@ -15,9 +15,9 @@ const HeroHeader = ({ highlighted }) => {
       />
       <h1
         style={{ fontFamily: font_names.regular }}
-        className="my-2 text-2xl leading-none tracking-tighter"
+        className="my-2 text-2xl leading-none"
       >
-        Mike Arriaga
+        Mike Ray
       </h1>
       <div className="">
         <Link

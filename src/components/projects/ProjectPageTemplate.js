@@ -1,6 +1,7 @@
 import React from 'react';
 import fonts from '../../constants/font_names';
 import HeroHeader from '../general/HeroHeader';
+import { Link } from 'gatsby';
 
 const ProjectPageTemplate = ({
   primary_color,
@@ -22,12 +23,12 @@ const ProjectPageTemplate = ({
   return (
     <>
       <div className="max-w-screen-lg mx-auto">
-        {/* <div className="py-8">
-          <Link to="/" className="underline text-lg sm:text-xl text-left">
+        <div className="py-8">
+          <Link to="/" className="underline text-lg text-left">
             {'< Back'}
           </Link>
-        </div> */}
-        <HeroHeader highlighted={'home'} />
+        </div>
+        {/* <HeroHeader highlighted={'home'} /> */}
         <img
           style={{ width: 300 }}
           className={'mx-auto pt-8 mb-8'}

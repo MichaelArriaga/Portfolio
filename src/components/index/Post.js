@@ -18,7 +18,7 @@ const Post = ({ slug, title, date, post_tags }) => {
           className="hidden sm:block"
         ></div>
         <h3
-          style={{ fontFamily: fonts.semiBold }}
+          style={{ fontFamily: fonts.semiBold, lineHeight: 1 }}
           className={
             'text-base sm:text-lg text-gray-900 text-left flex flex-wrap justify-start items-center'
           }

@@ -13,15 +13,15 @@ class About extends React.Component {
         meta_description="Mike Arriaga, Seattle Product Engineer - About"
         highlighted_hero_link={'about'}
       >
-        <div style={{ marginBottom: 150 }} className="">
+        <div style={{ marginBottom: 150, marginTop: 20 }} className="">
           <img
-            className={'w-64 mx-auto my-10'}
+            className={'w-64 mx-auto mb-10'}
             src={aboutimg}
             alt="not loaded"
           />
           <p
             style={{ fontFamily: fonts.regular }}
-            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+            className={'text-lg mb-2 text-gray-900'}
           >
             Mike is a <Bold>Product Engineer</Bold> and{' '}
             <Bold>Single Founder</Bold> Based in Seattle Wa. After hours, he's a
@@ -29,7 +29,7 @@ class About extends React.Component {
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+            className={'text-lg mb-2 text-gray-900'}
           >
             Previously, Mike was <Bold>CTO and Co-Founder</Bold> of{' '}
             <Link
@@ -43,7 +43,7 @@ class About extends React.Component {
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+            className={'text-lg mb-2 text-gray-900'}
           >
             <Bold>In 2018</Bold>, Mike gained some notoriety for creating{' '}
             <Link
@@ -58,7 +58,7 @@ class About extends React.Component {
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+            className={'text-lg mb-2 text-gray-900'}
           >
             Mike <Bold>helps startups win through user-centered design</Bold>{' '}
             and the ability to wear multiple hats in a product team.
@@ -66,7 +66,7 @@ class About extends React.Component {
 
           <p
             style={{ fontFamily: fonts.regular }}
-            className={'text-lg sm:text-xl mb-2 text-gray-900'}
+            className={'text-lg mb-2 text-gray-900'}
           >
             Looking for help with your project?{' '}
             <a

@@ -69,7 +69,7 @@ const EmailListSignupForm = () => {
   return (
     <div className="mb-4">
       <div className="pr-2">
-        <h3 style={{ fontFamily: fonts.bold }} className="mb-1 text-lg">
+        <h3 style={{ fontFamily: fonts.bold }} className="mb-0 text-base">
           My Newsletter
         </h3>
         <p style={{ fontFamily: fonts.regular }} className="mb-1">

@@ -27,6 +27,7 @@ const Blog = ({
       });
     }
 
+    // sort doesn't work for some reason!!
     // sort category tags by first character
     // tags_to_set.sort((a, b) => {
     //   console.log(`comparing ${a[0]} and ${b[0]}`);
