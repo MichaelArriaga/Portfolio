@@ -56,8 +56,8 @@ const Blog = ({
 
   return (
     <SidebarLayout
-      meta_title="Mike Arriaga, Seattle Product Engineer - Posts"
-      meta_description="Mike Arriaga, Seattle Product Engineer - Posts"
+      meta_title="Mike Ray, Seattle Product Engineer - Posts"
+      meta_description="Mike Ray, Seattle Product Engineer - Posts"
       highlighted_hero_link="posts"
     >
       <div style={{ marginBottom: 150 }} className="">
