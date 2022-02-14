@@ -21,13 +21,12 @@ const Index = () => {
           My Apps
         </h3>
         <ProjectItem
-          title="CrowdMint"
+          title="Minty Snippets"
           underline_color="#3661F2"
-          underline_width={125}
-          time_range="2022 - Present"
-          description="Track your Crowdsource earnings goals from multiple sources
-      automatically."
-          route="/projects/crowd_mint"
+          underline_width={165}
+          time_range="2022"
+          description="Make your job search less repetitive."
+          route="/projects/minty_snippets"
         />
         <ProjectItem
           title="Fresh And Tumble"

@@ -16,14 +16,14 @@ import '../index-css.module.css';
 
 const CrowdMint = () => (
   <div className="w-full">
-    <ReusableHelmet title={'CrowdMint'} description={'CrowdMint'} />
+    <ReusableHelmet title={'Minty Snippets'} description={'Minty Snippets'} />{' '}
     <ProjectPageTemplate
       primary_color="#3661F2"
       mockupImg={mockupImg}
-      title="CrowdMint"
+      title="Minty Snippets"
       project_date="2022 - Current"
       try_url={''}
-      description="CrowdMint is a browser extension for tracking earnings across multiple task-based earnings platforms like Amazon Mechanical Turk, Prolific, Task Rabbit e.t.c. CrowdMint aims to make it easy to track and set goals while earning across multiple sources, making it easier to achieve daily/weekly/monthly goals while jumping back and forth between multiple platforms"
+      description="Minty Snippets is a browser extension that makes it easy to create and insert and customize reusable text snippets. Need to insert a professional cover letter on the fly while still keeping it personalized? Minty Snippets has you covered, and it completely free."
       scope_array={['Browser Extension']}
       core_tech_array={['React.js']}
       apps_used_array={['Adobe XD', 'VIM']}
