@@ -20,18 +20,17 @@ class About extends React.Component {
             alt="not loaded"
           />
           <p
-            style={{ fontFamily: fonts.regular }}
+            style={{ fontFamily: fonts.regular, lineHeight: 1.4 }}
             className={'text-lg mb-2 text-gray-900'}
           >
-            Mike is a <Bold>Product Engineer</Bold> and{' '}
-            <Bold>Single Founder</Bold> Based in Seattle Wa. After hours, he's a
-            Professional Musician (Drumset and Bass Guitar).
+            Mike is a Product Engineer and Single Founder Based in Seattle Wa.
+            After hours, he's a Musician (Drumset and Bass Guitar).
           </p>
           <p
-            style={{ fontFamily: fonts.regular }}
+            style={{ fontFamily: fonts.regular, lineHeight: 1.4 }}
             className={'text-lg mb-2 text-gray-900'}
           >
-            Previously, Mike was <Bold>CTO and Co-Founder</Bold> of{' '}
+            Previously, Mike was CTO and Co-Founder of{' '}
             <Link
               style={{ fontFamily: fonts.bold }}
               to="/projects/fresh_and_tumble"
@@ -42,10 +41,10 @@ class About extends React.Component {
             , an Uber-style Delivery App for Laundry.
           </p>
           <p
-            style={{ fontFamily: fonts.regular }}
+            style={{ fontFamily: fonts.regular, lineHeight: 1.4 }}
             className={'text-lg mb-2 text-gray-900'}
           >
-            <Bold>In 2018</Bold>, Mike gained some notoriety for creating{' '}
+            In 2018, Mike gained some notoriety for creating{' '}
             <Link
               style={{ fontFamily: fonts.bold }}
               to="/projects/flex_mate"
@@ -53,19 +52,19 @@ class About extends React.Component {
             >
               Flex Mate
             </Link>
-            , A free open source tool for <Bold>Amazon Flex Drivers</Bold> to
-            estimate often unaccounted for expenses.
+            , A free open source tool for Amazon Flex Drivers to estimate often
+            unaccounted for expenses.
           </p>
           <p
-            style={{ fontFamily: fonts.regular }}
+            style={{ fontFamily: fonts.regular, lineHeight: 1.4 }}
             className={'text-lg mb-2 text-gray-900'}
           >
-            Mike <Bold>helps startups win through user-centered design</Bold>{' '}
-            and the ability to wear multiple hats in a product team.
+            Mike helps startups win through user-centered design and the ability
+            to wear multiple hats in a product team.
           </p>
 
           <p
-            style={{ fontFamily: fonts.regular }}
+            style={{ fontFamily: fonts.regular, lineHeight: 1.4 }}
             className={'text-lg mb-2 text-gray-900'}
           >
             Looking for help with your project?{' '}
