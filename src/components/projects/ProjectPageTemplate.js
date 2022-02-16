@@ -176,7 +176,7 @@ const ProjectPageTemplate = ({
               ? features_array.map((item) => {
                   return (
                     <li
-                      style={{ fontFamily: fonts.bold }}
+                      style={{ fontFamily: fonts.semiBold }}
                       className="list-desc text-lg"
                     >
                       {item}
@@ -209,10 +209,10 @@ const ProjectPageTemplate = ({
 
         {/* metrics section start */}
         <h2
-          style={{ fontFamily: fonts.bold }}
+          style={{ fontFamily: fonts.semiBold }}
           className={'text-left text-lg mb-4'}
         >
-          /Metrics
+          Metrics
         </h2>
 
         <div className="w-full">
@@ -254,10 +254,10 @@ const ProjectPageTemplate = ({
 
         {/* colors section start */}
         <h2
-          style={{ fontFamily: fonts.bold }}
+          style={{ fontFamily: fonts.semiBold }}
           className={'text-left text-lg mb-4'}
         >
-          /Color
+          Color
         </h2>
         <ul className={'block flex flex-wrap justify-start items-center'}>
           {colors_array.map((color) => {
@@ -292,10 +292,10 @@ const ProjectPageTemplate = ({
         {/* typography section start */}
         <div className="mb-4">
           <h2
-            style={{ fontFamily: fonts.bold }}
+            style={{ fontFamily: fonts.semiBold }}
             className={'text-left text-lg mb-4'}
           >
-            /Typography
+            Typography
           </h2>
 
           <img
