@@ -39,14 +39,30 @@ const ProjectPageTemplate = ({
         {/* project title start */}
 
         <div className={'mb-2'}>
-          <h1
-            style={{ fontFamily: fonts.bold }}
-            className={
-              'text-3xl tracking-tight text-center sm:text-2xl sm:text-left'
-            }
-          >
-            {title}
-          </h1>
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center">
+            <h1
+              style={{ fontFamily: fonts.bold }}
+              className={'text-3xl tracking-tight sm:text-2xl sm:text-left'}
+            >
+              {title}
+
+              {/* try link start */}
+              {try_url.length ? (
+                <a
+                  style={{ fontFamily: fonts.bold }}
+                  className={
+                    'text-blue-600 block sm:inline sm:ml-4 text-xl text-center sm:text-left underline'
+                  }
+                  href={try_url}
+                  target="_blank "
+                  rel="noopener"
+                >
+                  Get It Here
+                </a>
+              ) : null}
+              {/* try link end */}
+            </h1>
+          </div>
           <h2
             style={{ fontFamily: fonts.bold, color: primary_color }}
             className={
@@ -55,22 +71,8 @@ const ProjectPageTemplate = ({
           >
             {project_date}
           </h2>
+          {/* project title end */}
         </div>
-        {/* project title end */}
-
-        {/* try link start */}
-        {try_url.length ? (
-          <a
-            style={{ fontFamily: fonts.bold }}
-            className={'block text-center underline mb-4'}
-            href="https://michaelarriaga.github.io/Flex-Warehouse-Expense-Calculator/"
-            target="_blank "
-            rel="noopener"
-          >
-            TRY IT OUT HERE
-          </a>
-        ) : null}
-        {/* try link end */}
 
         {/* description start */}
         <div className={'mx-auto mb-4 sm:ml-0'}>
