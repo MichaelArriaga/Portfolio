@@ -1,12 +1,15 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import fonts from '../../constants/font_names';
-import Post from './Post';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import fonts from "../../constants/font_names";
+import Post from "./Post";
 
 const LatestPostList = () => {
   return (
     <div className="sm:max-w-xl mb-8 sm:mb-16">
-      <h3 style={{ fontFamily: fonts.bold }} className="text-lg mb-3 sm:mb-5">
+      <h3
+        style={{ fontFamily: fonts.semiBold }}
+        className="text-lg text-gray-900 mb-2"
+      >
         Latest Posts
       </h3>
       <StaticQuery
@@ -44,7 +47,7 @@ const LatestPostList = () => {
                         title={frontmatter.title}
                         date={frontmatter.date}
                         slug={frontmatter.slug}
-                        post_tags={frontmatter.tags.split(',')}
+                        post_tags={frontmatter.tags.split(",")}
                       />
                     );
                   })

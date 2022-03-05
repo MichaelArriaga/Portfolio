@@ -1,6 +1,6 @@
-import React from 'react';
-import font_names from '../../constants/font_names';
-import { Link } from 'gatsby';
+import React from "react";
+import font_names from "../../constants/font_names";
+import { Link } from "gatsby";
 const ProjectItem = ({
   title,
   underline_color,
@@ -12,34 +12,38 @@ const ProjectItem = ({
   return (
     <Link
       to={route}
-      style={{ height: 144 }}
+      // style={{ height: 144 }}
       className={
-        'block w-full p-3 sm:p-4 mb-4 rounded-lg bg-white shadow-md border border-gray-100 text-gray-900'
+        "block w-full mb-3 rounded-lg bg-white border-gray-100 text-gray-900"
       }
     >
-      <div className="mb-1">
-        <h1
-          style={{ fontFamily: font_names.bold }}
-          className={
-            'text-2xl text-gray-900 text-left tracking-tighter antialiased'
-          }
-        >
-          {title}
-        </h1>
+      <div className="">
+        <div className="flex flex-row justify-start items-center">
+          <h1
+            style={{ fontFamily: font_names.bold }}
+            className={
+              "text-xl text-gray-900 text-left tracking-tighter antialiased mr-2 "
+            }
+          >
+            {title}
+          </h1>
+          <h3
+            style={{ fontFamily: font_names.semiBold, marginBottom: 0 }}
+            className={
+              "text-lg text-gray-900 text-left leading-none tracking-tighter"
+            }
+          >
+            ({time_range})
+          </h3>
+        </div>
         <div
           style={{
             width: underline_width,
             height: 5,
-            backgroundColor: underline_color || 'black',
+            backgroundColor: underline_color || "black",
           }}
         ></div>
       </div>
-      <h3
-        style={{ fontFamily: font_names.semiBold }}
-        className={'text-sm text-gray-900 text-left mb-1'}
-      >
-        {time_range}
-      </h3>
       <p
         style={{ fontFamily: font_names.regular }}
         className="text-base text-gray-900 leading-tight"
