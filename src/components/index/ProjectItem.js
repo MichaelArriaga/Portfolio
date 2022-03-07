@@ -14,7 +14,7 @@ const ProjectItem = ({
       to={route}
       // style={{ height: 144 }}
       className={
-        "block w-full mb-3 rounded-lg bg-white border-gray-100 text-gray-900"
+        "block w-full mb-2 ml-3 rounded-lg bg-white border-gray-100 text-gray-900"
       }
     >
       <div className="">
@@ -22,7 +22,7 @@ const ProjectItem = ({
           <h1
             style={{ fontFamily: font_names.bold }}
             className={
-              "text-xl text-gray-900 text-left tracking-tighter antialiased mr-2 "
+              "text-xl text-gray-900 text-left tracking-tighter antialiased mr-2 underline "
             }
           >
             {title}
@@ -36,13 +36,15 @@ const ProjectItem = ({
             ({time_range})
           </h3>
         </div>
-        <div
-          style={{
-            width: underline_width,
-            height: 5,
-            backgroundColor: underline_color || "black",
-          }}
-        ></div>
+        {/* 
+          <div
+            style={{
+              width: underline_width,
+              height: 5,
+              backgroundColor: underline_color || "black",
+            }}
+          />
+        */}
       </div>
       <p
         style={{ fontFamily: font_names.regular }}
