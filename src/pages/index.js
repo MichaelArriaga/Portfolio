@@ -4,7 +4,6 @@ import fonts from "../constants/font_names";
 import ProjectItem from "../components/index/ProjectItem";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
-import { Link } from "gatsby";
 
 const Index = () => {
   return (
@@ -16,7 +15,7 @@ const Index = () => {
       {/* apps start */}
       <div className="sm:max-w-screen-sm mx-auto">
         <h3
-          style={{ fontFamily: fonts.semiBold }}
+          style={{ fontFamily: fonts.regular }}
           className="text-lg text-gray-900 mb-2"
         >
           My Apps

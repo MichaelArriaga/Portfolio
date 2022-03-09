@@ -7,7 +7,7 @@ const LatestPostList = () => {
   return (
     <div className="sm:max-w-xl mb-8 sm:mb-16">
       <h3
-        style={{ fontFamily: fonts.semiBold }}
+        style={{ fontFamily: fonts.regular }}
         className="text-lg text-gray-900 mb-2"
       >
         Latest Posts
