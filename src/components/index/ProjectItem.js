@@ -8,6 +8,7 @@ const ProjectItem = ({
   time_range,
   description,
   route,
+  open_in_new_tab,
 }) => {
   return (
     <Link
@@ -16,6 +17,7 @@ const ProjectItem = ({
       className={
         "block w-full mb-2 ml-3 rounded-lg bg-white border-gray-100 text-gray-900"
       }
+      target={open_in_new_tab ? "_blank" : null}
     >
       <div className="">
         <div className="flex flex-row justify-start items-center">

@@ -4,6 +4,7 @@ import fonts from "../constants/font_names";
 import ProjectItem from "../components/index/ProjectItem";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
+import { Link } from "gatsby";
 
 const Index = () => {
   return (
@@ -20,13 +21,16 @@ const Index = () => {
         >
           My Apps
         </h3>
+        {/* https://minty-snippets.netlify.app/ */}
+
         <ProjectItem
           title="Minty Snippets"
           underline_color="#3661F2"
           underline_width={190}
           time_range="2022"
           description="Make your job search less repetitive."
-          route="/projects/minty_snippets"
+          route="https://minty-snippets.netlify.app/"
+          open_in_new_tab={true}
         />
         <ProjectItem
           title="Fresh And Tumble"
