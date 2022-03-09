@@ -24,7 +24,7 @@ const ProjectItem = ({
           <h1
             style={{ fontFamily: font_names.bold }}
             className={
-              "text-xl text-gray-900 text-left tracking-tighter antialiased mr-2 underline "
+              "text-lg text-gray-900 text-left tracking-tighter antialiased mr-2 underline "
             }
           >
             {title}

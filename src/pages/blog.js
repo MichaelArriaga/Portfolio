@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import fonts from '../constants/font_names';
-import { graphql } from 'gatsby';
-import SidebarLayout from '../components/layouts/SidebarLayout';
-import Post from '../components/blog/Post';
+import React, { useState, useEffect } from "react";
+import fonts from "../constants/font_names";
+import { graphql } from "gatsby";
+import SidebarLayout from "../components/layouts/SidebarLayout";
+import Post from "../components/blog/Post";
 
 const Blog = ({
   data: {
@@ -10,17 +10,17 @@ const Blog = ({
   },
 }) => {
   const [category_tags, setCategoryTags] = useState([]);
-  const [selected_tag, setSelectedTag] = useState('All');
+  const [selected_tag, setSelectedTag] = useState("All");
 
   useEffect(() => {
     setCategoryTagsFromQuery();
   }, []);
 
   const setCategoryTagsFromQuery = () => {
-    let tags_to_set = ['All'];
+    let tags_to_set = ["All"];
     if (edges.length > 0) {
       edges.forEach((edge) => {
-        let tags = edge.node.frontmatter.tags.split(', ');
+        let tags = edge.node.frontmatter.tags.split(", ");
         tags.forEach((tag) => {
           tags_to_set.push(tag);
         });
@@ -45,8 +45,8 @@ const Blog = ({
   const postIncludedInFilter = (tags) => {
     let included = false;
     if (
-      selected_tag === '' ||
-      selected_tag === 'All' ||
+      selected_tag === "" ||
+      selected_tag === "All" ||
       tags.includes(selected_tag)
     ) {
       included = true;
@@ -62,10 +62,10 @@ const Blog = ({
     >
       <div style={{ marginBottom: 150 }} className="">
         {/* tags section start */}
-        <div className={'mb-2 py-2'}>
+        <div className={"mb-2 py-2"}>
           <h2
             style={{ fontFamily: fonts.bold }}
-            className={'text-md sm:text-base font-bold mb-2'}
+            className={"text-md sm:text-base font-bold mb-2"}
           >
             Tags
           </h2>
@@ -79,17 +79,17 @@ const Blog = ({
                         if (selected_tag !== tag) {
                           setSelectedTag(tag);
                         } else {
-                          setSelectedTag('All');
+                          setSelectedTag("All");
                         }
                       }}
                       style={{
                         backgroundColor:
-                          selected_tag === tag ? '#1f1f1f' : '#A0EDE4',
+                          selected_tag === tag ? "#1f1f1f" : "#A0EDE4",
                       }}
                       className={
                         selected_tag === tag
-                          ? 'outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2'
-                          : 'outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2'
+                          ? "outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
+                          : "outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
                       }
                     >
                       <h3
@@ -98,8 +98,8 @@ const Blog = ({
                         }}
                         className={
                           selected_tag === tag
-                            ? 'text-sm text-white'
-                            : 'text-sm text-gray-900'
+                            ? "text-sm text-white"
+                            : "text-sm text-gray-900"
                         }
                       >
                         {tag}
@@ -113,17 +113,17 @@ const Blog = ({
         {/* tags section end */}
 
         {/* posts section start */}
-        <div style={{ height: 500 }} className="overflow-y-scroll">
+        <div style={{ height: "auto" }} className="">
           <h2
             style={{ fontFamily: fonts.bold }}
-            className={'text-lg font-bold mb-2'}
+            className={"text-lg font-bold mb-2"}
           >
             Posts (43)
           </h2>
           {edges.length > 0
             ? edges.map((item) => {
                 let post = item.node.frontmatter;
-                let post_tags = post.tags.split(', ');
+                let post_tags = post.tags.split(", ");
                 if (postIncludedInFilter(post_tags)) {
                   return (
                     <Post
