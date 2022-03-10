@@ -16,9 +16,9 @@ const HeroHeader = ({ highlighted }) => {
       />
       <h1
         style={{ fontFamily: font_names.regular }}
-        className="my-2 text-2xl leading-none"
+        className="my-2 text-2xl leading-none tracking-tighter"
       >
-        Mike Ray Arriaga
+        Mike Ray (Arriaga)
       </h1>
       <div className="">
         <Link
