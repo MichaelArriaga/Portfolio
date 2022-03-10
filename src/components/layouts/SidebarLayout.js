@@ -1,13 +1,13 @@
-import React from 'react';
-import ReusableHelmet from '../ReusableHelmet';
-import HeroHeader from '../general/HeroHeader';
-import Footer from '../Footer';
-import EmailListSignupForm from '../email_lists/EmailListSignupForm';
-import twitter_icon from '../../../static/etc/images/icons/logo-twitter.png';
-import linkedin_icon from '../../../static/etc/images/icons/logo-linkedin.png';
-import github_icon from '../../../static/etc/images/icons/logo-github.png';
-import email_icon from '../../../static/etc/images/icons/logo-email-envelope.png';
-import fonts from '../../constants/font_names';
+import React from "react";
+import ReusableHelmet from "../ReusableHelmet";
+import HeroHeader from "../general/HeroHeader";
+import Footer from "../Footer";
+import EmailListSignupForm from "../email_lists/EmailListSignupForm";
+//import twitter_icon from '../../../static/etc/images/icons/logo-twitter.png';
+import linkedin_icon from "../../../static/etc/images/icons/logo-linkedin.png";
+import github_icon from "../../../static/etc/images/icons/logo-github.png";
+import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
+import fonts from "../../constants/font_names";
 
 const SidebarLayout = ({
   meta_title,
@@ -38,7 +38,7 @@ const SidebarLayout = ({
                 style={{ fontFamily: fonts.regular }}
                 className="text-base mb-2 text-gray-900 mr-2"
               >
-                Need help?{' '}
+                Need help?{" "}
               </h3>
 
               <h3 className="pb-2">
@@ -48,11 +48,15 @@ const SidebarLayout = ({
                   className="text-gray-900 underline"
                 >
                   Send me an email
-                </a>{' '}
+                </a>{" "}
               </h3>
             </div>
             <div className="flex flex-row justify-start items-center">
-              <a href="https://google.com" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/mike-ray-26a874230/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={linkedin_icon}
                   alt=""
