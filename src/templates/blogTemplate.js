@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import HeroHeader from '../components/general/HeroHeader';
-import Footer from '../components/Footer';
-import './blog-template-css.css';
-import './copy-code-btn-css.css';
-import fonts from '../constants/font_names';
+import React from "react";
+import { graphql } from "gatsby";
+import HeroHeader from "../components/general/HeroHeader";
+import Footer from "../components/Footer";
+import "./blog-template-css.css";
+import "./copy-code-btn-css.css";
+import fonts from "../constants/font_names";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -12,7 +12,7 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <div className="">
+    <div className="mt-10">
       <HeroHeader highlighted="posts" />
       <div className="max-w-screen-md mx-auto pt-12 py-2">
         <div className="">
@@ -26,7 +26,7 @@ export default function Template({
             style={{ fontFamily: fonts.regular }}
             className="text-base text-left mb-4"
           >
-            {frontmatter.date} /{' '}
+            {frontmatter.date} /{" "}
             <span style={{ fontFamily: fonts.bold }} className="readTime">
               {frontmatter.readtime}
             </span>

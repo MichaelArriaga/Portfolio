@@ -9,7 +9,7 @@ const Post = ({ slug, title, date, post_tags }) => {
         <h3
           style={{ fontFamily: fonts.semiBold, lineHeight: 1 }}
           className={
-            "text-base text-gray-900 text-left flex flex-wrap justify-start items-center"
+            "text-lg text-gray-900 text-left flex flex-wrap justify-start items-center"
           }
         >
           <span className="underline mr-2">{title}</span>{" "}

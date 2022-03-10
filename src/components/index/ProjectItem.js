@@ -24,7 +24,7 @@ const ProjectItem = ({
           <h1
             style={{ fontFamily: font_names.bold }}
             className={
-              "text-lg text-gray-900 text-left tracking-tighter antialiased mr-2 underline "
+              "text-xl text-gray-900 text-left tracking-tighter antialiased mr-2 underline "
             }
           >
             {title}
@@ -50,7 +50,7 @@ const ProjectItem = ({
       </div>
       <p
         style={{ fontFamily: font_names.regular }}
-        className="text-base text-gray-900 leading-tight"
+        className="text-lg text-gray-900 leading-tight"
       >
         {description}
       </p>

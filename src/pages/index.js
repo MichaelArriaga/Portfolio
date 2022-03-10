@@ -16,7 +16,7 @@ const Index = () => {
       <div className="sm:max-w-screen-sm mx-auto">
         <h3
           style={{ fontFamily: fonts.regular }}
-          className="text-lg text-gray-900 mb-2"
+          className="text-base text-gray-900 mb-2"
         >
           My Apps
         </h3>
