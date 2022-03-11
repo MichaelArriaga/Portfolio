@@ -18,13 +18,13 @@ const SidebarLayout = ({
     <div className="">
       <ReusableHelmet title={meta_title} description={meta_description} />
       <div
-        style={{ minWidth: 300 }}
+        style={{ minWidth: 300, height: "100vh", minHeight: "100vh" }}
         className="w-full sm:flex sm:flex-row sm:justify-start items-start"
       >
         {/* left panel start */}
         <div
-          style={{ width: 350 }}
-          className="hidden sm:block w-64 h-screen h-max mr-4 border-r-4 border-gray-900"
+          style={{ width: 350, height: "100vh", minHeight: "100vh" }}
+          className="hidden sm:block w-64 mr-4 border-r-4 border-gray-900"
         >
           <div style={{ marginTop: 45 }}></div>
           <div style={{ marginBottom: -20 }}>
@@ -113,7 +113,7 @@ const SidebarLayout = ({
         {/* right panel content start */}
         <div
           style={{ maxWidth: 600 }}
-          className="w-full flex flex-col justify-start items-center sm:pl-5 sm:max-w-screen-sm mb-3 mt-10"
+          className="w-full flex flex-col justify-start items-center sm:pl-5 sm:max-w-screen-sm mb-3 mt-10 "
         >
           <div className="w-full sm:hidden">
             <HeroHeader highlighted={highlighted_hero_link} />

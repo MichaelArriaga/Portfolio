@@ -110,7 +110,7 @@ const Blog = ({
         {/* tags section end */}
 
         {/* posts section start */}
-        <div style={{ height: "auto" }}>
+        <div style={{ height: 780 }} className="w-full overflow-y-scroll">
           <h2 className={"text-lg font-bold mb-2 font-bold antialiased"}>
             Posts (43)
           </h2>
