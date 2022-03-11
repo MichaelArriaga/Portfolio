@@ -120,7 +120,7 @@ const SidebarLayout = ({
         {/* right panel content start */}
         <div
           style={{ maxWidth: 600 }}
-          className="w-full mx-auto sm:pl-5 sm:max-w-screen-sm mb-3 mt-10"
+          className="w-full flex flex-col justify-start items-center sm:pl-5 sm:max-w-screen-sm mb-3 mt-10"
         >
           <div className="w-full sm:hidden">
             <HeroHeader highlighted={highlighted_hero_link} />

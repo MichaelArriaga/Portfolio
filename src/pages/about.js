@@ -14,20 +14,21 @@ class About extends React.Component {
       >
         <div style={{ marginBottom: 150 }} className="">
           <img
-            className={"hidden sm:block w-64 mx-auto mb-10"}
+            className={"hidden sm:block w-64 mx-auto "}
             src={aboutimg}
             alt="not loaded"
           />
+          <h3 className="font-bold text-3xl mb-4">Bio</h3>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-2 text-gray-900"}
+            className={"text-lg mb-4 text-gray-900"}
           >
             Mike is a Product Engineer and Single Founder Based in Seattle Wa.
             After hours, he's a Musician (Drumset and Bass Guitar).
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-2 text-gray-900"}
+            className={"text-lg mb-4 text-gray-900"}
           >
             Previously, Mike was CTO and Co-Founder of{" "}
             <Link
@@ -41,7 +42,7 @@ class About extends React.Component {
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-2 text-gray-900"}
+            className={"text-lg mb-4 text-gray-900"}
           >
             In 2018, Mike gained some notoriety for creating{" "}
             <Link
@@ -56,7 +57,7 @@ class About extends React.Component {
           </p>
           <p
             style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-2 text-gray-900"}
+            className={"text-lg mb-4 text-gray-900"}
           >
             Mike helps startups win through user-centered design and the ability
             to wear multiple hats in a product team.
@@ -64,7 +65,7 @@ class About extends React.Component {
 
           <p
             style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-2 text-gray-900"}
+            className={"text-lg mb-4 text-gray-900"}
           >
             Looking for help with your project?{" "}
             <a
