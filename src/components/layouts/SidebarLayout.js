@@ -20,38 +20,21 @@ const SidebarLayout = ({
       <ReusableHelmet title={meta_title} description={meta_description} />
       <div
         style={{ minWidth: 300 }}
-        className="w-full sm:flex sm:flex-row sm:justify-center items-start"
+        className="w-full sm:flex sm:flex-row sm:justify-start items-start"
       >
         {/* left panel start */}
         <div
-          style={{ width: 290 }}
-          className="hidden sm:block w-64 h-screen h-max mr-4 border-r border-gray-100"
+          style={{ width: 350 }}
+          className="hidden sm:block w-64 h-screen h-max mr-4 border-r-4 border-gray-900"
         >
           <div style={{ marginTop: 45 }}></div>
-          <HeroHeader highlighted={highlighted_hero_link} />
+          <div style={{ marginBottom: -20 }}>
+            <HeroHeader highlighted={highlighted_hero_link} />
+          </div>
 
           <div className="mb-4">
-            <EmailListSignupForm />
             {/* socials start */}
-            <div className="py-1 flex flex-row justify-start items-center">
-              <h3
-                style={{ fontFamily: fonts.regular }}
-                className="text-base mb-2 text-gray-900 mr-2"
-              >
-                Need help?{" "}
-              </h3>
-
-              <h3 className="pb-2">
-                <a
-                  href="mailto: m.arriaga.smb@gmail.com"
-                  style={{ fontFamily: fonts.bold }}
-                  className="text-gray-900 underline"
-                >
-                  Send me an email
-                </a>{" "}
-              </h3>
-            </div>
-            <div className="flex flex-row justify-start items-center">
+            <div className="flex flex-row justify-center items-center mb-6">
               <a
                 href="https://www.linkedin.com/in/mike-ray-26a874230/"
                 target="_blank"
@@ -86,6 +69,29 @@ const SidebarLayout = ({
               </a>
             </div>
             {/* socials end */}
+            <EmailListSignupForm />
+
+            {/* 
+            <div className="py-1 flex flex-row justify-start items-center">
+                <h3
+                  style={{ fontFamily: fonts.regular }}
+                  className="text-base mb-2 text-gray-900 mr-2"
+                >
+                  Need help?{" "}
+                </h3>
+
+              <h3 className="pb-2">
+                <a
+                  href="mailto: m.arriaga.smb@gmail.com"
+                  style={{ fontFamily: fonts.bold }}
+                  className="text-gray-900 underline"
+                >
+                  Send me an email
+                </a>{" "}
+              </h3>
+            </div>
+              */}
+
             <div className="w-full mb-4"></div>
             {/* <div className="sm:max-w-screen-sm mx-auto my-2">
               <h3
@@ -113,8 +119,8 @@ const SidebarLayout = ({
 
         {/* right panel content start */}
         <div
-          style={{ maxWidth: 525 }}
-          className="w-full min-w-min sm:max-w-screen-sm mb-3 mt-10 "
+          style={{ maxWidth: 600 }}
+          className="w-full mx-auto sm:pl-5 sm:max-w-screen-sm mb-3 mt-10"
         >
           <div className="w-full sm:hidden">
             <HeroHeader highlighted={highlighted_hero_link} />

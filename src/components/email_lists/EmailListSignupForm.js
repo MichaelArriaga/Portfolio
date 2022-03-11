@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import fonts from '../../constants/font_names';
-import { emailValid } from '../../utils/validations';
+import React, { useState } from "react";
+import fonts from "../../constants/font_names";
+import { emailValid } from "../../utils/validations";
 // import api from '../../api/v1/api';
 // import { post_api_v1_newsletter_registrations_path } from '../../api/v1/routes';
-import { sleep } from '../../utils/helpers';
+import { sleep } from "../../utils/helpers";
 
 const EmailListSignupForm = () => {
   const [form, setForm] = useState({
     email: {
-      value: '',
+      value: "",
       validations: [],
       errors: [],
     },
@@ -21,20 +21,19 @@ const EmailListSignupForm = () => {
     newState.errors = [];
 
     if (!emailValid(newState.value)) {
-      newState.errors.push('Check your email and try again.');
+      newState.errors.push("Check your email and try again.");
     } else {
       try {
         setIsLoading(true);
         await sleep(0.65);
         setIsLoading(false);
         const data = {
-          message: 'success',
+          message: "success",
         };
         // const { data } = await api.post(
         //   post_api_v1_newsletter_registrations_path,
         //   {
-        //     params: {
-        //       email: form.email.value,
+        //     params: { email: form.email.value,
         //     },
         //   },
         //   {
@@ -42,10 +41,10 @@ const EmailListSignupForm = () => {
         //   }
         // );
         switch (data.message) {
-          case 'success':
+          case "success":
             setSignupSuccess(true);
             break;
-          case 'failure':
+          case "failure":
             setSignupSuccess(false);
             break;
           default:
@@ -55,8 +54,8 @@ const EmailListSignupForm = () => {
       } catch (err) {
         setIsLoading(false);
         setSignupSuccess(false);
-        newState.errors.push('Network Error');
-        console.log('ERROR', err.message);
+        newState.errors.push("Network Error");
+        console.log("ERROR", err.message);
       }
     }
 
@@ -67,20 +66,25 @@ const EmailListSignupForm = () => {
   };
 
   return (
-    <div className="mb-4">
-      <div className="pr-2">
-        <h3 style={{ fontFamily: fonts.bold }} className="mb-0 text-base">
-          My Newsletter
-        </h3>
-        <p style={{ fontFamily: fonts.regular }} className="mb-1">
-          Stay up-to-date with my latest writings and courses.
+    <div className="mb-4 mx-auto">
+      <div className="">
+        {/* 
+          <h3 style={{ fontFamily: fonts.semiBold }} className="mb-0 text-base">
+            Newsletter
+          </h3>
+        */}
+        <p
+          style={{ fontFamily: fonts.regular }}
+          className="text-center mb-1 pl-4"
+        >
+          Stay up-to-date with future projects
         </p>
       </div>
 
       {/* email field start */}
       {!signup_success ? (
         <form action="post" method="post">
-          <div className="w-full flex flex-row justify-start itmes-center">
+          <div className="flex flex-row justify-center items-center">
             <input
               type="text"
               name="email"
@@ -104,16 +108,16 @@ const EmailListSignupForm = () => {
               onClick={() => signup(form)}
               className={
                 is_loading
-                  ? 'cursor-pointer py-1 px-3 rounded bg-indigo-300 text-white'
-                  : 'cursor-pointer hover:bg-indigo-700 py-1 px-3 rounded bg-indigo-600 text-white'
+                  ? "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white"
+                  : "py-2 px-3 cursor-pointer hover:bg-gray-700 rounded bg-gray-900 text-white"
               }
-              value={'Join'}
+              value={"Join"}
             />
           </div>
           {form.email.errors.length > 0 ? (
             <p
               style={{ fontFamily: fonts.regular }}
-              className="text-xs pt-1 text-red-700"
+              className="text-xs pt-1 text-red-700 text-center"
             >
               {form.email.errors[0]}
             </p>
@@ -121,13 +125,13 @@ const EmailListSignupForm = () => {
         </form>
       ) : (
         <form action="post" method="post">
-          <div className="w-full flex flex-row justify-start itmes-center">
+          <div className="flex flex-row justify-start itmes-center">
             <input
               type="button"
               disabled={true}
               onClick={() => signup(form)}
               className="py-1 px-3 rounded bg-green-600 text-white"
-              value={'✓ Thanks!'}
+              value={"✓ Thanks!"}
             />
           </div>
           {/* <p

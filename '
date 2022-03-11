@@ -1,4 +1,4 @@
-import aboutimg from "../../static/etc/images/pages/about/self-pic.png";
+//import aboutimg from '../../static/etc/images/pages/about/self-pic.png';
 import { Link } from "gatsby";
 import React from "react";
 import fonts from "../constants/font_names";
@@ -12,12 +12,14 @@ class About extends React.Component {
         meta_description="Mike Ray, Seattle Product Engineer - About"
         highlighted_hero_link={"about"}
       >
-        <div style={{ marginBottom: 150 }} className="">
+        <div style={{ marginBottom: 150 }} className="mt-10">
+          {/* 
           <img
-            className={"hidden sm:block w-64 mx-auto mb-10"}
+            className={'w-64 mx-auto mb-10'}
             src={aboutimg}
             alt="not loaded"
           />
+          */}
           <p
             style={{ fontFamily: fonts.regular }}
             className={"text-lg mb-2 text-gray-900"}

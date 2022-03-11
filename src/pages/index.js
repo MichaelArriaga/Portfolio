@@ -15,8 +15,8 @@ const Index = () => {
       {/* apps start */}
       <div className="sm:max-w-screen-sm mx-auto">
         <h3
-          style={{ fontFamily: fonts.regular }}
-          className="text-base text-gray-900 mb-2"
+          style={{ fontFamily: fonts.bold }}
+          className="text-xl text-gray-900 mb-2"
         >
           My Apps
         </h3>

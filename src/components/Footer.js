@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import twitter_icon from '../../static/etc/images/icons/logo-twitter.png';
-import linkedin_icon from '../../static/etc/images/icons/logo-linkedin.png';
-import github_icon from '../../static/etc/images/icons/logo-github.png';
-import email_icon from '../../static/etc/images/icons/logo-email-envelope.png';
-import fonts from '../constants/font_names';
+import twitter_icon from "../../static/etc/images/icons/logo-twitter.png";
+import linkedin_icon from "../../static/etc/images/icons/logo-linkedin.png";
+import github_icon from "../../static/etc/images/icons/logo-github.png";
+import email_icon from "../../static/etc/images/icons/logo-email-envelope.png";
+import fonts from "../constants/font_names";
 
 const Footer = () => (
-  <div className={'w-full mx-auto'}>
-    <hr className={'w-full border-t border-gray-200'}></hr>
+  <div className={"w-full mx-auto"}>
+    <hr className={"w-full border-t border-gray-200"}></hr>
 
     <div
-      className={'py-3 flex flex-col sm:flex-row justify-center items-center'}
+      className={"py-3 flex flex-col sm:flex-row justify-center items-center"}
     >
       <div className="flex flex-row mb-2 sm:mb-0 justify-center items-center">
         <h3 style={{ fontFamily: fonts.regular }} className="mr-1">
@@ -31,7 +31,7 @@ const Footer = () => (
         </a> */}
         <a
           style={{ width: 20 }}
-          className={'mr-2'}
+          className={"mr-2"}
           href="https://google.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Footer = () => (
         </a>
         <a
           style={{ width: 20 }}
-          className={'mr-2'}
+          className={"mr-2"}
           href="https://github.com/MichaelArriaga"
           target="_blank"
           rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const Footer = () => (
         </a>
         <a
           style={{ width: 20 }}
-          className={'mr-3'}
+          className={"mr-3"}
           href="https://github.com/MichaelArriaga"
           target="_blank"
           rel="noopener noreferrer"

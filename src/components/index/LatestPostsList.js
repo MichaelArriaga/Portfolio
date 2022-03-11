@@ -7,8 +7,8 @@ const LatestPostList = () => {
   return (
     <div className="sm:max-w-xl mb-8 sm:mb-16">
       <h3
-        style={{ fontFamily: fonts.regular }}
-        className="text-base text-gray-900 mb-2"
+        style={{ fontFamily: fonts.bold }}
+        className="text-xl text-gray-900 mb-2"
       >
         Latest Posts
       </h3>
@@ -17,7 +17,7 @@ const LatestPostList = () => {
           query {
             allMarkdownRemark(
               sort: { order: DESC, fields: [frontmatter___date] }
-              limit: 3
+              limit: 10
             ) {
               edges {
                 node {
