@@ -1,15 +1,11 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import fonts from "../../constants/font_names";
 import Post from "./Post";
 
 const LatestPostList = () => {
   return (
     <div className="sm:max-w-xl mb-8 sm:mb-16">
-      <h3
-        style={{ fontFamily: fonts.bold }}
-        className="text-xl text-gray-900 mb-2"
-      >
+      <h3 className="text-xl text-gray-900 mb-2 font-bold antialiased">
         Latest Posts
       </h3>
       <StaticQuery

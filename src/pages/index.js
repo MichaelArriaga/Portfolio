@@ -1,6 +1,5 @@
 import React from "react";
 import "../components/layout.css";
-import fonts from "../constants/font_names";
 import ProjectItem from "../components/index/ProjectItem";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
@@ -14,12 +13,11 @@ const Index = () => {
     >
       {/* apps start */}
       <div className="sm:max-w-screen-sm mx-auto">
-        <h3
-          style={{ fontFamily: fonts.bold }}
-          className="text-xl text-gray-900 mb-2"
-        >
-          My Apps
-        </h3>
+        <div className="flex flex-row justify-start items-center">
+          <h3 className="text-xl text-gray-900 mb-2 font-bold mr-2 antialiased">
+            My Apps
+          </h3>
+        </div>
         {/* https://minty-snippets.netlify.app/ */}
 
         <ProjectItem

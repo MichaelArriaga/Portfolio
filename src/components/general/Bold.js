@@ -1,8 +1,7 @@
-import React from 'react';
-import fonts from '../../constants/font_names';
+import React from "react";
 
 const Bold = ({ children }) => {
-  return <span style={{ fontFamily: fonts.bold }}>{children}</span>;
+  return <span className="font-bold">{children}</span>;
 };
 
 export default Bold;

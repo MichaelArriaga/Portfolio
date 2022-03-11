@@ -1,7 +1,5 @@
-import React from 'react';
-import fonts from '../../constants/font_names';
-import HeroHeader from '../general/HeroHeader';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
 const ProjectPageTemplate = ({
   primary_color,
@@ -25,33 +23,31 @@ const ProjectPageTemplate = ({
       <div className="max-w-screen-lg mx-auto">
         <div className="py-8">
           <Link to="/" className="underline text-lg text-left">
-            {'< Back'}
+            {"< Back"}
           </Link>
         </div>
-        {/* <HeroHeader highlighted={'home'} /> */}
         <img
           style={{ width: 300 }}
-          className={'mx-auto pt-8 mb-8'}
+          className={"mx-auto pt-8 mb-8"}
           src={mockupImg}
           alt="notloaded"
         />
 
         {/* project title start */}
-
-        <div className={'mb-2'}>
+        <div className={"mb-2"}>
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center">
             <h1
-              style={{ fontFamily: fonts.bold }}
-              className={'text-3xl tracking-tight sm:text-2xl sm:text-left'}
+              className={
+                "text-3xl tracking-tight sm:text-2xl sm:text-left font-bold antialiased"
+              }
             >
               {title}
 
               {/* try link start */}
               {try_url.length ? (
                 <a
-                  style={{ fontFamily: fonts.bold }}
                   className={
-                    'text-blue-600 block sm:inline sm:ml-4 text-xl text-center sm:text-left underline'
+                    "text-blue-600 block sm:inline sm:ml-4 text-xl text-center sm:text-left underline font-bold antialiased"
                   }
                   href={try_url}
                   target="_blank "
@@ -64,9 +60,9 @@ const ProjectPageTemplate = ({
             </h1>
           </div>
           <h2
-            style={{ fontFamily: fonts.bold, color: primary_color }}
+            style={{ color: primary_color }}
             className={
-              'text-xl tracking-tight text-center sm:text-xl sm:text-left'
+              "text-xl tracking-tight text-center sm:text-xl sm:text-left font-bold antialiased"
             }
           >
             {project_date}
@@ -75,11 +71,8 @@ const ProjectPageTemplate = ({
         </div>
 
         {/* description start */}
-        <div className={'mx-auto mb-4 sm:ml-0'}>
-          <p
-            style={{ fontFamily: fonts.regular }}
-            className={'text-lg sm:text-xl text-left'}
-          >
+        <div className={"mx-auto mb-4 sm:ml-0"}>
+          <p className={"text-lg sm:text-xl text-left font-normal antialiased"}>
             {description}
           </p>
         </div>
@@ -87,10 +80,12 @@ const ProjectPageTemplate = ({
 
         {/* scope sections start */}
         <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-start sm:items-start">
-          <ul className={'mb-4 sm:w-1/3'}>
+          <ul className={"mb-4 sm:w-1/3"}>
             <li
-              className={'text-xl text-center sm:text-left'}
-              style={{ fontFamily: fonts.bold, color: primary_color }}
+              style={{ color: primary_color }}
+              className={
+                "text-xl text-center sm:text-left font-bold antialiased"
+              }
             >
               SCOPE
             </li>
@@ -99,8 +94,9 @@ const ProjectPageTemplate = ({
               ? scope_array.map((item) => {
                   return (
                     <li
-                      style={{ fontFamily: fonts.semiBold }}
-                      className={'text-lg sm:text-xl text-center sm:text-left'}
+                      className={
+                        "text-lg sm:text-xl text-center sm:text-left font-semibold antialiased"
+                      }
                     >
                       {item}
                     </li>
@@ -108,10 +104,12 @@ const ProjectPageTemplate = ({
                 })
               : null}
           </ul>
-          <ul className={'mb-4 sm:w-1/3'}>
+          <ul className={"mb-4 sm:w-1/3"}>
             <li
-              className={'text-xl text-center sm:text-left'}
-              style={{ fontFamily: fonts.bold, color: primary_color }}
+              style={{ color: primary_color }}
+              className={
+                "text-xl text-center sm:text-left font-bold antialiased"
+              }
             >
               CORE TECH
             </li>
@@ -119,8 +117,9 @@ const ProjectPageTemplate = ({
               ? core_tech_array.map((item) => {
                   return (
                     <li
-                      style={{ fontFamily: fonts.semiBold }}
-                      className={'text-lg sm:text-xl text-center sm:text-left'}
+                      className={
+                        "text-lg sm:text-xl text-center sm:text-left font-semibold antialiased"
+                      }
                     >
                       {item}
                     </li>
@@ -128,10 +127,12 @@ const ProjectPageTemplate = ({
                 })
               : null}
           </ul>
-          <ul className={'mb-4 sm:w-1/3'}>
+          <ul className={"mb-4 sm:w-1/3"}>
             <li
-              className={'text-xl text-center sm:text-left'}
-              style={{ fontFamily: fonts.bold, color: primary_color }}
+              style={{ color: primary_color }}
+              className={
+                "text-xl text-center sm:text-left font-bold antialiased"
+              }
             >
               APPS USED
             </li>
@@ -139,8 +140,9 @@ const ProjectPageTemplate = ({
               ? apps_used_array.map((item) => {
                   return (
                     <li
-                      style={{ fontFamily: fonts.semiBold }}
-                      className={'text-lg sm:text-xl text-center sm:text-left'}
+                      className={
+                        "text-lg sm:text-xl text-center sm:text-left font-semibold antialiased"
+                      }
                     >
                       {item}
                     </li>
@@ -157,30 +159,26 @@ const ProjectPageTemplate = ({
 
         {/* features section start */}
         <h1
-          style={{ fontFamily: fonts.bold }}
           className={
-            'text-3xl tracking-tight text-center sm:text-2xl sm:text-left'
+            "text-3xl tracking-tight text-center sm:text-2xl sm:text-left font-bold antialiased"
           }
         >
           FEATURES
         </h1>
 
         <h2
-          style={{ fontFamily: fonts.bold, color: primary_color }}
+          style={{ color: primary_color }}
           className={
-            'text-xl sm:mb-2 mb-2 tracking-tight text-center sm:text-xl sm:text-left'
+            "text-xl sm:mb-2 mb-2 tracking-tight text-center sm:text-xl sm:text-left font-bold antialiased"
           }
         ></h2>
 
-        <ul className={'list-disc mb-4 sm:pl-6 '}>
+        <ul className={"list-disc mb-4 sm:pl-6 "}>
           <div className="mx-auto flex flex-col justify-center items-center sm:items-start">
             {features_array.length > 0
               ? features_array.map((item) => {
                   return (
-                    <li
-                      style={{ fontFamily: fonts.semiBold }}
-                      className="list-desc text-lg"
-                    >
+                    <li className="list-desc text-lg font-semibold antialiased">
                       {item}
                     </li>
                   );
@@ -192,17 +190,16 @@ const ProjectPageTemplate = ({
 
         {/* shared styles heading section start */}
         <h1
-          style={{ fontFamily: fonts.bold }}
           className={
-            'text-3xl tracking-tight text-center sm:text-2xl sm:text-left'
+            "text-3xl tracking-tight text-center sm:text-2xl sm:text-left font-bold antialiased"
           }
         >
           SHARED STYLES
         </h1>
         <h2
-          style={{ fontFamily: fonts.bold, color: primary_color }}
+          style={{ color: primary_color }}
           className={
-            'text-xl sm:mb-2 tracking-tight text-center sm:text-xl sm:text-left'
+            "text-xl sm:mb-2 tracking-tight text-center sm:text-xl sm:text-left font-bold antialiased"
           }
         >
           Design System
@@ -210,43 +207,31 @@ const ProjectPageTemplate = ({
         {/* shared styles heading section end */}
 
         {/* metrics section start */}
-        <h2
-          style={{ fontFamily: fonts.semiBold }}
-          className={'text-left text-lg mb-4'}
-        >
+        <h2 className={"text-left text-lg mb-4 font-semibold antialiased"}>
           Metrics
         </h2>
 
         <div className="w-full">
           <div
-            className={'sm:flex sm:flex-row sm:justify-start sm:items-center'}
+            className={"sm:flex sm:flex-row sm:justify-start sm:items-center"}
           >
             <div className="mb-2 flex flex-row justify-start items-center sm:mr-8 ">
               <img src={metrics.baseline_grid_img} alt="not loaded" />
-              <h3
-                style={{ fontFamily: fonts.regular }}
-                className={'text-xl ml-4 sm:text-lg'}
-              >
+              <h3 className={"text-xl ml-4 sm:text-lg font-normal antialiased"}>
                 {metrics.baseline_grid} baseline grid
               </h3>
             </div>
 
             <div className="mb-2 flex flex-row justify-start items-center sm:mr-8">
               <img src={metrics.gutter_img} alt="not loaded" />
-              <h3
-                style={{ fontFamily: fonts.regular }}
-                className={'text-xl ml-4 sm:text-lg'}
-              >
+              <h3 className={"text-xl ml-4 sm:text-lg font-normal antialiased"}>
                 {metrics.gutter} gutter/spacing
               </h3>
             </div>
 
             <div className="mb-2 flex flex-row justify-start items-center sm:mr-8">
               <img src={metrics.vertical_rhythm_img} alt="not loaded" />
-              <h3
-                style={{ fontFamily: fonts.regular }}
-                className={'text-xl ml-4 sm:text-lg'}
-              >
+              <h3 className={"text-xl ml-4 sm:text-lg font-normal antialiased"}>
                 {metrics.vertical_rhythm} vertical rhythm
               </h3>
             </div>
@@ -255,33 +240,24 @@ const ProjectPageTemplate = ({
         {/* metrics section end */}
 
         {/* colors section start */}
-        <h2
-          style={{ fontFamily: fonts.semiBold }}
-          className={'text-left text-lg mb-4'}
-        >
+        <h2 className={"text-left text-lg mb-4 font-semibold antialiased"}>
           Color
         </h2>
-        <ul className={'block flex flex-wrap justify-start items-center'}>
+        <ul className={"block flex flex-wrap justify-start items-center"}>
           {colors_array.map((color) => {
             return (
-              <li className={'flex flex-row justify-start items-center'}>
+              <li className={"flex flex-row justify-start items-center"}>
                 <div
-                  className={'h-32 w-32 p-2 mr-4 mb-4 border-4 border-black'}
+                  className={"h-32 w-32 p-2 mr-4 mb-4 border-4 border-black"}
                   style={{
                     background: color.color,
                     color: color.labelcolor,
                   }}
                 >
-                  <p
-                    style={{ fontFamily: fonts.semiBold }}
-                    className="leading-none"
-                  >
+                  <p className="leading-none font-semibold antialiased">
                     {color.label}
                   </p>
-                  <p
-                    style={{ fontFamily: fonts.semiBold }}
-                    className="leading-none"
-                  >
+                  <p className="leading-none font-semibold antialiased">
                     {color.color}
                   </p>
                 </div>
@@ -293,10 +269,7 @@ const ProjectPageTemplate = ({
 
         {/* typography section start */}
         <div className="mb-4">
-          <h2
-            style={{ fontFamily: fonts.semiBold }}
-            className={'text-left text-lg mb-4'}
-          >
+          <h2 className={"text-left text-lg mb-4 font-semibold antialiased"}>
             Typography
           </h2>
 
@@ -313,17 +286,16 @@ const ProjectPageTemplate = ({
         {flowchart_small_screen_img && flowchart_large_screen_img ? (
           <div className="mb-12">
             <h1
-              style={{ fontFamily: fonts.bold }}
               className={
-                'text-3xl tracking-tight text-center sm:text-2xl sm:text-left'
+                "text-3xl tracking-tight text-center sm:text-2xl sm:text-left font-bold antialiased"
               }
             >
               User Flows
             </h1>
             <h2
-              style={{ fontFamily: fonts.bold, color: primary_color }}
+              style={{ color: primary_color }}
               className={
-                'text-xl mb-2 sm:mb-4 tracking-tight text-center sm:text-xl sm:text-left'
+                "text-xl mb-2 sm:mb-4 tracking-tight text-center sm:text-xl sm:text-left font-bold antialiased"
               }
             >
               Main Functionality

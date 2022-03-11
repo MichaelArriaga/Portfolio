@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import fonts from "../../constants/font_names";
 import { emailValid } from "../../utils/validations";
 // import api from '../../api/v1/api';
 // import { post_api_v1_newsletter_registrations_path } from '../../api/v1/routes';
@@ -69,14 +68,11 @@ const EmailListSignupForm = () => {
     <div className="mb-4 mx-auto">
       <div className="">
         {/* 
-          <h3 style={{ fontFamily: fonts.semiBold }} className="mb-0 text-base">
+          <h3 className="mb-0 text-base font-semibold antialiased">
             Newsletter
           </h3>
         */}
-        <p
-          style={{ fontFamily: fonts.regular }}
-          className="text-center mb-1 pl-4"
-        >
+        <p className="text-center mb-1 pl-4 font-normal antialiased">
           Stay up-to-date with future projects
         </p>
       </div>
@@ -108,17 +104,14 @@ const EmailListSignupForm = () => {
               onClick={() => signup(form)}
               className={
                 is_loading
-                  ? "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white"
-                  : "py-2 px-3 cursor-pointer hover:bg-gray-700 rounded bg-gray-900 text-white"
+                  ? "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white font-normal antialiased"
+                  : "py-2 px-3 cursor-pointer hover:bg-gray-700 rounded bg-gray-900 text-white font-semibold antialiased"
               }
               value={"Join"}
             />
           </div>
           {form.email.errors.length > 0 ? (
-            <p
-              style={{ fontFamily: fonts.regular }}
-              className="text-xs pt-1 text-red-700 text-center"
-            >
+            <p className="text-xs pt-1 text-red-700 text-center font-normal antialiased">
               {form.email.errors[0]}
             </p>
           ) : null}
@@ -130,13 +123,12 @@ const EmailListSignupForm = () => {
               type="button"
               disabled={true}
               onClick={() => signup(form)}
-              className="py-1 px-3 rounded bg-green-600 text-white"
+              className="py-1 px-3 rounded bg-green-600 text-white font-normal antialiased"
               value={"✓ Thanks!"}
             />
           </div>
           {/* <p
-              style={{ fontFamily: fonts.regular }}
-              className="text-sm pt-1 text-gray-900"
+              className="text-sm pt-1 text-gray-900 font-normal antialiased"
             >
               Check your email to confirm
             </p> */}

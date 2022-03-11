@@ -4,7 +4,6 @@ import HeroHeader from "../components/general/HeroHeader";
 import Footer from "../components/Footer";
 import "./blog-template-css.css";
 import "./copy-code-btn-css.css";
-import fonts from "../constants/font_names";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -16,18 +15,12 @@ export default function Template({
       <HeroHeader highlighted="posts" />
       <div className="max-w-screen-md mx-auto pt-12 py-2">
         <div className="">
-          <h1
-            style={{ fontFamily: fonts.bold }}
-            className="text-3xl text-left leading-none mb-1"
-          >
+          <h1 className="text-3xl text-left leading-none mb-1 font-bold antialiased">
             {frontmatter.title}
           </h1>
-          <h2
-            style={{ fontFamily: fonts.regular }}
-            className="text-base text-left mb-4"
-          >
+          <h2 className="text-base text-left mb-4 font-normal antialiased">
             {frontmatter.date} /{" "}
-            <span style={{ fontFamily: fonts.bold }} className="readTime">
+            <span className="readTime font-bold antialiased">
               {frontmatter.readtime}
             </span>
           </h2>

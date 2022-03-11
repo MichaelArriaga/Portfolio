@@ -1,7 +1,6 @@
 import aboutimg from "../../static/etc/images/pages/about/self-pic.png";
 import { Link } from "gatsby";
 import React from "react";
-import fonts from "../constants/font_names";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 
 class About extends React.Component {
@@ -18,60 +17,42 @@ class About extends React.Component {
             src={aboutimg}
             alt="not loaded"
           />
-          <h3 className="font-bold text-3xl mb-4">Bio</h3>
-          <p
-            style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-4 text-gray-900"}
-          >
+          <h3 className="font-bold text-3xl my-2">Bio</h3>
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Mike is a Product Engineer and Single Founder Based in Seattle Wa.
             After hours, he's a Musician (Drumset and Bass Guitar).
           </p>
-          <p
-            style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-4 text-gray-900"}
-          >
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Previously, Mike was CTO and Co-Founder of{" "}
             <Link
-              style={{ fontFamily: fonts.bold }}
               to="/projects/fresh_and_tumble"
-              className="underline"
+              className="underline font-bold antialiased"
             >
               Fresh And Tumble
             </Link>
             , an Uber-style Delivery App for Laundry.
           </p>
-          <p
-            style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-4 text-gray-900"}
-          >
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             In 2018, Mike gained some notoriety for creating{" "}
             <Link
-              style={{ fontFamily: fonts.bold }}
               to="/projects/flex_mate"
-              className="underline"
+              className="underline font-bold antialiased"
             >
               Flex Mate
             </Link>
             , A free open source tool for Amazon Flex Drivers to estimate often
             unaccounted for expenses.
           </p>
-          <p
-            style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-4 text-gray-900"}
-          >
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Mike helps startups win through user-centered design and the ability
             to wear multiple hats in a product team.
           </p>
 
-          <p
-            style={{ fontFamily: fonts.regular }}
-            className={"text-lg mb-4 text-gray-900"}
-          >
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Looking for help with your project?{" "}
             <a
               href="mailto:m.arriaga.smb@gmail.com"
-              style={{ fontFamily: fonts.bold }}
-              className="underline"
+              className="underline font-bold antialiased"
             >
               Send Mike an Email
             </a>

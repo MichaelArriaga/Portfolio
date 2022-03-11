@@ -1,6 +1,5 @@
-import React from 'react';
-import fonts from '../constants/font_names';
-import SidebarLayout from '../components/layouts/SidebarLayout';
+import React from "react";
+import SidebarLayout from "../components/layouts/SidebarLayout";
 const Contact = () => {
   return (
     <SidebarLayout
@@ -9,16 +8,14 @@ const Contact = () => {
       highlighted_hero_link="contact"
     >
       <div style={{ marginBottom: 150 }} className="">
-        <h2
-          style={{ fontFamily: fonts.bold }}
-          className={'text-xl font-bold mb-2'}
-        >
+        <h2 className={"text-xl font-bold mb-2 font-bold antialiased"}>
           /Contact
         </h2>
 
         <p
-          style={{ fontFamily: fonts.regular }}
-          className={'text-lg sm:text-xl mb-2 text-gray-900'}
+          className={
+            "text-lg sm:text-xl mb-2 text-gray-900 font-normal antialiased"
+          }
         >
           Contact me
         </p>

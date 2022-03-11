@@ -1,10 +1,8 @@
 import React from "react";
-
-import twitter_icon from "../../static/etc/images/icons/logo-twitter.png";
+//import twitter_icon from "../../static/etc/images/icons/logo-twitter.png";
 import linkedin_icon from "../../static/etc/images/icons/logo-linkedin.png";
 import github_icon from "../../static/etc/images/icons/logo-github.png";
 import email_icon from "../../static/etc/images/icons/logo-email-envelope.png";
-import fonts from "../constants/font_names";
 
 const Footer = () => (
   <div className={"w-full mx-auto"}>
@@ -14,7 +12,7 @@ const Footer = () => (
       className={"py-3 flex flex-col sm:flex-row justify-center items-center"}
     >
       <div className="flex flex-row mb-2 sm:mb-0 justify-center items-center">
-        <h3 style={{ fontFamily: fonts.regular }} className="mr-1">
+        <h3 className="mr-1 font-normal antialiased">
           Made with ♥ in Seattle, WA
         </h3>
       </div>

@@ -1,2 +1,2 @@
-import './src/css/index.css';
-require('prismjs/themes/prism.css');
+import "./src/styles/global.css";
+require("prismjs/themes/prism.css");

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import fonts from "../constants/font_names";
 import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import Post from "../components/blog/Post";
@@ -64,8 +63,9 @@ const Blog = ({
         {/* tags section start */}
         <div className={"mb-2 py-2"}>
           <h2
-            style={{ fontFamily: fonts.bold }}
-            className={"text-md sm:text-base font-bold mb-2"}
+            className={
+              "text-md sm:text-base font-bold mb-2 font-bold antialiased"
+            }
           >
             Tags
           </h2>
@@ -93,13 +93,10 @@ const Blog = ({
                       }
                     >
                       <h3
-                        style={{
-                          fontFamily: fonts.semiBold,
-                        }}
                         className={
                           selected_tag === tag
-                            ? "text-sm text-white"
-                            : "text-sm text-gray-900"
+                            ? "text-sm text-white font-semibold antialiased"
+                            : "text-sm text-gray-900 font-semibold antialiased"
                         }
                       >
                         {tag}
@@ -113,11 +110,8 @@ const Blog = ({
         {/* tags section end */}
 
         {/* posts section start */}
-        <div style={{ height: "auto" }} className="">
-          <h2
-            style={{ fontFamily: fonts.bold }}
-            className={"text-lg font-bold mb-2"}
-          >
+        <div style={{ height: "auto" }}>
+          <h2 className={"text-lg font-bold mb-2 font-bold antialiased"}>
             Posts (43)
           </h2>
           {edges.length > 0

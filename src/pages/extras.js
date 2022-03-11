@@ -1,6 +1,5 @@
 import React from "react";
 import SidebarLayout from "../components/layouts/SidebarLayout";
-import fonts from "../constants/font_names";
 
 const Extras = () => {
   return (
@@ -10,10 +9,7 @@ const Extras = () => {
       highlighted_hero_link={"extras"}
     >
       <div className="sm:max-w-screen-sm mx-auto">
-        <h3
-          style={{ fontFamily: fonts.bold }}
-          className="text-lg text-gray-900 mb-3 sm:mb-5"
-        >
+        <h3 className="text-lg text-gray-900 mb-3 sm:mb-5 font-bold antialiased">
           My Extras
         </h3>
       </div>
