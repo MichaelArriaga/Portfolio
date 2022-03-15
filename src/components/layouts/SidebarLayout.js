@@ -3,7 +3,7 @@ import ReusableHelmet from "../ReusableHelmet";
 import HeroHeader from "../general/HeroHeader";
 import Footer from "../Footer";
 import EmailListSignupForm from "../email_lists/EmailListSignupForm";
-//import twitter_icon from '../../../static/etc/images/icons/logo-twitter.png';
+import twitter_icon from "../../../static/etc/images/icons/logo-twitter.png";
 import linkedin_icon from "../../../static/etc/images/icons/logo-linkedin.png";
 import github_icon from "../../../static/etc/images/icons/logo-github.png";
 import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
@@ -34,6 +34,18 @@ const SidebarLayout = ({
           <div className="mb-4">
             {/* socials start */}
             <div className="flex flex-row justify-center items-center mb-6">
+              <a
+                href="https://twitter.com/mike_ray_ux"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={twitter_icon}
+                  alt=""
+                  style={{ width: 25 }}
+                  className="mr-2"
+                />
+              </a>
               <a
                 href="https://www.linkedin.com/in/mike-ray-26a874230/"
                 target="_blank"
