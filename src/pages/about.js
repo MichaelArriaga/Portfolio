@@ -34,7 +34,7 @@ class About extends React.Component {
             className={"text-lg mb-3 text-gray-900 font-normal antialiased"}
           ></p>
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
-            Mike's latest software product{" "}
+            Mike's latest product{" "}
             <a
               href="https://minty-snippets.netlify.app/"
               className="underline font-bold antialiased"
