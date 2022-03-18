@@ -3,7 +3,7 @@ import "../components/layout.css";
 import ProjectItem from "../components/index/ProjectItem";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
-
+import { Link } from "gatsby";
 const Index = () => {
   return (
     <SidebarLayout
@@ -18,17 +18,47 @@ const Index = () => {
             My Apps
           </h3>
         </div>
-        {/* https://minty-snippets.netlify.app/ */}
+        <div>
+          <Link
+            to={"https://minty-snippets.netlify.app/"}
+            // style={{ height: 144 }}
+            className={
+              "block w-full mb-2 ml-3 rounded-lg bg-white border-gray-100 text-gray-900"
+            }
+            target={"_blank"}
+          >
+            <div className="">
+              <div className="flex flex-wrap justify-start items-center">
+                <h1
+                  className={
+                    "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 underline font-bold antialiased"
+                  }
+                >
+                  Minty Snippets
+                </h1>
+                <h3
+                  style={{ marginBottom: 0 }}
+                  className={
+                    "text-lg text-gray-900 text-left leading-none tracking-snug font-semibold antialiased"
+                  }
+                >
+                  (2022)
+                </h3>
+              </div>
+              <p
+                style={{ color: "#EA522A" }}
+                className="mt-0 text-lg text-gray-500 font-bold text-left leading-none antialiased"
+              >
+                <span className="text-base mr-1">🎉 </span>
+                #7 on Product Hunt (3/13/2022){" "}
+              </p>
+            </div>
+            <p className="text-lg text-gray-900 leading-tight font-normal antialiased">
+              Make your job search less repetitive.
+            </p>
+          </Link>
+        </div>
 
-        <ProjectItem
-          title="Minty Snippets"
-          underline_color="#3661F2"
-          underline_width={190}
-          time_range="2022"
-          description="Make your job search less repetitive."
-          route="https://minty-snippets.netlify.app/"
-          open_in_new_tab={true}
-        />
         <ProjectItem
           title="Fresh And Tumble"
           underline_color="#D70CF5"
