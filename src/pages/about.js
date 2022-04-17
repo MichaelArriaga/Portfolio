@@ -3,6 +3,11 @@ import { Link } from "gatsby";
 import React from "react";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 
+//
+//
+//
+// Looking for help with your project or team? Let's chat.
+
 class About extends React.Component {
   render() {
     return (
@@ -19,16 +24,19 @@ class About extends React.Component {
           />
           <h3 className="font-bold text-3xl my-2">Bio</h3>
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
-            Mike is a Product Engineer and Single Founder Based in Seattle Wa.
-            After hours, he's a Musician (Drumset and Bass Guitar). Previously,
-            Mike was{" "}
+            Mike is a Product Engineer and Rails Enthusiast based in Seattle WA.
+            After hours, he's a Musician (Drums & Bass Guitar).
+          </p>
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
+            Previously, Mike was Founder, CTO and Principal Engineer at{" "}
             <Link
               to="/projects/fresh_and_tumble"
               className="underline font-bold antialiased"
             >
-              Founder and CTO of Fresh And Tumble
-            </Link>
-            , an Uber-style Delivery App for Laundry.
+              Fresh And Tumble,
+            </Link>{" "}
+            an Uber-of Delivery App which consisted of 2 React Native Apps:
+            (Customer/Driver) & Web App/API powered by a Rails 6 Monolith.
           </p>
           <p
             className={"text-lg mb-3 text-gray-900 font-normal antialiased"}
@@ -42,22 +50,25 @@ class About extends React.Component {
               rel="noreferrer"
             >
               Minty Snippets
-            </a>
-            , achieved 7th place on{" "}
+            </a>{" "}
+            achieved 7th place on{" "}
             <a
               href="https://www.producthunt.com/posts/minty-snippets"
               className="underline font-bold antialiased"
               target="_blank"
               rel="noreferrer"
             >
-              Product Hunt at Launch Day
+              Product Hunt at Launch Day (3/13/2022) 🎉
             </a>{" "}
-            🎉
           </p>
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
-            Mike believes that Single Technical Founders (STF) can win through a
-            strong combination of user-centered design and the ability to wear
-            multiple hats. Looking for help with your project or team?{" "}
+            With over 10 years experience in Web Development and 8 years
+            experience building Web Apps and RESTful APIs with Rails, Mike has a
+            strong understanding of both Web Development best practices and how
+            to architect Rails apps that scale.
+          </p>
+          <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
+            Need help with your team or project?{" "}
             <a
               href="mailto:m.arriaga.smb@gmail.com"
               className="underline font-bold antialiased"
