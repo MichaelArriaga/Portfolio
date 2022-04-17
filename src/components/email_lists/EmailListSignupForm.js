@@ -9,7 +9,7 @@ const EmailListSignupForm = () => {
     email: {
       value: "",
       validations: [],
-      errors: [],
+      errors: [""],
     },
   });
 
@@ -42,6 +42,7 @@ const EmailListSignupForm = () => {
             setForm({
               ...form,
               email: {
+                ...form.email,
                 value: "",
               },
             });
@@ -65,86 +66,63 @@ const EmailListSignupForm = () => {
   return (
     <div className="mb-4 mx-auto">
       <div className="">
-        {/* 
-          <h3 className="mb-0 text-base font-semibold antialiased">
-            Newsletter
-          </h3>
-        */}
         <p className="text-center mb-1 pl-4 font-normal antialiased">
           Stay up-to-date with future projects
         </p>
       </div>
 
-      {/* email field start */}
-      {!signup_success ? (
-        <form action="post" method="post">
-          <div className="flex flex-row justify-center items-center">
+      <form action="post" method="post">
+        <div className="flex flex-row justify-center items-center">
+          <input
+            type="text"
+            name="email"
+            autoComplete="on"
+            placeholder="Email"
+            value={form.email.value}
+            disabled={signup_success}
+            onChange={(e) => {
+              setForm({
+                ...form,
+                email: {
+                  ...form.email,
+                  value: e.target.value,
+                },
+              });
+            }}
+            className="border rounded py-2 px-2 mr-2"
+          />
+          {is_loading ? (
             <input
-              type="text"
-              name="email"
-              autoComplete="on"
-              placeholder="Email"
-              value={form.email.value}
-              onChange={(e) => {
-                setForm({
-                  ...form,
-                  email: {
-                    ...form.email,
-                    value: e.target.value,
-                  },
-                });
-              }}
-              className="border rounded py-2 px-2 mr-2"
-            />
-            <input
-              type="submit"
-              disabled={is_loading}
+              type="button"
+              disabled={true}
               onClick={() => signup(form)}
               className={
-                is_loading
-                  ? "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white font-normal antialiased"
-                  : "py-2 px-3 cursor-pointer hover:bg-gray-700 rounded bg-gray-900 text-white font-semibold antialiased"
+                "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white font-normal antialiased"
               }
               value={"Join"}
             />
-          </div>
-          {form.email.errors.length > 0 ? (
-            <p className="text-xs pt-1 text-red-700 text-center font-normal antialiased">
-              {form.email.errors[0]}
-            </p>
-          ) : null}
-        </form>
-      ) : (
-        <form action="post" method="post">
-          <div className="flex flex-row justify-center itmes-center">
+          ) : (
             <input
-              type="text"
-              name="email"
-              autoComplete="on"
-              placeholder="Email"
-              value={form.email.value}
-              onChange={(e) => {
-                setForm({
-                  ...form,
-                  email: {
-                    ...form.email,
-                    value: e.target.value,
-                  },
-                });
-              }}
-              className="border rounded py-2 px-2 mr-2"
-            />
-            <input
-              type="submit"
-              disabled={true}
+              type="button"
+              disabled={is_loading}
               onClick={() => signup(form)}
               className="py-1 px-3 rounded bg-green-600 text-white font-normal antialiased"
-              value={"Joined! ✓"}
+              className={
+                signup_success
+                  ? "py-2 px-3 rounded bg-green-600 text-white font-normal antialiased"
+                  : "py-2 px-3 cursor-pointer hover:bg-gray-800 rounded bg-gray-900 text-white font-semibold antialiased"
+              }
+              value={signup_success ? "Joined!" : "Join"}
             />
-          </div>
-        </form>
-      )}
-      {/* email field end */}
+          )}
+        </div>
+
+        {form.email.errors.length > 0 ? (
+          <p className="text-xs pt-1 text-red-700 text-center font-normal antialiased">
+            {form.email.errors[0]}
+          </p>
+        ) : null}
+      </form>
     </div>
   );
 };
