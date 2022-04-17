@@ -97,7 +97,7 @@ const EmailListSignupForm = () => {
               className="border rounded py-2 px-2 mr-2"
             />
             <input
-              type="button"
+              type="submit"
               disabled={is_loading}
               onClick={() => signup(form)}
               className={
@@ -135,11 +135,11 @@ const EmailListSignupForm = () => {
               className="border rounded py-2 px-2 mr-2"
             />
             <input
-              type="button"
+              type="submit"
               disabled={true}
               onClick={() => signup(form)}
               className="py-1 px-3 rounded bg-green-600 text-white font-normal antialiased"
-              value={"✓ Joined!"}
+              value={"Joined! ✓"}
             />
           </div>
         </form>
