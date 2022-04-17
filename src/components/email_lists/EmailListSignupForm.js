@@ -15,12 +15,18 @@ const EmailListSignupForm = () => {
 
   const [signup_success, setSignupSuccess] = useState(false);
   const [is_loading, setIsLoading] = useState(false);
+
   const signup = async () => {
     let newState = { ...form.email };
     newState.errors = [];
 
     if (!emailValid(newState.value)) {
       newState.errors.push("Check your email and try again.");
+
+      setForm({
+        ...form,
+        email: newState,
+      });
     } else {
       try {
         setIsLoading(true);
@@ -29,19 +35,16 @@ const EmailListSignupForm = () => {
         const data = {
           message: "success",
         };
-        // const { data } = await api.post(
-        //   post_api_v1_newsletter_registrations_path,
-        //   {
-        //     params: { email: form.email.value,
-        //     },
-        //   },
-        //   {
-        //     headers: { Authorization: null },
-        //   }
-        // );
         switch (data.message) {
           case "success":
             setSignupSuccess(true);
+
+            setForm({
+              ...form,
+              email: {
+                value: "",
+              },
+            });
             break;
           case "failure":
             setSignupSuccess(false);
@@ -57,11 +60,6 @@ const EmailListSignupForm = () => {
         console.log("ERROR", err.message);
       }
     }
-
-    setForm({
-      ...form,
-      email: newState,
-    });
   };
 
   return (
@@ -118,20 +116,32 @@ const EmailListSignupForm = () => {
         </form>
       ) : (
         <form action="post" method="post">
-          <div className="flex flex-row justify-start itmes-center">
+          <div className="flex flex-row justify-center itmes-center">
+            <input
+              type="text"
+              name="email"
+              autoComplete="on"
+              placeholder="Email"
+              value={form.email.value}
+              onChange={(e) => {
+                setForm({
+                  ...form,
+                  email: {
+                    ...form.email,
+                    value: e.target.value,
+                  },
+                });
+              }}
+              className="border rounded py-2 px-2 mr-2"
+            />
             <input
               type="button"
               disabled={true}
               onClick={() => signup(form)}
               className="py-1 px-3 rounded bg-green-600 text-white font-normal antialiased"
-              value={"✓ Thanks!"}
+              value={"✓ Joined!"}
             />
           </div>
-          {/* <p
-              className="text-sm pt-1 text-gray-900 font-normal antialiased"
-            >
-              Check your email to confirm
-            </p> */}
         </form>
       )}
       {/* email field end */}

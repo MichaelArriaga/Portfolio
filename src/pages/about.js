@@ -3,11 +3,6 @@ import { Link } from "gatsby";
 import React from "react";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 
-//
-//
-//
-// Looking for help with your project or team? Let's chat.
-
 class About extends React.Component {
   render() {
     return (
