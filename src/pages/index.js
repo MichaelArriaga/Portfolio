@@ -4,6 +4,7 @@ import ProjectItem from "../components/index/ProjectItem";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import { Link } from "gatsby";
+
 const Index = () => {
   return (
     <SidebarLayout

@@ -24,7 +24,7 @@ const SidebarLayout = ({
         {/* left panel start */}
         <div
           style={{ width: 350, height: "100vh", minHeight: "100vh" }}
-          className="hidden sm:block w-64 mr-4 border-r-4 border-gray-900"
+          className="hidden sm:block w-64 mr-4 border-r border-gray-300"
         >
           <div style={{ marginTop: 45 }}></div>
           <div style={{ marginBottom: -20 }}>

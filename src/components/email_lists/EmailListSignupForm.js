@@ -5,6 +5,7 @@ import { emailValid } from "../../utils/validations";
 import { sleep } from "../../utils/helpers";
 
 const EmailListSignupForm = () => {
+  console.log("asdlkfjasdflkj");
   const [form, setForm] = useState({
     email: {
       value: "",
@@ -93,7 +94,7 @@ const EmailListSignupForm = () => {
           />
           {is_loading ? (
             <input
-              type="button"
+              type="submit"
               disabled={true}
               onClick={() => signup(form)}
               className={
@@ -103,10 +104,12 @@ const EmailListSignupForm = () => {
             />
           ) : (
             <input
-              type="button"
+              type="submit"
               disabled={is_loading}
-              onClick={() => signup(form)}
-              className="py-1 px-3 rounded bg-green-600 text-white font-normal antialiased"
+              onClick={(e) => {
+                e.preventDefault();
+                signup(form);
+              }}
               className={
                 signup_success
                   ? "py-2 px-3 rounded bg-green-600 text-white font-normal antialiased"
