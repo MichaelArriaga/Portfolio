@@ -81,6 +81,6 @@ rl.question(
 );
 
 rl.on("close", () => {
-  console.log("\nBYE BYE !!!");
+  console.log("Closing....");
   process.exit(0);
 });
