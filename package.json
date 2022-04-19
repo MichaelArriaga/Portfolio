@@ -1,6 +1,6 @@
 {
   "name": "mike.io",
-  "description": "Mike Arriaga Developer Portfolio",
+  "description": "Mike Ray Developer Portfolio",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop -p 8000",

@@ -1,10 +1,10 @@
 ---
-slug: '/blog/animate-blog-posts-with-isotope'
-path: '/blog/animate-blog-posts-with-isotope'
-date: '2018-03-07'
-title: 'Animate and Filter Your Jekyll Blog Posts with Isotope'
-readtime: '10 min read'
-tags: 'Jekyll'
+slug: "/blog/animate-blog-posts-with-isotope"
+path: "/blog/animate-blog-posts-with-isotope"
+date: "2018-03-07"
+title: "Animate and Filter Your Jekyll Blog Posts with Isotope"
+readtime: "10 min read"
+tags: "Jekyll"
 ---
 
 Adding filter/sorting functionality to our Jekyll blog is a must these days to keep things in order. We can get that functionality easily by using Isotope and as a bonus for our efforts we get the animation effect for free since that is part of the core functionality of the Isotope library.
@@ -31,8 +31,8 @@ At the very top of our our Jekyll posts we have our **front matter** which by de
 ```yaml
 ---
 layout: post
-title: 'Sample Post'
-author: Michael Arriaga
+title: "Sample Post"
+author: Mike Ray
 date: 2018-01-14 20:43:28 -0800
 categories: guides
 comments: true
@@ -160,16 +160,16 @@ Now we have to simply initalize Isotope in our main.js:
 
 ```javascript
 // isotope initializer
-var elem = document.querySelector('.grid');
+var elem = document.querySelector(".grid");
 var iso = new Isotope(elem, {
   // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
+  itemSelector: ".grid-item",
+  layoutMode: "fitRows",
 });
 
 // element argument can be a selector string
 //   for an individual element
-var iso = new Isotope('.grid', {
+var iso = new Isotope(".grid", {
   // options
 });
 ```
@@ -178,8 +178,8 @@ Finally we can add our sort functionality using jQuery:
 
 ```javascript
 // filter posts on button click
-$('.post-sort-btn').on('click', function () {
-  var filterValue = $(this).attr('data-filter');
+$(".post-sort-btn").on("click", function () {
+  var filterValue = $(this).attr("data-filter");
   // use filter function if value matches
   filterValue = filterFns[filterValue] || filterValue;
   $grid.isotope({

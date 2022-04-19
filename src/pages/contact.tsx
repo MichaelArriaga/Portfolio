@@ -3,8 +3,8 @@ import SidebarLayout from "../components/layouts/SidebarLayout";
 const Contact = () => {
   return (
     <SidebarLayout
-      meta_title="Mike Arriaga Contact"
-      meta_description="Mike Arriaga Contact"
+      meta_title="Mike Ray Contact"
+      meta_description="Mike Ray Contact"
       highlighted_hero_link="contact"
     >
       <div style={{ marginBottom: 150 }} className="">
