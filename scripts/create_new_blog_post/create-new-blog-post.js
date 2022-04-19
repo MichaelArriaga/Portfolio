@@ -23,6 +23,7 @@ path: /blog/${filename}
 date: ${TODAYS_DATE}
 title: ${post_name}
 blurb: ${post_name}
+thumbnail: ""
 readtime: '15 min read'
 tags: 'Tag1, Tag2, Tag3'
 ---

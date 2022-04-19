@@ -57,11 +57,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-//thumbnail {
-//childImageSharp {
-//sizes(maxWidth: 600) {
-//...GatsbyImageSharpSizes
-//}
-//}
-//}
