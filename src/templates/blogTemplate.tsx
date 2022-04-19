@@ -5,20 +5,14 @@ import Footer from "../components/Footer";
 import "./blog-template-css.css";
 import "./copy-code-btn-css.css";
 
-interface PropTypes {
-  data: any;
-  pageContext: any;
-  location: any;
-}
-
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
   pageContext,
   location,
-}: PropTypes) {
-  //const post = data.markdownRemark;
+}: any) {
+  const post = data.markdownRemark;
   //const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
+  //const { previous, next } = pageContext;
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   //const thumbnail = post.frontmatter.thumbnail;

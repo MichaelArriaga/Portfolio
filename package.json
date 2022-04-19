@@ -7,7 +7,8 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "new-blog-post": "node ./scripts/create_new_blog_post/create-new-blog-post.js"
   },
   "dependencies": {
     "autoprefixer": "^10.3.1",
