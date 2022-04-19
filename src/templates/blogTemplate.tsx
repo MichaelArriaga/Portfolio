@@ -18,7 +18,7 @@ export default function Template({
 }: PropTypes) {
   //const post = data.markdownRemark;
   //const siteTitle = data.site.siteMetadata.title;
-  //const { previous, next } = pageContext;
+  const { previous, next } = pageContext;
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   //const thumbnail = post.frontmatter.thumbnail;
