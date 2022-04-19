@@ -1,9 +1,9 @@
-const path = require('path');
+const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.tsx`);
 
   return graphql(`
     {
@@ -34,19 +34,3 @@ exports.createPages = ({ actions, graphql }) => {
     });
   });
 };
-
-// NO LONGER USES TYPEFORM
-// exports.onCreateWebpackConfig = ({ stage, actions }) => {
-//   if (stage === 'build-html') {
-//     actions.setWebpackConfig({
-//       module: {
-//         rules: [
-//           {
-//             test: /@typeform/,
-//             loader: 'null-loader',
-//           },
-//         ],
-//       },
-//     });
-//   }
-// };

@@ -3,7 +3,11 @@ import mike_circle_logo from "../../../static/etc/images/icons/mike-circle-logo.
 import "../layout.css";
 import { Link } from "gatsby";
 
-const HeroHeader = ({ highlighted }) => {
+interface PropTypes {
+  highlighted: string;
+}
+
+const HeroHeader = ({ highlighted }: PropTypes) => {
   return (
     <div className="flex flex-col justify-center items-center mb-8">
       <img
