@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode, useState } from "react";
 import ReusableHelmet from "../ReusableHelmet";
 import HeroHeader from "../general/HeroHeader";
 import Footer from "../Footer";
@@ -9,10 +9,10 @@ import github_icon from "../../../static/etc/images/icons/logo-github.png";
 import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
 
 interface PropTypes {
+  children: ReactNode;
   meta_title: string;
   meta_description: string;
   highlighted_hero_link: string;
-  children: Function;
 }
 
 const SidebarLayout = ({
@@ -88,43 +88,7 @@ const SidebarLayout = ({
             </div>
             {/* socials end */}
             <EmailListSignupForm />
-
-            {/* 
-            <div className="py-1 flex flex-row justify-start items-center">
-                <h3
-                  className="text-base mb-2 text-gray-900 mr-2 font-normal antialiased"
-                >
-                  Need help?{" "}
-                </h3>
-
-              <h3 className="pb-2">
-                <a
-                  href="mailto: m.arriaga.smb@gmail.com"
-                  className="text-gray-900 underline font-bold antialiased"
-                >
-                  Send me an email
-                </a>{" "}
-              </h3>
-            </div>
-              */}
-
             <div className="w-full mb-4"></div>
-            {/* <div className="sm:max-w-screen-sm mx-auto my-2">
-              <h3
-                className="text-left text-sm mb-2 font-normal antialiased"
-              >
-                Hey! <span className="pl-1"></span> 👋
-              </h3>
-              <h3
-                className="text-sm mb-2 text-gray-900 font-normal antialiased"
-              >
-                I'm a Software Engineer and Single Founder based in Seattle
-                Washington. I help startups win through user-centered design and
-                the ability to wear multiple hats on a product team. On
-                occasion, I write about my favorite tools for building software
-                products: Ruby on Rails and React Native.
-              </h3>
-            </div> */}
           </div>
         </div>
         {/* left panel end */}

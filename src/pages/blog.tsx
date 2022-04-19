@@ -7,7 +7,7 @@ const Blog = ({
   data: {
     allMarkdownRemark: { edges },
   },
-}) => {
+}: any) => {
   const [category_tags, setCategoryTags] = useState([]);
   const [selected_tag, setSelectedTag] = useState("All");
 
@@ -18,9 +18,9 @@ const Blog = ({
   const setCategoryTagsFromQuery = () => {
     let tags_to_set = ["All"];
     if (edges.length > 0) {
-      edges.forEach((edge) => {
+      edges.forEach((edge: any) => {
         let tags = edge.node.frontmatter.tags.split(", ");
-        tags.forEach((tag) => {
+        tags.forEach((tag: any) => {
           tags_to_set.push(tag);
         });
       });
@@ -41,7 +41,7 @@ const Blog = ({
     }
   };
 
-  const postIncludedInFilter = (tags) => {
+  const postIncludedInFilter = (tags: any) => {
     let included = false;
     if (
       selected_tag === "" ||
@@ -115,7 +115,7 @@ const Blog = ({
             Posts (43)
           </h2>
           {edges.length > 0
-            ? edges.map((item) => {
+            ? edges.map((item: any) => {
                 let post = item.node.frontmatter;
                 let post_tags = post.tags.split(", ");
                 if (postIncludedInFilter(post_tags)) {
