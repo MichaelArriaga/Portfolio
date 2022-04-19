@@ -1,5 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
+
+interface PropTypes {
+  title: string;
+  underline_color: string;
+  underline_width: number;
+  time_range: string;
+  description: string;
+  route: string;
+  open_in_new_tab: boolean;
+}
+
 const ProjectItem = ({
   title,
   underline_color,
@@ -8,7 +19,7 @@ const ProjectItem = ({
   description,
   route,
   open_in_new_tab,
-}) => {
+}: PropTypes) => {
   return (
     <Link
       to={route}
@@ -36,15 +47,6 @@ const ProjectItem = ({
             ({time_range})
           </h3>
         </div>
-        {/* 
-          <div
-            style={{
-              width: underline_width,
-              height: 5,
-              backgroundColor: underline_color || "black",
-            }}
-          />
-        */}
       </div>
       <p className="text-lg text-gray-900 leading-tight font-normal antialiased">
         {description}

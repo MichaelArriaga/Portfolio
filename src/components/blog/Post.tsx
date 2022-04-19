@@ -1,7 +1,13 @@
-import React from "react";
 import { Link } from "gatsby";
 
-const Post = ({ title, date, slug, post_tags }) => {
+interface PropTypes {
+  title: string;
+  date: string;
+  slug: string;
+  post_tags: Array<String>;
+}
+
+const Post = ({ title, date, slug, post_tags }: PropTypes) => {
   return (
     <div className={"sm:max-w-xl "}>
       <Link className="flex justify-start items-center mb-1" to={slug}>
@@ -19,7 +25,7 @@ const Post = ({ title, date, slug, post_tags }) => {
 
       <div className={"flex flex-row justify-start items-center"}>
         {post_tags && post_tags.length > 0
-          ? post_tags.map((tag) => (
+          ? post_tags.map((tag: any): any => (
               // post tag start
               <button
                 disabled={true}

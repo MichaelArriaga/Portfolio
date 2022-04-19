@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const Post = ({ slug, title, date, post_tags }) => {
+interface PropTypes {
+  slug: string;
+  title: string;
+  date: string;
+  post_tags: Array<string>;
+}
+
+const Post = ({ slug, title, date, post_tags }: PropTypes) => {
   return (
     <div className={"sm:max-w-xl mx-auto ml-3 mb-3"}>
       <Link className="flex justify-start items-center mb-1" to={slug}>

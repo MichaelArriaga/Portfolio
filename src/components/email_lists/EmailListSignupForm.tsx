@@ -55,7 +55,7 @@ const EmailListSignupForm = () => {
             setIsLoading(false);
             break;
         }
-      } catch (err) {
+      } catch (err: any) {
         setIsLoading(false);
         setSignupSuccess(false);
         newState.errors.push("Network Error");
@@ -96,7 +96,7 @@ const EmailListSignupForm = () => {
             <input
               type="submit"
               disabled={true}
-              onClick={() => signup(form)}
+              onClick={() => signup()}
               className={
                 "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white font-normal antialiased"
               }
@@ -108,7 +108,7 @@ const EmailListSignupForm = () => {
               disabled={is_loading}
               onClick={(e) => {
                 e.preventDefault();
-                signup(form);
+                signup();
               }}
               className={
                 signup_success

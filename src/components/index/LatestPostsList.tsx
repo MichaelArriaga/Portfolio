@@ -35,7 +35,7 @@ const LatestPostList = () => {
           return (
             <>
               {posts.length > 0
-                ? posts.map((item) => {
+                ? posts.map((item: any) => {
                     let frontmatter = item.node.frontmatter;
                     return (
                       <Post

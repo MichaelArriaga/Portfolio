@@ -1,6 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const Bold = ({ children }) => {
+interface PropTypes {
+  children: ReactNode;
+}
+
+const Bold = ({ children }: PropTypes) => {
   return <span className="font-bold">{children}</span>;
 };
 

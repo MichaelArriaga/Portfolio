@@ -8,14 +8,21 @@ import linkedin_icon from "../../../static/etc/images/icons/logo-linkedin.png";
 import github_icon from "../../../static/etc/images/icons/logo-github.png";
 import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
 
+interface PropTypes {
+  meta_title: string;
+  meta_description: string;
+  highlighted_hero_link: string;
+  children: Function;
+}
+
 const SidebarLayout = ({
   meta_title,
   meta_description,
   highlighted_hero_link,
   children,
-}) => {
+}: PropTypes) => {
   return (
-    <div className="">
+    <div>
       <ReusableHelmet title={meta_title} description={meta_description} />
       <div
         style={{ minWidth: 300, height: "100vh", minHeight: "100vh" }}
