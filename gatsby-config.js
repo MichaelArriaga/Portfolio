@@ -1,8 +1,12 @@
 module.exports = {
   // pathPrefix: "michaelarriaga.github.io/michael-arriaga-portfolio",
   siteMetadata: {
-    title: 'Mike Arriaga Portfolio',
-    siteUrl: 'https://ekim.me',
+    title: "Mike Ray",
+    siteUrl: "https://mike-ray.netlify.app",
+    url: "https://mike-ray.netlify.app",
+    description: "Product Engineer and Rails Enthusiast",
+    image: "",
+    twitterUsername: "@mike_ray_ux",
   },
   plugins: [
     // config step for tailwindcss installation
@@ -12,7 +16,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/blog`,
-        name: 'markdown-pages',
+        name: "markdown-pages",
       },
     },
     `gatsby-plugin-sharp`,
@@ -22,17 +26,17 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-code-buttons',
+            resolve: "gatsby-remark-code-buttons",
             options: {
               tooltipText: `Copy to clipboard`,
-              toasterText: 'Copied to clipboard',
+              toasterText: "Copied to clipboard",
               toasterDuration: 5000,
             },
           },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,

@@ -7,9 +7,15 @@ import "./copy-code-btn-css.css";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  pageContext,
+  location,
 }) {
+  const post = data.markdownRemark;
+  //const siteTitle = data.site.siteMetadata.title;
+  //const { previous, next } = pageContext;
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
+  //const thumbnail = post.frontmatter.thumbnail;
   return (
     <div className="mt-10">
       <HeroHeader highlighted="posts" />
@@ -41,11 +47,21 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         path
+        date(formatString: "MMMM DD, YYYY")
         title
+        description
         readtime
+        tags
       }
     }
   }
 `;
+
+//thumbnail {
+//childImageSharp {
+//sizes(maxWidth: 600) {
+//...GatsbyImageSharpSizes
+//}
+//}
+//}
