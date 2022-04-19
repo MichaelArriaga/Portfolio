@@ -66,9 +66,15 @@ rl.question(
   "What do you want the name of the post to be? (ex: Top 10 Rubyists to follow in 2022)  ",
   (post_name) => {
     console.log(`Title: '${post_name}'`);
-    console.log(`Is that correct? (Y|N) `);
+    console.log(`Is that correct? (Y/[Enter]|N) `);
     rl.question("", (confirm) => {
-      if (confirm === "Yes" || confirm === "yes" || confirm === "y") {
+      if (
+        // enter key
+        !confirm ||
+        confirm === "Yes" ||
+        confirm === "yes" ||
+        confirm === "y"
+      ) {
         createNewBlogPost(post_name);
       }
 
