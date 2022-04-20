@@ -4,8 +4,8 @@
 // |_|  |_|_|_\_\___| |_|_\__,_|\_, |
 //                             |__/
 // create-new-blog-post.js (Node script for gatsby.js)
-
-const fs = require("fs");
+const fs = require("fs-extra");
+const path = require("path");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -22,16 +22,22 @@ slug: /blog/${filename}
 path: /blog/${filename}
 date: ${TODAYS_DATE}
 title: ${post_name}
+description: This is a placeholder description
 blurb: ${post_name}
-thumbnail: ""
+thumbnail: "./preview-card.png"
 readtime: '15 min read'
 tags: 'Tag1, Tag2, Tag3'
 ---
-### Find me at: ${new_post_dir}/${filename}.md`;
+### Find me at: ${new_post_dir}/${filename}.md
+
+###
+
+![alt](./preview-card.png)`;
 };
 
 const createNewBlogPost = (post_name) => {
   let filename = post_name
+    .replace(/[^a-zA-Z ]/g, "") // strip special characters
     .split(" ")
     .map((item) => item.toLowerCase())
     .join("-");
@@ -47,16 +53,12 @@ const createNewBlogPost = (post_name) => {
     }
   );
 
-  //3. Copy sample social media preview image to new_post_dir
-  // NOT YET WORKING!!
-  // fs.copyFile(
-  //   "./sample-preview-card-image@800x418.png",
-  //   `${new_post_dir}/sample-preview-card-image@800x418.png`,
-  //   (err) => {
-  //     if (err) throw err;
-  //     console.log("source.txt was copied to destination.txt");
-  //   }
-  // );
+  //3. Copy placeholder preview card to project folder
+  fs.copySync(
+    path.resolve(__dirname, "./sample-preview-card@800x418.png"),
+    `${new_post_dir}/preview-card.png`
+  );
+
   console.log(`****************************`);
   console.log(`Post created successfully!!`);
   console.log(`Find it at: ${new_post_dir}/${filename}.md`);

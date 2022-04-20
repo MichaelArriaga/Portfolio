@@ -52,3 +52,10 @@ tags: 'Tag1, Tag2, Tag3'
 
 ![alt](gh-pages-custom-domain-redirects-chart.png)
 ```
+
+### TroubleShooting
+
+#### Deployment via netlify
+
+- If recently replaced/updated an existing static image anywhere in the project,
+  make sure to clear cache and rebuild in netlify/projects/build
