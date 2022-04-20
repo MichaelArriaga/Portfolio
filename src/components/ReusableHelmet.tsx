@@ -8,7 +8,7 @@ const env_siteUrl =
     : "https://mike-ray.netlify.app";
 
 const ReusableHelmet = ({ title, description }: any) => {
-  const imageUrl = `${env_siteUrl}/${defaultImage}`;
+  const imageUrl = `${env_siteUrl}${defaultImage}`;
   console.log("imageUrl:", imageUrl);
   return (
     <Helmet>
