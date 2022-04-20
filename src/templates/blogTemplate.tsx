@@ -16,7 +16,7 @@ export default function Template({
   //const { previous, next } = pageContext;
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
-  console.log("frontmatter:", frontmatter);
+  //console.log("frontmatter:", frontmatter);
   const thumbnail = post.frontmatter.thumbnail;
   return (
     <div className="mt-10">

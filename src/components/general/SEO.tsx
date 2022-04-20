@@ -23,9 +23,10 @@ const SEO = ({
     defaultImage,
     twitterUsername,
   }: any = site.siteMetadata;
-  console.log("siteUrl", siteUrl);
 
-  // check environment to get proper url
+  //console.log("siteUrl", siteUrl);
+
+  // Check environment to get proper url
   const env_siteUrl =
     process.env.NODE_ENV === "development" ? "http://localhost:8000" : siteUrl;
 

@@ -5,7 +5,6 @@ import { emailValid } from "../../utils/validations";
 import { sleep } from "../../utils/helpers";
 
 const EmailListSignupForm = () => {
-  console.log("asdlkfjasdflkj");
   const [form, setForm] = useState({
     email: {
       value: "",

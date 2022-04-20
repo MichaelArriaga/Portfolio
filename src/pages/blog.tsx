@@ -33,7 +33,7 @@ const Blog = ({
     //   return a - b;
     // });
 
-    console.log(tags_to_set);
+    //console.log(tags_to_set);
 
     if (tags_to_set.length > 0) {
       // removes duplicates Array.from([...new Set(my_array)])
