@@ -4,6 +4,7 @@ import HeroHeader from "../components/general/HeroHeader";
 import Footer from "../components/Footer";
 import "./blog-template-css.css";
 import "./copy-code-btn-css.css";
+import SEO from "../components/general/SEO";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -15,9 +16,20 @@ export default function Template({
   //const { previous, next } = pageContext;
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
-  //const thumbnail = post.frontmatter.thumbnail;
+  console.log("frontmatter:", frontmatter);
+  const thumbnail = post.frontmatter.thumbnail;
   return (
     <div className="mt-10">
+      <SEO
+        path={frontmatter.path}
+        date={frontmatter.date}
+        title={frontmatter.title}
+        description={frontmatter.description}
+        thumbnail={frontmatter.thumbnail}
+        readtime={frontmatter.readtime}
+        tags={frontmatter.tags}
+        article={true}
+      />
       <HeroHeader highlighted="posts" />
       <div className="max-w-screen-md mx-auto pt-12 py-2">
         <div className="">
@@ -51,6 +63,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         readtime
         tags
       }

@@ -1,9 +1,13 @@
 module.exports = {
   // pathPrefix: "michaelarriaga.github.io/michael-arriaga-portfolio",
   siteMetadata: {
+    defaultTitle: "Mike Ray Blog",
+    defaultImage: "./static/etc/images/default-image.png",
+    titleTemplate: "",
     title: "Mike Ray",
     siteUrl: "https://mike-ray.netlify.app",
     url: "https://mike-ray.netlify.app",
+    defaultDescription: "Product Engineer and Rails Enthusiast",
     description: "Product Engineer and Rails Enthusiast",
     image: "",
     twitterUsername: "@mike_ray_ux",
@@ -21,6 +25,9 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -48,6 +55,9 @@ module.exports = {
             options: {
               maxWidth: 590,
             },
+          },
+          {
+            resolve: `gatsby-transformer-sharp`,
           },
         ],
       },
