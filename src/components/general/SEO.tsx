@@ -42,10 +42,10 @@ const SEO = ({
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${env_siteUrl}${seo_image_path}`,
-    url: `${env_siteUrl}${path}`,
+    url: `${env_siteUrl}${path}/`,
   };
 
-  //console.log("seo:", seo);
+  console.log("seo:", seo);
   //console.log(process.env.NODE_ENV);
   //console.log("seo.image:", seo.image);
   return (
