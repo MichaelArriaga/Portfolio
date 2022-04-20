@@ -17,7 +17,7 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   //console.log("frontmatter:", frontmatter);
-  const thumbnail = post.frontmatter.thumbnail;
+  const thumbnail = post.frontmatter.thumbnail || null;
   return (
     <div className="mt-10">
       <SEO
@@ -25,7 +25,7 @@ export default function Template({
         date={frontmatter.date}
         title={frontmatter.title}
         description={frontmatter.description}
-        thumbnail={frontmatter.thumbnail}
+        thumbnail={thumbnail}
         readtime={frontmatter.readtime}
         tags={frontmatter.tags}
         article={true}

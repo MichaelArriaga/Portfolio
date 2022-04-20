@@ -1,10 +1,12 @@
 ---
-slug: '/blog/use-react-style-css-modules-in-your-rails-app'
-path: '/blog/use-react-style-css-modules-in-your-rails-app'
-date: '2020-10-13'
-title: 'Use React Style CSS Modules in Your Rails App'
-readtime: '5 min read'
-tags: 'Rails'
+slug: "/blog/use-react-style-css-modules-in-your-rails-app"
+path: "/blog/use-react-style-css-modules-in-your-rails-app"
+date: "2020-10-13"
+title: "Use React Style CSS Modules in Your Rails App"
+description: "Use React Style CSS Modules in Your Rails App"
+readtime: "5 min read"
+thumbnail: "./preview-card.png"
+tags: "Rails"
 ---
 
 **Step 1:** add `Rails.application.config.assets.precompile += %w( modules/my_css_module.css )` to `config/initializers/assets.rb`You can add additional files separated by a space

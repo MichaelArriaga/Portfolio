@@ -3,7 +3,9 @@ slug: "/blog/post-flow-in-gatsby"
 path: "/blog/post-flow-in-gatsby"
 date: "2018-03-07"
 title: "Workflow for Creating Posts in Gatsby"
+description: "Workflow for Creating Posts in Gatsby"
 readtime: "2 min read"
+thumbnail: "./preview-card.png"
 tags: "Gatsby"
 ---
 

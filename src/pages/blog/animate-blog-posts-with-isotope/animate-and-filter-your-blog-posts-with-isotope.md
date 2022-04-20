@@ -3,7 +3,9 @@ slug: "/blog/animate-blog-posts-with-isotope"
 path: "/blog/animate-blog-posts-with-isotope"
 date: "2018-03-07"
 title: "Animate and Filter Your Jekyll Blog Posts with Isotope"
+description: "Animate and Filter Your Jekyll Blog Posts with Isotope"
 readtime: "10 min read"
+thumbnail: "./preview-card.png"
 tags: "Jekyll"
 ---
 

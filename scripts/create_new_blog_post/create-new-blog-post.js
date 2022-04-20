@@ -18,15 +18,15 @@ const TODAYS_DATE = new Date().toISOString().split("T")[0];
 
 const newFrontmatter = (post_name, filename, new_post_dir) => {
   return `---
-slug: /blog/${filename}
-path: /blog/${filename}
-date: ${TODAYS_DATE}
-title: ${post_name}
-description: This is a placeholder description
-blurb: ${post_name}
+slug: "/blog/${filename}"
+path: "/blog/${filename}"
+date: "${TODAYS_DATE}"
+title: "${post_name}"
+description: "This is a placeholder description"
+blurb: "${post_name}"
 thumbnail: "./preview-card.png"
-readtime: '15 min read'
-tags: 'Tag1, Tag2, Tag3'
+readtime: "15 min read"
+tags: "Tag1, Tag2, Tag3"
 ---
 ### Find me at: ${new_post_dir}/${filename}.md
 

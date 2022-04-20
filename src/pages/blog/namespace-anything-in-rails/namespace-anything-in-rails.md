@@ -1,10 +1,12 @@
 ---
-slug: '/blog/namespace-anything'
-path: '/blog/namespace-anything'
-date: '2020-12-02'
-title: 'Namespace::Anything'
-readtime: '5 min read'
-tags: 'Rails'
+slug: "/blog/namespace-anything"
+path: "/blog/namespace-anything"
+date: "2020-12-02"
+title: "Namespace::Anything"
+description: "Namespace::Anything"
+readtime: "5 min read"
+thumbnail: "./preview-card.png"
+tags: "Rails"
 ---
 
 Ditch Ruby module syntact and use namespacing instead. Here we will use an existing mailer as an example, but you can namespace anything in our project: controller, models, helpers, you name it!
@@ -20,11 +22,15 @@ Ditch Ruby module syntact and use namespacing instead. Here we will use an exist
 3. Wherever the mailer is called in the application, preface it with the namespace
 
    ```ruby
-     def perform(zipcode, email)
-       @zipcode = zipcode
-       @email = email
-       Users::AvailabilityMailingListNewSubscriptionMailer.send_subscribed_notice(@zipcode, @email).deliver_later
-     end
+   def perform(zipcode, email)
+     @zipcode = zipcode
+     @email = email
+     Users::AvailabilityMailingListNewSubscriptionMailer.send_subscribed_notice(
+       @zipcode,
+       @email
+     )
+       .deliver_later
+   end
    ```
 
 4. namespace the appropriate spec folder to match the subfolder in the application `spec/mailers/users/`

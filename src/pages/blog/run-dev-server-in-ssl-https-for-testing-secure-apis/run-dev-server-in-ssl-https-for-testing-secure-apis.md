@@ -1,10 +1,12 @@
 ---
-slug: '/blog/how-to-run-rails-development-mode-in-ssl-https-for-testing-secure-apis'
-path: '/blog/how-to-run-rails-development-mode-in-ssl-https-for-testing-secure-apis'
-date: '2019-09-01'
-title: 'How to: Run Rails Development Mode in SSL/HTTPS for Testing Secure Apis'
-readtime: '60 min read'
-tags: 'Rails, Security'
+slug: "/blog/how-to-run-rails-development-mode-in-ssl-https-for-testing-secure-apis"
+path: "/blog/how-to-run-rails-development-mode-in-ssl-https-for-testing-secure-apis"
+date: "2019-09-01"
+title: "How to: Run Rails Development Mode in SSL/HTTPS for Testing Secure Apis"
+description: "How to: Run Rails Development Mode in SSL/HTTPS for Testing Secure Apis"
+readtime: "60 min read"
+thumbnail: "./preview-card.png"
+tags: "Rails, Security"
 ---
 
 Sometimes we might need to test an Api in HTTPS on our local network using another device like a phone or tablet. We could deploy our App to a our preferred cloud service that provides free HTTPS encryption, but in order to debug or iterate, we would need to deploy our app after every change. Not only is that not efficient, but it is prone to build errors. Luckily we can generate our own `SSL Certificate` using the [OPENSSL Library](https://www.openssl.org/)

@@ -1,10 +1,12 @@
 ---
-slug: '/blog/simple-docker-cheat-sheet-for-dockerized-rails-apps'
-path: '/blog/simple-docker-cheat-sheet-for-dockerized-rails-apps'
-date: '2020-09-28'
-title: 'Simple Docker Cheat Sheet For Dockerized Rails Apps'
-readtime: '15 min read'
-tags: 'Docker, Rails'
+slug: "/blog/simple-docker-cheat-sheet-for-dockerized-rails-apps"
+path: "/blog/simple-docker-cheat-sheet-for-dockerized-rails-apps"
+date: "2020-09-28"
+title: "Simple Docker Cheat Sheet For Dockerized Rails Apps"
+description: "Simple Docker Cheat Sheet For Dockerized Rails Apps"
+readtime: "15 min read"
+thumbnail: "./preview-card.png"
+tags: "Docker, Rails"
 ---
 
 | container commands                                                                                                                                             |                                                                                                                                                                                                                                                         effect |
