@@ -2,13 +2,14 @@ import aboutimg from "../../static/etc/images/pages/about/self-pic.png";
 import { Link } from "gatsby";
 import React from "react";
 import SidebarLayout from "../components/layouts/SidebarLayout";
+import { metaTitle } from "../constants/metaTitle";
 
 class About extends React.Component {
   render() {
     return (
       <SidebarLayout
-        meta_title="Mike Ray, Seattle Product Engineer - About"
-        meta_description="Mike Ray, Seattle Product Engineer - About"
+        meta_title={`${metaTitle} - About`}
+        meta_description={`${metaTitle} - About`}
         highlighted_hero_link={"about"}
       >
         <div style={{ marginBottom: 150 }} className="">

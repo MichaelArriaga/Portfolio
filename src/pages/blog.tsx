@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import Post from "../components/blog/Post";
+import { metaTitle } from "../constants/metaTitle";
 
 const Blog = ({
   data: {
@@ -55,8 +56,8 @@ const Blog = ({
 
   return (
     <SidebarLayout
-      meta_title="Mike Ray, Seattle Product Engineer - Posts"
-      meta_description="Mike Ray, Seattle Product Engineer - Posts"
+      meta_title={`${metaTitle} - Posts`}
+      meta_description={`${metaTitle} - Posts`}
       highlighted_hero_link="posts"
     >
       <div style={{ marginBottom: 150 }} className="">

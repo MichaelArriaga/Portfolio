@@ -4,12 +4,13 @@ import ProjectItem from "../components/index/ProjectItem";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import { Link } from "gatsby";
+import { metaTitle } from "../constants/metaTitle";
 
 const Index = () => {
   return (
     <SidebarLayout
-      meta_title="Mike Ray, Seattle Product Engineer - Home"
-      meta_description="Mike Ray, Seattle Product Engineer Web Developer - Home"
+      meta_title={`${metaTitle} - Home`}
+      meta_description={`${metaTitle} - Home`}
       highlighted_hero_link={"home"}
     >
       {/* apps start */}
