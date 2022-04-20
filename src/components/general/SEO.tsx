@@ -29,17 +29,24 @@ const SEO = ({
   const env_siteUrl =
     process.env.NODE_ENV === "development" ? "http://localhost:8000" : siteUrl;
 
+  let seo_image_path;
+
+  if (thumbnail) {
+    seo_image_path = thumbnail.childImageSharp.fluid.src;
+  } else {
+    seo_image_path = defaultImage;
+  }
+
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${env_siteUrl}${
-      thumbnail.childImageSharp.fluid.src || defaultImage
-    }`,
+    image: `${env_siteUrl}${seo_image_path}`,
     url: `${env_siteUrl}${path}`,
   };
 
-  console.log(process.env.NODE_ENV);
-  console.log("seo.image:", seo.image);
+  //console.log("seo:", seo);
+  //console.log(process.env.NODE_ENV);
+  //console.log("seo.image:", seo.image);
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
