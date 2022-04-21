@@ -12,7 +12,7 @@ const Index = () => {
     <SidebarLayout highlighted_hero_link={"home"}>
       {/* apps start */}
       <SEO
-        path={null}
+        path={"/"}
         title={`${metaTitle} - Home`}
         description={metaTitle}
         thumbnail={false}

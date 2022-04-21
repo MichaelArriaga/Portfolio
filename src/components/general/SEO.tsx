@@ -40,12 +40,13 @@ const SEO = ({
     //console.log("thumb not found");
     //seo_image_path = `/static/etc/images/default-image.png`;
     seo_image_path = real_defaultImage;
-    console.log("defaultImage:", seo_image_path);
+    //console.log("defaultImage:", seo_image_path);
   }
 
+  console.log("path:", path);
   let seo_url;
   if (path) {
-    seo_url = `${env_siteUrl}${path}/`;
+    seo_url = `${env_siteUrl}${path}`;
   } else {
     seo_url = `${env_siteUrl}/`;
   }
@@ -57,7 +58,7 @@ const SEO = ({
     url: seo_url,
   };
 
-  console.log("seo:", seo);
+  //console.log("seo:", seo);
   //console.log(process.env.NODE_ENV);
   //console.log("seo.image:", seo.image);
   return (

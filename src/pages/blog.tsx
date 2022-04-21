@@ -58,7 +58,7 @@ const Blog = ({
   return (
     <SidebarLayout highlighted_hero_link="posts">
       <SEO
-        path={null}
+        path={"/blog"}
         title={`${metaTitle} - Blog`}
         description={metaTitle}
         thumbnail={false}

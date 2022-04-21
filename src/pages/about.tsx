@@ -10,7 +10,7 @@ class About extends React.Component {
     return (
       <SidebarLayout highlighted_hero_link={"about"}>
         <SEO
-          path={null}
+          path={"/about"}
           title={`${metaTitle} - About`}
           description={metaTitle}
           thumbnail={false}
