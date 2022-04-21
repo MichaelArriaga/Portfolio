@@ -25,8 +25,6 @@ const SEO = ({
     twitterUsername,
   }: any = site.siteMetadata;
 
-  //console.log("siteUrl", siteUrl);
-
   // Check environment to get proper url
   const env_siteUrl =
     process.env.NODE_ENV === "development" ? "http://localhost:8000" : siteUrl;
@@ -34,16 +32,11 @@ const SEO = ({
   let seo_image_path;
 
   if (thumbnail) {
-    //console.log("thumb found!");
     seo_image_path = thumbnail.childImageSharp.fluid.src;
   } else {
-    //console.log("thumb not found");
-    //seo_image_path = `/static/etc/images/default-image.png`;
     seo_image_path = real_defaultImage;
-    //console.log("defaultImage:", seo_image_path);
   }
 
-  console.log("path:", path);
   let seo_url;
   if (path) {
     seo_url = `${env_siteUrl}${path}`;
@@ -58,9 +51,6 @@ const SEO = ({
     url: seo_url,
   };
 
-  //console.log("seo:", seo);
-  //console.log(process.env.NODE_ENV);
-  //console.log("seo.image:", seo.image);
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
