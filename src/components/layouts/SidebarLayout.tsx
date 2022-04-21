@@ -1,5 +1,4 @@
 import React, { ReactNode, useState } from "react";
-import ReusableHelmet from "../ReusableHelmet";
 import HeroHeader from "../general/HeroHeader";
 import Footer from "../Footer";
 import EmailListSignupForm from "../email_lists/EmailListSignupForm";
@@ -10,20 +9,12 @@ import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png
 
 interface PropTypes {
   children: ReactNode;
-  meta_title: string;
-  meta_description: string;
   highlighted_hero_link: string;
 }
 
-const SidebarLayout = ({
-  meta_title,
-  meta_description,
-  highlighted_hero_link,
-  children,
-}: PropTypes) => {
+const SidebarLayout = ({ highlighted_hero_link, children }: PropTypes) => {
   return (
     <div>
-      <ReusableHelmet title={meta_title} description={meta_description} />
       <div
         style={{ minWidth: 300, height: "100vh", minHeight: "100vh" }}
         className="w-full sm:flex sm:flex-row sm:justify-start items-start"

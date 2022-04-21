@@ -5,15 +5,21 @@ import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import { Link } from "gatsby";
 import { metaTitle } from "../constants/metaTitle";
+import SEO from "../components/general/SEO";
 
 const Index = () => {
   return (
-    <SidebarLayout
-      meta_title={`${metaTitle} - Home`}
-      meta_description={`${metaTitle} - Home`}
-      highlighted_hero_link={"home"}
-    >
+    <SidebarLayout highlighted_hero_link={"home"}>
       {/* apps start */}
+      <SEO
+        path={null}
+        title={`${metaTitle} - Home`}
+        description={metaTitle}
+        thumbnail={false}
+        readtime={null}
+        tags={null}
+        article={false}
+      />
       <div className="sm:max-w-screen-sm mx-auto">
         <div className="flex flex-row justify-start items-center">
           <h3 className="text-xl text-gray-900 mb-2 font-bold mr-2 antialiased">

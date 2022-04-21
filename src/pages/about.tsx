@@ -3,15 +3,21 @@ import { Link } from "gatsby";
 import React from "react";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import { metaTitle } from "../constants/metaTitle";
+import SEO from "../components/general/SEO";
 
 class About extends React.Component {
   render() {
     return (
-      <SidebarLayout
-        meta_title={`${metaTitle} - About`}
-        meta_description={`${metaTitle} - About`}
-        highlighted_hero_link={"about"}
-      >
+      <SidebarLayout highlighted_hero_link={"about"}>
+        <SEO
+          path={null}
+          title={`${metaTitle} - About`}
+          description={metaTitle}
+          thumbnail={false}
+          readtime={null}
+          tags={null}
+          article={false}
+        />
         <div style={{ marginBottom: 150 }} className="">
           <img
             className={"hidden sm:block w-64 mx-auto "}

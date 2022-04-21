@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import Post from "../components/blog/Post";
 import { metaTitle } from "../constants/metaTitle";
+import SEO from "../components/general/SEO";
 
 const Blog = ({
   data: {
@@ -55,11 +56,16 @@ const Blog = ({
   };
 
   return (
-    <SidebarLayout
-      meta_title={`${metaTitle} - Posts`}
-      meta_description={`${metaTitle} - Posts`}
-      highlighted_hero_link="posts"
-    >
+    <SidebarLayout highlighted_hero_link="posts">
+      <SEO
+        path={null}
+        title={`${metaTitle} - Blog`}
+        description={metaTitle}
+        thumbnail={false}
+        readtime={null}
+        tags={null}
+        article={false}
+      />
       <div style={{ marginBottom: 150 }} className="">
         {/* tags section start */}
         <div className={"mb-2 py-2"}>

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import real_defaultImage from "../../../static/etc/images/default-image.png";
 
 const SEO = ({
   title,
@@ -33,19 +34,30 @@ const SEO = ({
   let seo_image_path;
 
   if (thumbnail) {
+    //console.log("thumb found!");
     seo_image_path = thumbnail.childImageSharp.fluid.src;
   } else {
-    seo_image_path = defaultImage;
+    //console.log("thumb not found");
+    //seo_image_path = `/static/etc/images/default-image.png`;
+    seo_image_path = real_defaultImage;
+    console.log("defaultImage:", seo_image_path);
+  }
+
+  let seo_url;
+  if (path) {
+    seo_url = `${env_siteUrl}${path}/`;
+  } else {
+    seo_url = `${env_siteUrl}/`;
   }
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${env_siteUrl}${seo_image_path}`,
-    url: `${env_siteUrl}${path}/`,
+    url: seo_url,
   };
 
-  //console.log("seo:", seo);
+  console.log("seo:", seo);
   //console.log(process.env.NODE_ENV);
   //console.log("seo.image:", seo.image);
   return (
