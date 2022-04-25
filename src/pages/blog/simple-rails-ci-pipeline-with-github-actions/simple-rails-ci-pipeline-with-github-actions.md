@@ -17,11 +17,9 @@ whenever [an incoming change is scheduled for our code
 repo.](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on)
 
 **CI/CD** systems are incredibly useful for validating a commit or pull request
-that we might receive, heck...**CI/CD** systems are also great at saving us from our
-own mistakes!
+that we might receive. As Rails Developers, we probably want to: **run our test suite**, maybe some **security auditing** or **code linting** as part of our CI/CD pipeline.
 
-As Rails Developers, whenever we push changes to the main branch of our github repo, we probably want to: **run our test suite**, maybe some **security auditing** or **code linting**
-perhaps?
+We will use the CI/CD service **[Github Actions](https://github.com/features/actions)** to accomplish this. Github Actions is a CI/CD service that is already integrated with our github project's repository. With it we can perform all of our seperate CI/CD jobs automatically.
 
 A good place to start for us would be to create a `test` job that will run every time we:
 
@@ -29,22 +27,20 @@ A good place to start for us would be to create a `test` job that will run every
 
 - receive a `pull_request` from a contributor
 
-We will use the CI/CD service **[Github Actions](https://github.com/features/actions)** to accomplish this. Github Actions is a CI/CD service that is already integrated with our github project's repository. With it we can perform all of our seperate CI/CD jobs automatically.
+But how do we get started? Well, you know that button at the top of your project repositories that says "Actions"?
 
-You know that button at the top of your project repositories that says
-"Actions"?
+![github-actions-button-screenshot](./github-actions-button.png)
 
 **Yea that one! Click it and do some exploring!**
 
-![github-actions-button-screenshot](./github-actions-button.png)
+After some tinkering, you'll probably have learned that in order to get started
+with GitHub Actions, we must first create a `workflow` file. So let's do that
+now.
 
 ## Setting up the workflow file
 
 For simplicity's sake (and to honor the 'Simple' in the title of this post)
-we are going to set up just one `job` for our Rails
-App:
-
-- `test`: This will spin it up in a container and run our test suite.
+we are going to set up just one `job` for our Rails App and we will call it `test` which will spin up an instance of our Rails app inside a container in order to run our test suite.
 
 In order to create a CI/CD pipeline with GitHub Actions, Github first expects a
 `.yml` file to exist at `.github/workflows/` directory at the root of our
@@ -89,7 +85,7 @@ on:
 ```
 
 we can specify our jobs with our third and final top level key called (you
-guessed it) `jobs:` let's start with out first job `test`
+guessed it) `jobs:` let's start with our first job called `test`
 
 ```yml
 # .github/workflows/rubyonrails.yml
@@ -130,7 +126,7 @@ jobs:
 .
 ```
 
-Next is the `services:` key. Our Rails app uses `postgress` for it's database. Let's
+Next is the `services:` key. Our Rails app uses `postgres` for it's database. Let's
 add it.
 
 ```yml
