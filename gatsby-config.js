@@ -33,14 +33,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-code-buttons",
-            options: {
-              tooltipText: `Copy to clipboard`,
-              toasterText: "Copied to clipboard",
-              toasterDuration: 5000,
-            },
-          },
-          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
