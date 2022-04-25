@@ -1,5 +1,5 @@
 import React from "react";
-//import twitter_icon from "../../static/etc/images/icons/logo-twitter.png";
+import twitter_icon from "../../static/etc/images/icons/logo-twitter.png";
 import linkedin_icon from "../../static/etc/images/icons/logo-linkedin.png";
 import github_icon from "../../static/etc/images/icons/logo-github.png";
 import email_icon from "../../static/etc/images/icons/logo-email-envelope.png";
@@ -18,19 +18,19 @@ const Footer = () => (
       </div>
 
       <div className="pl-2 flex flex-row justify-start items-center">
-        {/* <a
+        <a
           style={{ width: 20 }}
-          className={'mr-2'}
-          href="https://google.com"
+          className={"mr-2"}
+          href="https://twitter.com/mike_ray_ux"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={twitter_icon} alt="not loaded" />
-        </a> */}
+        </a>
         <a
           style={{ width: 20 }}
           className={"mr-2"}
-          href="https://google.com"
+          href="https://www.linkedin.com/in/mike-ray-26a874230/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -48,7 +48,7 @@ const Footer = () => (
         <a
           style={{ width: 20 }}
           className={"mr-3"}
-          href="https://github.com/MichaelArriaga"
+          href="mailto:m.arriaga.smb@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
