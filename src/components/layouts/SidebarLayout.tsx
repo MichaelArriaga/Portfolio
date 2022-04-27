@@ -12,7 +12,7 @@ const SidebarLayout = ({ highlighted_hero_link, children }: PropTypes) => {
   return (
     <div>
       <div
-        style={{ minWidth: 300, height: "100vh", minHeight: "100vh" }}
+        style={{ minWidth: 300, minHeight: "100vh" }}
         className="w-full sm:flex sm:flex-row sm:justify-start items-start"
       >
         {/* left panel start */}

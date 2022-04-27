@@ -23,8 +23,8 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "home"
-              ? "font-black antialiased underline mr-3 text-lg sm:text-base"
-              : "font-regular antialiased underline mr-3 text-lg sm:text-base"
+              ? "font-black antialiased underline mr-3 text-lg sm:text-xl"
+              : "font-regular antialiased underline mr-3 text-lg sm:text-xl"
           }
           to="/"
         >
@@ -33,8 +33,8 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "about"
-              ? "font-black antialiased underline mr-3 text-lg sm:text-base"
-              : "font-regular antialiased underline mr-3 text-lg sm:text-base"
+              ? "font-black antialiased underline mr-3 text-lg sm:text-xl"
+              : "font-regular antialiased underline mr-3 text-lg sm:text-xl"
           }
           to="/about"
         >
@@ -43,8 +43,8 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "posts"
-              ? "font-black antialiased underline mr-3 text-lg sm:text-base"
-              : "font-regular antialiased underline mr-3 text-lg sm:text-base"
+              ? "font-black antialiased underline mr-3 text-lg sm:text-xl"
+              : "font-regular antialiased underline mr-3 text-lg sm:text-xl"
           }
           to="/blog"
         >
