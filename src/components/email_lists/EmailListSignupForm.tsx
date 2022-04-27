@@ -3,6 +3,10 @@ import { emailValid } from "../../utils/validations";
 // import api from '../../api/v1/api';
 // import { post_api_v1_newsletter_registrations_path } from '../../api/v1/routes';
 import { sleep } from "../../utils/helpers";
+import twitter_icon from "../../../static/etc/images/icons/logo-twitter.png";
+import linkedin_icon from "../../../static/etc/images/icons/logo-linkedin.png";
+import github_icon from "../../../static/etc/images/icons/logo-github.png";
+import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
 
 const EmailListSignupForm = () => {
   const [form, setForm] = useState({
@@ -64,10 +68,10 @@ const EmailListSignupForm = () => {
   };
 
   return (
-    <div className="mb-4 mx-auto">
+    <div style={{ maxWidth: 255 }} className="mb-4 mx-auto">
       <div className="">
-        <p className="text-center mb-1 pl-4 font-normal antialiased">
-          Stay up-to-date with future projects
+        <p className="text-left mb-1 font-normal antialiased">
+          Stay up-to-date with future projects.
         </p>
       </div>
 
@@ -120,11 +124,55 @@ const EmailListSignupForm = () => {
         </div>
 
         {form.email.errors.length > 0 ? (
-          <p className="text-xs pt-1 text-red-700 text-center font-normal antialiased">
+          <p className="text-xs pt-1 text-red-700 text-left font-normal antialiased mb-2">
             {form.email.errors[0]}
           </p>
         ) : null}
       </form>
+
+      {/* socials start */}
+      <div className="flex flex-row justify-start items-center mb-6">
+        <a
+          href="https://twitter.com/mike_ray_ux"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={twitter_icon}
+            alt=""
+            style={{ width: 23 }}
+            className="mr-2"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mike-ray-26a874230/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={linkedin_icon}
+            alt=""
+            style={{ width: 23 }}
+            className="mr-2"
+          />
+        </a>
+        <a
+          href="https://github.com/MichaelArriaga"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={github_icon}
+            alt=""
+            style={{ width: 23 }}
+            className="mr-2"
+          />
+        </a>
+        <a href="mailto:m.arriaga.smb@gmail.com">
+          <img src={email_icon} alt="" style={{ width: 23 }} className="" />
+        </a>
+      </div>
+      {/* socials end */}
     </div>
   );
 };

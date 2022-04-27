@@ -24,7 +24,7 @@ class About extends React.Component {
             src={aboutimg}
             alt="not loaded"
           />
-          <h3 className="font-bold text-3xl my-2">Bio</h3>
+          <h3 className="font-black text-3xl my-2">Bio</h3>
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Mike is a Product Engineer and Rails Enthusiast based in Seattle WA.
             After hours, he's a Musician (Drums & Bass Guitar).

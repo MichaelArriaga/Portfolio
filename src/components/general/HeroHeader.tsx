@@ -16,14 +16,14 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         src={mike_circle_logo}
         alt="mike logo"
       />
-      <h1 className="my-2 text-2xl leading-none tracking-tight font-bold antialiased">
-        Mike Ray (Arriaga)
+      <h1 className="my-2 text-3xl leading-none tracking-tight font-black antialiased">
+        Mike Ray
       </h1>
       <div className="">
         <Link
           className={
             highlighted === "home"
-              ? "font-bold antialiased underline mr-3 text-lg sm:text-base"
+              ? "font-black antialiased underline mr-3 text-lg sm:text-base"
               : "font-regular antialiased underline mr-3 text-lg sm:text-base"
           }
           to="/"
@@ -33,7 +33,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "about"
-              ? "font-bold antialiased underline mr-3 text-lg sm:text-base"
+              ? "font-black antialiased underline mr-3 text-lg sm:text-base"
               : "font-regular antialiased underline mr-3 text-lg sm:text-base"
           }
           to="/about"
@@ -43,7 +43,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "posts"
-              ? "font-bold antialiased underline mr-3 text-lg sm:text-base"
+              ? "font-black antialiased underline mr-3 text-lg sm:text-base"
               : "font-regular antialiased underline mr-3 text-lg sm:text-base"
           }
           to="/blog"

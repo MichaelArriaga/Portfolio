@@ -32,7 +32,7 @@ export default function Template({
       <HeroHeader highlighted="posts" />
       <div className="max-w-screen-md pt-12 py-2 mx-auto">
         <div className="">
-          <h1 className="text-3xl text-left leading-none mb-1 font-bold antialiased">
+          <h1 className="text-3xl text-left leading-none mb-1 font-black antialiased">
             {frontmatter.title}
           </h1>
           <h2 className="text-base text-left mb-4 font-normal antialiased">
