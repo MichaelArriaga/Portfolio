@@ -33,6 +33,7 @@ p > code {
 .blog-post-container > p > a {
   color: blue !important;
   text-decoration: underline !important;
+  font-weight: bold;
 }
 
 .blog-post-container > p {
