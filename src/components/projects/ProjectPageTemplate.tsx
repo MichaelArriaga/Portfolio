@@ -72,9 +72,17 @@ const ProjectPageTemplate = ({
 
         {/* description start */}
         <div className={"mx-auto mb-4 sm:ml-0"}>
-          <p className={"text-lg sm:text-xl text-left font-normal antialiased"}>
-            {description}
-          </p>
+          {description.map((paragraph: any) => {
+            return (
+              <p
+                className={
+                  "text-lg sm:text-xl text-left font-normal antialiased mb-2"
+                }
+              >
+                {paragraph}
+              </p>
+            );
+          })}
         </div>
         {/* description end */}
 
