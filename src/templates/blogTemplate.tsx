@@ -50,7 +50,7 @@ export default function Template({
                       style={{
                         backgroundColor: "#A0EDE4",
                       }}
-                      to="/blog?tag=rails"
+                      to={`/blog?tag=${tag.toLowerCase()}`}
                       className={
                         "inline-block outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
                       }
