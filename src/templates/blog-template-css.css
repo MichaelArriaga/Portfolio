@@ -12,6 +12,11 @@ body > *:first-child {
 body > *:last-child {
   margin-bottom: 0 !important; } */
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .blog-post-container > a {
   color: blue !important;
   text-decoration: underline !important;
@@ -586,4 +591,31 @@ tt {
 pre tt {
   background-color: transparent;
   border: none;
+}
+
+@media (min-width: 600px) {
+  .blog-post-container > a,
+  .blog-post-container > ol,
+  .blog-post-container > ul,
+  .blog-post-container > li,
+  .blog-post-container > li,
+  .blog-post-container > p,
+  .blog-post-container > h1,
+  .blog-post-container > h2,
+  .blog-post-container > h3,
+  .blog-post-container > h4,
+  .blog-post-container > h5,
+  .blog-post-container > h6 {
+    font-size: 22px;
+  }
+  pre {
+    font-size: 20px !important;
+  }
+
+  pre > code {
+    font-size: 20px !important;
+  }
+  pre > code > span {
+    font-size: 20px !important;
+  }
 }
