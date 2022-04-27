@@ -94,7 +94,7 @@ const EmailListSignupForm = () => {
                 },
               });
             }}
-            className="border border-gray-300 rounded py-2 px-2 mr-2"
+            className="border border-gray-300 rounded py-2 px-2 mr-4"
           />
           {is_loading ? (
             <input
@@ -144,11 +144,11 @@ const EmailListSignupForm = () => {
             src={linkedin_icon}
             alt=""
             style={{ width: 23 }}
-            className="mr-2"
+            className="mr-4"
           />
         </a>
         <a href="mailto:m.arriaga.smb@gmail.com">
-          <img src={email_icon} alt="" style={{ width: 23 }} className="mr-2" />
+          <img src={email_icon} alt="" style={{ width: 23 }} className="mr-4" />
         </a>
         <a
           href="https://github.com/MichaelArriaga"
@@ -159,7 +159,7 @@ const EmailListSignupForm = () => {
             src={github_icon}
             alt=""
             style={{ width: 23 }}
-            className="mr-2"
+            className="mr-4"
           />
         </a>
         <a
@@ -171,7 +171,7 @@ const EmailListSignupForm = () => {
             src={twitter_icon}
             alt=""
             style={{ width: 23 }}
-            className="mr-2"
+            className="mr-4"
           />
         </a>
       </div>
