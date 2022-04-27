@@ -21,6 +21,10 @@ body > *:last-child {
   background-color: #c5ffff !important;
 }
 
+p > code {
+  background-color: #76f4f4 !important;
+}
+
 .blog-post-container > a {
   color: blue !important;
   text-decoration: underline !important;
