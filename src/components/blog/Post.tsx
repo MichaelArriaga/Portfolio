@@ -14,11 +14,11 @@ const Post = ({ title, date, slug, post_tags }: PropTypes) => {
       <Link className="flex justify-start items-center mb-1" to={slug}>
         <h3
           className={
-            "text-base sm:text-lg text-gray-900 text-left flex flex-wrap justify-start items-center font-semibold antialiased"
+            "text-base sm:text-lg text-gray-900 text-left flex flex-wrap justify-start items-center font-bold antialiased"
           }
         >
-          <span className="underline mr-2">{title}</span>{" "}
-          <span style={{ color: "#9F9F9F" }} className="tracking-tighter">
+          <span className="mr-2">{title}</span>{" "}
+          <span className="text-base tracking-tighter font-semibold text-gray-500">
             ({date})
           </span>
         </h3>
@@ -40,7 +40,7 @@ const Post = ({ title, date, slug, post_tags }: PropTypes) => {
                 }}
                 className="px-1 rounded bg-cyan-400 mr-2 mb-3"
               >
-                <h3 className="text-xs text-gray-900 font-semibold antialiased">
+                <h3 className="text-xs text-gray-900 font-normal antialiased">
                   {tag}
                 </h3>
               </button>

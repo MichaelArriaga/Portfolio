@@ -31,7 +31,7 @@ const ProjectItem = ({
         <div className="flex flex-row justify-start items-center">
           <h1
             className={
-              "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 underline font-bold antialiased"
+              "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 font-black antialiased"
             }
           >
             {title}

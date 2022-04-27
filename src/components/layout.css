@@ -30,12 +30,22 @@
   /*--secondary-type-emphasis: OpenSans-Bold;*/
   /*font-size: 16px;*/
 }
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(0, 0, 0, 0);
+}
 
 body {
   width: 100%;
   background: #f3f3f3;
   padding-left: 20px;
   padding-right: 20px;
+  overflow: overlay;
 }
 
 /* em {
