@@ -48,7 +48,7 @@ export default function Template({
                     <Link
                       key={tag}
                       style={{
-                        backgroundColor: "#A0EDE4",
+                        backgroundColor: "#76d3ca",
                       }}
                       to={`/blog?tag=${tag.toLowerCase()}`}
                       className={

@@ -89,7 +89,7 @@ const Blog = ({
                       }}
                       style={{
                         backgroundColor:
-                          selected_tag === tag ? "#1f1f1f" : "#A0EDE4",
+                          selected_tag === tag ? "#1f1f1f" : "#76d3ca",
                       }}
                       className={
                         selected_tag === tag

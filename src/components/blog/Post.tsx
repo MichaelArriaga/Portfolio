@@ -36,7 +36,7 @@ const Post = ({ title, date, slug, post_tags }: PropTypes) => {
                   paddingBottom: 3,
                   paddingLeft: 6,
                   paddingRight: 6,
-                  backgroundColor: "#A0EDE4",
+                  backgroundColor: "#76d3ca",
                 }}
                 className="px-1 rounded bg-cyan-400 mr-2 mb-3"
               >
