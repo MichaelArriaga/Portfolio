@@ -69,7 +69,7 @@ const Blog = ({
         <div className={"mb-2 py-2"}>
           <h2
             className={
-              "text-md sm:text-base font-black mb-2 font-bold antialiased"
+              "text-xl sm:text-xl font-black mb-2 font-bold antialiased"
             }
           >
             Tags
@@ -116,7 +116,11 @@ const Blog = ({
 
         {/* posts section start */}
         <div style={{ height: 780 }} className="w-full overflow-y-scroll">
-          <h2 className={"text-lg font-black mb-2 font-bold antialiased"}>
+          <h2
+            className={
+              "text-xl sm:text-2xl font-black mb-2 font-bold antialiased"
+            }
+          >
             Posts (43)
           </h2>
           {edges.length > 0

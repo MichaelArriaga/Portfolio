@@ -22,7 +22,7 @@ const Index = () => {
       />
       <div className="sm:max-w-screen-sm mx-auto">
         <div className="flex flex-row justify-start items-center">
-          <h3 className="text-xl text-gray-900 mb-2 font-black mr-2 antialiased">
+          <h3 className="text-xl sm:text-2xl text-gray-900 mb-2 font-black mr-2 antialiased">
             My Apps
           </h3>
         </div>
