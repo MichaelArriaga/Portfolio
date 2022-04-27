@@ -113,10 +113,11 @@ const EmailListSignupForm = () => {
                 e.preventDefault();
                 signup();
               }}
+              style={{ backgroundColor: "#34a298" }}
               className={
                 signup_success
-                  ? "py-2 px-3 rounded bg-green-600 text-white font-normal antialiased"
-                  : "py-2 px-3 cursor-pointer hover:bg-gray-800 rounded bg-gray-900 text-white font-semibold antialiased"
+                  ? "py-2 px-3 rounded text-white font-normal antialiased"
+                  : "py-2 px-3 cursor-pointer rounded bg-gray-900 text-white font-semibold antialiased"
               }
               value={signup_success ? "Joined!" : "Join"}
             />
@@ -133,18 +134,6 @@ const EmailListSignupForm = () => {
       {/* socials start */}
       <div className="flex flex-row justify-start items-center mb-6">
         <a
-          href="https://twitter.com/mike_ray_ux"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={twitter_icon}
-            alt=""
-            style={{ width: 23 }}
-            className="mr-2"
-          />
-        </a>
-        <a
           href="https://www.linkedin.com/in/mike-ray-26a874230/"
           target="_blank"
           rel="noreferrer"
@@ -155,6 +144,9 @@ const EmailListSignupForm = () => {
             style={{ width: 23 }}
             className="mr-2"
           />
+        </a>
+        <a href="mailto:m.arriaga.smb@gmail.com">
+          <img src={email_icon} alt="" style={{ width: 23 }} className="mr-2" />
         </a>
         <a
           href="https://github.com/MichaelArriaga"
@@ -168,8 +160,17 @@ const EmailListSignupForm = () => {
             className="mr-2"
           />
         </a>
-        <a href="mailto:m.arriaga.smb@gmail.com">
-          <img src={email_icon} alt="" style={{ width: 23 }} className="" />
+        <a
+          href="https://twitter.com/mike_ray_ux"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={twitter_icon}
+            alt=""
+            style={{ width: 23 }}
+            className="mr-2"
+          />
         </a>
       </div>
       {/* socials end */}
