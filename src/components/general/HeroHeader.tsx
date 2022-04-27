@@ -24,7 +24,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
           className={
             highlighted === "home"
               ? "font-black antialiased underline mr-3 text-lg sm:text-xl"
-              : "font-regular antialiased underline mr-3 text-lg sm:text-xl"
+              : "font-semibold antialiased mr-3 text-lg sm:text-xl"
           }
           to="/"
         >
@@ -34,7 +34,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
           className={
             highlighted === "about"
               ? "font-black antialiased underline mr-3 text-lg sm:text-xl"
-              : "font-regular antialiased underline mr-3 text-lg sm:text-xl"
+              : "font-semibold antialiased mr-3 text-lg sm:text-xl"
           }
           to="/about"
         >
@@ -44,7 +44,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
           className={
             highlighted === "posts"
               ? "font-black antialiased underline mr-3 text-lg sm:text-xl"
-              : "font-regular antialiased underline mr-3 text-lg sm:text-xl"
+              : "font-semibold antialiased mr-3 text-lg sm:text-xl"
           }
           to="/blog"
         >
