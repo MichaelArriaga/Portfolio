@@ -71,7 +71,7 @@ const EmailListSignupForm = () => {
     <div style={{ maxWidth: 255 }} className="mb-4 mx-auto">
       <div className="">
         <p className="text-left mb-1 font-normal antialiased">
-          Stay up-to-date with future projects.
+          Stay up-to-date with my projects.
         </p>
       </div>
 
@@ -83,6 +83,7 @@ const EmailListSignupForm = () => {
             autoComplete="on"
             placeholder="Email"
             value={form.email.value}
+            style={{ backgroundColor: "#f3f3f3" }}
             disabled={signup_success}
             onChange={(e) => {
               setForm({
@@ -93,13 +94,14 @@ const EmailListSignupForm = () => {
                 },
               });
             }}
-            className="border rounded py-2 px-2 mr-2"
+            className="border border-gray-300 rounded py-2 px-2 mr-2"
           />
           {is_loading ? (
             <input
               type="submit"
               disabled={true}
               onClick={() => signup()}
+              style={{ backgroundColor: "#f3f3f3" }}
               className={
                 "cursor-pointer py-2 px-3 rounded bg-gray-400 text-white font-normal antialiased"
               }

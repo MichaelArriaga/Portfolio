@@ -17,6 +17,10 @@ body > *:last-child {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.gatsby-highlight > pre {
+  background-color: #c5ffff !important;
+}
+
 .blog-post-container > a {
   color: blue !important;
   text-decoration: underline !important;

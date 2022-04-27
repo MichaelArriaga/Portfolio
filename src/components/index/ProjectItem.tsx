@@ -23,7 +23,7 @@ const ProjectItem = ({
       to={route}
       // style={{ height: 144 }}
       className={
-        "block w-full mb-2 ml-3 rounded-lg bg-white border-gray-100 text-gray-900"
+        "block w-full mb-2 ml-3 rounded-lg border-gray-100 text-gray-900"
       }
       target={open_in_new_tab ? "_blank" : null}
     >
