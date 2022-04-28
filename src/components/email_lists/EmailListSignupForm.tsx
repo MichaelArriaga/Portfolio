@@ -94,7 +94,7 @@ const EmailListSignupForm = () => {
                 },
               });
             }}
-            className="border border-gray-300 rounded py-2 px-2 mr-4"
+            className="border border-gray-400 rounded py-2 px-2 mr-4"
           />
           {is_loading ? (
             <input
