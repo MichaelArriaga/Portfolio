@@ -7,6 +7,12 @@ import twitter_icon from "../../../static/etc/images/icons/logo-twitter.png";
 import linkedin_icon from "../../../static/etc/images/icons/logo-linkedin.png";
 import github_icon from "../../../static/etc/images/icons/logo-github.png";
 import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
+import {
+  FaLinkedin,
+  FaEnvelopeSquare,
+  FaGithub,
+  FaTwitter,
+} from "react-icons/fa";
 
 const EmailListSignupForm = () => {
   const [form, setForm] = useState({
@@ -139,40 +145,30 @@ const EmailListSignupForm = () => {
           href="https://www.linkedin.com/in/mike-ray-26a874230/"
           target="_blank"
           rel="noreferrer"
+          className="mr-4"
         >
-          <img
-            src={linkedin_icon}
-            alt=""
-            style={{ width: 23 }}
-            className="mr-4"
-          />
+          <FaLinkedin size={28} className="text-gray-900 dark:text-green-900" />
         </a>
-        <a href="mailto:m.arriaga.smb@gmail.com">
-          <img src={email_icon} alt="" style={{ width: 23 }} className="mr-4" />
+        <a href="mailto:m.arriaga.smb@gmail.com" className="mr-4">
+          <FaEnvelopeSquare
+            size={28}
+            className="text-gray-900 dark:text-green-900"
+          />
         </a>
         <a
           href="https://github.com/MichaelArriaga"
           target="_blank"
           rel="noreferrer"
+          className="mr-4"
         >
-          <img
-            src={github_icon}
-            alt=""
-            style={{ width: 23 }}
-            className="mr-4"
-          />
+          <FaGithub size={28} className="text-gray-900 dark:text-green-900" />
         </a>
         <a
           href="https://twitter.com/mike_ray_ux"
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src={twitter_icon}
-            alt=""
-            style={{ width: 23 }}
-            className="mr-4"
-          />
+          <FaTwitter size={28} className="text-gray-900 dark:text-green-900" />
         </a>
       </div>
       {/* socials end */}

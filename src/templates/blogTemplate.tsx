@@ -18,7 +18,7 @@ export default function Template({
   //console.log("frontmatter:", frontmatter);
   const thumbnail = post.frontmatter.thumbnail || null;
   return (
-    <div id="innerBody" className="">
+    <div id="innerBody" className="bg-gray-200">
       <div className="pt-10 px-4">
         <SEO
           path={frontmatter.path}
