@@ -52,8 +52,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
           Posts
         </Link>
       </div>
-      {/* dark mode toggler start */}
-      <DarkModeToggler />
+      {/* <DarkModeToggler /> */}
     </div>
   );
 };
