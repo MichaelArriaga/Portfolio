@@ -38,7 +38,7 @@ const Post = ({ slug, title, date, post_tags }: PropTypes) => {
                 }}
                 className="px-1 rounded bg-cyan-400 mr-2"
               >
-                <h3 className="text-xs text-gray-900 font-normal antialiased">
+                <h3 className="text-xs text-gray-900 font-semibold antialiased">
                   {tag}
                 </h3>
               </Link>
