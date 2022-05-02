@@ -147,13 +147,10 @@ const EmailListSignupForm = () => {
           rel="noreferrer"
           className="mr-4"
         >
-          <FaLinkedin size={28} className="text-gray-900 dark:text-green-900" />
+          <FaLinkedin size={28} className="text-gray-900" />
         </a>
         <a href="mailto:m.arriaga.smb@gmail.com" className="mr-4">
-          <FaEnvelopeSquare
-            size={28}
-            className="text-gray-900 dark:text-green-900"
-          />
+          <FaEnvelopeSquare size={28} className="text-gray-900" />
         </a>
         <a
           href="https://github.com/MichaelArriaga"
@@ -161,14 +158,14 @@ const EmailListSignupForm = () => {
           rel="noreferrer"
           className="mr-4"
         >
-          <FaGithub size={28} className="text-gray-900 dark:text-green-900" />
+          <FaGithub size={28} className="text-gray-900" />
         </a>
         <a
           href="https://twitter.com/mike_ray_ux"
           target="_blank"
           rel="noreferrer"
         >
-          <FaTwitter size={28} className="text-gray-900 dark:text-green-900" />
+          <FaTwitter size={28} className="text-gray-900" />
         </a>
       </div>
       {/* socials end */}
