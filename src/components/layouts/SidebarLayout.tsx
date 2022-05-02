@@ -10,10 +10,10 @@ interface PropTypes {
 
 const SidebarLayout = ({ highlighted_hero_link, children }: PropTypes) => {
   return (
-    <div>
+    <div id="innerBody" className="bg-gray-200">
       <div
         style={{ minWidth: 300, minHeight: "100vh" }}
-        className="w-full sm:flex sm:flex-row sm:justify-start items-start"
+        className="w-full sm:flex sm:flex-row sm:justify-start items-start px-4"
       >
         {/* left panel start */}
         <div
