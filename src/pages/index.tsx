@@ -28,7 +28,7 @@ const Index = () => {
         </div>
         <div>
           <Link
-            to={"https://minty-snippets.netlify.app/"}
+            to={"https://www.mintysnippets.com"}
             // style={{ height: 144 }}
             className={
               "block w-full mb-2 ml-3 rounded-lg border-gray-100 text-gray-900"
