@@ -55,15 +55,15 @@ module.exports = {
             resolve: `gatsby-remark-classes`,
             options: {
               classMap: {
-                "heading[depth=1]": "title",
-                "heading[depth=2]":
-                  "font-bold text-2xl sm:text-4xl underline mt-4 mb-2",
-                paragraph: "text-lg sm:text-lg sm:text-2xl mb-6 antialiased",
-                strong: "font-bold",
-                link: "font-bold text-blue-700 underline antialiased",
-                code: "text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded",
-                "list[ordered=false]": "text-2xl list-disc pl-8 mb-6",
-                "list[ordered=true]": "text-2xl list-decimal pl-8 mb-6",
+                //"heading[depth=1]": "title",
+                //"heading[depth=2]":
+                //"font-bold text-2xl sm:text-4xl underline mt-4 mb-2",
+                //paragraph: "text-lg sm:text-lg sm:text-2xl mb-6 antialiased",
+                //strong: "font-bold",
+                //link: "font-bold text-blue-700 underline antialiased",
+                //code: "text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded",
+                //"list[ordered=false]": "text-2xl list-disc pl-8 mb-6",
+                //"list[ordered=true]": "text-2xl list-decimal pl-8 mb-6",
               },
             },
           },

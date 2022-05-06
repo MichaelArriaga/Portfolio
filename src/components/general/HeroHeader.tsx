@@ -13,7 +13,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
     <div className="flex flex-col justify-center items-center mb-8">
       <img
         className="block"
-        style={{ maxWidth: 75 }}
+        style={{ maxWidth: 75, borderRadius: "50%" }}
         src={mike_circle_logo}
         alt="mike logo"
       />
