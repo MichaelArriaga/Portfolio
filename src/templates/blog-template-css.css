@@ -73,7 +73,8 @@ li > a {
 }
 
 .blog-post-container > h2 {
-  margin: 20px 0 10px;
+  margin-right: 10px;
+  margin-bottom: 35px !important;
   padding: 0;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
@@ -601,6 +602,9 @@ pre tt {
 }
 
 @media (min-width: 600px) {
+  .blog-post-container > p {
+    margin-bottom: 35px !important;
+  }
   .blog-post-container > a,
   .blog-post-container > ol,
   .blog-post-container > ul,
@@ -615,14 +619,16 @@ pre tt {
   }
   .blog-post-container > h1,
   .blog-post-container > h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   pre {
     font-size: 20px;
+    margin-bottom: 30px !important;
   }
 
   pre > code {
     font-size: 20px !important;
+    margin-bottom: 30px !important;
   }
   pre > code > span {
     font-size: 20px !important;
