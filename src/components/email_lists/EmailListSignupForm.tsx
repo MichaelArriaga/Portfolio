@@ -3,10 +3,6 @@ import { emailValid } from "../../utils/validations";
 // import api from '../../api/v1/api';
 // import { post_api_v1_newsletter_registrations_path } from '../../api/v1/routes';
 import { sleep } from "../../utils/helpers";
-import twitter_icon from "../../../static/etc/images/icons/logo-twitter.png";
-import linkedin_icon from "../../../static/etc/images/icons/logo-linkedin.png";
-import github_icon from "../../../static/etc/images/icons/logo-github.png";
-import email_icon from "../../../static/etc/images/icons/logo-email-envelope.png";
 import {
   FaLinkedin,
   FaEnvelopeSquare,
