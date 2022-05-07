@@ -4,7 +4,8 @@
 }
 
 .gatsby-highlight > pre {
-  background-color: #f7f7f7 !important;
+  background-color: white !important;
+  /*background-color: #f7f7f7 !important;*/
   border: 1px solid #1f1f1f;
   border-radius: 4px;
 }
@@ -576,7 +577,8 @@ tt {
 }
 
 .blog-post-container > .highlight pre {
-  background-color: #f8f8f8;
+  /*background-color: #f8f8f8;*/
+  background-color: white;
   border: 1px solid #cccccc;
   font-size: 13px;
   line-height: 19px;
@@ -586,7 +588,8 @@ tt {
 }
 
 .blog-post-container > pre {
-  background-color: #f8f8f8;
+  /*background-color: #f8f8f8;*/
+  background-color: white;
   border: 1px solid #cccccc;
   font-size: 13px;
   line-height: 19px;

@@ -8,12 +8,12 @@ import {
 
 const EndAskBox = () => {
   return (
-    <div className="w-full rounded p-4 rounded border border-gray-800 mb-6">
+    <div className="w-full bg-white rounded p-4 rounded border border-gray-800 mb-6">
       <div className="mb-4">
-        <h1 className="text-2xl sm:text-3xl text-gray-900 font-black text-center leading-none mb-4">
+        <h1 className="text-2xl sm:text-3xl text-gray-900 font-black text-center leading-none mb-4 antialiased">
           Thanks for reading! 👋
         </h1>
-        <h2 className="text-xl sm:text-2xl text-gray-900 font-bold text-center leading-none mb-4 sm:text-center">
+        <h2 className="text-xl sm:text-2xl text-gray-900 font-bold text-center leading-none mb-4 sm:text-center antialiased">
           Find this article useful?
         </h2>
       </div>
@@ -21,7 +21,7 @@ const EndAskBox = () => {
         <a
           style={{ backgroundColor: "#359BF0" }}
           href={"https://twitter.com/mike_ray_ux"}
-          className="px-4 py-2 rounded-lg text-lg flex justify-center items-center text-white font-bold"
+          className="px-4 py-2 rounded-lg text-lg flex justify-center items-center text-white font-bold antialiased"
           target="_blank"
           rel="noreferrer"
         >
