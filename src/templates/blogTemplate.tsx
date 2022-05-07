@@ -4,6 +4,7 @@ import HeroHeader from "../components/general/HeroHeader";
 import Footer from "../components/Footer";
 import "./blog-template-css.css";
 import SEO from "../components/general/SEO";
+import EndAskBox from "../components/blog/EndAskBox";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -76,6 +77,7 @@ export default function Template({
               className="blog-post-container"
               dangerouslySetInnerHTML={{ __html: html }}
             />
+            <EndAskBox />
           </div>
         </div>
         <Footer />
