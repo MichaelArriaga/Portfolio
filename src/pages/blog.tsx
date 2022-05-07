@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useQueryParams } from "react";
 import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import Post from "../components/blog/Post";
@@ -6,6 +6,7 @@ import { metaTitle } from "../constants/metaTitle";
 import SEO from "../components/general/SEO";
 
 const Blog = ({
+  location,
   data: {
     allMarkdownRemark: { edges },
   },
@@ -15,6 +16,7 @@ const Blog = ({
 
   useEffect(() => {
     setCategoryTagsFromQuery();
+    setSelectedTagFromQueryParam();
   }, []);
 
   const setCategoryTagsFromQuery = () => {
@@ -23,7 +25,7 @@ const Blog = ({
       edges.forEach((edge: any) => {
         let tags = edge.node.frontmatter.tags.split(", ");
         tags.forEach((tag: any) => {
-          tags_to_set.push(tag);
+          tags_to_set.push(tag.toLowerCase());
         });
       });
     }
@@ -35,7 +37,7 @@ const Blog = ({
     //   return a - b;
     // });
 
-    if (tags_to_set.length > 0) {
+    if (tags_to_set && tags_to_set.length > 0) {
       // removes duplicates Array.from([...new Set(my_array)])
       setCategoryTags(Array.from([...new Set(tags_to_set)]));
     }
@@ -43,14 +45,42 @@ const Blog = ({
 
   const postIncludedInFilter = (tags: any) => {
     let included = false;
+    let tags_downcased = [...tags].map((item) => item.toLowerCase());
+    //console.log("tags_downcased:", tags_downcased);
     if (
       selected_tag === "" ||
       selected_tag === "All" ||
-      tags.includes(selected_tag)
+      tags_downcased.includes(selected_tag.toLowerCase())
     ) {
       included = true;
     }
     return included;
+  };
+
+  const setFilterTag = (tag) => {
+    updateQueryParam(tag);
+    setSelectedTagFromQueryParam(tag);
+  };
+
+  const updateQueryParam = (tag) => {
+    const Url = new URL(location.origin + location.pathname);
+    const urlParams = new URLSearchParams(Url.search);
+    urlParams.set("tag", tag);
+    Url.search = urlParams.toString();
+    window.history.pushState("data", "", Url.href);
+  };
+
+  const setSelectedTagFromQueryParam = () => {
+    const params = new URLSearchParams(window.location.search);
+    let filter_tag;
+
+    if (params.get("tag")) {
+      filter_tag = params.get("tag").split("+").join(" ");
+    }
+    console.log("selected_tag:", selected_tag);
+    console.log("filter_tag:", filter_tag);
+
+    setSelectedTag(filter_tag || "All");
   };
 
   return (
@@ -82,9 +112,9 @@ const Blog = ({
                       key={tag}
                       onClick={() => {
                         if (selected_tag !== tag) {
-                          setSelectedTag(tag);
+                          setFilterTag(tag);
                         } else {
-                          setSelectedTag("All");
+                          setFilterTag("All");
                         }
                       }}
                       style={{
@@ -104,7 +134,10 @@ const Blog = ({
                             : "text-sm text-gray-900 font-semibold antialiased"
                         }
                       >
-                        {tag}
+                        {tag
+                          .split(" ")
+                          .map((item) => item[0].toUpperCase() + item.slice(1))
+                          .join(" ")}
                       </h3>
                     </button>
                   );

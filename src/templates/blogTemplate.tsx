@@ -51,7 +51,10 @@ export default function Template({
                         style={{
                           backgroundColor: "#76d3ca",
                         }}
-                        to={`/blog?tag=${tag.toLowerCase()}`}
+                        to={`/blog?tag=${tag
+                          .split(" ")
+                          .join("+")
+                          .toLowerCase()}`}
                         className={
                           "inline-block outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
                         }
