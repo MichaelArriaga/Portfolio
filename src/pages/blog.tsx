@@ -46,7 +46,6 @@ const Blog = ({
   const postIncludedInFilter = (tags: any) => {
     let included = false;
     let tags_downcased = [...tags].map((item) => item.toLowerCase());
-    //console.log("tags_downcased:", tags_downcased);
     if (
       selected_tag === "" ||
       selected_tag === "All" ||
@@ -77,9 +76,6 @@ const Blog = ({
     if (params.get("tag")) {
       filter_tag = params.get("tag").split("+").join(" ");
     }
-    console.log("selected_tag:", selected_tag);
-    console.log("filter_tag:", filter_tag);
-
     setSelectedTag(filter_tag || "All");
   };
 
