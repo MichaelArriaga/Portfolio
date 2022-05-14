@@ -31,7 +31,7 @@ const ProjectItem = ({
         <div className="flex flex-row justify-start items-center">
           <h1
             className={
-              "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 font-black antialiased"
+              "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 font-bold antialiased"
             }
           >
             {title}
@@ -39,7 +39,7 @@ const ProjectItem = ({
           <h3
             style={{ marginBottom: 0 }}
             className={
-              "text-lg text-gray-900 text-left leading-none tracking-snug font-semibold antialiased"
+              "text-lg text-gray-900 text-left leading-none tracking-snug font-bold antialiased"
             }
           >
             ({time_range})
