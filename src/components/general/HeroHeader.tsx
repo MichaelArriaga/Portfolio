@@ -49,7 +49,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
           }
           to="/blog"
         >
-          Posts
+          Blog
         </Link>
       </div>
       {/* <DarkModeToggler /> */}
