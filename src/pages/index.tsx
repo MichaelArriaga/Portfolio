@@ -12,9 +12,10 @@ const Index = () => {
     <SidebarLayout highlighted_hero_link={"home"}>
       {/* apps start */}
       <SEO
-        path={"/"}
         title={`${metaTitle} - Home`}
         description={metaTitle}
+        path={"/"}
+        date={null}
         thumbnail={false}
         readtime={null}
         tags={null}
@@ -27,13 +28,12 @@ const Index = () => {
           </h3>
         </div>
         <div>
-          <Link
-            to={"https://www.mintysnippets.com"}
+          <a
+            href="https://www.mintysnippets.com"
             // style={{ height: 144 }}
-            className={
-              "block w-full mb-1 rounded-lg ml-3 border-gray-100 text-gray-900"
-            }
-            target={"_blank"}
+            className="block w-full mb-1 ml-3 text-gray-900 border-gray-100 rounded-lg"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="">
               <div className="flex flex-wrap items-center justify-start">
@@ -54,7 +54,7 @@ const Index = () => {
                 </h3>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
 
         <ProjectItem

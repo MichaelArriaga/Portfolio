@@ -8,10 +8,10 @@ interface PropTypes {
   title: string;
   description: string;
   path: string;
-  date: string;
+  date: string | null;
   thumbnail: any;
-  readtime: string;
-  tags: Array<String>;
+  readtime: string | null;
+  tags: Array<String> | null;
   article: boolean;
 }
 

@@ -16,7 +16,6 @@ const Blog = ({
 
   useEffect(() => {
     setCategoryTagsFromQuery();
-    setSelectedTagFromQueryParam();
   }, []);
 
   const setCategoryTagsFromQuery = () => {
@@ -56,28 +55,17 @@ const Blog = ({
     return included;
   };
 
-  const setFilterTag = (tag) => {
-    updateQueryParam(tag);
-    setSelectedTagFromQueryParam(tag);
+  const setFilterTag = (tag: any) => {
+    setSelectedTag(tag || "All");
   };
 
-  const updateQueryParam = (tag) => {
-    const Url = new URL(location.origin + location.pathname);
-    const urlParams = new URLSearchParams(Url.search);
-    urlParams.set("tag", tag);
-    Url.search = urlParams.toString();
-    window.history.pushState("data", "", Url.href);
-  };
-
-  const setSelectedTagFromQueryParam = () => {
-    const params = new URLSearchParams(window.location.search);
-    let filter_tag;
-
-    if (params.get("tag")) {
-      filter_tag = params.get("tag").split("+").join(" ");
-    }
-    setSelectedTag(filter_tag || "All");
-  };
+  //const updateQueryParam = (tag: any) => {
+  //const Url = new URL(location.origin + location.pathname);
+  //const urlParams = new URLSearchParams(Url.search);
+  //urlParams.set("tag", tag);
+  //Url.search = urlParams.toString();
+  //window.history.pushState("data", "", Url.href);
+  //};
 
   return (
     <SidebarLayout highlighted_hero_link="posts">
@@ -85,6 +73,7 @@ const Blog = ({
         path={"/blog"}
         title={`${metaTitle} - Blog`}
         description={metaTitle}
+        date={null}
         thumbnail={false}
         readtime={null}
         tags={null}
@@ -100,9 +89,9 @@ const Blog = ({
           >
             Tags
           </h2>
-          <div className="flex flex-wrap justify-start items-center">
+          <div className="flex flex-wrap items-center justify-start">
             {category_tags.length > 0
-              ? category_tags.map((tag) => {
+              ? category_tags.map((tag: any) => {
                   return (
                     <button
                       key={tag}
@@ -132,7 +121,9 @@ const Blog = ({
                       >
                         {tag
                           .split(" ")
-                          .map((item) => item[0].toUpperCase() + item.slice(1))
+                          .map(
+                            (item: any) => item[0].toUpperCase() + item.slice(1)
+                          )
                           .join(" ")}
                       </h3>
                     </button>
