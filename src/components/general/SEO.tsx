@@ -4,6 +4,17 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import real_defaultImage from "../../../static/etc/images/default-image.png";
 
+interface PropTypes {
+  title: string;
+  description: string;
+  path: string;
+  date: string;
+  thumbnail: any;
+  readtime: string;
+  tags: Array<String>;
+  article: boolean;
+}
+
 const SEO = ({
   title,
   description,
@@ -13,7 +24,7 @@ const SEO = ({
   readtime,
   tags,
   article,
-}: any) => {
+}: PropTypes) => {
   const { site } = useStaticQuery(query);
   //gatsby-config.js
   const {

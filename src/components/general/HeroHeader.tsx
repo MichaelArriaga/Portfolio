@@ -2,7 +2,6 @@ import React from "react";
 import mike_circle_logo from "../../../static/etc/images/icons/mike-circle-logo.png";
 import "../layout.css";
 import { Link } from "gatsby";
-import DarkModeToggler from "../general/dark_mode_toggler/DarkModeToggler";
 
 interface PropTypes {
   highlighted: string;

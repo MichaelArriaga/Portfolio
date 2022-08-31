@@ -3,18 +3,14 @@ import { Link } from "gatsby";
 
 interface PropTypes {
   title: string;
-  underline_color?: string;
-  underline_width?: number;
   time_range: string;
-  description: string;
   route: string;
-  open_in_new_tab?: boolean;
+  open_in_new_tab: boolean;
 }
 
 const ProjectItem = ({
   title,
   time_range,
-  description,
   route,
   open_in_new_tab,
 }: PropTypes) => {

@@ -20,7 +20,7 @@ export default function Template({
   const thumbnail = post.frontmatter.thumbnail || null;
   return (
     <div id="innerBody" className="bg-gray-200">
-      <div className="pt-10 px-4">
+      <div className="px-4 pt-10">
         <SEO
           path={frontmatter.path}
           date={frontmatter.date}
@@ -32,14 +32,14 @@ export default function Template({
           article={true}
         />
         <HeroHeader highlighted="posts" />
-        <div className="max-w-4xl pt-12 py-2 mx-auto">
+        <div className="max-w-4xl py-2 pt-12 mx-auto">
           <div className="">
-            <h1 className="text-3xl sm:text-5xl text-left leading-none mb-1 font-black antialiased">
+            <h1 className="mb-1 text-3xl antialiased font-black leading-none text-left sm:text-5xl">
               {frontmatter.title}
             </h1>
-            <h2 className="text-base text-left mb-2 font-normal antialiased">
+            <h2 className="mb-2 text-base antialiased font-normal text-left">
               {frontmatter.date} /{" "}
-              <span className="readTime font-bold antialiased">
+              <span className="antialiased font-bold readTime">
                 {frontmatter.readtime}
               </span>
             </h2>
@@ -72,7 +72,7 @@ export default function Template({
                   })
                 : null}
             </div>
-            <hr className="h-px border-t border-gray-200 my-2" />
+            <hr className="h-px my-2 border-t border-gray-200" />
             <div
               className="blog-post-container"
               dangerouslySetInnerHTML={{ __html: html }}
