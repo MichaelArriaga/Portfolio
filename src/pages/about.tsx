@@ -19,7 +19,7 @@ class About extends React.Component {
           article={false}
         />
         <div style={{ marginBottom: 150 }} className="">
-          <h3 className="font-black text-3xl mb-2">Bio</h3>
+          <h3 className="mb-2 text-3xl font-black">Bio</h3>
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Mike is a Product Engineer and Rails Enthusiast based in Seattle WA.
             After hours, he's a Musician (Drums & Bass Guitar).
@@ -28,7 +28,7 @@ class About extends React.Component {
             Previously, Mike was Founder, CTO and Principal Engineer at{" "}
             <Link
               to="/projects/fresh_and_tumble"
-              className="underline font-bold antialiased"
+              className="antialiased font-bold underline"
             >
               Fresh And Tumble,
             </Link>{" "}
@@ -41,8 +41,8 @@ class About extends React.Component {
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Mike's latest product{" "}
             <a
-              href="https://minty-snippets.netlify.app/"
-              className="underline font-bold antialiased"
+              href="https://mintysnippets.com"
+              className="antialiased font-bold underline"
               target="_blank"
               rel="noreferrer"
             >
@@ -51,7 +51,7 @@ class About extends React.Component {
             achieved 7th place on{" "}
             <a
               href="https://www.producthunt.com/posts/minty-snippets"
-              className="underline font-bold antialiased"
+              className="antialiased font-bold underline"
               target="_blank"
               rel="noreferrer"
             >
@@ -68,7 +68,7 @@ class About extends React.Component {
             Need help with your team or project?{" "}
             <a
               href="mailto:m.arriaga.smb@gmail.com"
-              className="underline font-bold antialiased"
+              className="antialiased font-bold underline"
             >
               Email Mike
             </a>
