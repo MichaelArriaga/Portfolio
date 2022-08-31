@@ -23,12 +23,12 @@ const ProjectItem = ({
       to={route}
       // style={{ height: 144 }}
       className={
-        "block w-full mb-2 ml-3 rounded-lg border-gray-100 text-gray-900"
+        "block w-full ml-3 mb-1 rounded-lg border-gray-100 text-gray-900"
       }
       target={open_in_new_tab ? "_blank" : null}
     >
       <div className="">
-        <div className="flex flex-row justify-start items-center">
+        <div className="flex flex-row items-center justify-start">
           <h1
             className={
               "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 font-bold antialiased"
@@ -46,9 +46,6 @@ const ProjectItem = ({
           </h3>
         </div>
       </div>
-      <p className="text-lg text-gray-900 leading-tight font-normal antialiased">
-        {description}
-      </p>
     </Link>
   );
 };

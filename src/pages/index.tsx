@@ -20,9 +20,9 @@ const Index = () => {
         tags={null}
         article={false}
       />
-      <div className="sm:max-w-screen-sm mx-auto">
-        <div className="flex flex-row justify-start items-center">
-          <h3 className="text-xl sm:text-2xl text-gray-900 mb-2 font-black mr-2 antialiased">
+      <div className="mr-auto sm:max-w-screen-sm">
+        <div className="flex flex-row items-center justify-start">
+          <h3 className="mb-2 text-xl antialiased font-black text-gray-900 sm:text-2xl">
             My Apps
           </h3>
         </div>
@@ -31,12 +31,12 @@ const Index = () => {
             to={"https://www.mintysnippets.com"}
             // style={{ height: 144 }}
             className={
-              "block w-full mb-2 ml-3 rounded-lg border-gray-100 text-gray-900"
+              "block w-full mb-1 rounded-lg ml-3 border-gray-100 text-gray-900"
             }
             target={"_blank"}
           >
             <div className="">
-              <div className="flex flex-wrap justify-start items-center">
+              <div className="flex flex-wrap items-center justify-start">
                 <h1
                   className={
                     "text-xl text-gray-900 text-left tracking-snug antialiased mr-2 font-bold antialiased"
@@ -53,17 +53,7 @@ const Index = () => {
                   (2022 - Current)
                 </h3>
               </div>
-              <p
-                style={{ color: "#EA522A" }}
-                className="mt-0 text-lg text-gray-500 font-bold text-left leading-none antialiased"
-              >
-                <span className="text-base mr-1">🎉 </span>
-                #7 on Product Hunt (3/13/2022){" "}
-              </p>
             </div>
-            <p className="text-lg text-gray-900 leading-tight font-normal antialiased">
-              Make your job search less repetitive.
-            </p>
           </Link>
         </div>
 

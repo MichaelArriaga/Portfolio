@@ -10,14 +10,14 @@ interface PropTypes {
 
 const HeroHeader = ({ highlighted }: PropTypes) => {
   return (
-    <div className="flex flex-col justify-center items-center mb-8">
+    <div className="flex flex-col items-center justify-center mb-8">
       <img
         className="block"
         style={{ maxWidth: 75, borderRadius: "50%" }}
         src={mike_circle_logo}
         alt="mike logo"
       />
-      <h1 className="my-2 text-3xl text-gray-900 leading-none tracking-tight font-black antialiased">
+      <h1 className="my-2 text-3xl antialiased font-black leading-none tracking-tight text-gray-900">
         Mike Ray
       </h1>
       <div className="">
