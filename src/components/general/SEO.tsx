@@ -43,7 +43,8 @@ const SEO = ({
   let seo_image_path;
 
   if (thumbnail) {
-    seo_image_path = thumbnail.childImageSharp.fluid.src;
+    seo_image_path =
+      thumbnail.childImageSharp.gatsbyImageData.images.fallback.src;
   } else {
     seo_image_path = real_defaultImage;
   }
