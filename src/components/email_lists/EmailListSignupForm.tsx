@@ -70,15 +70,15 @@ const EmailListSignupForm = () => {
   };
 
   return (
-    <div style={{ maxWidth: 255 }} className="mb-4 mx-auto">
+    <div style={{ maxWidth: 255 }} className="mx-auto mb-4">
       <div className="">
-        <p className="text-left mb-1 font-normal antialiased">
-          Stay up-to-date with my projects.
+        <p className="mb-1 antialiased font-normal text-left">
+          Stay up-to-date with my posts.
         </p>
       </div>
 
       <form action="post" method="post">
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row items-center justify-center">
           <input
             type="text"
             name="email"
@@ -96,7 +96,7 @@ const EmailListSignupForm = () => {
                 },
               });
             }}
-            className="border border-gray-400 rounded py-2 px-2 mr-4"
+            className="px-2 py-2 mr-4 border border-gray-400 rounded"
           />
           {is_loading ? (
             <input
@@ -129,14 +129,14 @@ const EmailListSignupForm = () => {
         </div>
 
         {form.email.errors.length > 0 ? (
-          <p className="text-xs pt-1 text-red-700 text-left font-normal antialiased mb-2">
+          <p className="pt-1 mb-2 text-xs antialiased font-normal text-left text-red-700">
             {form.email.errors[0]}
           </p>
         ) : null}
       </form>
 
       {/* socials start */}
-      <div className="flex flex-row justify-start items-center mb-6">
+      <div className="flex flex-row items-center justify-start mb-6">
         <a
           href="https://www.linkedin.com/in/mike-ray-26a874230/"
           target="_blank"

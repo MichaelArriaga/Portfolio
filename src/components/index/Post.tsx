@@ -11,7 +11,7 @@ interface PropTypes {
 const Post = ({ slug, title, date, post_tags }: PropTypes) => {
   return (
     <div className={"sm:max-w-xl mx-auto ml-3 mb-3"}>
-      <Link className="flex justify-start items-center mb-1" to={slug}>
+      <Link className="flex items-center justify-start mb-1" to={slug}>
         <h3
           style={{ lineHeight: 1 }}
           className={
@@ -36,9 +36,9 @@ const Post = ({ slug, title, date, post_tags }: PropTypes) => {
                   paddingRight: 6,
                   backgroundColor: "#76d3ca",
                 }}
-                className="px-1 rounded bg-cyan-400 mr-2"
+                className="px-1 mr-2 rounded bg-cyan-400"
               >
-                <h3 className="text-xs text-gray-900 font-semibold antialiased">
+                <h3 className="text-xs antialiased font-semibold text-gray-900">
                   {tag}
                 </h3>
               </Link>
