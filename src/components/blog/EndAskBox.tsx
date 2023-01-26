@@ -1,10 +1,5 @@
 import React, { useEffect, useState, useContext, useRef } from "react";
-import {
-  FaLinkedin,
-  FaEnvelopeSquare,
-  FaGithub,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const EndAskBox = () => {
   return (
@@ -20,14 +15,20 @@ const EndAskBox = () => {
       <div className="flex flex-row justify-center items-center">
         <a
           style={{ backgroundColor: "#359BF0" }}
-          href={"https://twitter.com/mike_ray_ux"}
+          href="https://twitter.com/mike_ray_ux?ref_src=twsrc%5Etfw"
           className="px-4 py-2 rounded-lg text-lg flex justify-center items-center text-white font-bold antialiased"
+          data-show-count="false"
           target="_blank"
           rel="noreferrer"
         >
-          <FaTwitter size={24} className="text-white mr-2" />
           Follow me on Twitter
+          <FaTwitter size={24} className="text-white ml-2" />
         </a>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charSet="utf-8"
+          ></script>
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ export default function Template({
             </h2>
             <div>
               {frontmatter.tags.length > 0
-                ? frontmatter.tags.split(", ").map((tag) => {
+                ? frontmatter.tags.split(", ").map((tag: string) => {
                     return (
                       <Link
                         key={tag}
