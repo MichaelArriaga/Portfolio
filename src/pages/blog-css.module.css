@@ -22,9 +22,6 @@
   font-family: var(--secondary-type-copy);
 }
 
-.postItem {
-}
-
 .postLink {
   font-size: 28.5px;
   font-family: var(--primary-type-heading);
@@ -43,10 +40,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .sectionHeader {
-
-  }
-
   .blogContainer {
     width: 95%;
   }
@@ -58,7 +51,6 @@
 
   .section {
     width: 95%;
-
   }
 
   .sectionHeader {

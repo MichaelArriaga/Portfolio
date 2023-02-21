@@ -4,8 +4,8 @@ import Post from "./Post";
 
 const LatestPostList = () => {
   return (
-    <div className="sm:max-w-xl mb-8 sm:mb-16">
-      <h3 className="text-xl sm:text-2xl text-gray-900 mb-2 font-black antialiased">
+    <div className="sm:max-w-xl mb-8 sm:mb-16 mr-auto">
+      <h3 className="text-lg text-gray-900 mb-1 font-black antialiased tracking-tight">
         Latest Posts
       </h3>
       <StaticQuery
@@ -13,7 +13,7 @@ const LatestPostList = () => {
           query {
             allMarkdownRemark(
               sort: { order: DESC, fields: [frontmatter___date] }
-              limit: 10
+              limit: 7
             ) {
               edges {
                 node {

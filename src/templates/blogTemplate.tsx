@@ -19,7 +19,7 @@ export default function Template({
   //console.log("frontmatter:", frontmatter);
   const thumbnail = post.frontmatter.thumbnail || null;
   return (
-    <div id="innerBody" className="bg-gray-200">
+    <div id="innerBody" className="">
       <div className="px-4 pt-10">
         <SEO
           path={frontmatter.path}
@@ -32,18 +32,17 @@ export default function Template({
           article={true}
         />
         <HeroHeader highlighted="posts" />
-        <div className="max-w-4xl py-2 pt-12 mx-auto">
-          <div className="">
-            <h1 className="mb-1 text-3xl antialiased font-black leading-none text-left sm:text-5xl">
+        <div className="max-w-3xl py-2 mx-auto">
+          <div className="mb-10">
+            <h1 className="mb-2 text-4xl antialiased font-black leading-none text-left sm:text-5xl">
               {frontmatter.title}
             </h1>
-            <h2 className="mb-2 text-base antialiased font-normal text-left">
+            <h2 className="mb-2 text-xl antialiased font-normal text-left">
               {frontmatter.date} /{" "}
               <span className="antialiased font-bold readTime">
                 {frontmatter.readtime}
               </span>
             </h2>
-            <div>
               {frontmatter.tags.length > 0
                 ? frontmatter.tags.split(", ").map((tag: string) => {
                     return (
@@ -62,7 +61,7 @@ export default function Template({
                       >
                         <h3
                           className={
-                            "text-sm text-gray-900 font-semibold antialiased"
+                            "text-lg text-gray-900 font-semibold antialiased"
                           }
                         >
                           {tag}
@@ -72,7 +71,9 @@ export default function Template({
                   })
                 : null}
             </div>
-            <hr className="h-px my-2 border-t border-gray-200" />
+
+          <div>
+            {/* <hr className="h-px my-2 border-t border-gray-200" /> */}
             <div
               className="blog-post-container"
               dangerouslySetInnerHTML={{ __html: html }}

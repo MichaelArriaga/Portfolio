@@ -50,7 +50,7 @@ const TailwindPlayground = () => {
               </h3>
             </a>
           </div>
-          <hr className="h-px border-t border-gray-200 my-2"></hr>
+          {/* <hr className="h-px border-t border-gray-200 my-2"></hr> */}
           <div className="">
             <p className="text-lg sm:text-lg sm:text-2xl mb-6 antialiased">
               Believe it or not, assembling a{" "}

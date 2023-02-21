@@ -10,12 +10,12 @@ interface PropTypes {
 
 const Post = ({ slug, title, date, post_tags }: PropTypes) => {
   return (
-    <div className={"sm:max-w-xl mx-auto ml-3 mb-3"}>
+    <div className={"sm:max-w-xl mx-auto mb-5"}>
       <Link className="flex items-center justify-start mb-1" to={slug}>
         <h3
           style={{ lineHeight: 1 }}
           className={
-            "text-lg text-gray-900 text-left flex flex-wrap justify-start items-center font-bold antialiased"
+            "text-xl text-gray-900 text-left flex flex-wrap justify-start items-center font-bold antialiased"
           }
         >
           <span className="mr-2">{title}</span>{" "}
@@ -23,29 +23,36 @@ const Post = ({ slug, title, date, post_tags }: PropTypes) => {
       </Link>
 
       <div className={"flex flex-row justify-start items-center "}>
-        {post_tags && post_tags.length > 0
-          ? post_tags.map((tag) => (
-              // post tag start
-              <Link
-                key={tag}
-                to={"/blog"}
-                style={{
-                  paddingTop: 3,
-                  paddingBottom: 3,
-                  paddingLeft: 6,
-                  paddingRight: 6,
-                  backgroundColor: "#76d3ca",
-                }}
-                className="px-1 mr-2 rounded bg-cyan-400"
-              >
-                <h3 className="text-xs antialiased font-semibold text-gray-900">
-                  {tag}
-                </h3>
-              </Link>
-              // post tag end
-            ))
-          : null}
+      <div className="flex flex-row justify-start items-center mb-1 mr-3">
+        <span className="text-base font-semibold text-gray-900">{date}</span>
       </div>
+        <div className="flex flex-row justify-start items-center">
+          {post_tags && post_tags.length > 0
+            ? post_tags.map((tag) => (
+                // post tag start
+                <Link
+                  key={tag}
+                  to={"/blog"}
+                  style={{
+                    paddingTop: 3,
+                    paddingBottom: 3,
+                    paddingLeft: 6,
+                    paddingRight: 6,
+                    backgroundColor: "#76d3ca",
+                  }}
+                  className="px-1 mr-1 rounded bg-cyan-400"
+                >
+                  <h3 style={{fontSize: 12}}className="text-xs antialiased font-bold text-gray-900">
+                    {tag}
+                  </h3>
+                </Link>
+                // post tag end
+              ))
+            : null}
+        </div>
+
+      </div>
+
     </div>
   );
 };

@@ -10,8 +10,20 @@
   border-radius: 4px;
 }
 
+li > code {
+  font-size: 22px !important;
+  padding-left: 5px !important;
+  padding-right: 5px  !important;
+  background-color: #76f4f4 !important;
+  border: 1px solid #1f1f1f;
+}
+
+p {
+  font-size: 22px !important;
+}
+
 p > code {
-  font-size: 18px !important;
+  font-size: 20px !important;
   padding-left: 5px !important;
   padding-right: 5px  !important;
   background-color: #76f4f4 !important;
@@ -68,7 +80,9 @@ li > a {
 }
 
 .blog-post-container > h1 {
-  margin: 20px 0 10px;
+  margin-top: 60px !important;
+  margin-bottom: 40px !important;
+  padding: 0;
   padding: 0;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
@@ -77,16 +91,22 @@ li > a {
 }
 
 .blog-post-container > h2 {
+  font-weight: 800 !important;
   margin-right: 10px;
-  margin-bottom: 35px !important;
+  margin-top: 35px !important;
+  margin-bottom: 10px !important;
   padding: 0;
   font-weight: bold;
+  text-align: center;
+  text-decoration: none !important;
   -webkit-font-smoothing: antialiased;
   cursor: text;
   position: relative;
 }
 
 .blog-post-container > h3 {
+  font-size: 28px !important;
+  text-align: left;
   margin: 20px 0 10px;
   padding: 0;
   font-weight: bold;
@@ -176,12 +196,15 @@ li > a {
 
 .blog-post-container > h1 {
   font-size: 28px;
+  border-bottom: 1px solid #cccccc;
   color: black;
+}
+ol {
+  /* margin-bottom: 28px !important */
 }
 
 .blog-post-container > h2 {
   font-size: 24px;
-  border-bottom: 1px solid #cccccc;
   color: black;
 }
 
@@ -203,7 +226,7 @@ li > a {
 }
 
 .blog-post-container > p {
-  margin: 15px 0;
+  margin: 0 0 20px 0;
 }
 
 .blog-post-container > blockquote {
@@ -215,7 +238,7 @@ li > a {
 }
 
 .blog-post-container > ol {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .blog-post-container > dl {
@@ -515,7 +538,7 @@ ol :last-child {
 
 .blog-post-container > span.align-center span img {
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .blog-post-container > span.align-right {
@@ -559,6 +582,10 @@ ol :last-child {
   overflow: hidden;
   margin: 13px auto 0;
   text-align: right;
+}
+
+.language-text {
+  white-space: nowrap !important;
 }
 
 .blog-post-container > code,
@@ -607,36 +634,51 @@ pre tt {
   border: none;
 }
 
+.blog-post-container > ol > li {
+  margin-bottom: 8px;
+  font-size: 22px !important;
+}
+
+
 @media (min-width: 600px) {
-  .blog-post-container > p {
-    margin-bottom: 35px !important;
+  .blog-post-container > h2 {
+    font-size: 28px;
   }
+
   .blog-post-container > a,
   .blog-post-container > ol,
   .blog-post-container > ul,
-  .blog-post-container > li,
   .blog-post-container > li,
   .blog-post-container > p,
   .blog-post-container > h3,
   .blog-post-container > h4,
   .blog-post-container > h5,
   .blog-post-container > h6 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
-  .blog-post-container > h1,
-  .blog-post-container > h2 {
+  .blog-post-container > h1 {
     font-size: 35px;
   }
   pre {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 30px !important;
   }
 
   pre > code {
-    font-size: 20px !important;
+    font-size: 19px !important;
     margin-bottom: 30px !important;
   }
   pre > code > span {
-    font-size: 20px !important;
+    font-size: 19px !important;
   }
+
+p {
+  font-size: 26px !important;
+}
+
+p > code {
+  font-size: 21px !important;
+}
+
+
 }

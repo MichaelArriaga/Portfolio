@@ -55,6 +55,9 @@ tags: 'Tag1, Tag2, Tag3'
 
 ### TroubleShooting
 
+* I replaced or updated an image but it hasn't changed:
+A: It's stuck in cache (especially if the filename remains the same) run `gatsby clean`
+
 #### Deployment via netlify
 
 - If recently replaced/updated an existing static image anywhere in the project,
