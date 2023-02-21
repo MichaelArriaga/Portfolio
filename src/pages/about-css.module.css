@@ -8,7 +8,7 @@
 }
 
 .aboutHeader {
-  font-family: var(--primary-type-heading);
+  /* font-family: var(--primary-type-heading); */
   font-size: 34px;
   margin-bottom: 20px;
 }
@@ -18,7 +18,7 @@
 }
 
 .bodyBlock {
-  font-family: var(--secondary-type-copy);
+  /* font-family: var(--secondary-type-copy); */
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 40px;
@@ -33,13 +33,13 @@
 }
 
 .sectionHeader {
-  font-family: var(--primary-type-heading);
+  /* font-family: var(--primary-type-heading); */
   font-size: 28.35px;
   margin-bottom: 20px;
 }
 
 .highlight {
-  font-family: var(--secondary-type-emphasis);
+  /* font-family: var(--secondary-type-emphasis); */
 }
 
 .link {
@@ -66,7 +66,7 @@
   height: auto;
   margin: auto;
   text-align: center;
-  font-family: var(--secondary-type-emphasis);
+  /* font-family: var(--secondary-type-emphasis); */
   font-size: 28.35px;
   padding: 15px 17px;
   border-style: solid;
@@ -82,7 +82,7 @@
 }
 
 .typeformButton {
-  font-family: var(--primary-type-heading);
+  /* font-family: var(--primary-type-heading); */
   font-size: 26px;
   padding: 20px 15px;
   border-style: none;
@@ -135,7 +135,7 @@ box-shadow: 1px 4px 9px 2x rgba(0, 0, 0, 0.2);
   }
 
   .sectionHeader {
-    font-family: var(--primary-type-heading);
+    /* font-family: var(--primary-type-heading); */
     font-size: 21.26px;
     margin-bottom: 10px;
     padding: 0 10px;

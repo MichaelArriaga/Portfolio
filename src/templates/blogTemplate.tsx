@@ -61,7 +61,7 @@ export default function Template({
                       >
                         <h3
                           className={
-                            "text-lg text-gray-900 font-semibold antialiased"
+                            "text-base text-gray-900 font-semibold antialiased"
                           }
                         >
                           {tag}
