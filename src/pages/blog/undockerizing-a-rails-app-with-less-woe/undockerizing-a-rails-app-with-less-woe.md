@@ -11,98 +11,98 @@ tags: "Docker, Rails"
 ---
 
 Last summer, I decided to [undockerize one of my side
-projects](https://twitter.com/mike_ray_ux/status/1543235092494970880). The
-motivation behind it was to prevent a persistent **docker system crash caused by
-a memory leak** inside my `webpacker` service that required a full restart of my
-machine each time the docker system ran out of memory.
+projects](https://twitter.com/mike_ray_ux/status/1543235092494970880).
+
+The motivation behind it was to prevent a persistent **docker system crash
+caused by a memory leak** inside my `webpacker` service that required a full
+restart of my machine whenever the docker system ran out of memory, which would
+occur several times throughout a single development session.
 
 ## The Memory Leak
 
 **By default**, docker will allow a single service's container to **use the
-entirety of docker's allocated system memory** unless you specify a limit in
-your `docker-compose.yml` 
+entirety of docker's allocated system memory** unless a memory limit is
+specified in your `docker-compose.yml` 
 
-This means that if you have a leaky service, **you likely won't notice until**
-your app slows down to a crawl, or docker freezes entirely.
+This means that unless you specify a `mem_limit` at the per-service-level, **you
+likely won't notice until** your app slows down to a crawl, or docker freezes
+entirely.
 
 ## The Lazy Solution
 
-After an extended amount of time [code spelunking](https://youtu.be/LiyLXklIQHc)
+After some amount of time spent [code spelunking](https://youtu.be/LiyLXklIQHc)
 without much luck, my first effective solution was to well....**just live with
 it!**
 
 
 I specified a `mem_limit` inside my `docker-compose.yml` and ran `docker stats`
-in a single terminal instance to keep an eye on individual memory usages across
-all currently running containers. 
+in a single terminal instance. This allowed me to **keep an eye on individual memory
+usage** across all currently running containers. 
 
-When the "Webpacker Compiling...." message started to hang, a quick remedy could
-be found with the `docker-compose restart webpacker` command.
+When the **"Webpacker Compiling...."** message started to hang, running
+`docker-compose restart webpacker` was the quick remedy.
 
-The major downside of this approach was that sometimes **I wouldn't notice that
+The downside of this approach was sometimes **I wouldn't notice that
 the memory limit had been reached**, making the service unresponsive and unable
-to be restarted without killing the docker process entirely, but **it was better
-than having to restart my entire system**, and I had more insight and control
-over the issue.
+to be restarted without killing the docker process entirely. 
 
+Still though, **it was better than having to restart my entire system**, and now
+I had more insight and control over the issue.
 
-## Deriving Other Possible Solutions
+## Deriving Other Solutions
 
-A containerized environment provides **benefits for teams** both in development
-and deployment, but at the time, the trade-offs of having a containerized
-environment at the cost of a much **slower file I/O didn't make much sense for
-me as a Solo Dev** working on a solo project. 
+For teams, A containerized environment **provides benefits both in
+development and deployment** at the cost of a slower file I/O. 
 
-This and adding the annoyance of the memory leak led me to three possible
-solutions:
+It's a pretty good deal, but as a Solo Dev, **these benefits didn't make much
+sense for me** over developing locally. The additional annoyance of the
+memory leak led me to **three possible solutions:**
 
-**Solution 1: Switch JavaScript Bundlers, and Dockerize it. (Requiring a Rails
-Upgrade)**
+## Option 1: Try another Bundler and Dockerize it.
 
 As a `Rails 5.2` app, the official javascript bundler for this version of Rails
 was the webpacker gem. So in order to leverage something like `esbuild` or
 `vite_ruby`, I'd have to upgrade Rails to `~6.0.1`.
 
-At the time, `esbuild` still lacked true support for [Hot Module Replacement
-(HMR)](https://stackoverflow.com/questions/40889776/what-are-the-conceptual-differences-between-live-reloading-hot-reloading-and-h#:~:text=to%20file%20changes-,Hot%20Module%20Replacement,your%20currently%20selected%20tab%20etc.)
-or "LiveReload"
+At the time, `esbuild` still lacked true support for [HMR
+(LiveReload)](https://stackoverflow.com/questions/40889776/what-are-the-conceptual-differences-between-live-reloading-hot-reloading-and-h#:~:text=to%20file%20changes-,Hot%20Module%20Replacement,your%20currently%20selected%20tab%20etc.),
+something that wepback and thus webpacker already did well.
 
-**Solution 2: Endure the issue.**
+This option had the highest potential for solving my issue with the bonus of
+initializing a Rails upgrade sidequest, but also **had the highest potential for
+woe.**
+
+## Option 2: Endure the issue.
 
 Out of all the options, **this one was the least exciting,** but it required the
 least amount of effort. Watching for high memory usage while developing created
 an additional level of cognitive overhead. 
 
-**Solution 3: Preserve existing Docker configuration, but run my App locally for
-now**
+## Option 3: Preserve existing Docker configuration and run my App locally for now.
 
-This was the happy middle ground to options 1 and 2. I could keep my existing
-Docker configuration and run my app locally at the same time.
+This was **the happy middle ground** to options **1** and **2**. I could keep my
+existing Docker configuration and run my app locally at the same time.
 
 I might be putting off fixing the memory leak, but at least for now, or until a
-wider solution becomes available, I can avoid the issue altogether.
+wider solution becomes available, **I can avoid the issue**.
 
-Luckily the memory leak did not happen while running Webpacker locally 🤞
+Thankfully the memory leak didn't exist locally.
 
 ## Repeatable Steps for Undockerizing
 
-Unplugging Docker from our Rails app can be broken down into **three main
-steps**:
+By undockerizing, we won't be making any changes to the existing `Dockerfile` or
+`docker-compose.yml`, ensuring that any existing Docker configuration is
+preserved.
 
-1. Identify **docker-specific configuration values** in our `docker-compose.yml`
-   such as environment variables
-1. Find those values in our Rails App code and **restore them to their
-   pre-docker defaults**.
-1. Ensure our **local environment** is properly configured to run our App
-   locally.
+Undockerizing my Rails app broke down into **three main steps**:
 
-Each of these steps **can be repeated for each service**.
+1. Identifying **docker-specific configuration values** in `docker-compose.yml`
+   such as environment variables.
+1. Finding those values in Rails App code and **providing them as defaults**
+   when fetching their ENV vars.
+1. Configuring my **local environment** to run my App locally.
 
-It's also important to note that by **undockerizing**, we're not actually make
-any changes our existing `Dockerfile` or `docker-compose.yml` so if we ever want
-to bring on more team members or delegate development to a contractor, **Running
-our app in an Docker environment would just be a matter of running our
-building/running our Docker environment as before**.
+******NOTE***** These steps can be repeated for additional services.
 
 # 1.0 Double Checking Environment Variables
 
@@ -174,7 +174,7 @@ default: &default
   .
 ```
 
-## 2. Running our App Locally
+## 2. Running My App Locally
 
 Now that we have defined some default values for our database service, we can
 ensure that when we run `rails s` locally, those default values will be used
@@ -265,8 +265,5 @@ Solution: We want to ensure that postgresql is installed and configure a user ca
 2. Create new postgres user with `createuser -s postgres`
 3. Restart postgres services with `brew services restart postgresql`
 
-Now we can run `rails db:create`
-
-Migrate the database by running `rails db:migrate`
-
-
+Now we can run `rails db:create` and migrate the database by running `rails
+db:migrate`
