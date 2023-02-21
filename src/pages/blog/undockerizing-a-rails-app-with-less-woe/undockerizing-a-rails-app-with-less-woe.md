@@ -1,12 +1,12 @@
 ---
 slug: "/blog/undockerizing-a-rails-app-with-less-woe"
 path: "/blog/undockerizing-a-rails-app-with-less-woe"
-date: "2023-02-05"
+date: "2023-02-20"
 title: "From Whales to Woe: Undockerizing a Rails App."
 description: "Re-thinking the value of Dockerizing as a Solo Dev"
 blurb: "Re-thinking the value of Dockerizing as a Solo Dev"
 thumbnail: "./preview-card.png"
-readtime: "45 min read"
+readtime: "30 min read"
 tags: "Docker, Rails"
 ---
 
