@@ -18,17 +18,18 @@ li > code {
   border: 1px solid #1f1f1f;
 }
 
-p {
+.blog-post-container > p {
   font-size: 22px !important;
 }
 
-p > code {
+.blog-post-container > p > code {
   font-size: 20px !important;
   padding-left: 5px !important;
   padding-right: 5px  !important;
   background-color: #76f4f4 !important;
   border: 1px solid #1f1f1f;
 }
+
 
 li > code {
   background-color: #76f4f4 !important;
@@ -672,13 +673,11 @@ pre tt {
     font-size: 19px !important;
   }
 
-p {
-  font-size: 26px !important;
-}
+  .blog-post-container > p {
+    font-size: 26px !important;
+  }
 
-p > code {
-  font-size: 21px !important;
-}
-
-
+  .blog-post-container > p > code {
+    font-size: 21px !important;
+  }
 }

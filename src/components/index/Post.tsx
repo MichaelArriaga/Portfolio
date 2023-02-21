@@ -42,7 +42,7 @@ const Post = ({ slug, title, date, post_tags }: PropTypes) => {
                   }}
                   className="px-1 mr-1 rounded bg-cyan-400"
                 >
-                  <h3 style={{fontSize: 12}}className="text-xs antialiased font-bold text-gray-900">
+                  <h3 style={{fontSize: 12}}className="text-xs antialiased font-semibold text-gray-900">
                     {tag}
                   </h3>
                 </Link>

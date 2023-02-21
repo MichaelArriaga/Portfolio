@@ -20,6 +20,7 @@ class About extends React.Component {
         />
         <div style={{ marginBottom: 150 }} className="">
           <h3 className="mb-2 text-3xl font-black">Bio</h3>
+
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             Mike is a Product Engineer and Rails Enthusiast based in Seattle WA.
             After hours, he's a Musician (Drums & Bass Guitar).
@@ -58,6 +59,7 @@ class About extends React.Component {
               Product Hunt at Launch Day (3/13/2022) 🎉
             </a>{" "}
           </p>
+
           <p className={"text-lg mb-3 text-gray-900 font-normal antialiased"}>
             With over 10 years experience in Web Development and 8 years
             experience building Web Apps and RESTful APIs with Rails, Mike has a
