@@ -24,26 +24,21 @@
 
 
 .contactHeading {
-   /* font-family: var(--primary-type-heading); */
    font-size: 37.8px;
    margin-bottom: 80px;
 }
 
 .contactSubHeading {
-  /* font-family: var(--primary-type-heading); */
   font-size: 28.35px;
   margin-bottom: 20px;
 }
 
 
 .contactCopy {
-  /* font-family: var(--secondary-type-copy); */
   margin-bottom:15px;
 }
 
 /* contact button styles inside about-css.module.css */
-
-
 .contactContactBtn:hover {
   cursor: pointer;
 }
