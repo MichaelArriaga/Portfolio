@@ -15,48 +15,45 @@ tags: "Docker, Rails"
 Last summer, I decided to [undockerize one of my side
 projects](https://twitter.com/mike_ray_ux/status/1543235092494970880).
 
-The motivation behind it was to prevent a persistent **docker system crash
-caused by a memory leak** inside my `webpacker` service that required a full
-restart of my machine whenever the docker system ran out of memory, which would
-occur several times throughout a single development session.
+The motivation was to prevent **persistent docker crashes caused by a memory
+leak** in my `webpacker` service, which required frequent full restarts of my
+machine during development.
 
 ## The Memory Leak
 
-**By default**, docker will allow a single service's container to **use the
-entirety of docker's allocated system memory** unless a memory limit is
-specified in your `docker-compose.yml` 
+**By Default,** Docker allows a single service's container to use all of the 
+system's memory, unless a limit is set in the `docker-compose.yml` file. Without
+a per-service `mem_limit`, you **may not realize there's a problem** until your 
+app slows down or docker freezes completely.
 
-This means that unless you specify a `mem_limit` at the per-service-level, **you
-likely won't notice until** your app slows down to a crawl, or docker freezes
-entirely.
+Even with a specific limit, sometimes the Docker process needs a restart when a
+single service runs out of memory, though this particular behavior has
+significantly improved over time. 
 
 ## The Lazy Solution
 
-After some amount of time spent [code spelunking](https://youtu.be/LiyLXklIQHc)
-without much luck, my first effective solution was to well....**just live with
-it!**
+After spending a considerable amount of time [code
+spelunking](https://youtu.be/LiyLXklIQHc) without much success, my initial
+solution was to simply tolerate the issue and **Just...well, live with it!**
+
+I set a `mem_limit` in `docker-compose.yml` and monitored memory usage of all
+running containers using docker stats in a single terminal. When the
+**"Webpacker Compiling...."** message started to hang, running `docker-compose
+restart webpacker` was the quick remedy.
 
 
-I specified a `mem_limit` inside my `docker-compose.yml` and ran `docker stats`
-in a single terminal instance. This allowed me to **keep an eye on individual memory
-usage** across all currently running containers. 
-
-When the **"Webpacker Compiling...."** message started to hang, running
-`docker-compose restart webpacker` was the quick remedy.
-
-The downside of this approach was sometimes **I wouldn't notice that
-the memory limit had been reached**, making the service unresponsive and unable
-to be restarted without killing the docker process entirely. 
-
-Still though, **it was better than having to restart my entire system**, and now
-I had more insight and control over the issue.
+However, sometimes I **didn't notice** when the memory limit was reached,
+**making the service unresponsive** which required killing the docker process
+entirely. Despite this, it was still an improvement over having
+to restart my whole system, and **I gained greater insight and control** of the
+problem.
 
 ## Deriving Other Solutions
 
 For teams, A containerized environment **provides benefits both in
 development and deployment** at the cost of a slower file I/O. 
 
-It's a pretty good deal, but as a Solo Dev, **these benefits didn't make much
+**It's a pretty good deal**, but as a Solo Dev, **these benefits didn't make much
 sense for me** over developing locally. The additional annoyance of the
 memory leak led me to **three possible solutions:**
 
