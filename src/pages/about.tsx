@@ -64,8 +64,9 @@ class About extends React.Component {
           </p>
 
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
-            This has given him a solid grasp of web application development and
-            scaling best practices with Rails.
+            Mike has gained a deep understanding of how to architect Rails
+            applications that are scalable, with taking careful considerations
+            to build maintainable business logic.
           </p>
 
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
