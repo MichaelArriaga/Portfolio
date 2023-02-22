@@ -17,7 +17,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         alt="mike logo"
       />
       <h1 className="my-2 text-4xl antialiased font-black leading-none tracking-tight text-gray-900">
-        Mike Arriaga
+        Mike Ray Arriaga
       </h1>
       <div className="">
         <Link
