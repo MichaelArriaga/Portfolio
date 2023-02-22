@@ -5,7 +5,7 @@ import Post from "./Post";
 const LatestPostList = () => {
   return (
     <div className="sm:max-w-xl mb-8 sm:mb-16 mr-auto">
-      <h3 className="text-lg text-gray-900 mb-1 font-black antialiased tracking-tight">
+      <h3 className="text-xl text-gray-900 mb-1 font-black antialiased tracking-tight">
         Latest Posts
       </h3>
       <StaticQuery

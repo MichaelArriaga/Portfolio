@@ -4,8 +4,8 @@ import SidebarLayout from "../components/layouts/SidebarLayout";
 const Extras = () => {
   return (
     <SidebarLayout
-      meta_title="Mike Ray, Seattle Product Engineer - Extras"
-      meta_description="Mike Ray, Seattle Product Engineer Web Developer - Extras"
+      meta_title="Mike Arriaga, Seattle Product Engineer - Extras"
+      meta_description="Mike Arriaga, Seattle Product Engineer Web Developer - Extras"
       highlighted_hero_link={"extras"}
     >
       <div className="sm:max-w-screen-sm mx-auto">

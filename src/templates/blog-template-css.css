@@ -655,22 +655,27 @@ pre tt {
   .blog-post-container > h4,
   .blog-post-container > h5,
   .blog-post-container > h6 {
-    font-size: 22px !important;
+    font-size: 26px !important;
   }
+
+  .blog-post-container > ol > li {
+    font-size: 26px !important;
+  }
+
   .blog-post-container > h1 {
     font-size: 35px;
   }
   pre {
-    font-size: 19px;
+    font-size: 22px;
     margin-bottom: 30px !important;
   }
 
   pre > code {
-    font-size: 19px !important;
+    font-size: 22px !important;
     margin-bottom: 30px !important;
   }
   pre > code > span {
-    font-size: 19px !important;
+    font-size: 22px !important;
   }
 
   .blog-post-container > p {

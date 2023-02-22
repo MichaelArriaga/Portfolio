@@ -10,6 +10,8 @@ readtime: "30 min read"
 tags: "Docker, Rails"
 ---
 
+![alt](preview-card.png)
+
 Last summer, I decided to [undockerize one of my side
 projects](https://twitter.com/mike_ray_ux/status/1543235092494970880).
 

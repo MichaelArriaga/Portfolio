@@ -34,7 +34,7 @@ At the very top of our our Jekyll posts we have our **front matter** which by de
 ---
 layout: post
 title: "Sample Post"
-author: Mike Ray
+author: Mike Arriaga
 date: 2018-01-14 20:43:28 -0800
 categories: guides
 comments: true

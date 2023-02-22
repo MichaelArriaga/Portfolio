@@ -40,7 +40,7 @@ const Post = ({ title, date, slug, post_tags }: PropTypes) => {
                 }}
                 className="px-1 rounded bg-cyan-400 mr-2 mb-3"
               >
-                <h3 className="text-xs text-gray-900 font-normal antialiased">
+                <h3 className="text-xs text-gray-900 font-semibold antialiased">
                   {tag}
                 </h3>
               </button>

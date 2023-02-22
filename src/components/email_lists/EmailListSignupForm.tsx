@@ -136,14 +136,14 @@ const EmailListSignupForm = () => {
       {/* </form> */}
 
       {/* socials start */}
-      <div className="flex flex-row items-center justify-start mb-6">
+      <div className="flex flex-row items-center justify-start">
         <a
           href="https://twitter.com/mike_ray_ux"
           target="_blank"
           rel="noreferrer"
           className="mr-4"
         >
-          <FaTwitter size={28} className="text-gray-900" />
+          <FaTwitter size={35} className="text-gray-900" />
         </a>
         <a
           href="https://github.com/MichaelArriaga"
@@ -151,7 +151,7 @@ const EmailListSignupForm = () => {
           rel="noreferrer"
           className="mr-4"
         >
-          <FaGithub size={28} className="text-gray-900" />
+          <FaGithub size={35} className="text-gray-900" />
         </a>
         <a
           href="https://www.linkedin.com/in/mike-ray-26a874230/"
@@ -159,10 +159,10 @@ const EmailListSignupForm = () => {
           rel="noreferrer"
           className="mr-4"
         >
-          <FaLinkedin size={28} className="text-gray-900" />
+          <FaLinkedin size={35} className="text-gray-900" />
         </a>
         <a href="mailto:m.arriaga.smb@gmail.com" className="">
-          <FaEnvelopeSquare size={28} className="text-gray-900" />
+          <FaEnvelopeSquare size={35} className="text-gray-900" />
         </a>
       </div>
       {/* socials end */}

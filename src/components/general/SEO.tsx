@@ -8,7 +8,7 @@ interface PropTypes {
   title: string;
   description: string;
   path: string;
-  date: string | null;
+  date?: string | null;
   thumbnail: any;
   readtime: string | null;
   tags: Array<String> | null;

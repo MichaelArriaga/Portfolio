@@ -21,7 +21,7 @@ const SidebarLayout = ({ highlighted_hero_link, children }: PropTypes) => {
           className="hidden sm:block w-64 mr-4 border-r border-gray-400"
         >
           <div style={{ marginTop: 45 }}></div>
-          <div style={{ marginBottom: 40 }}>
+          <div style={{}}>
             <HeroHeader highlighted={highlighted_hero_link} />
           </div>
 
