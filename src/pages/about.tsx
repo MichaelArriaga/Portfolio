@@ -26,7 +26,7 @@ class About extends React.Component {
             he's a Musician (Drums & Bass Guitar).
           </p>
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
-            Mike was the Founder, CTO, and Principal Engineer of{" "}
+            Previously, Mike was the Founder, CTO, and Principal Engineer of{" "}
             <Link
               to="/projects/fresh_and_tumble"
               className="antialiased font-bold underline"
