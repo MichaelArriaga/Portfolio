@@ -19,8 +19,8 @@ const ProjectPageTemplate = ({
   flowchart_large_screen_img,
 }) => {
   return (
-    <>
-      <div className="max-w-screen-lg mx-auto">
+    <div className="w-full max-w-4xl mx-auto">
+      <div className="w-full">
         <div className="py-8">
           <Link to="/" className="underline text-lg text-left">
             {"< Back"}
@@ -34,7 +34,7 @@ const ProjectPageTemplate = ({
         />
 
         {/* project title start */}
-        <div className={"mb-2"}>
+        <div className={"mb-2 w-full max-w-screen-xl"}>
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center">
             <h1
               className={
@@ -334,7 +334,7 @@ const ProjectPageTemplate = ({
         ) : null}
         {/* flow charts end */}
       </div>
-    </>
+    </div>
   );
 };
 
