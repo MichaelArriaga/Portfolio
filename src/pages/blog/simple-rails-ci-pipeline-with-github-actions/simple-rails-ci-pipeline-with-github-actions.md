@@ -28,9 +28,9 @@ repository. With it we can perform all of our seperate CI/CD jobs automatically.
 
 A good place to start for us would be to create a `test` job that will run every time we:
 
-- `push` to one of our branches (in our case `main`)
+* `push` to one of our branches (in our case `main`)
 
-- receive a `pull_request` from a contributor
+* receive a `pull_request` from a contributor
 
 But how do we get started? Well, you know that button at the top of your project
 repositories that says "Actions"?

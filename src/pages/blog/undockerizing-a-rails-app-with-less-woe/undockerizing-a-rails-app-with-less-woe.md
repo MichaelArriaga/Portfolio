@@ -38,7 +38,7 @@ solution was to simply tolerate the issue and **Just...well, live with it!**
 
 I set a `mem_limit` in `docker-compose.yml` and monitored memory usage of all
 running containers using docker stats in a single terminal. When the
-**"Webpacker Compiling...."** message started to hang, running `docker-compose
+**"[Webpacker] Compiling..."** message started to hang, running `docker-compose
 restart webpacker` was the quick remedy.
 
 
