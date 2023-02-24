@@ -1,7 +1,40 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const ProjectPageTemplate = ({
+
+type Color = {
+  label: string,
+  labelcolor: string,
+  color: string,
+}
+
+
+type PropTypes = {
+  primary_color: string;
+  mockupImg: any;
+  title: string;
+  project_date: string;
+  try_url?: string;
+  description: string[];
+  scope_array: string[];
+  core_tech_array: string[];
+  apps_used_array: string[];
+  features_array: string[];
+  metrics: {
+    baseline_grid: string;
+    baseline_grid_img: any;
+    gutter: string,
+    gutter_img: any;
+    vertical_rhythm: string;
+    vertical_rhythm_img: any;
+  };
+  colors_array: Color[];
+  typography_image: any;
+  flowchart_small_screen_img: any;
+  flowchart_large_screen_img: any;
+}
+
+const ProjectPageTemplate: React.FC<PropTypes> = ({
   primary_color,
   mockupImg,
   title,
