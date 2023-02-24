@@ -77,7 +77,7 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
               {title}
 
               {/* try link start */}
-              {try_url.length ? (
+              {try_url ? (
                 <a
                   className={
                     "text-blue-600 block sm:inline sm:ml-4 text-xl text-center sm:text-left underline font-bold antialiased"
@@ -286,8 +286,8 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
         <h2 className={"text-left text-lg mb-4 font-semibold antialiased"}>
           Color
         </h2>
-        <ul className={"block flex flex-wrap justify-start items-center"}>
-          {colors_array.map((color) => {
+        <ul className={"flex flex-wrap justify-start items-center"}>
+          {colors_array.map((color: Color) => {
             return (
               <li className={"flex flex-row justify-start items-center"}>
                 <div
