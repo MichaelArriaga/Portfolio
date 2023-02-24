@@ -15,7 +15,7 @@ const Post = ({ slug, title, date, post_tags }: PropTypes) => {
         <h3
           style={{ lineHeight: 1 }}
           className={
-            "text-xl text-gray-900 text-left flex flex-wrap justify-start items-center font-bold antialiased"
+            "text-xl text-gray-900 text-left flex flex-wrap justify-start items-center font-semibold underline antialiased"
           }
         >
           <span className="mr-2">{title}</span>{" "}

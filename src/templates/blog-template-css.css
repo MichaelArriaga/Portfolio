@@ -18,6 +18,14 @@ li > code {
   border: 1px solid #1f1f1f;
 }
 
+li > p > code {
+  font-size: 22px !important;
+  padding-left: 5px !important;
+  padding-right: 5px  !important;
+  background-color: #76f4f4 !important;
+  border: 1px solid #1f1f1f;
+}
+
 .blog-post-container > p {
   font-size: 22px !important;
 }
@@ -640,6 +648,11 @@ pre tt {
   font-size: 22px !important;
 }
 
+.blog-post-container > ul > li {
+  margin-bottom: 8px;
+  font-size: 22px !important;
+}
+
 
 @media (min-width: 600px) {
   .blog-post-container > h2 {
@@ -659,6 +672,10 @@ pre tt {
   }
 
   .blog-post-container > ol > li {
+    font-size: 26px !important;
+  }
+
+  .blog-post-container > ul > li {
     font-size: 26px !important;
   }
 

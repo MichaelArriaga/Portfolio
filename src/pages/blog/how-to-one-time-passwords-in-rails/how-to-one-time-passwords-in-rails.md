@@ -2,7 +2,7 @@
 slug: "/blog/how-to-one-time-passwords-in-rails"
 path: "/blog/how-to-one-time-passwords-in-rails"
 date: "2020-11-05"
-title: "How to: One Time Passwords in Rails"
+title: "Create One Time Passwords in Rails"
 description: "How to: One Time Passwords in Rails"
 readtime: "60 min read"
 thumbnail: "./preview-card.png"

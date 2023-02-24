@@ -2,7 +2,7 @@
 slug: "/blog/simple-jwt-auth-for-rails-apis"
 path: "/blog/simple-jwt-auth-for-rails-apis"
 date: "2020-10-03"
-title: "How to: Simple JWT Token Authentication System for Rails Apis"
+title: "Simple JWT Token Auth for Rails Apis"
 description: "How to: Simple JWT Token Authentication System for Rails Apis"
 readtime: "20 min read"
 thumbnail: "./preview-card.png"

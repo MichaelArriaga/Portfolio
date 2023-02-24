@@ -30,7 +30,7 @@ const Index: React.FC = (): JSX.Element => {
         <a
           href="http://Zero-Mileage-Tracker.com"
           // style={{ height: 144 }}
-          className="block mb-1 w-full mr-2 text-xl antialiased font-bold text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
           target="_blank"
           rel="noreferrer"
         >
@@ -39,21 +39,21 @@ const Index: React.FC = (): JSX.Element => {
         <a
           href="https://www.mintysnippets.com"
           // style={{ height: 144 }}
-          className="block mb-1 w-full mr-2 text-xl antialiased font-bold text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
           target="_blank"
           rel="noreferrer"
         >
           Minty Snippets (2022 - Current)
         </a>
         <Link
-          className="block mb-1 w-full mr-2 text-xl antialiased font-bold text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
           to="/projects/fresh_and_tumble"
         >
           Fresh And Tumble (2019 - 2021)
         </Link>
 
         <Link
-          className="block mb-1 w-full mr-2 text-xl antialiased font-bold text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
           to="/projects/flex_mate"
         >
           Flex Mate (2018)
