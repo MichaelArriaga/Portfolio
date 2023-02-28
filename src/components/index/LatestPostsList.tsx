@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import Post from "./Post";
 
 const LatestPostList = () => {
@@ -13,7 +14,7 @@ const LatestPostList = () => {
           query {
             allMarkdownRemark(
               sort: { order: DESC, fields: [frontmatter___date] }
-              limit: 7
+              limit: 5
             ) {
               edges {
                 node {
