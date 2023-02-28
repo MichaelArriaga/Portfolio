@@ -21,7 +21,7 @@ const Index: React.FC = (): JSX.Element => {
         tags={null}
         article={false}
       />
-      <div className="mr-auto sm:max-w-screen-sm mb-4">
+      <div className="mr-auto sm:max-w-screen-sm mb-2">
         <div className="flex flex-row items-center justify-start">
           <h3 className="mb-1 text-xl antialiased font-black text-gray-900 tracking-tight">
             My Apps
