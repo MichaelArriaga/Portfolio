@@ -34,7 +34,7 @@ class About extends React.Component {
               Fresh And Tumble,
             </Link>{" "}
             an Uber-like delivery app that included 2 React Native apps
-            (Customer and Driver) and a Rails 6 Monolith-powered web app/API.
+            (Customer and Driver) and a Rails 6 Monolith-powered Web App/API.
           </p>
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
             Mike's latest product{" "}
@@ -65,8 +65,8 @@ class About extends React.Component {
 
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
             Mike has gained a deep understanding of how to architect Rails
-            applications that are scalable, with taking careful considerations
-            to build maintainable business logic.
+            applications that are scalable, while taking careful considerations
+            for building maintainable business logic.
           </p>
 
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
