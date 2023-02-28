@@ -44,6 +44,13 @@ const Index: React.FC = (): JSX.Element => {
         />
 
         <ProjectItem
+          name="Prolific Daily Summed Submissions"
+          technologies={["Chrome Manifest V3", "Vanilla JS"]}
+          to="https://chrome.google.com/webstore/detail/prolific-daily-summed-sub/jmcjelkbllmmeaeplopkdcbkpbffofpg?hl=en&authuser=1"
+          externalLink={true}
+        />
+
+        <ProjectItem
           name="Fresh And Tumble"
           technologies={["Rails", "React", "React Native", "Docker"]}
           to="/projects/fresh_and_tumble"

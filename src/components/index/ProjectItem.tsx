@@ -43,7 +43,7 @@ const ProjectItem: React.FC<PropTypes> = ({
             paddingRight: 5,
             transform: 'rotate(10deg)',
             position: 'absolute',
-            right: 5,
+            right: 120,
             bottom: 25
           }}
           className="cursor-default text-xs antialiased font-bold text-white px-1 mr-1 rounded bg-gray-800"
