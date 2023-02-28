@@ -29,34 +29,41 @@ const Index: React.FC = (): JSX.Element => {
         </div>
 
         <ProjectItem
-          name="Zero Mileage Tracker"
+          name="Zero Mileage Tracker (Current)"
           technologies={["React Native"]}
           to="http://Zero-Mileage-Tracker.com"
           externalLink={true}
-          latest={true}
         />
 
         <ProjectItem
-          name="Minty Snippets"
-          technologies={["Rails", "React", "Electron", "Docker"]}
+          name="Minty Snippets (2022 - Current)"
+          technologies={["Rails", "React", "Electron", "Chrome Extension V3"]}
           to="https://www.mintysnippets.com"
           externalLink={true}
         />
 
-        <ProjectItem
-          name="Fresh And Tumble"
-          technologies={["Rails", "React", "React Native", "Docker"]}
+        <a
+          href="https://www.mintysnippets.com"
+          // style={{ height: 144 }}
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
+          target="_blank"
+          rel="noreferrer"
+        >
+          Minty Snippets (2022 - Current)
+        </a>
+        <Link
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
           to="/projects/fresh_and_tumble"
-          externalLink={false}
-        />
+        >
+          Fresh And Tumble (2019 - 2021)
+        </Link>
 
-        <ProjectItem
-          name="Flex Mate"
-          technologies={["React"]}
+        <Link
+          className="block mb-1 w-full mr-2 text-xl antialiased font-semibold underline text-left text-gray-900 border-gray-100 rounded-lg tracking-snug "
           to="/projects/flex_mate"
-          externalLink={false}
-        />
-
+        >
+          Flex Mate (2018)
+        </Link>
       </div>
       {/* latest posts start */}
       <LatestPostsLists />

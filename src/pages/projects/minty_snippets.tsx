@@ -23,9 +23,7 @@ const CrowdMint = () => (
       title="Minty Snippets"
       project_date="2022 - Current"
       try_url={"https://minty-snippets.netlify.app/"}
-      description={[
-        "Minty Snippets is a browser extension that makes it easy to create, customize and paste reusable text snippets in the browser. Tired of copying/personalizing that cover letter endlessly on your job hunt? Minty Snippets makes personalizing text easier. Fun fact: 'Snippets' are nothing new, Programmers have been using Snippets for many years because they prevent having to write the same boilerplate code over and over. Minty Snippets takes the idea of Snippets and attempts to make it accessible to everyone, whether you are a coder or not. A new Hotkey powered workflow makes creating/customizing snippets faster and more convenient than ever before.",
-      ]}
+      description={[ "Minty Snippets is a browser extension that makes it easy to create, customize and paste reusable text snippets in the browser. Tired of copying/personalizing that cover letter endlessly on your job hunt? Minty Snippets makes personalizing text easier. Fun fact: 'Snippets' are nothing new, Programmers have been using Snippets for many years because they prevent having to write the same boilerplate code over and over. Minty Snippets takes the idea of Snippets and attempts to make it accessible to everyone, whether you are a coder or not. A new Hotkey powered workflow makes creating/customizing snippets faster and more convenient than ever before." ]}
       scope_array={["Browser Extension", "Productivity"]}
       core_tech_array={["React.js", "Chrome Manifest V3"]}
       apps_used_array={["Adobe XD", "VIM"]}

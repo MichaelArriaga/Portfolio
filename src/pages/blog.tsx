@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useQueryParams } from "react";
 import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
-import Post from "../components/blog/Post";
+import Post from "../components/index/Post";
 import { metaTitle } from "../constants/metaTitle";
 import SEO from "../components/general/SEO";
 

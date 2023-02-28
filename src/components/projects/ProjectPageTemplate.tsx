@@ -30,8 +30,8 @@ type PropTypes = {
   };
   colors_array: Color[];
   typography_image: any;
-  flowchart_small_screen_img: any;
-  flowchart_large_screen_img: any;
+  flowchart_small_screen_img?: any;
+  flowchart_large_screen_img?: any;
 }
 
 const ProjectPageTemplate: React.FC<PropTypes> = ({

@@ -26,7 +26,9 @@ const FlexMate = () => (
       project_date="November 2018"
       try_url={""}
       description={[
-        "A tool that helps Amazon Flex Drivers estimate often unaccounted for fuel expenses. This app shows the user a list of available delivery stations based on their preferred region, and renders an estimate of fuel cost for travel based on the user provided average cost per gallon (cpg) as well as their vehicle average miles per gallon (mpg).",
+        "A tool that helped Amazon Flex Drivers estimate often unaccounted for expenses related to being an Amazon flex contractor. This app shows the user a list of available delivery stations based on their preferred region, and renders an estimate of fuel cost for travel based on the user provided average cost per gallon (cpg) as well as their vehicle average miles per gallon (mpg).",
+        "In addition to fuel expenses, Flex Mate also showed which type of offers a warehouse was currently offering.",
+        "This tool was created for the sole purpose of filling the information gap between Amazon and flex drivers. Later, more useful community tools would be created making this tool obselete."
       ]}
       scope_array={["Website", "CostAnalysis"]}
       core_tech_array={["React.js", "Google Distance Matrix API"]}

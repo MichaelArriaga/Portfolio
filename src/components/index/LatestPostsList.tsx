@@ -49,6 +49,22 @@ const LatestPostList = () => {
                     );
                   })
                 : null}
+
+              <div className={"sm:max-w-xl mx-auto mb-2"}>
+                <Link
+                  className="flex items-center justify-start mb-1"
+                  to={"/blog"}
+                >
+                  <h3
+                    style={{ lineHeight: 1 }}
+                    className={
+                      "text-xl text-gray-900 text-left flex flex-wrap justify-start items-center font-semibold underline antialiased"
+                    }
+                  >
+                    <span className="mr-2">More posts....</span>{" "}
+                  </h3>
+                </Link>
+              </div>
             </>
           );
         }}
