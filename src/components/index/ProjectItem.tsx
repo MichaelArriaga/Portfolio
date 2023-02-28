@@ -65,8 +65,9 @@ const ProjectItem: React.FC<PropTypes> = ({
                     paddingBottom: 3,
                     paddingLeft: 6,
                     paddingRight: 6,
+                    backgroundColor: '#abd6ff'
                   }}
-                  className="cursor-default text-xs antialiased font-semibold text-gray-900 px-1 mr-1 rounded bg-blue-300"
+                  className="cursor-default text-xs antialiased font-medium text-gray-900 px-1 mr-1 rounded"
                 >
                   {tag}
                 </h3>
