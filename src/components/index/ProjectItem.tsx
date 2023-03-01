@@ -74,7 +74,7 @@ const NewTag = () => {
   );
 };
 
-const TechTag: React.FC<{name: string}> = ({ name }): JSX.Element => {
+const TechTag: React.FC<{ name: string }> = ({ name }): JSX.Element => {
   return (
     <h3
       style={{

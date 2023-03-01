@@ -67,12 +67,10 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
         />
 
         {/* project title start */}
-        <div className={"mb-2 w-full max-w-screen-xl"}>
+        <div className={"mb-2 w-full"}>
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center">
             <h1
-              className={
-                "text-3xl tracking-tight sm:text-2xl sm:text-left font-bold antialiased"
-              }
+              className={ "text-3xl tracking-tight sm:text-4xl sm:text-left font-black antialiased flex flex-row justify-start items-center" }
             >
               {title}
 
@@ -80,13 +78,13 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
               {try_url ? (
                 <a
                   className={
-                    "text-blue-600 block sm:inline sm:ml-4 text-xl text-center sm:text-left underline font-bold antialiased"
+                    "text-blue-600 block sm:inline sm:ml-4 text-2xl text-center sm:text-left underline font-semibold antialiased"
                   }
                   href={try_url}
                   target="_blank "
                   rel="noopener"
                 >
-                  Get It Here
+                  Try It Here
                 </a>
               ) : null}
               {/* try link end */}
@@ -95,7 +93,7 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
           <h2
             style={{ color: primary_color }}
             className={
-              "text-xl tracking-tight text-center sm:text-xl sm:text-left font-bold antialiased"
+              "text-2xl tracking-tight text-center sm:text-left font-bold antialiased"
             }
           >
             {project_date}

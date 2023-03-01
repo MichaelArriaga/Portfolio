@@ -30,7 +30,7 @@ const Index: React.FC = (): JSX.Element => {
 
         <ProjectItem
           name="Zero Mileage Tracker"
-          technologies={["React Native"]}
+          technologies={["React Native", "Tailwind"]}
           to="http://Zero-Mileage-Tracker.com"
           externalLink={true}
           latest={true}
@@ -38,32 +38,37 @@ const Index: React.FC = (): JSX.Element => {
 
         <ProjectItem
           name="Minty Snippets"
-          technologies={["Rails", "React", "Electron", "Docker"]}
+          technologies={["Rails", "React", "Electron", "Tailwind", "Docker"]}
           to="https://www.mintysnippets.com"
           externalLink={true}
         />
 
         <ProjectItem
           name="Prolific Daily Summed Submissions"
-          technologies={["Chrome Manifest V3", "Vanilla JS"]}
+          technologies={["Chrome Manifest V3", "Tailwind", "Vanilla JS"]}
           to="https://chrome.google.com/webstore/detail/prolific-daily-summed-sub/jmcjelkbllmmeaeplopkdcbkpbffofpg?hl=en&authuser=1"
           externalLink={true}
         />
 
         <ProjectItem
           name="Fresh And Tumble"
-          technologies={["Rails", "React", "React Native", "Docker"]}
+          technologies={[
+            "Rails",
+            "React",
+            "React Native",
+            "Tailwind",
+            "Docker",
+          ]}
           to="/projects/fresh_and_tumble"
           externalLink={false}
         />
 
         <ProjectItem
           name="Flex Mate"
-          technologies={["React"]}
+          technologies={["HTML", "CSS", "Vanilla JS"]}
           to="/projects/flex_mate"
           externalLink={false}
         />
-
       </div>
       {/* latest posts start */}
       <LatestPostsLists />
