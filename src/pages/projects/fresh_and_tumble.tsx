@@ -4,7 +4,7 @@ import ProjectPageTemplate from "../../components/projects/ProjectPageTemplate";
 import Footer from "../../components/Footer";
 
 // static assets
-import mockupImg from "../../../static/etc/images/project_images/fresh_and_tumble/phone-mockup.png";
+import mockupImg from "../../../static/etc/video/fresh_and_tumble_pickup_demo.mp4";
 import baseline_grid_img from "../../../static/etc/images/project_images/flex_mate/8px-grid.png";
 import gutter_img from "../../../static/etc/images/project_images/flex_mate/16px-grid.png";
 import vertical_rhythm_img from "../../../static/etc/images/project_images/flex_mate/48px-grid.png";
@@ -27,6 +27,7 @@ const FreshAndTumble = () => (
       title="FRESH AND TUMBLE"
       project_date="2019 - 2021"
       try_url={""}
+      is_video={true}
       description={[
         "Uber of Laundry is pretty self-explanatory, but there's a lot of exciting tech under the hood that powers Fresh And Tumble Laundry Pickups and Deliveries, all of which were built from the ground up, ensuring the core of the service (pickup/delivery) is not reliant on any costly premade delivery last mile api solutions.",
         "Fresh And Tumble has automated systems that provide real-time estimations and enroute map visualization for customers to observe during their laundry pickup including an SMS notification that their Wash Expert is approaching their doorstep for pickup. The SMS notification system would soon become an important tool for facilitating contact-free pickups and deliveries during the COVID-19 pandemic.",

@@ -32,6 +32,7 @@ type PropTypes = {
   typography_image: any;
   flowchart_small_screen_img?: any;
   flowchart_large_screen_img?: any;
+  is_video?: boolean;
 }
 
 const ProjectPageTemplate: React.FC<PropTypes> = ({
@@ -50,27 +51,40 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
   typography_image,
   flowchart_small_screen_img,
   flowchart_large_screen_img,
+  is_video
 }) => {
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto px-6">
       <div className="w-full">
         <div className="py-8">
           <Link to="/" className="underline text-lg text-left">
             {"< Back"}
           </Link>
         </div>
-        <img
-          style={{ width: 300 }}
-          className={"mx-auto pt-8 mb-8"}
-          src={mockupImg}
-          alt="notloaded"
-        />
+        {is_video ? (
+          <video 
+            playsInline={true}
+            autoPlay={true} 
+            muted={true} 
+            controls={false} 
+            loop={true} 
+            className="w-full mx-auto mb-8 shadow-lg rounded-lg border border-gray-300" src={mockupImg}
+            /> 
+        ) : (
+          <img
+            style={{ width: 300 }}
+            className={"mx-auto pt-8 mb-8"}
+            src={mockupImg}
+            alt="notloaded"
+            />
+
+        )}
 
         {/* project title start */}
         <div className={"mb-2 w-full"}>
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center">
             <h1
-              className={ "text-3xl tracking-tight sm:text-4xl sm:text-left font-black antialiased flex flex-row justify-start items-center" }
+              className={ "text-3xl tracking-tight sm:text-3xl sm:text-left font-black antialiased flex flex-row justify-start items-center" }
             >
               {title}
 
