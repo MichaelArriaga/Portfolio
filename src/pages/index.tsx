@@ -37,7 +37,7 @@ const Index: React.FC = (): JSX.Element => {
         />
 
         <ProjectItem
-          name="Fresh And Tumble"
+          name="Fresh And Tumble Laundry"
           technologies={[
             "Rails",
             "React",
