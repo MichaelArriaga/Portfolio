@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import { Link } from "gatsby";
 
 type PropTypes = {
   name: string;
   technologies: string[];
   to: string;
-  externalLink: boolean
-  latest?: boolean
+  externalLink: boolean;
+  latest?: boolean;
 };
 
 const ProjectItem: React.FC<PropTypes> = ({
@@ -14,7 +14,7 @@ const ProjectItem: React.FC<PropTypes> = ({
   technologies,
   to,
   externalLink,
-  latest
+  latest,
 }): JSX.Element => {
   return (
     <div className={"sm:max-w-xl mx-auto mb-3"}>
@@ -33,24 +33,7 @@ const ProjectItem: React.FC<PropTypes> = ({
           <span className="mr-2">{name}</span>
         </h3>
 
-          {latest ? (
-        <h3
-          style={{
-            fontSize: 11,
-            paddingTop: 2,
-            paddingBottom: 2,
-            paddingLeft: 5,
-            paddingRight: 5,
-            transform: 'rotate(10deg)',
-            position: 'absolute',
-            right: 120,
-            bottom: 25
-          }}
-          className="cursor-default text-xs antialiased font-bold text-white px-1 mr-1 rounded bg-gray-800"
-        >
-          NEW!
-        </h3>
-          ): null}
+        {latest ? <NewTag /> : null}
       </Link>
 
       <div className={"flex flex-row justify-start items-center "}>
@@ -58,19 +41,7 @@ const ProjectItem: React.FC<PropTypes> = ({
           {technologies && technologies.length
             ? technologies.map((tag) => (
                 // post tag start
-                <h3
-                  style={{
-                    fontSize: 12,
-                    paddingTop: 3,
-                    paddingBottom: 3,
-                    paddingLeft: 6,
-                    paddingRight: 6,
-                    backgroundColor: '#abd6ff'
-                  }}
-                  className="cursor-default text-xs antialiased font-medium text-gray-900 px-1 mr-1 rounded"
-                >
-                  {tag}
-                </h3>
+                <TechTag name={tag} />
                 // post tag end
               ))
             : null}
@@ -81,3 +52,42 @@ const ProjectItem: React.FC<PropTypes> = ({
 };
 
 export default ProjectItem;
+
+const NewTag = () => {
+  return (
+    <h3
+      style={{
+        fontSize: 11,
+        paddingTop: 2,
+        paddingBottom: 2,
+        paddingLeft: 5,
+        paddingRight: 5,
+        transform: "rotate(10deg)",
+        position: "absolute",
+        right: 120,
+        bottom: 25,
+      }}
+      className="cursor-default text-xs antialiased font-bold text-white px-1 mr-1 rounded bg-gray-800"
+    >
+      NEW!
+    </h3>
+  );
+};
+
+const TechTag: React.FC<{name: string}> = ({ name }): JSX.Element => {
+  return (
+    <h3
+      style={{
+        fontSize: 12,
+        paddingTop: 3,
+        paddingBottom: 3,
+        paddingLeft: 6,
+        paddingRight: 6,
+        backgroundColor: "#abd6ff",
+      }}
+      className="cursor-default text-xs antialiased font-semibold text-gray-900 px-1 mr-1 rounded"
+    >
+      {name}
+    </h3>
+  );
+};
