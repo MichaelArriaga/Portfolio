@@ -39,9 +39,9 @@ const ProjectItem: React.FC<PropTypes> = ({
       <div className={"flex flex-row justify-start items-center "}>
         <div className="flex flex-row justify-start items-center">
           {technologies && technologies.length
-            ? technologies.map((tag) => (
+            ? technologies.map((tag: string, index: number) => (
                 // post tag start
-                <TechTag name={tag} />
+                <TechTag key={index} name={tag} />
                 // post tag end
               ))
             : null}
