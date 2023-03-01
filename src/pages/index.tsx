@@ -2,7 +2,6 @@ import React from "react";
 import "../components/layout.css";
 import LatestPostsLists from "../components/index/LatestPostsList";
 import SidebarLayout from "../components/layouts/SidebarLayout";
-import { Link } from "gatsby";
 import { metaTitle } from "../constants/metaTitle";
 import SEO from "../components/general/SEO";
 import ProjectItem from "../components/index/ProjectItem";

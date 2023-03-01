@@ -21,10 +21,6 @@ const VideoDemo: React.FC<PropTypes> = ({ src }): JSX.Element => {
           className={`w-full ${showVideo ? 'block' : 'invisible'} w-full mx-auto mb-8 shadow-lg rounded-lg border border-gray-400`}
           src={src}
           onLoadedData={() => {
-            // setTimeout(() => {
-            //   console.log("onLoadedData");
-
-            // }, 3000)
             setIsLoading(false);
             setShowVideo(true);
           }}

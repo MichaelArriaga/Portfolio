@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import VideoDemo from "../../components/projects/VideoDemo"
+import VideoDemo from "../../components/projects/VideoDemo";
 
 type Color = {
   label: string;
