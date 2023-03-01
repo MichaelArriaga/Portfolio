@@ -111,9 +111,10 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
         {/* description start */}
         <div className={"mx-auto mb-4 sm:ml-0"}>
           {description.length > 0
-            ? description.map((paragraph: any) => {
+            ? description.map((paragraph: any, index: number) => {
                 return (
                   <p
+                    key={index}
                     className={
                       "text-lg sm:text-xl text-left font-normal antialiased mb-2"
                     }
@@ -139,9 +140,10 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
             </li>
 
             {scope_array.length > 0
-              ? scope_array.map((item) => {
+              ? scope_array.map((item: string, index: number) => {
                   return (
                     <li
+                      key={index}
                       className={
                         "text-lg sm:text-xl text-center sm:text-left font-semibold antialiased"
                       }
@@ -162,9 +164,10 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
               CORE TECH
             </li>
             {core_tech_array.length > 0
-              ? core_tech_array.map((item) => {
+              ? core_tech_array.map((item: string, index: number) => {
                   return (
                     <li
+                      key={index}
                       className={
                         "text-lg sm:text-xl text-center sm:text-left font-semibold antialiased"
                       }
@@ -185,9 +188,10 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
               APPS USED
             </li>
             {apps_used_array.length > 0
-              ? apps_used_array.map((item) => {
+              ? apps_used_array.map((item: string, index: number) => {
                   return (
                     <li
+                      key={index}
                       className={
                         "text-lg sm:text-xl text-center sm:text-left font-semibold antialiased"
                       }
@@ -224,9 +228,12 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
         <ul className={"list-disc mb-4 sm:pl-6 "}>
           <div className="mx-auto flex flex-col justify-center items-center sm:items-start">
             {features_array.length > 0
-              ? features_array.map((item) => {
+              ? features_array.map((item: string, index: number) => {
                   return (
-                    <li className="list-desc text-lg font-semibold antialiased">
+                    <li
+                      key={index}
+                      className="list-desc text-lg font-semibold antialiased"
+                    >
                       {item}
                     </li>
                   );
@@ -292,9 +299,12 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
           Color
         </h2>
         <ul className={"flex flex-wrap justify-start items-center"}>
-          {colors_array.map((color: Color) => {
+          {colors_array.map((color: Color, index: number) => {
             return (
-              <li className={"flex flex-row justify-start items-center"}>
+              <li
+                key={index}
+                className={"flex flex-row justify-start items-center"}
+              >
                 <div
                   className={"h-32 w-32 p-2 mr-4 mb-4 border-4 border-black"}
                   style={{
