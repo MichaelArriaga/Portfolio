@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {ColorRing} from  'react-loader-spinner'
 
 type PropTypes = {
@@ -8,11 +8,19 @@ type PropTypes = {
 const VideoDemo: React.FC<PropTypes> = ({ src }): JSX.Element => {
   const [isLoading, setIsLoading] = useState(true);
   const [showVideo, setShowVideo] = useState(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null)
 
+
+  useEffect(() => {
+    if (!videoRef.current) return
+
+    videoRef.current.playbackRate = 1.6
+  }, [showVideo, isLoading])
 
   return (
     <div className={`relative mb-8 ${!showVideo ? 'border border-gray-400 rounded-lg' : null}`}>
         <video
+          ref={videoRef}
           playsInline={true}
           autoPlay={true}
           muted={true}
