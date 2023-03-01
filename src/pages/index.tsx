@@ -37,20 +37,6 @@ const Index: React.FC = (): JSX.Element => {
         />
 
         <ProjectItem
-          name="Minty Snippets"
-          technologies={["Rails", "React", "Electron", "Tailwind", "Docker"]}
-          to="https://www.mintysnippets.com"
-          externalLink={true}
-        />
-
-        <ProjectItem
-          name="Prolific Daily Summed Submissions"
-          technologies={["Chrome Manifest V3", "Tailwind", "Vanilla JS"]}
-          to="https://chrome.google.com/webstore/detail/prolific-daily-summed-sub/jmcjelkbllmmeaeplopkdcbkpbffofpg?hl=en&authuser=1"
-          externalLink={true}
-        />
-
-        <ProjectItem
           name="Fresh And Tumble"
           technologies={[
             "Rails",
@@ -61,6 +47,20 @@ const Index: React.FC = (): JSX.Element => {
           ]}
           to="/projects/fresh_and_tumble"
           externalLink={false}
+        />
+
+        <ProjectItem
+          name="Prolific Daily Summed Submissions"
+          technologies={["Chrome Manifest V3", "Tailwind", "Vanilla JS"]}
+          to="https://chrome.google.com/webstore/detail/prolific-daily-summed-sub/jmcjelkbllmmeaeplopkdcbkpbffofpg?hl=en&authuser=1"
+          externalLink={true}
+        />
+
+        <ProjectItem
+          name="Minty Snippets"
+          technologies={["Rails", "React", "Electron", "Tailwind", "Docker"]}
+          to="https://www.mintysnippets.com"
+          externalLink={true}
         />
 
         <ProjectItem
