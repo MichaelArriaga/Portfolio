@@ -11,8 +11,8 @@ const Blog = ({
     allMarkdownRemark: { edges },
   },
 }: any) => {
-  const [category_tags, setCategoryTags] = useState([]);
-  const [selected_tag, setSelectedTag] = useState("All");
+  const [category_tags, setCategoryTags] = useState<string[]>([]);
+  const [selected_tag, setSelectedTag] = useState<string>("All");
 
   useEffect(() => {
     setCategoryTagsFromQuery();
@@ -29,15 +29,7 @@ const Blog = ({
       });
     }
 
-    // sort doesn't work for some reason!!
-    // sort category tags by first character
-    // tags_to_set.sort((a, b) => {
-    //   console.log(`comparing ${a[0]} and ${b[0]}`);
-    //   return a - b;
-    // });
-
     if (tags_to_set && tags_to_set.length > 0) {
-      // removes duplicates Array.from([...new Set(my_array)])
       setCategoryTags(Array.from([...new Set(tags_to_set)]));
     }
   };
@@ -55,7 +47,7 @@ const Blog = ({
     return included;
   };
 
-  const setFilterTag = (tag: any) => {
+  const setFilterTag = (tag: string) => {
     setSelectedTag(tag || "All");
   };
 
@@ -82,52 +74,13 @@ const Blog = ({
       <div style={{ marginBottom: 150 }} className="">
         {/* tags section start */}
         <div className={"mb-2 py-2"}>
-          <h2
-            className={
-              "text-xl sm:text-xl font-black mb-2 font-bold antialiased"
-            }
-          >
+          <h2 className={"text-xl sm:text-xl font-black mb-2 antialiased"}>
             Tags
           </h2>
           <div className="flex flex-wrap items-center justify-start">
             {category_tags.length > 0
-              ? category_tags.map((tag: any) => {
-                  return (
-                    <button
-                      key={tag}
-                      onClick={() => {
-                        if (selected_tag !== tag) {
-                          setFilterTag(tag);
-                        } else {
-                          setFilterTag("All");
-                        }
-                      }}
-                      style={{
-                        backgroundColor:
-                          selected_tag === tag ? "#1f1f1f" : "#76d3ca",
-                      }}
-                      className={
-                        selected_tag === tag
-                          ? "outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
-                          : "outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
-                      }
-                    >
-                      <h3
-                        className={
-                          selected_tag === tag
-                            ? "text-sm text-white font-semibold antialiased"
-                            : "text-sm text-gray-900 font-semibold antialiased"
-                        }
-                      >
-                        {tag
-                          .split(" ")
-                          .map(
-                            (item: any) => item[0].toUpperCase() + item.slice(1)
-                          )
-                          .join(" ")}
-                      </h3>
-                    </button>
-                  );
+              ? category_tags.map((tag: string) => {
+                  return <Tag tag={tag} selected_tag={selected_tag} setFilterTag={setFilterTag} />;
                 })
               : null}
           </div>
@@ -136,9 +89,7 @@ const Blog = ({
 
         {/* posts section start */}
         <div style={{ height: 780 }} className="w-full overflow-y-scroll">
-          <h2 className={"text-xl font-black mb-2 font-bold antialiased"}>
-            Posts (43)
-          </h2>
+          <h2 className={"text-xl font-black mb-2 antialiased"}>Posts (43)</h2>
           {edges.length > 0
             ? edges.map((item: any) => {
                 let post = item.node.frontmatter;
@@ -163,6 +114,48 @@ const Blog = ({
 };
 
 export default Blog;
+
+type TagPropTypes = {
+  tag: string;
+  selected_tag: string;
+  setFilterTag: (tag: string) => void
+}
+
+const Tag: React.FC<TagPropTypes> = ({tag, selected_tag, setFilterTag}): JSX.Element => {
+  return (
+    <button
+      key={tag}
+      onClick={() => {
+        if (selected_tag !== tag) {
+          setFilterTag(tag);
+        } else {
+          setFilterTag("All");
+        }
+      }}
+      style={{
+        backgroundColor: selected_tag === tag ? "#1f1f1f" : "#76d3ca",
+      }}
+      className={
+        selected_tag === tag
+          ? "outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
+          : "outline-none focus:outline-none px-3 py-1 rounded mr-2 mb-2"
+      }
+    >
+      <h3
+        className={
+          selected_tag === tag
+            ? "text-sm text-white font-semibold antialiased"
+            : "text-sm text-gray-900 font-semibold antialiased"
+        }
+      >
+        {tag
+          .split(" ")
+          .map((item: any) => item[0].toUpperCase() + item.slice(1))
+          .join(" ")}
+      </h3>
+    </button>
+  );
+};
 
 export const pageQuery = graphql`
   query {
