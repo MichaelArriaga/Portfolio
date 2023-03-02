@@ -116,7 +116,7 @@ const TechTag: React.FC<{ name: string }> = ({ name }): JSX.Element => {
         paddingBottom: 3,
         paddingLeft: 6,
         paddingRight: 6,
-        backgroundColor: "#abd6ff",
+        backgroundColor: "#76d3ca",
       }}
       className="cursor-default text-xs antialiased font-semibold text-gray-900 px-1 mr-1 rounded"
     >
