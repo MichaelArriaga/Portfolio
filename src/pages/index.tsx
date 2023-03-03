@@ -30,7 +30,7 @@ const Index: React.FC = (): JSX.Element => {
         <ProjectItem
           name="Zero Mileage Tracker"
           technologies={["React Native", "Tailwind"]}
-          to="http://Zero-Mileage-Tracker.com"
+          to="https://apps.apple.com/us/app/zero-mileage-tracker/id1668300293?platform=iphone"
           externalLink={true}
           latest={true}
         />

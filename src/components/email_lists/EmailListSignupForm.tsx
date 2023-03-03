@@ -146,7 +146,7 @@ const EmailListSignupForm = () => {
           <FaTwitter size={35} className="text-gray-900" />
         </a>
         <a
-          href="https://github.com/MichaelArriaga"
+          href="https://github.com/mikerayux"
           target="_blank"
           rel="noreferrer"
           className="mr-4"
