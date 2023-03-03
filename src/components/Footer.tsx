@@ -37,7 +37,7 @@ const Footer = () => (
           <FaLinkedin size={22} className="text-gray-900" />
         </a>
         <a
-          href="https://github.com/MichaelArriaga"
+          href="https://github.com/mikerayux"
           className="mr-2 text-gray-900"
           target="_blank"
           rel="noreferrer"
