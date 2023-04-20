@@ -8,6 +8,12 @@
   visibility: hidden;
 }
 
+.gatsby-code-button {
+  position: absolute;
+  top: -21px;
+  right: 0px
+}
+
 .gatsby-code-button[data-tooltip]:hover:after {
   display: none;
 }

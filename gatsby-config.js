@@ -40,7 +40,7 @@ module.exports = {
               // to 'gatsby-code-button-container'.
               buttonContainerClass: ``,
               // Optional button class name. Defaults to 'gatsby-code-button'.
-              buttonClass: `absolute top-0 right-5 border text-sm sm:text-base px-2 sm:px-4 py-1 rounded bg-gray-800 text-white flex justify-center items-center`,
+              buttonClass: `absolute border text-sm sm:text-base px-2 sm:px-4 py-1 rounded bg-gray-800 text-white flex justify-center items-center`,
               // Optional button text. Defaults to ''.
               buttonText: `Copy`,
               // Optional svg icon class name. Defaults to 'gatsby-code-button-icon'.
