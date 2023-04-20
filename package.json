@@ -40,6 +40,7 @@
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
     "@types/react-helmet": "^6.1.5",
+    "gatsby-remark-code-buttons": "^2.0.7",
     "gh-pages": "^2.2.0",
     "typescript": "^4.6.3"
   },
