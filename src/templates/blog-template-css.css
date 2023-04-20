@@ -3,6 +3,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.gatsby-code-button-icon {
+  display: none !important;
+  visibility: hidden;
+}
+
+.gatsby-code-button[data-tooltip]:hover:after {
+  display: none;
+}
+
 .gatsby-highlight > pre {
   background-color: white !important;
   /*background-color: #f7f7f7 !important;*/
