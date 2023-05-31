@@ -1,5 +1,5 @@
 import React from "react";
-import mike_circle_logo from "../../../static/etc/images/icons/mike-circle-logo.png";
+import header_image from "../../../static/etc/images/icons/mike-circle-portrait.png";
 import "../layout.css";
 import { Link } from "gatsby";
 
@@ -13,7 +13,7 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
       <img
         className="block"
         style={{ maxWidth: 175, borderRadius: "50%" }}
-        src={mike_circle_logo}
+        src={header_image}
         alt="mike logo"
       />
       <h1 className="my-2 text-4xl antialiased font-black leading-none tracking-tight text-gray-900">
