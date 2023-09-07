@@ -23,8 +23,8 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "home"
-              ? "text-gray-900 font-black antialiased underline mr-3 text-lg sm:text-xl"
-              : "text-gray-900 font-semibold antialiased mr-3 text-lg sm:text-xl"
+              ? "text-gray-900 font-black antialiased underline mr-3 text-xl sm:text-xl"
+              : "text-gray-900 font-semibold antialiased mr-3 text-xl sm:text-xl"
           }
           to="/"
         >
@@ -33,8 +33,8 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "about"
-              ? "text-gray-900 font-black antialiased underline mr-3 text-lg sm:text-xl"
-              : "text-gray-900 font-semibold antialiased mr-3 text-lg sm:text-xl"
+              ? "text-gray-900 font-black antialiased underline mr-3 text-xl sm:text-xl"
+              : "text-gray-900 font-semibold antialiased mr-3 text-xl sm:text-xl"
           }
           to="/about"
         >
@@ -43,12 +43,22 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         <Link
           className={
             highlighted === "posts"
-              ? "text-gray-900 font-black antialiased underline mr-3 text-lg sm:text-xl"
-              : "text-gray-900 font-semibold antialiased mr-3 text-lg sm:text-xl"
+              ? "text-gray-900 font-black antialiased underline mr-3 text-xl sm:text-xl"
+              : "text-gray-900 font-semibold antialiased mr-3 text-xl sm:text-xl"
           }
           to="/blog"
         >
           Posts
+        </Link>
+        <Link
+          className={
+            highlighted === "services"
+              ? "text-gray-900 font-black antialiased underline mr-3 text-xl sm:text-xl"
+              : "text-gray-900 font-semibold antialiased mr-3 text-xl sm:text-xl"
+          }
+          to="/blog"
+        >
+          Services
         </Link>
       </div>
       {/* <DarkModeToggler /> */}

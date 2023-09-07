@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useQueryParams } from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
 import Post from "../components/index/Post";
@@ -33,6 +33,7 @@ const Blog = ({
       setCategoryTags(Array.from([...new Set(tags_to_set)]));
     }
   };
+
 
   const postIncludedInFilter = (tags: any) => {
     let included = false;
