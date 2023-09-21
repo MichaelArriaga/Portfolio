@@ -50,16 +50,16 @@ const HeroHeader = ({ highlighted }: PropTypes) => {
         >
           Posts
         </Link>
-        <Link
-          className={
-            highlighted === "services"
-              ? "text-gray-900 font-black antialiased underline mr-3 text-xl sm:text-xl"
-              : "text-gray-900 font-semibold antialiased mr-3 text-xl sm:text-xl"
-          }
-          to="/blog"
-        >
-          Services
-        </Link>
+        {/* <Link */}
+        {/*   className={ */}
+        {/*     highlighted === "services" */}
+        {/*       ? "text-gray-900 font-black antialiased underline mr-3 text-xl sm:text-xl" */}
+        {/*       : "text-gray-900 font-semibold antialiased mr-3 text-xl sm:text-xl" */}
+        {/*   } */}
+        {/*   to="/blog" */}
+        {/* > */}
+        {/*   Services */}
+        {/* </Link> */}
       </div>
       {/* <DarkModeToggler /> */}
     </div>
