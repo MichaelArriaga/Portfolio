@@ -15,7 +15,7 @@ const Footer = () => (
     >
       <div className="flex flex-row mb-2 sm:mb-0 justify-center items-center">
         <h3 className="mr-1 font-normal text-lg antialiased">
-          Made with ❤️ in Seattle, WA
+          Made with ❤️  in Akron, OH
         </h3>
       </div>
 
