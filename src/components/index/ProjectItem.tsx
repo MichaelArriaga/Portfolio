@@ -23,22 +23,22 @@ const ProjectItem: React.FC<PropTypes> = ({
   latest,
 }): JSX.Element => {
   return (
-    <div className={"sm:max-w-xl mx-auto mb-3"}>
+    <div className={"sm:max-w-xl mx-auto mb-2"}>
       {externalLink ? (
         <ExternalLink to={to} name={name} latest={latest} />
       ) : (
         <InternalLink to={to} name={name} latest={latest} />
       )}
 
-      <div className={"flex flex-row justify-start items-center "}>
+      <div className={"flex flex-row justify-start items-center"}>
         <div className="flex flex-row justify-start items-center">
-          {technologies && technologies.length
-            ? technologies.map((tag: string, index: number) => (
-                // post tag start
-                <TechTag key={index} name={tag} />
-                // post tag end
-              ))
-            : null}
+          {/* {technologies && technologies.length */}
+          {/*   ? technologies.map((tag: string, index: number) => ( */}
+          {/*       // post tag start */}
+          {/*       <TechTag key={index} name={tag} /> */}
+          {/*       // post tag end */}
+          {/*     )) */}
+          {/*   : null} */}
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@ const ExternalLink: React.FC<LinkTypes> = ({ to, name, latest }) => {
       <h3
         style={{ lineHeight: 1 }}
         className={
-          "text-xl text-gray-900 text-left flex flex-wrap justify-start items-center font-black underline antialiased mb-1"
+          "text-2xl text-gray-900 text-left flex flex-wrap justify-start items-center font-bold underline antialiased mb-1"
         }
       >
         <span className="mr-2">{name}</span>
@@ -75,7 +75,7 @@ const InternalLink: React.FC<LinkTypes> = ({ to, name, latest }): JSX.Element =>
       <h3
         style={{ lineHeight: 1 }}
         className={
-          "text-xl text-gray-900 text-left flex flex-wrap justify-start items-center font-black underline antialiased mb-1"
+          "text-2xl text-gray-900 text-left flex flex-wrap justify-start items-center font-bold underline antialiased mb-1"
         }
       >
         <span className="mr-2">{name}</span>
@@ -97,10 +97,10 @@ const NewTag: React.FC = (): JSX.Element => {
         paddingRight: 5,
         transform: "rotate(10deg)",
         position: "absolute",
-        right: 120,
-        bottom: 25,
+        left: 350,
+        bottom: 15,
       }}
-      className="cursor-default tracking-tighter text-xs antialiased font-black text-white px-1 mr-1 rounded bg-gray-800"
+      className="cursor-default tracking-tighter text-xs antialiased font-bold text-white px-1 mr-1 rounded bg-gray-800"
     >
       NEW!
     </h3>
@@ -111,7 +111,7 @@ const TechTag: React.FC<{ name: string }> = ({ name }): JSX.Element => {
   return (
     <h3
       style={{
-        fontSize: 12,
+        fontSize: 13,
         paddingTop: 3,
         paddingBottom: 3,
         paddingLeft: 6,

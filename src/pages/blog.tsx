@@ -34,7 +34,6 @@ const Blog = ({
     }
   };
 
-
   const postIncludedInFilter = (tags: any) => {
     let included = false;
     let tags_downcased = [...tags].map((item) => item.toLowerCase());
@@ -75,13 +74,17 @@ const Blog = ({
       <div style={{ marginBottom: 150 }} className="">
         {/* tags section start */}
         <div className={"mb-2 py-2"}>
-          <h2 className={"text-xl sm:text-xl font-black mb-2 antialiased"}>
-            Tags
-          </h2>
+          <h2 className={"text-3xl font-black mb-2 antialiased"}>Tags</h2>
           <div className="flex flex-wrap items-center justify-start">
             {category_tags.length > 0
               ? category_tags.map((tag: string) => {
-                  return <Tag tag={tag} selected_tag={selected_tag} setFilterTag={setFilterTag} />;
+                  return (
+                    <Tag
+                      tag={tag}
+                      selected_tag={selected_tag}
+                      setFilterTag={setFilterTag}
+                    />
+                  );
                 })
               : null}
           </div>
@@ -90,7 +93,6 @@ const Blog = ({
 
         {/* posts section start */}
         <div style={{ height: 780 }} className="w-full overflow-y-scroll">
-          <h2 className={"text-xl font-black mb-2 antialiased"}>Posts (43)</h2>
           {edges.length > 0
             ? edges.map((item: any) => {
                 let post = item.node.frontmatter;
@@ -103,6 +105,10 @@ const Blog = ({
                       date={post.date}
                       slug={post.slug}
                       post_tags={post_tags}
+                      thumbnail={
+                        post.thumbnail?.childImageSharp?.gatsbyImageData?.images
+                          .fallback.src
+                      }
                     />
                   );
                 }
@@ -119,10 +125,14 @@ export default Blog;
 type TagPropTypes = {
   tag: string;
   selected_tag: string;
-  setFilterTag: (tag: string) => void
-}
+  setFilterTag: (tag: string) => void;
+};
 
-const Tag: React.FC<TagPropTypes> = ({tag, selected_tag, setFilterTag}): JSX.Element => {
+const Tag: React.FC<TagPropTypes> = ({
+  tag,
+  selected_tag,
+  setFilterTag,
+}): JSX.Element => {
   return (
     <button
       key={tag}
@@ -172,6 +182,11 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 800)
+              }
+            }
             tags
           }
         }

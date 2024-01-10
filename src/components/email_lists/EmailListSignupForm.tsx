@@ -70,7 +70,10 @@ const EmailListSignupForm = () => {
   };
 
   return (
-    <div style={{ maxWidth: 255 }} className="mx-auto flex flex-row justify-center items-center">
+    <div
+      style={{ maxWidth: 255 }}
+      className="mx-auto flex flex-row justify-center items-center"
+    >
       {/* <div className=""> */}
       {/*   <p className="mb-1 antialiased font-normal text-left"> */}
       {/*     Stay up-to-date with my posts. */}
@@ -136,36 +139,6 @@ const EmailListSignupForm = () => {
       {/* </form> */}
 
       {/* socials start */}
-      <div className="flex flex-row items-center justify-start">
-        <a
-          href="https://twitter.com/mike_ray_ux"
-          target="_blank"
-          rel="noreferrer"
-          className="mr-4"
-        >
-          <FaTwitter size={35} className="text-gray-900" />
-        </a>
-        <a
-          href="https://github.com/mikerayux"
-          target="_blank"
-          rel="noreferrer"
-          className="mr-4"
-        >
-          <FaGithub size={35} className="text-gray-900" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mike-ray-26a874230/"
-          target="_blank"
-          rel="noreferrer"
-          className="mr-4"
-        >
-          <FaLinkedin size={35} className="text-gray-900" />
-        </a>
-        <a href="mailto:m.arriaga.smb@gmail.com" className="">
-          <FaEnvelopeSquare size={35} className="text-gray-900" />
-        </a>
-      </div>
-      {/* socials end */}
     </div>
   );
 };

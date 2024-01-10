@@ -20,59 +20,74 @@ const Index: React.FC = (): JSX.Element => {
         tags={null}
         article={false}
       />
-      <div className="mr-auto sm:max-w-screen-sm mb-2">
-        <div className="flex flex-row items-center justify-start">
-          <h3 className="mb-1 text-xl antialiased font-black text-gray-900 tracking-tight">
-            My Apps
+      <div style={{maxHeight: "100vh"}} className="h-screen max-h-screen w-full max-w-sm sm:max-w-full sm:mr-auto">
+        <div className="mr-auto mb-1">
+          <h3 className="text-3xl antialiased font-black mb-3 text-gray-900 text-center sm:text-left tracking-tight">
+            Libraries & Tools
           </h3>
+
+          <ProjectItem
+            name="Simulus inline input validations"
+            technologies={["StimulusJS", "Vanilla JS"]}
+            to="https://github.com/MikeRayUX/stimulus-inline-input-validations"
+            externalLink={true}
+            latest={true}
+          />
+        </div>
+        <div className="mr-auto mb-1">
+          <h3 className="text-3xl antialiased font-black text-gray-900 mb-3 text-center sm:text-left tracking-tight">
+            Apps
+          </h3>
+
+          <ProjectItem
+            name="Fresh And Tumble Laundry"
+            technologies={[
+              "Rails",
+              "React",
+              "React Native",
+              "Tailwind",
+              "Docker",
+            ]}
+            to="/projects/fresh_and_tumble"
+            externalLink={false}
+          />
+
+          <ProjectItem
+            name="Minty Snippets"
+            technologies={["Rails", "React", "Electron", "Tailwind", "Docker"]}
+            to="https://www.mintysnippets.com"
+            externalLink={true}
+          />
+
+          <ProjectItem
+            name="Prolific Daily Summed Submissions"
+            technologies={["Chrome Manifest V3", "Tailwind", "Vanilla JS"]}
+            to="https://chrome.google.com/webstore/detail/prolific-daily-summed-sub/jmcjelkbllmmeaeplopkdcbkpbffofpg?hl=en&authuser=1"
+            externalLink={true}
+          />
+
+          <ProjectItem
+            name="Zero Mileage Tracker"
+            technologies={["React Native", "Tailwind"]}
+            to="https://apps.apple.com/us/app/zero-mileage-tracker/id1668300293?platform=iphone"
+            externalLink={true}
+            latest={false}
+          />
+
+
+          <ProjectItem
+            name="Flex Mate"
+            technologies={["HTML", "CSS", "Vanilla JS"]}
+            to="/projects/flex_mate"
+            externalLink={false}
+          />
         </div>
 
-        <ProjectItem
-          name="Zero Mileage Tracker"
-          technologies={["React Native", "Tailwind"]}
-          to="https://apps.apple.com/us/app/zero-mileage-tracker/id1668300293?platform=iphone"
-          externalLink={true}
-          latest={true}
-        />
+        {/* latest posts start */}
+        <LatestPostsLists />
 
-        <ProjectItem
-          name="Fresh And Tumble Laundry"
-          technologies={[
-            "Rails",
-            "React",
-            "React Native",
-            "Tailwind",
-            "Docker",
-          ]}
-          to="/projects/fresh_and_tumble"
-          externalLink={false}
-        />
-
-        <ProjectItem
-          name="Prolific Daily Summed Submissions"
-          technologies={["Chrome Manifest V3", "Tailwind", "Vanilla JS"]}
-          to="https://chrome.google.com/webstore/detail/prolific-daily-summed-sub/jmcjelkbllmmeaeplopkdcbkpbffofpg?hl=en&authuser=1"
-          externalLink={true}
-        />
-
-        <ProjectItem
-          name="Minty Snippets"
-          technologies={["Rails", "React", "Electron", "Tailwind", "Docker"]}
-          to="https://www.mintysnippets.com"
-          externalLink={true}
-        />
-
-        <ProjectItem
-          name="Flex Mate"
-          technologies={["HTML", "CSS", "Vanilla JS"]}
-          to="/projects/flex_mate"
-          externalLink={false}
-        />
+        {/* latest posts end */}
       </div>
-      {/* latest posts start */}
-      <LatestPostsLists />
-
-      {/* latest posts end */}
     </SidebarLayout>
   );
 };
