@@ -1,36 +1,3 @@
-/* @font-face { */
-/* font-family: OpenSans-Regular; */
-/* src: url(../../static/etc/fonts/OpenSans-Regular.ttf) */
-/* } */
-
-/* @font-face { */
-/* font-family: OpenSans-SemiBold; */
-/* src: url(../../static/etc/fonts/OpenSans-SemiBold.ttf) */
-/* } */
-
-/* @font-face { */
-/* font-family: OpenSans-Bold; */
-/* src: url(../../static/etc/fonts/OpenSans-Bold.ttf) */
-/* } */
-
-/* @font-face { */
-/* font-family: OpenSans-ExtraBold; */
-/* src: url(../../static/etc/fonts/OpenSans-ExtraBold.ttf) */
-/* } */
-
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
-:root {
-  /*--primary-type-copy: OpenSans-Regular;*/
-  /*--primary-type-heading: OpenSans-Bold;*/
-  /*--secondary-type-copy: OpenSans-Regular;*/
-  /*--secondary-type-emphasis: OpenSans-Bold;*/
-  /*font-size: 16px;*/
-}
-
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
@@ -40,26 +7,3 @@
   width: 12px;
   background-color: rgba(0, 0, 0, 0);
 }
-/* ::-webkit-scrollbar              { background-color: rgba(0, 0, 0, 0); width: 9px; border-radius: 10px; } */
-/* ::-webkit-scrollbar-button       { background-color: blue } */
-/* ::-webkit-scrollbar-track        { background-color: green } */
-/* ::-webkit-scrollbar-track-piece  { background-color: yellow } */
-/* ::-webkit-scrollbar-thumb        { background-color: black; border-radius: 10px;  } */
-/* ::-webkit-scrollbar-corner       {color: red} */
-/* ::-webkit-resizer                {color: red} */
-
-/* Keyword values */
-
-body {
-  width: 100%;
-  /* background-color: #e9e9e9; */
-  overflow: overlay;
-}
-
-/* em {
-  font-style: inherit;
-} */
-
-/* a {
-  text-decoration: none;
-} */
