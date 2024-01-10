@@ -51,14 +51,6 @@ const Blog = ({
     setSelectedTag(tag || "All");
   };
 
-  //const updateQueryParam = (tag: any) => {
-  //const Url = new URL(location.origin + location.pathname);
-  //const urlParams = new URLSearchParams(Url.search);
-  //urlParams.set("tag", tag);
-  //Url.search = urlParams.toString();
-  //window.history.pushState("data", "", Url.href);
-  //};
-
   return (
     <SidebarLayout highlighted_hero_link="posts">
       <SEO
@@ -92,7 +84,7 @@ const Blog = ({
         {/* tags section end */}
 
         {/* posts section start */}
-        <div style={{ height: 780 }} className="w-full overflow-y-scroll">
+        <div style={{ height: 650 }} className="w-full overflow-y-scroll">
           {edges.length > 0
             ? edges.map((item: any) => {
                 let post = item.node.frontmatter;

@@ -6,7 +6,7 @@ title: "Understanding Redux in 4 Steps"
 description: "Understanding Redux in 4 Steps"
 readtime: "5 min read"
 thumbnail: "./preview-card.png"
-tags: "React, React Redux"
+tags: "React, Redux"
 ---
 
 ### REDUX in 4 STEPS
