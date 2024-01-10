@@ -13,7 +13,7 @@ type LinkTypes = {
   to: string;
   name: string;
   latest?: boolean;
-}
+};
 
 const ProjectItem: React.FC<PropTypes> = ({
   name,
@@ -29,18 +29,6 @@ const ProjectItem: React.FC<PropTypes> = ({
       ) : (
         <InternalLink to={to} name={name} latest={latest} />
       )}
-
-      <div className={"flex flex-row justify-start items-center"}>
-        <div className="flex flex-row justify-start items-center">
-          {/* {technologies && technologies.length */}
-          {/*   ? technologies.map((tag: string, index: number) => ( */}
-          {/*       // post tag start */}
-          {/*       <TechTag key={index} name={tag} /> */}
-          {/*       // post tag end */}
-          {/*     )) */}
-          {/*   : null} */}
-        </div>
-      </div>
     </div>
   );
 };
@@ -69,7 +57,11 @@ const ExternalLink: React.FC<LinkTypes> = ({ to, name, latest }) => {
   );
 };
 
-const InternalLink: React.FC<LinkTypes> = ({ to, name, latest }): JSX.Element => {
+const InternalLink: React.FC<LinkTypes> = ({
+  to,
+  name,
+  latest,
+}): JSX.Element => {
   return (
     <Link to={to} className="relative flex items-center justify-start mb-1">
       <h3
@@ -97,7 +89,7 @@ const NewTag: React.FC = (): JSX.Element => {
         paddingRight: 5,
         transform: "rotate(10deg)",
         position: "absolute",
-        left: 350,
+        left: 365,
         bottom: 15,
       }}
       className="cursor-default tracking-tighter text-xs antialiased font-bold text-white px-1 mr-1 rounded bg-gray-800"
