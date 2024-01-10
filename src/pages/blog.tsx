@@ -71,7 +71,7 @@ const Blog = ({
         tags={null}
         article={false}
       />
-      <div style={{ marginBottom: 150 }} className="">
+      <div style={{ marginBottom: 0 }} className="">
         {/* tags section start */}
         <div className={"mb-2 py-2"}>
           <h2 className={"text-3xl font-black mb-2 antialiased"}>Tags</h2>

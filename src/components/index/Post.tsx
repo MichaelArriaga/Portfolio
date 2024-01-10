@@ -11,22 +11,15 @@ interface PropTypes {
 
 const Post = ({ slug, title, date, post_tags, thumbnail }: PropTypes) => {
   return (
-    <div className={"sm:max-w-full mx-auto "}>
-      <Link className="flex items-center justify-start mb-4" to={slug}>
+    <div className={"sm:max-w-full mx-auto mb-4 "}>
+      <Link className="" to={slug}>
         <h3
           style={{ lineHeight: 1 }}
           className={
             "w-[380px] overflow-hidden rounded-md bg-blue-200  border-2 border-black  font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
           }
         >
-          {/* {thumbnail ? ( */}
-          {/* ) : null} */}
-            {/* <img */}
-            {/*   className="w-full h-[150px] object-cover" */}
-            {/*   src={thumbnail} */}
-            {/*   alt="image" */}
-            {/* /> */}
-          <figcaption className="pt-4 px-4 pb-4 border-t-2 font-bold border-black flex flex-col justify-start items-start text-xl text-black leading-tight">
+          <figcaption className="pt-4 px-4 pb-4 border-t-2 font-bold border-black text-xl text-black leading-tight">
             {title}
           </figcaption>
           <div className="px-4 py-2 bg-[#8CD1CA] flex flex-row justify-start items-center w-full border-t-2 border-black text-grayp900 ">
@@ -47,7 +40,6 @@ const Post = ({ slug, title, date, post_tags, thumbnail }: PropTypes) => {
           <div className="px-4 pb-4 bg-[#8CD1CA] flex flex-row justify-start items-center space-x-2">
             {post_tags && post_tags.length > 0
               ? post_tags.map((tag) => (
-                  // post tag start
                   <Link
                     key={tag}
                     to={"/blog"}
@@ -63,7 +55,6 @@ const Post = ({ slug, title, date, post_tags, thumbnail }: PropTypes) => {
                       {tag}
                     </h3>
                   </Link>
-                  // post tag end
                 ))
               : null}
           </div>
