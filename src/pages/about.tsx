@@ -22,7 +22,7 @@ class About extends React.Component {
           <h3 className="mb-2 text-3xl font-black">About Mike</h3>
 
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
-            Mike is an indie Rails Developer based in Seattle WA. After hours,
+            Mike is an indie Rails Developer based in Akron OH. After hours,
             he's a Musician (Drums & Bass Guitar).
           </p>
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
