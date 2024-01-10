@@ -27,7 +27,7 @@ const Index: React.FC = (): JSX.Element => {
           </h3>
 
           <ProjectItem
-            name="Simulus inline input validations"
+            name="Stimulus Inline Input Validations"
             technologies={["StimulusJS", "Vanilla JS"]}
             to="https://github.com/MikeRayUX/stimulus-inline-input-validations"
             externalLink={true}
