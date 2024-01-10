@@ -147,8 +147,8 @@ const Tag: React.FC<TagPropTypes> = ({
       <h3
         className={
           selected_tag === tag
-            ? "text-sm text-white font-semibold antialiased"
-            : "text-sm text-gray-900 font-semibold antialiased"
+            ? "text-sm text-white font-bold antialiased"
+            : "text-sm text-gray-900 font-bold antialiased"
         }
       >
         {tag
