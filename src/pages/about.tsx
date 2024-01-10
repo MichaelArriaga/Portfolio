@@ -19,7 +19,7 @@ class About extends React.Component {
           article={false}
         />
         <div style={{ marginBottom: 150 }} className="">
-          <h3 className="mb-2 text-3xl font-black">About Mike</h3>
+          <h3 className="mb-2 text-3xl font-bold">About Mike</h3>
 
           <p className={"text-xl mb-3 text-gray-900 font-medium antialiased"}>
             Mike is an indie Rails Developer based in Akron OH. After hours,

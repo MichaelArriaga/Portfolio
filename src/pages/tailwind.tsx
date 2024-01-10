@@ -14,7 +14,7 @@ const TailwindPlayground = () => {
       <div className="max-w-4xl pt-12 py-2 px-4 mx-auto">
         <HeroHeader highlighted="posts" />
         <div className="">
-          <h1 className="text-3xl sm:text-5xl text-left leading-none mb-1 font-black antialiased">
+          <h1 className="text-3xl sm:text-5xl text-left leading-none mb-1 font-bold antialiased">
             Simple Rails CI/CD Pipeline with Github Actions
           </h1>
           <h2 className="text-base text-left mb-2 font-normal antialiased">

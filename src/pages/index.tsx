@@ -22,7 +22,7 @@ const Index: React.FC = (): JSX.Element => {
       />
       <div style={{maxHeight: "100vh"}} className="h-screen max-h-screen w-full max-w-sm sm:max-w-full sm:mr-auto">
         <div className="mr-auto mb-1">
-          <h3 className="text-3xl antialiased font-black mb-1 text-gray-900 text-center sm:text-left tracking-tight">
+          <h3 className="text-3xl antialiased font-bold mb-1 text-gray-900 text-center sm:text-left tracking-tight">
             Libraries & Tools
           </h3>
 
@@ -35,7 +35,7 @@ const Index: React.FC = (): JSX.Element => {
           />
         </div>
         <div className="mr-auto mb-1">
-          <h3 className="text-3xl antialiased font-black text-gray-900 mb-1 text-center sm:text-left tracking-tight">
+          <h3 className="text-3xl antialiased font-bold text-gray-900 mb-1 text-center sm:text-left tracking-tight">
             Apps
           </h3>
 

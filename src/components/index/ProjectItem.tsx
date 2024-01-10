@@ -46,7 +46,7 @@ const ExternalLink: React.FC<LinkTypes> = ({ to, name, latest }) => {
       <h3
         style={{ lineHeight: 1 }}
         className={
-          "text-2xl text-gray-900 text-left flex flex-wrap justify-start items-center font-bold underline antialiased mb-1"
+          "text-2xl text-gray-900 text-left flex flex-wrap justify-start underline items-center font-medium antialiased mb-1"
         }
       >
         <span className="mr-2">{name}</span>
@@ -67,7 +67,7 @@ const InternalLink: React.FC<LinkTypes> = ({
       <h3
         style={{ lineHeight: 1 }}
         className={
-          "text-2xl text-gray-900 text-left flex flex-wrap justify-start items-center font-bold underline antialiased mb-1"
+          "text-2xl text-gray-900 text-left flex flex-wrap justify-start underline items-center font-medium antialiased mb-1"
         }
       >
         <span className="mr-2">{name}</span>
@@ -82,17 +82,17 @@ const NewTag: React.FC = (): JSX.Element => {
   return (
     <h3
       style={{
-        fontSize: 11,
+        fontSize: 13,
         paddingTop: 2,
         paddingBottom: 2,
         paddingLeft: 5,
         paddingRight: 5,
         transform: "rotate(10deg)",
         position: "absolute",
-        left: 365,
-        bottom: 15,
+        left: 340,
+        bottom: 20,
       }}
-      className="cursor-default tracking-tighter text-xs antialiased font-bold text-white px-1 mr-1 rounded bg-gray-800"
+      className="cursor-default tracking-tighter antialiased font-black text-white rounded bg-gray-800"
     >
       NEW!
     </h3>

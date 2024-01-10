@@ -76,7 +76,7 @@ const ProjectPageTemplate: React.FC<PropTypes> = ({
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center">
             <h1
               className={
-                "text-3xl tracking-tight sm:text-3xl sm:text-left font-black antialiased flex flex-row justify-start items-center"
+                "text-3xl tracking-tight sm:text-3xl sm:text-left font-bold antialiased flex flex-row justify-start items-center"
               }
             >
               {title}
