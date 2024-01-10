@@ -66,7 +66,7 @@ const Blog = ({
       <div style={{ marginBottom: 0 }} className="">
         {/* tags section start */}
         <div className={"mb-2 py-2"}>
-          <h2 className={"text-3xl font-bold mb-2 antialiased"}>Tags</h2>
+          <h2 className={"text-3xl font-bold mb-2 antialiased"}>Topics</h2>
           <div className="flex flex-wrap items-center justify-start">
             {category_tags.length > 0
               ? category_tags.map((tag: string) => {
