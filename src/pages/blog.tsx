@@ -72,7 +72,7 @@ const Blog = ({
               ? category_tags.map((tag: string) => {
                   return (
                     <Tag
-                      tag={tag.toUpperCase()}
+                      tag={tag}
                       selected_tag={selected_tag}
                       setFilterTag={setFilterTag}
                     />
@@ -151,10 +151,7 @@ const Tag: React.FC<TagPropTypes> = ({
             : "text-sm text-gray-900 font-bold antialiased tracking-tighter"
         }
       >
-        {tag
-          .split(" ")
-          .map((item: any) => item[0].toUpperCase() + item.slice(1))
-          .join(" ")}
+        {tag.toUpperCase()}
       </h3>
     </button>
   );
