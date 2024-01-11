@@ -11,7 +11,7 @@ interface PropTypes {
 
 const Post = ({ slug, title, date, post_tags, thumbnail }: PropTypes) => {
   return (
-    <div className={"w-full mb-8 pr-2"}>
+    <div className={"w-full max-w-[400px] mb-8 pr-2"}>
       <Link className="" to={slug}>
         <h3
           style={{ lineHeight: 1 }}

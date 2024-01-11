@@ -23,9 +23,9 @@ const Index: React.FC = (): JSX.Element => {
       />
       <div
         style={{ maxHeight: "100vh" }}
-        className="h-screen max-h-screen w-full max-w-sm md:max-w-full md:mr-auto space-y-6"
+        className="h-screen max-h-screen w-full max-w-sm md:max-w-[500px] md:mr-auto space-y-6 "
       >
-        <div className="mr-auto mb-1">
+        <div className="mr-auto md:pl-2 mb-1">
           <h3 className="text-3xl antialiased font-bold text-gray-900 mb-1 text-center md:text-left tracking-tight">
             Apps
           </h3>
@@ -67,8 +67,8 @@ const Index: React.FC = (): JSX.Element => {
             externalLink={false}
           />
         </div>
-        <div className="mr-auto mb-1">
-          <h3 className="text-3xl antialiased font-bold mb-1 text-gray-900 text-center md:text-left tracking-tight">
+        <div className="mr-auto mb-1 md:pl-2">
+          <h3 className="text-3xl antialiased font-bold text-gray-900 mb-1 text-center md:text-left tracking-tight">
             Libraries & Tools
           </h3>
           <ProjectItem
@@ -79,8 +79,8 @@ const Index: React.FC = (): JSX.Element => {
             latest={true}
           />
         </div>
-        <div className="w-full mb-8 md:mb-16 mr-auto">
-          <h3 className="text-3xl text-center md:text-left text-gray-900 mb-1 font-bold antialiased tracking-tight">
+        <div className="w-full mb-8 md:mb-16 mr-auto md:pl-2">
+          <h3 className="text-3xl  antialiased font-bold text-gray-900 mb-1 text-center md:text-left tracking-tight">
             Latest Post
           </h3>
           <StaticQuery
@@ -141,7 +141,7 @@ const Index: React.FC = (): JSX.Element => {
                       <h3
                         style={{ lineHeight: 1 }}
                         className={
-                          "text-2xl text-gray-900 text-left flex flex-wrap justify-start items-center font-semibold underline antialiased"
+                          "text-2xl mb-8 text-gray-900 text-left flex flex-wrap justify-start items-center font-semibold underline antialiased"
                         }
                       >
                         <span className="mr-2">More...</span>

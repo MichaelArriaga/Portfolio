@@ -39,12 +39,11 @@ const ExternalLink: React.FC<LinkTypes> = ({ to, name, latest }) => {
   return (
     <a
       href={to}
-      className="relative flex items-center justify-start mb-1"
+      className="mb-1"
       target={"_blank"}
       rel={"noreferer"}
     >
       <h3
-        style={{ lineHeight: 1 }}
         className={
           "text-2xl text-gray-900 text-left flex flex-wrap justify-start underline items-center font-medium antialiased mb-1"
         }
@@ -61,9 +60,8 @@ const InternalLink: React.FC<LinkTypes> = ({
   latest,
 }): JSX.Element => {
   return (
-    <Link to={to} className="relative flex items-center justify-start mb-1">
+    <Link to={to} className="mb-1">
       <h3
-        style={{ lineHeight: 1 }}
         className={
           "text-2xl text-gray-900 text-left flex flex-wrap justify-start underline items-center font-medium antialiased mb-1"
         }

@@ -63,10 +63,10 @@ const Blog = ({
         tags={null}
         article={false}
       />
-      <div style={{ marginBottom: 0 }} className="flex flex-col justify-center items-center mr-auto">
+      <div style={{ marginBottom: 0 }} className="flex flex-col justify-center items-center mr-auto md:max-w-[500px]">
         {/* tags section start */}
         <div className={"mb-2"}>
-          <h2 className={"text-3xl font-bold mb-2 antialiased leading-none text-center md:text-left"}>Topics</h2>
+          <h2 className={"text-3xl font-bold mb-2 antialiased text-center md:text-left "}>Topics</h2>
           <div className="flex flex-wrap items-center justify-start">
             {category_tags.length > 0
               ? category_tags.map((tag: string) => {

@@ -25,7 +25,7 @@ const SidebarLayout = ({ highlighted_hero_link, children }: PropTypes) => {
         {/* left panel end */}
 
         {/* right panel content start */}
-        <div className="w-full flex max-w-[500px] flex-col justify-start items-center md:max-w-screen-xs mt-16 px-6">
+        <div className="w-full flex max-w-[500px] flex-col justify-start items-center md:max-w-screen-sm mt-16 px-6">
           <div className="w-full md:hidden">
             <HeroHeader highlighted={highlighted_hero_link} />
           </div>
