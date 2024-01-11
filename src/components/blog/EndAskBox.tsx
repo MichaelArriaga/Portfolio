@@ -5,10 +5,10 @@ const EndAskBox = () => {
   return (
     <div className="w-full rounded p-4 mb-4">
       <div className="mb-4">
-        <h1 className="text-2xl sm:text-3xl text-gray-900 font-bold text-center leading-none mb-4 antialiased">
+        <h1 className="text-2xl md:text-3xl text-gray-900 font-bold text-center leading-none mb-4 antialiased">
           Thanks for reading! 👋
         </h1>
-        <h2 className="text-xl sm:text-2xl text-gray-900 font-bold text-center leading-none mb-4 sm:text-center antialiased">
+        <h2 className="text-xl md:text-2xl text-gray-900 font-bold text-center leading-none mb-4 md:text-center antialiased">
           Did you find this article useful?
         </h2>
       </div>

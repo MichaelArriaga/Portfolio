@@ -14,7 +14,7 @@ const Contact = () => {
 
         <p
           className={
-            "text-lg sm:text-xl mb-2 text-gray-900 font-normal antialiased"
+            "text-lg md:text-xl mb-2 text-gray-900 font-normal antialiased"
           }
         >
           Contact me

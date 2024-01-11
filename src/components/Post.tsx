@@ -10,14 +10,13 @@ interface PropTypes {
 }
 
 const Post = ({ slug, title, date, post_tags, thumbnail }: PropTypes) => {
-  console.log(post_tags);
   return (
-    <div className={"sm:max-w-full mx-auto mb-8 "}>
+    <div className={"w-full mb-8 pr-2"}>
       <Link className="" to={slug}>
         <h3
           style={{ lineHeight: 1 }}
           className={
-            "w-[420px] overflow-hidden rounded-md bg-blue-200  border-2 border-black  font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+            "overflow-hidden rounded-md bg-sky-200 border-2 border-black font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
           }
         >
           <figcaption className="pt-4 px-4 pb-4 border-t-2 font-bold border-black text-2xl text-black leading-tight">

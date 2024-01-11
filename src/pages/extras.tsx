@@ -8,8 +8,8 @@ const Extras = () => {
       meta_description="Mike Ray Arriaga, Product Engineer - Extras"
       highlighted_hero_link={"extras"}
     >
-      <div className="sm:max-w-screen-sm mx-auto">
-        <h3 className="text-lg text-gray-900 mb-3 sm:mb-5 font-bold antialiased">
+      <div className="md:max-w-screen-sm mx-auto">
+        <h3 className="text-lg text-gray-900 mb-3 md:mb-5 font-bold antialiased">
           My Extras
         </h3>
       </div>

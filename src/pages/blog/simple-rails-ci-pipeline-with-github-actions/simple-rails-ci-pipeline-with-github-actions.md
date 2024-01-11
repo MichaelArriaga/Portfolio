@@ -7,7 +7,7 @@ description: "Let's add a simple CI/CD pipeline to our Rails GitHub Repo to run
 our test suite."
 thumbnail: "./preview-card.png"
 readtime: "30 min read"
-tags: "Rails, Webpacker, CI/CD"
+tags: "Rails, CI"
 ---
 
 Believe it or not, assembling a **CI/CD (Continuous Integration / Continuous Delivery)

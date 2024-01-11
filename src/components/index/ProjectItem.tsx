@@ -23,7 +23,7 @@ const ProjectItem: React.FC<PropTypes> = ({
   latest,
 }): JSX.Element => {
   return (
-    <div className={"sm:max-w-xl mx-auto mb-2"}>
+    <div className={"md:max-w-xl mx-auto mb-2"}>
       {externalLink ? (
         <ExternalLink to={to} name={name} latest={latest} />
       ) : (
@@ -51,8 +51,6 @@ const ExternalLink: React.FC<LinkTypes> = ({ to, name, latest }) => {
       >
         <span className="mr-2">{name}</span>
       </h3>
-
-      {latest ? <NewTag /> : null}
     </a>
   );
 };
@@ -72,8 +70,6 @@ const InternalLink: React.FC<LinkTypes> = ({
       >
         <span className="mr-2">{name}</span>
       </h3>
-
-      {latest ? <NewTag /> : null}
     </Link>
   );
 };

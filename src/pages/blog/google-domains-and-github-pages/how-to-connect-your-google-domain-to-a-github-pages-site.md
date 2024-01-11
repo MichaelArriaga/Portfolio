@@ -6,7 +6,7 @@ title: "How to connect your google domain to a github pages site"
 description: "How to connect your google domain to a github pages site"
 readtime: "30 min read"
 thumbnail: "./preview-card.png"
-tags: "Google Domains, Github Pages"
+tags: "Github Pages"
 ---
 
 <!--

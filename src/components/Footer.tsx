@@ -10,7 +10,7 @@ const Footer = () => (
   <div className={"w-full mx-auto"}>
     <hr className={"w-full border-t border-gray-200"}></hr>
     <div
-      className={"py-3 flex flex-col sm:flex-row justify-center items-center"}
+      className={"py-3 flex flex-col md:flex-row justify-center items-center"}
     >
 
       <div className="pl-2 flex flex-row justify-start items-center">

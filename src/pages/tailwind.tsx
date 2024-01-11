@@ -14,7 +14,7 @@ const TailwindPlayground = () => {
       <div className="max-w-4xl pt-12 py-2 px-4 mx-auto">
         <HeroHeader highlighted="posts" />
         <div className="">
-          <h1 className="text-3xl sm:text-5xl text-left leading-none mb-1 font-bold antialiased">
+          <h1 className="text-3xl md:text-5xl text-left leading-none mb-1 font-bold antialiased">
             Simple Rails CI/CD Pipeline with Github Actions
           </h1>
           <h2 className="text-base text-left mb-2 font-normal antialiased">
@@ -52,7 +52,7 @@ const TailwindPlayground = () => {
           </div>
           {/* <hr className="h-px border-t border-gray-200 my-2"></hr> */}
           <div className="">
-            <p className="text-lg sm:text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-lg md:text-2xl mb-6 antialiased">
               Believe it or not, assembling a{" "}
               <strong className="font-bold">
                 CI/CD (Continuous Integration / Continuous Delivery)
@@ -68,7 +68,7 @@ const TailwindPlayground = () => {
                 an incoming change is scheduled for our code repo.
               </a>
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               <strong className="font-bold">CI/CD</strong> systems are
               incredibly useful for validating a commit or pull request that we
               might receive. As Rails Developers, we probably want to:{" "}
@@ -77,7 +77,7 @@ const TailwindPlayground = () => {
               <strong className="font-bold">code linting</strong> as part of our
               CI/CD pipeline.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               We will use the CI/CD service{" "}
               <strong className="font-bold">
                 <a
@@ -91,82 +91,82 @@ const TailwindPlayground = () => {
               already integrated with our github project's repository. With it
               we can perform all of our seperate CI/CD jobs automatically.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               A good place to start for us would be to create a{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 test
               </code>{" "}
               job that will run every time we:
             </p>
             <ul className="text-2xl list-disc pl-8 mb-6">
               <li>
-                <p className="text-lg sm:text-2xl mb-6 antialiased">
-                  <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+                <p className="text-lg md:text-2xl mb-6 antialiased">
+                  <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                     push
                   </code>{" "}
                   to one of our branches (in our case{" "}
-                  <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+                  <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                     main
                   </code>
                   )
                 </p>
               </li>
               <li>
-                <p className="text-lg sm:text-2xl mb-6 antialiased">
+                <p className="text-lg md:text-2xl mb-6 antialiased">
                   receive a{" "}
-                  <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+                  <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                     pull_request
                   </code>{" "}
                   from a contributor
                 </p>
               </li>
             </ul>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               But how do we get started? Well, you know that button at the top
               of your project repositories that says "Actions"?
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased"></p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased"></p>
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               <strong>Yea that one! Click it and do some exploring!</strong>
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               After some tinkering, you'll probably have learned that in order
               to get started with GitHub Actions, we must first create a{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 workflow
               </code>{" "}
               file. So let's do that now.
             </p>
-            <h2 className="font-bold text-2xl sm:text-4xl underline mt-4 mb-2">
+            <h2 className="font-bold text-2xl md:text-4xl underline mt-4 mb-2">
               Setting up the workflow file
             </h2>
             <hr></hr>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               For simplicity's sake (and to honor the 'Simple' in the title of
               this post) we are going to set up just one{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 job
               </code>{" "}
               for our Rails App and we will call it{" "}
-              <code className="px-1 text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="px-1 text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 test
               </code>{" "}
               which will spin up an instance of our Rails app inside a container
               in order to run our test suite.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               In order to create a CI/CD pipeline with GitHub Actions, Github
               first expects a
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 .yml
               </code>{" "}
               file to exist at{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 .github/workflows/
               </code>{" "}
               directory at the root of our project/repository.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Let's create the file now:
             </p>
             <div className="highlight " data-language="bash">
@@ -177,10 +177,10 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Before we add any configuration to our file, we need to give it a
               top level key of{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 name:
               </code>{" "}
               in our case we'll call it "CI"
@@ -197,25 +197,25 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Next we need to specify another top level key called{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 on:
               </code>{" "}
               which will tell github actions at which events we want to trigger
               our ci/cd jobs to run.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               We want our jobs to run every time we{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 push
               </code>{" "}
               to our{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 main
               </code>{" "}
               branch as well as when we receive a{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 pull_request
               </code>
               . So let's add them.
@@ -246,14 +246,14 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               we can specify our jobs with our third and final top level key
               called (you guessed it){" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 jobs:
               </code>{" "}
               let's start with our first job called{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 test
               </code>
             </p>
@@ -287,9 +287,9 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               The{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 runs-on:
               </code>{" "}
               key allows us to specify an existing pre-configured container or
@@ -302,9 +302,9 @@ const TailwindPlayground = () => {
               that we can use to build our rails app as part of our CI process
               so we can run our test suite.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Here we are going to specify{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 ubuntu-latest
               </code>
               .
@@ -342,13 +342,13 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Next is the{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 services:
               </code>{" "}
               key. Our Rails app uses{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 postgres
               </code>{" "}
               for it's database. Let's add it.
@@ -406,84 +406,84 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Our{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 postgres
               </code>{" "}
               service has 3 seperate nested properties called{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 image
               </code>
               ,{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 ports
               </code>
               , and{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 env
               </code>
               Our image specifies an existing image provided to us by github
               actions.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               The remaining properties{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 ports
               </code>{" "}
               and{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 env
               </code>{" "}
               contain some default boilerplate settings:{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 5432:5432
               </code>{" "}
               as the default port and
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 POSTGRES_DB
               </code>
               ,
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 POSTGRES_USER
               </code>
               ,
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 POSTGRES_PASSWORD
               </code>{" "}
               as our default configuration for the postgres service itself.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               <strong>Quick Note:</strong> If you're familiar with{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 Docker
               </code>{" "}
               and creating services with{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 docker-compose
               </code>
               , you'll find the way{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 jobs
               </code>{" "}
               are composed familiar.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Next, we want to specify a couple envrionment variables for the
               instance of our Rails app that will be running inside our{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 test
               </code>{" "}
               service.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 RAILS_ENV: test
               </code>
               : for the environment mode we want our Rails app to be running in.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 DATABASE_URL:
                 "postgres://rails:password@localhost:5432/rails_test"
               </code>
@@ -553,25 +553,25 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               And finally, we can get to the meat and potatoes of building and
               configuring our test job, the{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 steps:
               </code>{" "}
               key.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               The{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 steps:
               </code>{" "}
               key allows us to specify a number of steps in order to spin up our
               Rails app and run our test suite.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               My App is using Rails6 and uses{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 webpacker
               </code>{" "}
               to compile a little bit of React code, so my steps look like this:
@@ -661,7 +661,7 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Your mileage may vary on this step. If you're app doesn't use
               webpacker, feel free to remove those individual steps. Now let's
               add them to our workflow file:
@@ -808,52 +808,52 @@ const TailwindPlayground = () => {
                 </code>
               </pre>
             </div>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Now, once we push this file up to our github repository, github
               actions will begin automatically.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Assuming that our test suite passes in development on our machine,
               and that our{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 steps
               </code>{" "}
               are properly configured for our particular Rails app (again, your
               mileage may vary), we should see a green checkmark next to our{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 test
               </code>{" "}
               job signifiying that our CI completed successfully!
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased"></p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased"></p>
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               <strong>Note:</strong> We can view the jobs by visiting the{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 Actions
               </code>{" "}
               tab of our repository on github.com{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 github.com/username/project_name/actions
               </code>
             </p>
-            <h2 className="font-bold text-2xl sm:text-4xl underline mt-4 mb-2">
+            <h2 className="font-bold text-2xl md:text-4xl underline mt-4 mb-2">
               Homework (Add more jobs)
             </h2>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Here's a great opportunity to expand your knowledge of CI/CD and
               add your own custom jobs to your{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 rubyonrails.yml
               </code>{" "}
               workflow file.
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               How about a new{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 job
               </code>{" "}
               called{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 audit
               </code>{" "}
               that will check your rails project code for security
@@ -877,13 +877,13 @@ const TailwindPlayground = () => {
                 </a>
               </li>
             </ul>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               or maybe a{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 job
               </code>{" "}
               called{" "}
-              <code className="text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
+              <code className="text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded">
                 lint
               </code>{" "}
               which will use the{" "}
@@ -895,7 +895,7 @@ const TailwindPlayground = () => {
               </a>{" "}
               gem to lint your code?
             </p>
-            <p className="text-lg sm:text-2xl mb-6 antialiased">
+            <p className="text-lg md:text-2xl mb-6 antialiased">
               Here's what those jobs might look like:
             </p>
             <div className="gatsby-highlight" data-language="yml">

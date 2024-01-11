@@ -40,7 +40,7 @@ module.exports = {
               // to 'gatsby-code-button-container'.
               buttonContainerClass: ``,
               // Optional button class name. Defaults to 'gatsby-code-button'.
-              buttonClass: `absolute border text-sm sm:text-base px-2 sm:px-4 py-1 rounded bg-gray-800 text-white flex justify-center items-center`,
+              buttonClass: `absolute border text-sm md:text-base px-2 md:px-4 py-1 rounded bg-gray-800 text-white flex justify-center items-center`,
               // Optional button text. Defaults to ''.
               buttonText: `Copy`,
               // Optional svg icon class name. Defaults to 'gatsby-code-button-icon'.
@@ -86,11 +86,11 @@ module.exports = {
               classMap: {
                 //"heading[depth=1]": "title",
                 //"heading[depth=2]":
-                //"font-bold text-2xl sm:text-4xl underline mt-4 mb-2",
-                //paragraph: "text-lg sm:text-lg sm:text-2xl mb-6 antialiased",
+                //"font-bold text-2xl md:text-4xl underline mt-4 mb-2",
+                //paragraph: "text-lg md:text-lg md:text-2xl mb-6 antialiased",
                 //strong: "font-bold",
                 //link: "font-bold text-blue-700 underline antialiased",
-                //code: "text-lg sm:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded",
+                //code: "text-lg md:text-xl font-normal px-1 bg-green-300 border border-gray-900 rounded",
                 //"list[ordered=false]": "text-2xl list-disc pl-8 mb-6",
                 //"list[ordered=true]": "text-2xl list-decimal pl-8 mb-6",
               },

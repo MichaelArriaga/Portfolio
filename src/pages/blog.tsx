@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import SidebarLayout from "../components/layouts/SidebarLayout";
-import Post from "../components/index/Post";
+import Post from "../components/Post";
 import { metaTitle } from "../constants/metaTitle";
 import SEO from "../components/general/SEO";
 
@@ -63,16 +63,16 @@ const Blog = ({
         tags={null}
         article={false}
       />
-      <div style={{ marginBottom: 0 }} className="">
+      <div style={{ marginBottom: 0 }} className="flex flex-col justify-center items-center mr-auto">
         {/* tags section start */}
-        <div className={"mb-2 py-2"}>
-          <h2 className={"text-3xl font-bold mb-2 antialiased"}>Topics</h2>
+        <div className={"mb-2"}>
+          <h2 className={"text-3xl font-bold mb-2 antialiased leading-none text-center md:text-left"}>Topics</h2>
           <div className="flex flex-wrap items-center justify-start">
             {category_tags.length > 0
               ? category_tags.map((tag: string) => {
                   return (
                     <Tag
-                      tag={tag}
+                      tag={tag.toUpperCase()}
                       selected_tag={selected_tag}
                       setFilterTag={setFilterTag}
                     />
@@ -84,7 +84,7 @@ const Blog = ({
         {/* tags section end */}
 
         {/* posts section start */}
-        <div style={{ height: 650 }} className="w-full overflow-y-scroll">
+        <div style={{ height: 650 }} className="w-full overflow-y-scroll ml-auto mr-auto md:ml-0 md:mr-auto">
           {edges.length > 0
             ? edges.map((item: any) => {
                 let post = item.node.frontmatter;
@@ -147,8 +147,8 @@ const Tag: React.FC<TagPropTypes> = ({
       <h3
         className={
           selected_tag === tag
-            ? "text-sm text-white font-bold antialiased"
-            : "text-sm text-gray-900 font-bold antialiased"
+            ? "text-sm text-white font-bold antialiased tracking-tighter"
+            : "text-sm text-gray-900 font-bold antialiased tracking-tighter"
         }
       >
         {tag
