@@ -3,7 +3,7 @@
   "description": "Mike Ray Developer Portfolio",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop -p 8000",
+    "develop": "gatsby clean && gatsby develop -p 8000",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^5.6.0",
     "gatsby-plugin-sharp": "^4.6.0",
     "gatsby-remark-classes": "^1.0.2",
+    "gatsby-remark-gifs": "^1.2.0",
     "gatsby-remark-images": "^6.6.0",
     "gatsby-remark-prismjs": "^6.6.0",
     "gatsby-source-filesystem": "^4.6.0",
